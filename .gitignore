@@ -7,6 +7,18 @@ __pycache__/
 vendor/
 checkpoints/*
 !checkpoints/README.md
+!checkpoints/stage1_lora_baseline/
+!checkpoints/stage1_lora_baseline/**
+!checkpoints/stage3_failure_driven/
+!checkpoints/stage3_failure_driven/**
+!checkpoints/stage3_schema_only/
+!checkpoints/stage3_schema_only/**
+!checkpoints/stage4_counterfactual_paired/
+!checkpoints/stage4_counterfactual_paired/**
+!checkpoints/stage4_failure_weighted/
+!checkpoints/stage4_failure_weighted/**
+!checkpoints/stage4_world_randomization/
+!checkpoints/stage4_world_randomization/**
 logs/*
 !logs/README.md
 
