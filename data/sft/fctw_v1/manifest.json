@@ -1,0 +1,61 @@
+{
+  "version": "fctw_sft_v1",
+  "seed": 20261020,
+  "method": "Factorial Counterfactual Tool-World SFT",
+  "hypothesis": "完整覆盖 Valid × Near-miss 四象限，可减少 E11 错误拒绝，同时保留 E01 的能力约束拒绝。",
+  "base": {
+    "dataset": "failure_driven_v1",
+    "train_samples": 2429,
+    "train_sha256": "73c7ed0d30dc249bf279f0e4c6aa2abcf47bd0db6221e19970c4a47c25281afd",
+    "dev_samples": 150,
+    "dev_sha256": "633d9f4c95f1d59a9be651a1ff8d72c8ab869bf9093bea1a3c59bd68b07a6940"
+  },
+  "controlled_budget": {
+    "added_samples": 400,
+    "unique_added_intents": 100,
+    "world_counts": {
+      "E00": 100,
+      "E01": 100,
+      "E10": 100,
+      "E11": 100
+    },
+    "call_samples": 200,
+    "reject_samples": 200,
+    "constraint_counts": {
+      "enum": 50,
+      "numeric_range": 50
+    },
+    "category_counts": {
+      "multiple": 33,
+      "parallel": 33,
+      "parallel_multiple": 3,
+      "simple_python": 31
+    }
+  },
+  "shortcut_checks": {
+    "tool_count_mismatched_groups": 0,
+    "opaque_name_prefix": "tool_",
+    "position_randomized": true,
+    "single_target_intent_only": true
+  },
+  "data": {
+    "train": {
+      "samples": 2829,
+      "sha256": "5906866b67416f3702bea31a8e907e3519e10c05768e20cccac5143819485d11"
+    },
+    "dev": {
+      "samples": 150,
+      "sha256": "633d9f4c95f1d59a9be651a1ff8d72c8ab869bf9093bea1a3c59bd68b07a6940"
+    },
+    "worlds": {
+      "samples": 400,
+      "sha256": "6e0a8260264c5e23876df5f1e9dc3c1636413a1390d2e58e0dfbdf3965bc3f67"
+    }
+  },
+  "excluded_evaluation_source_ids": 350,
+  "limitations": [
+    "训练约束仅覆盖 enum 与数值上界；字符串模式约束保留为未见评测。",
+    "标准 SFT 不显式加入因子化损失，方法收益只能归因于结构化数据覆盖。",
+    "为获得无歧义 Reject 标签，仅使用全部标准调用属于同一目标工具的意图。"
+  ]
+}

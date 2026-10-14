@@ -50,6 +50,24 @@ class SchemaValidationTest(unittest.TestCase):
         errors = validate_arguments({"count": True}, schema)
         self.assertTrue(errors)
 
+    def test_numeric_maximum_is_enforced(self) -> None:
+        """数值超过 JSON Schema maximum 时必须报错。"""
+        schema = {
+            "type": "object",
+            "properties": {"count": {"type": "integer", "maximum": 2}},
+            "required": ["count"],
+        }
+        self.assertTrue(validate_arguments({"count": 3}, schema))
+
+    def test_string_pattern_is_enforced(self) -> None:
+        """字符串不匹配 JSON Schema pattern 时必须报错。"""
+        schema = {
+            "type": "object",
+            "properties": {"code": {"type": "string", "pattern": "^ok$"}},
+            "required": ["code"],
+        }
+        self.assertTrue(validate_arguments({"code": "wrong"}, schema))
+
     def test_extra_argument_is_error(self) -> None:
         """关闭额外字段时，多余参数必须报错。"""
         schema = {

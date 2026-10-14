@@ -102,5 +102,21 @@
       "messages": "conversations",
       "tools": "tools"
     }
+  },
+  "toolace_fctw_train": {
+    "file_name": "sft/fctw_v1/train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "tools": "tools"
+    }
+  },
+  "toolace_fctw_dev": {
+    "file_name": "sft/fctw_v1/dev.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "tools": "tools"
+    }
   }
 }

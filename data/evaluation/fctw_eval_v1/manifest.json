@@ -1,0 +1,31 @@
+{
+  "version": "fctw_eval_v1",
+  "seed": 20261021,
+  "policy": "独立来源意图的 Valid × Near-miss 四象限；string_pattern 仅用于未见约束测试。",
+  "base_tasks": 30,
+  "worlds_per_task": 4,
+  "world_samples": 120,
+  "constraint_counts": {
+    "enum": 10,
+    "numeric_range": 10,
+    "string_pattern": 10
+  },
+  "unseen_constraint_family": "string_pattern",
+  "category_counts": {
+    "multiple": 11,
+    "parallel": 9,
+    "parallel_multiple": 2,
+    "simple_python": 8
+  },
+  "excluded_source_ids": 450,
+  "datasets": {
+    "fctw_eval_v1.jsonl": {
+      "samples": 120,
+      "sha256": "77196e6dc80a6b34be4e64d609dc5b4230fed47d6eb68dca10cc6e343ea176b4"
+    }
+  },
+  "limitations": [
+    "评测规模为 30 个基础意图，优先保证成对结构和人工可核验性。",
+    "字符串 pattern 是单一未见约束族，不代表所有现实能力表达。"
+  ]
+}

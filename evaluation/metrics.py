@@ -137,6 +137,12 @@ def validate_value(value: Any, schema: dict[str, Any], path: str) -> list[str]:
         return [f"{path} 类型应为 {expected_type}"]
     if "enum" in schema and value not in schema["enum"]:
         errors.append(f"{path} 不在枚举范围内")
+    if "minimum" in schema and isinstance(value, (int, float)) and value < schema["minimum"]:
+        errors.append(f"{path} 小于最小值 {schema['minimum']}")
+    if "maximum" in schema and isinstance(value, (int, float)) and value > schema["maximum"]:
+        errors.append(f"{path} 大于最大值 {schema['maximum']}")
+    if "pattern" in schema and isinstance(value, str) and re.search(schema["pattern"], value) is None:
+        errors.append(f"{path} 不满足字符串模式 {schema['pattern']}")
     if expected_type == "array" and isinstance(value, list) and "items" in schema:
         for index, item in enumerate(value):
             errors.extend(validate_value(item, schema["items"], f"{path}[{index}]"))

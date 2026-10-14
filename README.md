@@ -54,8 +54,8 @@ tool-use-posttraining/
 ├── evaluation/               # 严格解析、Schema 校验、工具世界指标
 ├── reports/                  # 实验账本、汇总、逐样本结果与报告
 ├── scripts/                  # 数据构建、推理、评测、统计比较
-├── tests/                    # 23 项单元测试
-├── checkpoints/README.md     # 权重获取与重训说明
+├── tests/                    # 30 项单元测试
+├── checkpoints/             # 七组最终 LoRA adapter 与恢复材料
 ├── environment_report.md
 └── README.md
 ```
@@ -96,8 +96,10 @@ python -m unittest discover -s tests -v
 
 完整研究叙事见 `reports/final_report.md`，Stage 4 实验账本见 `reports/stage4/stage4_experiment_record.md`，机器可读的成对统计见 `reports/tool_world_final/comparison/final_comparison.json`。
 
+Stage 5 进一步检验了四象限 FCTW-SFT。该方法在受控 E11 环境中降低了错误拒绝，但在独立动态工具集上的 Capability Substitution 仅为 3.33%，未能保留 FWCT 的 56.67%。这表明均匀因素覆盖会改变调用阈值，却不足以形成稳定的能力条件化学习。完整负面结果与逐样本证据见 `reports/stage5_fctw/stage5_experiment_report.md`。
+
 ## 发布边界
 
-GitHub 版本不包含 LoRA 权重、第三方仓库快照、完整终端日志和 SFT 正文。上游训练数据中存在形似访问令牌的示例字符串，因此只公开数据构建代码、清单与 SHA-256。服务器保留全部 Checkpoint、训练数据和原始日志。
+GitHub 版本通过 Git LFS 保存七组正式实验的最终 LoRA adapter，但不包含 Qwen 基座权重、第三方仓库快照、完整 SFT 正文或中间优化器快照。上游训练数据中存在形似访问令牌的示例字符串，因此训练正文不公开提交，只保留确定性构建代码、工具世界记录、清单与 SHA-256。服务器保留完整训练数据和中间 Checkpoint。
 
 BFCL 子集结果不是官方排行榜成绩；公开基准也可能出现在基础模型预训练数据中。最终集只有 60 个基础任务，且严格去重后 `multiple` 类仅剩 2 条，结论仍需在更大规模和真实执行环境中复核。

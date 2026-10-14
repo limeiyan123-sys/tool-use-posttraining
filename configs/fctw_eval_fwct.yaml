@@ -1,0 +1,7 @@
+project_root: /root/autodl-tmp/tool-use-posttraining
+frozen_dir: /root/autodl-tmp/tool-use-posttraining/data/evaluation/fctw_eval_v1
+model_path: /root/autodl-tmp/models/Qwen2.5-1.5B-Instruct
+adapter_path: /root/autodl-tmp/tool-use-posttraining/checkpoints/stage4_failure_weighted
+output_path: /root/autodl-tmp/tool-use-posttraining/reports/stage5_fctw/fctw_eval/fwct_predictions.jsonl
+seed: 20261021
+max_new_tokens: 256

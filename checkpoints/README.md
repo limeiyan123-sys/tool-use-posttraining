@@ -1,6 +1,6 @@
 # Checkpoint 说明
 
-本目录保存六组正式实验的最终 LoRA adapter，并通过 Git LFS 版本化。仓库不包含 Qwen2.5-1.5B-Instruct 基座权重，也不包含各训练过程的 `checkpoint-*` 优化器快照；使用前需要自行获取基座模型。
+本目录保存七组正式实验的最终 LoRA adapter，并通过 Git LFS 版本化。仓库不包含 Qwen2.5-1.5B-Instruct 基座权重，也不包含各训练过程的 `checkpoint-*` 优化器快照；使用前需要自行获取基座模型。
 
 每个实验目录保留以下恢复材料：
 
@@ -21,6 +21,7 @@
 | `stage4_counterfactual_paired` | 70.49 MiB | `2d12583264bf32f4038ddd886a5e6139f7b57f02b9b421030a4825a6b10af6c5` |
 | `stage4_failure_weighted` | 70.49 MiB | `8e173e08027b248b025ccab909b5fdb5fa0b0407a398ab324685e0d8b3ed561c` |
 | `stage4_world_randomization` | 70.49 MiB | `0719f21153c27903d5a16693df2354d76d5989a9e01a749b120bae9de5be7182` |
+| `stage5_fctw` | 70.49 MiB | `e408b8230d945288b54bbb07294ebe301bfe4cc3f1c8b666652e7f52b24013d2` |
 
 ## 获取与校验
 

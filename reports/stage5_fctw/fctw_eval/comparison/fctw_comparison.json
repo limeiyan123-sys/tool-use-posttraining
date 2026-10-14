@@ -1,0 +1,100 @@
+{
+  "methods": {
+    "fdsrc": {
+      "samples": 120,
+      "overall_decision_exact": 0.6083333333333333,
+      "E10_decision_exact": 0.8,
+      "E01_decision_exact": 0.0,
+      "E11_decision_exact": 0.6333333333333333,
+      "E00_decision_exact": 1.0,
+      "E11_false_rejection_rate": 0.0,
+      "unseen_constraint_decision_exact": 0.6
+    },
+    "fwct": {
+      "samples": 120,
+      "overall_decision_exact": 0.65,
+      "E10_decision_exact": 0.8333333333333334,
+      "E01_decision_exact": 0.13333333333333333,
+      "E11_decision_exact": 0.6333333333333333,
+      "E00_decision_exact": 1.0,
+      "E11_false_rejection_rate": 0.03333333333333333,
+      "unseen_constraint_decision_exact": 0.625
+    },
+    "fctw": {
+      "samples": 120,
+      "overall_decision_exact": 0.6583333333333333,
+      "E10_decision_exact": 0.8666666666666667,
+      "E01_decision_exact": 0.06666666666666667,
+      "E11_decision_exact": 0.7,
+      "E00_decision_exact": 1.0,
+      "E11_false_rejection_rate": 0.0,
+      "unseen_constraint_decision_exact": 0.675
+    }
+  },
+  "comparisons": {
+    "FCTW - FDSRC": {
+      "Overall Decision Exact": {
+        "clusters": 30,
+        "difference": 0.05,
+        "ci_low": -0.008333333333333333,
+        "ci_high": 0.10833333333333334
+      },
+      "E01 Decision Exact": {
+        "clusters": 30,
+        "difference": 0.06666666666666667,
+        "ci_low": 0.0,
+        "ci_high": 0.16666666666666666
+      },
+      "E11 Decision Exact": {
+        "clusters": 30,
+        "difference": 0.06666666666666667,
+        "ci_low": -0.1,
+        "ci_high": 0.23333333333333334
+      },
+      "E11 False Rejection": {
+        "clusters": 30,
+        "difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "Unseen Constraint Decision Exact": {
+        "clusters": 10,
+        "difference": 0.075,
+        "ci_low": 0.0,
+        "ci_high": 0.15
+      }
+    },
+    "FCTW - FWCT": {
+      "Overall Decision Exact": {
+        "clusters": 30,
+        "difference": 0.008333333333333333,
+        "ci_low": -0.03333333333333333,
+        "ci_high": 0.058333333333333334
+      },
+      "E01 Decision Exact": {
+        "clusters": 30,
+        "difference": -0.06666666666666667,
+        "ci_low": -0.16666666666666666,
+        "ci_high": 0.0
+      },
+      "E11 Decision Exact": {
+        "clusters": 30,
+        "difference": 0.06666666666666667,
+        "ci_low": 0.0,
+        "ci_high": 0.16666666666666666
+      },
+      "E11 False Rejection": {
+        "clusters": 30,
+        "difference": -0.03333333333333333,
+        "ci_low": -0.1,
+        "ci_high": 0.0
+      },
+      "Unseen Constraint Decision Exact": {
+        "clusters": 10,
+        "difference": 0.05,
+        "ci_low": 0.0,
+        "ci_high": 0.15
+      }
+    }
+  }
+}

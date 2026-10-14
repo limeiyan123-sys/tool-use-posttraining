@@ -19,6 +19,8 @@ checkpoints/*
 !checkpoints/stage4_failure_weighted/**
 !checkpoints/stage4_world_randomization/
 !checkpoints/stage4_world_randomization/**
+!checkpoints/stage5_fctw/
+!checkpoints/stage5_fctw/**
 logs/*
 !logs/README.md
 

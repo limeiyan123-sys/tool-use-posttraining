@@ -1,0 +1,341 @@
+{
+  "overall": {
+    "samples": 120,
+    "parse_rate": 1.0,
+    "tool_accuracy": 0.675,
+    "argument_accuracy": 0.6458333333333334,
+    "argument_exact_match": 0.6083333333333333,
+    "decision_exact": 0.6083333333333333,
+    "false_rejection_rate": 0.0,
+    "wrong_tool_selection_rate": 0.325,
+    "argument_failure_rate": 0.06666666666666667,
+    "invalid_output_rate": 0.0,
+    "error_counts": {
+      "argument_failure": 8,
+      "correct": 73,
+      "wrong_tool_selection": 39
+    }
+  },
+  "by_world": {
+    "E00": {
+      "samples": 30,
+      "parse_rate": 1.0,
+      "tool_accuracy": 1.0,
+      "argument_accuracy": 1.0,
+      "argument_exact_match": 1.0,
+      "decision_exact": 1.0,
+      "false_rejection_rate": 0.0,
+      "wrong_tool_selection_rate": 0.0,
+      "argument_failure_rate": 0.0,
+      "invalid_output_rate": 0.0,
+      "error_counts": {
+        "correct": 30
+      }
+    },
+    "E01": {
+      "samples": 30,
+      "parse_rate": 1.0,
+      "tool_accuracy": 0.0,
+      "argument_accuracy": 0.0,
+      "argument_exact_match": 0.0,
+      "decision_exact": 0.0,
+      "false_rejection_rate": 0.0,
+      "wrong_tool_selection_rate": 1.0,
+      "argument_failure_rate": 0.0,
+      "invalid_output_rate": 0.0,
+      "error_counts": {
+        "wrong_tool_selection": 30
+      }
+    },
+    "E10": {
+      "samples": 30,
+      "parse_rate": 1.0,
+      "tool_accuracy": 0.9666666666666667,
+      "argument_accuracy": 0.8916666666666668,
+      "argument_exact_match": 0.8,
+      "decision_exact": 0.8,
+      "false_rejection_rate": 0.0,
+      "wrong_tool_selection_rate": 0.03333333333333333,
+      "argument_failure_rate": 0.16666666666666666,
+      "invalid_output_rate": 0.0,
+      "error_counts": {
+        "argument_failure": 5,
+        "correct": 24,
+        "wrong_tool_selection": 1
+      }
+    },
+    "E11": {
+      "samples": 30,
+      "parse_rate": 1.0,
+      "tool_accuracy": 0.7333333333333333,
+      "argument_accuracy": 0.6916666666666665,
+      "argument_exact_match": 0.6333333333333333,
+      "decision_exact": 0.6333333333333333,
+      "false_rejection_rate": 0.0,
+      "wrong_tool_selection_rate": 0.26666666666666666,
+      "argument_failure_rate": 0.1,
+      "invalid_output_rate": 0.0,
+      "error_counts": {
+        "argument_failure": 3,
+        "correct": 19,
+        "wrong_tool_selection": 8
+      }
+    }
+  },
+  "by_constraint": {
+    "enum": {
+      "samples": 40,
+      "parse_rate": 1.0,
+      "tool_accuracy": 0.675,
+      "argument_accuracy": 0.65,
+      "argument_exact_match": 0.625,
+      "decision_exact": 0.625,
+      "false_rejection_rate": 0.0,
+      "wrong_tool_selection_rate": 0.325,
+      "argument_failure_rate": 0.05,
+      "invalid_output_rate": 0.0,
+      "error_counts": {
+        "argument_failure": 2,
+        "correct": 25,
+        "wrong_tool_selection": 13
+      }
+    },
+    "numeric_range": {
+      "samples": 40,
+      "parse_rate": 1.0,
+      "tool_accuracy": 0.65,
+      "argument_accuracy": 0.6166666666666667,
+      "argument_exact_match": 0.6,
+      "decision_exact": 0.6,
+      "false_rejection_rate": 0.0,
+      "wrong_tool_selection_rate": 0.35,
+      "argument_failure_rate": 0.05,
+      "invalid_output_rate": 0.0,
+      "error_counts": {
+        "argument_failure": 2,
+        "correct": 24,
+        "wrong_tool_selection": 14
+      }
+    },
+    "string_pattern": {
+      "samples": 40,
+      "parse_rate": 1.0,
+      "tool_accuracy": 0.7,
+      "argument_accuracy": 0.6708333333333334,
+      "argument_exact_match": 0.6,
+      "decision_exact": 0.6,
+      "false_rejection_rate": 0.0,
+      "wrong_tool_selection_rate": 0.3,
+      "argument_failure_rate": 0.1,
+      "invalid_output_rate": 0.0,
+      "error_counts": {
+        "argument_failure": 4,
+        "correct": 24,
+        "wrong_tool_selection": 12
+      }
+    }
+  },
+  "by_constraint_world": {
+    "enum": {
+      "E00": {
+        "samples": 10,
+        "parse_rate": 1.0,
+        "tool_accuracy": 1.0,
+        "argument_accuracy": 1.0,
+        "argument_exact_match": 1.0,
+        "decision_exact": 1.0,
+        "false_rejection_rate": 0.0,
+        "wrong_tool_selection_rate": 0.0,
+        "argument_failure_rate": 0.0,
+        "invalid_output_rate": 0.0,
+        "error_counts": {
+          "correct": 10
+        }
+      },
+      "E01": {
+        "samples": 10,
+        "parse_rate": 1.0,
+        "tool_accuracy": 0.0,
+        "argument_accuracy": 0.0,
+        "argument_exact_match": 0.0,
+        "decision_exact": 0.0,
+        "false_rejection_rate": 0.0,
+        "wrong_tool_selection_rate": 1.0,
+        "argument_failure_rate": 0.0,
+        "invalid_output_rate": 0.0,
+        "error_counts": {
+          "wrong_tool_selection": 10
+        }
+      },
+      "E10": {
+        "samples": 10,
+        "parse_rate": 1.0,
+        "tool_accuracy": 0.9,
+        "argument_accuracy": 0.8666666666666666,
+        "argument_exact_match": 0.8,
+        "decision_exact": 0.8,
+        "false_rejection_rate": 0.0,
+        "wrong_tool_selection_rate": 0.1,
+        "argument_failure_rate": 0.1,
+        "invalid_output_rate": 0.0,
+        "error_counts": {
+          "argument_failure": 1,
+          "correct": 8,
+          "wrong_tool_selection": 1
+        }
+      },
+      "E11": {
+        "samples": 10,
+        "parse_rate": 1.0,
+        "tool_accuracy": 0.8,
+        "argument_accuracy": 0.7333333333333333,
+        "argument_exact_match": 0.7,
+        "decision_exact": 0.7,
+        "false_rejection_rate": 0.0,
+        "wrong_tool_selection_rate": 0.2,
+        "argument_failure_rate": 0.1,
+        "invalid_output_rate": 0.0,
+        "error_counts": {
+          "argument_failure": 1,
+          "correct": 7,
+          "wrong_tool_selection": 2
+        }
+      }
+    },
+    "numeric_range": {
+      "E00": {
+        "samples": 10,
+        "parse_rate": 1.0,
+        "tool_accuracy": 1.0,
+        "argument_accuracy": 1.0,
+        "argument_exact_match": 1.0,
+        "decision_exact": 1.0,
+        "false_rejection_rate": 0.0,
+        "wrong_tool_selection_rate": 0.0,
+        "argument_failure_rate": 0.0,
+        "invalid_output_rate": 0.0,
+        "error_counts": {
+          "correct": 10
+        }
+      },
+      "E01": {
+        "samples": 10,
+        "parse_rate": 1.0,
+        "tool_accuracy": 0.0,
+        "argument_accuracy": 0.0,
+        "argument_exact_match": 0.0,
+        "decision_exact": 0.0,
+        "false_rejection_rate": 0.0,
+        "wrong_tool_selection_rate": 1.0,
+        "argument_failure_rate": 0.0,
+        "invalid_output_rate": 0.0,
+        "error_counts": {
+          "wrong_tool_selection": 10
+        }
+      },
+      "E10": {
+        "samples": 10,
+        "parse_rate": 1.0,
+        "tool_accuracy": 1.0,
+        "argument_accuracy": 0.8666666666666666,
+        "argument_exact_match": 0.8,
+        "decision_exact": 0.8,
+        "false_rejection_rate": 0.0,
+        "wrong_tool_selection_rate": 0.0,
+        "argument_failure_rate": 0.2,
+        "invalid_output_rate": 0.0,
+        "error_counts": {
+          "argument_failure": 2,
+          "correct": 8
+        }
+      },
+      "E11": {
+        "samples": 10,
+        "parse_rate": 1.0,
+        "tool_accuracy": 0.6,
+        "argument_accuracy": 0.6,
+        "argument_exact_match": 0.6,
+        "decision_exact": 0.6,
+        "false_rejection_rate": 0.0,
+        "wrong_tool_selection_rate": 0.4,
+        "argument_failure_rate": 0.0,
+        "invalid_output_rate": 0.0,
+        "error_counts": {
+          "correct": 6,
+          "wrong_tool_selection": 4
+        }
+      }
+    },
+    "string_pattern": {
+      "E00": {
+        "samples": 10,
+        "parse_rate": 1.0,
+        "tool_accuracy": 1.0,
+        "argument_accuracy": 1.0,
+        "argument_exact_match": 1.0,
+        "decision_exact": 1.0,
+        "false_rejection_rate": 0.0,
+        "wrong_tool_selection_rate": 0.0,
+        "argument_failure_rate": 0.0,
+        "invalid_output_rate": 0.0,
+        "error_counts": {
+          "correct": 10
+        }
+      },
+      "E01": {
+        "samples": 10,
+        "parse_rate": 1.0,
+        "tool_accuracy": 0.0,
+        "argument_accuracy": 0.0,
+        "argument_exact_match": 0.0,
+        "decision_exact": 0.0,
+        "false_rejection_rate": 0.0,
+        "wrong_tool_selection_rate": 1.0,
+        "argument_failure_rate": 0.0,
+        "invalid_output_rate": 0.0,
+        "error_counts": {
+          "wrong_tool_selection": 10
+        }
+      },
+      "E10": {
+        "samples": 10,
+        "parse_rate": 1.0,
+        "tool_accuracy": 1.0,
+        "argument_accuracy": 0.9416666666666668,
+        "argument_exact_match": 0.8,
+        "decision_exact": 0.8,
+        "false_rejection_rate": 0.0,
+        "wrong_tool_selection_rate": 0.0,
+        "argument_failure_rate": 0.2,
+        "invalid_output_rate": 0.0,
+        "error_counts": {
+          "argument_failure": 2,
+          "correct": 8
+        }
+      },
+      "E11": {
+        "samples": 10,
+        "parse_rate": 1.0,
+        "tool_accuracy": 0.8,
+        "argument_accuracy": 0.7416666666666667,
+        "argument_exact_match": 0.6,
+        "decision_exact": 0.6,
+        "false_rejection_rate": 0.0,
+        "wrong_tool_selection_rate": 0.2,
+        "argument_failure_rate": 0.2,
+        "invalid_output_rate": 0.0,
+        "error_counts": {
+          "argument_failure": 2,
+          "correct": 6,
+          "wrong_tool_selection": 2
+        }
+      }
+    }
+  },
+  "all_worlds_group_accuracy": {
+    "groups": 30,
+    "all_correct": 0,
+    "accuracy": 0.0
+  },
+  "capability_substitution_accuracy": 0.0
+}
