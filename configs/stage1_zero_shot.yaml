@@ -1,0 +1,5 @@
+project_root: /root/autodl-tmp/tool-use-posttraining
+model_path: /root/autodl-tmp/models/Qwen2.5-1.5B-Instruct
+output_path: /root/autodl-tmp/tool-use-posttraining/reports/stage1/zero_shot_predictions.jsonl
+seed: 20261014
+max_new_tokens: 256

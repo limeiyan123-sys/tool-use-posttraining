@@ -1,0 +1,99 @@
+{
+  "overall": {
+    "samples": 70,
+    "parse_rate": 1.0,
+    "tool_accuracy": 0.9857142857142858,
+    "argument_accuracy": 0.9155555555555553,
+    "argument_exact_match": 0.7714285714285715,
+    "execution_success_rate": null,
+    "executable_samples": 0,
+    "error_counts": {
+      "argument_error": 15,
+      "none": 54,
+      "tool_selection_error": 1
+    }
+  },
+  "by_track": {
+    "bfcl_holdout_v1": {
+      "samples": 70,
+      "parse_rate": 1.0,
+      "tool_accuracy": 0.9857142857142858,
+      "argument_accuracy": 0.9155555555555553,
+      "argument_exact_match": 0.7714285714285715,
+      "execution_success_rate": null,
+      "executable_samples": 0,
+      "error_counts": {
+        "argument_error": 15,
+        "none": 54,
+        "tool_selection_error": 1
+      }
+    }
+  },
+  "by_category": {
+    "bfcl_holdout_v1::irrelevance": {
+      "samples": 10,
+      "parse_rate": 1.0,
+      "tool_accuracy": 1.0,
+      "argument_accuracy": 1.0,
+      "argument_exact_match": 1.0,
+      "execution_success_rate": null,
+      "executable_samples": 0,
+      "error_counts": {
+        "none": 10
+      }
+    },
+    "bfcl_holdout_v1::multiple": {
+      "samples": 20,
+      "parse_rate": 1.0,
+      "tool_accuracy": 1.0,
+      "argument_accuracy": 0.9125,
+      "argument_exact_match": 0.8,
+      "execution_success_rate": null,
+      "executable_samples": 0,
+      "error_counts": {
+        "argument_error": 4,
+        "none": 16
+      }
+    },
+    "bfcl_holdout_v1::parallel": {
+      "samples": 10,
+      "parse_rate": 1.0,
+      "tool_accuracy": 1.0,
+      "argument_accuracy": 0.8833333333333332,
+      "argument_exact_match": 0.6,
+      "execution_success_rate": null,
+      "executable_samples": 0,
+      "error_counts": {
+        "argument_error": 4,
+        "none": 6
+      }
+    },
+    "bfcl_holdout_v1::parallel_multiple": {
+      "samples": 10,
+      "parse_rate": 1.0,
+      "tool_accuracy": 1.0,
+      "argument_accuracy": 0.917222222222222,
+      "argument_exact_match": 0.6,
+      "execution_success_rate": null,
+      "executable_samples": 0,
+      "error_counts": {
+        "argument_error": 4,
+        "none": 6
+      }
+    },
+    "bfcl_holdout_v1::simple_python": {
+      "samples": 20,
+      "parse_rate": 1.0,
+      "tool_accuracy": 0.95,
+      "argument_accuracy": 0.8916666666666666,
+      "argument_exact_match": 0.8,
+      "execution_success_rate": null,
+      "executable_samples": 0,
+      "error_counts": {
+        "argument_error": 3,
+        "none": 16,
+        "tool_selection_error": 1
+      }
+    }
+  }
+}

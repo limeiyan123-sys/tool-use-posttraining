@@ -1,0 +1,1213 @@
+{
+  "report_name": "final_comparison",
+  "seed": 20261020,
+  "bootstrap_samples": 10000,
+  "methods": [
+    {
+      "key": "fdsrc",
+      "display_name": "FDSRC",
+      "summary": {
+        "overall": {
+          "samples": 300,
+          "parse_rate": 0.9833333333333333,
+          "tool_accuracy": 0.7033333333333334,
+          "argument_accuracy": 0.6362685185185185,
+          "argument_exact_match": 0.5266666666666666,
+          "decision_exact": 0.5266666666666666,
+          "semantic_exact": 0.5266666666666666,
+          "error_counts": {
+            "argument_error": 35,
+            "distractor_selection_error": 4,
+            "incompatible_substitute_selection": 60,
+            "interface_argument_mapping_error": 18,
+            "interface_tool_mapping_error": 5,
+            "none": 158,
+            "parse_error": 5,
+            "tool_selection_error": 9,
+            "unavailable_tool_hallucination": 5,
+            "unnecessary_refusal": 1
+          }
+        },
+        "by_world": {
+          "capability_removal": {
+            "samples": 60,
+            "parse_rate": 1.0,
+            "tool_accuracy": 0.8333333333333334,
+            "argument_accuracy": 0.8263888888888888,
+            "argument_exact_match": 0.8,
+            "decision_exact": 0.8,
+            "semantic_exact": 0.8,
+            "error_counts": {
+              "argument_error": 2,
+              "none": 48,
+              "tool_selection_error": 4,
+              "unavailable_tool_hallucination": 5,
+              "unnecessary_refusal": 1
+            }
+          },
+          "capability_substitution": {
+            "samples": 60,
+            "parse_rate": 1.0,
+            "tool_accuracy": 0.0,
+            "argument_accuracy": 0.0,
+            "argument_exact_match": 0.0,
+            "decision_exact": 0.0,
+            "semantic_exact": 0.0,
+            "error_counts": {
+              "incompatible_substitute_selection": 60
+            }
+          },
+          "distractor": {
+            "samples": 60,
+            "parse_rate": 0.9833333333333333,
+            "tool_accuracy": 0.8833333333333333,
+            "argument_accuracy": 0.7820833333333334,
+            "argument_exact_match": 0.6,
+            "decision_exact": 0.6,
+            "semantic_exact": 0.6,
+            "error_counts": {
+              "argument_error": 17,
+              "distractor_selection_error": 4,
+              "none": 36,
+              "parse_error": 1,
+              "tool_selection_error": 2
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 60,
+            "parse_rate": 0.9333333333333333,
+            "tool_accuracy": 0.85,
+            "argument_accuracy": 0.7159259259259259,
+            "argument_exact_match": 0.55,
+            "decision_exact": 0.55,
+            "semantic_exact": 0.55,
+            "error_counts": {
+              "interface_argument_mapping_error": 18,
+              "interface_tool_mapping_error": 5,
+              "none": 33,
+              "parse_error": 4
+            }
+          },
+          "original": {
+            "samples": 60,
+            "parse_rate": 1.0,
+            "tool_accuracy": 0.95,
+            "argument_accuracy": 0.8569444444444444,
+            "argument_exact_match": 0.6833333333333333,
+            "decision_exact": 0.6833333333333333,
+            "semantic_exact": 0.6833333333333333,
+            "error_counts": {
+              "argument_error": 16,
+              "none": 41,
+              "tool_selection_error": 3
+            }
+          }
+        },
+        "interface_equivariance_accuracy": 0.55,
+        "counterfactual_pair_accuracy": {
+          "capability_removal": {
+            "pairs": 60,
+            "both_correct": 37,
+            "accuracy": 0.6166666666666667
+          },
+          "capability_substitution": {
+            "pairs": 60,
+            "both_correct": 0,
+            "accuracy": 0.0
+          },
+          "distractor": {
+            "pairs": 60,
+            "both_correct": 35,
+            "accuracy": 0.5833333333333334
+          },
+          "ephemeral_interface": {
+            "pairs": 60,
+            "both_correct": 31,
+            "accuracy": 0.5166666666666667
+          }
+        },
+        "all_worlds_group_accuracy": {
+          "groups": 60,
+          "all_correct": 0,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "key": "world_randomization",
+      "display_name": "World Randomization",
+      "summary": {
+        "overall": {
+          "samples": 300,
+          "parse_rate": 0.98,
+          "tool_accuracy": 0.73,
+          "argument_accuracy": 0.6689907407407407,
+          "argument_exact_match": 0.5533333333333333,
+          "decision_exact": 0.5533333333333333,
+          "semantic_exact": 0.5533333333333333,
+          "error_counts": {
+            "argument_error": 35,
+            "distractor_selection_error": 1,
+            "incompatible_substitute_selection": 58,
+            "interface_argument_mapping_error": 18,
+            "interface_tool_mapping_error": 2,
+            "none": 166,
+            "parse_error": 6,
+            "tool_selection_error": 7,
+            "unavailable_tool_hallucination": 5,
+            "unnecessary_refusal": 2
+          }
+        },
+        "by_world": {
+          "capability_removal": {
+            "samples": 60,
+            "parse_rate": 1.0,
+            "tool_accuracy": 0.8333333333333334,
+            "argument_accuracy": 0.8263888888888888,
+            "argument_exact_match": 0.8,
+            "decision_exact": 0.8,
+            "semantic_exact": 0.8,
+            "error_counts": {
+              "argument_error": 2,
+              "none": 48,
+              "tool_selection_error": 4,
+              "unavailable_tool_hallucination": 5,
+              "unnecessary_refusal": 1
+            }
+          },
+          "capability_substitution": {
+            "samples": 60,
+            "parse_rate": 1.0,
+            "tool_accuracy": 0.03333333333333333,
+            "argument_accuracy": 0.03333333333333333,
+            "argument_exact_match": 0.03333333333333333,
+            "decision_exact": 0.03333333333333333,
+            "semantic_exact": 0.03333333333333333,
+            "error_counts": {
+              "incompatible_substitute_selection": 58,
+              "none": 2
+            }
+          },
+          "distractor": {
+            "samples": 60,
+            "parse_rate": 1.0,
+            "tool_accuracy": 0.95,
+            "argument_accuracy": 0.8524537037037038,
+            "argument_exact_match": 0.65,
+            "decision_exact": 0.65,
+            "semantic_exact": 0.65,
+            "error_counts": {
+              "argument_error": 18,
+              "distractor_selection_error": 1,
+              "none": 39,
+              "tool_selection_error": 1,
+              "unnecessary_refusal": 1
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 60,
+            "parse_rate": 0.9,
+            "tool_accuracy": 0.8666666666666667,
+            "argument_accuracy": 0.7464351851851851,
+            "argument_exact_match": 0.5666666666666667,
+            "decision_exact": 0.5666666666666667,
+            "semantic_exact": 0.5666666666666667,
+            "error_counts": {
+              "interface_argument_mapping_error": 18,
+              "interface_tool_mapping_error": 2,
+              "none": 34,
+              "parse_error": 6
+            }
+          },
+          "original": {
+            "samples": 60,
+            "parse_rate": 1.0,
+            "tool_accuracy": 0.9666666666666667,
+            "argument_accuracy": 0.8863425925925926,
+            "argument_exact_match": 0.7166666666666667,
+            "decision_exact": 0.7166666666666667,
+            "semantic_exact": 0.7166666666666667,
+            "error_counts": {
+              "argument_error": 15,
+              "none": 43,
+              "tool_selection_error": 2
+            }
+          }
+        },
+        "interface_equivariance_accuracy": 0.5666666666666667,
+        "counterfactual_pair_accuracy": {
+          "capability_removal": {
+            "pairs": 60,
+            "both_correct": 38,
+            "accuracy": 0.6333333333333333
+          },
+          "capability_substitution": {
+            "pairs": 60,
+            "both_correct": 1,
+            "accuracy": 0.016666666666666666
+          },
+          "distractor": {
+            "pairs": 60,
+            "both_correct": 37,
+            "accuracy": 0.6166666666666667
+          },
+          "ephemeral_interface": {
+            "pairs": 60,
+            "both_correct": 34,
+            "accuracy": 0.5666666666666667
+          }
+        },
+        "all_worlds_group_accuracy": {
+          "groups": 60,
+          "all_correct": 1,
+          "accuracy": 0.016666666666666666
+        }
+      }
+    },
+    {
+      "key": "counterfactual_paired",
+      "display_name": "Counterfactual Paired",
+      "summary": {
+        "overall": {
+          "samples": 300,
+          "parse_rate": 0.9733333333333334,
+          "tool_accuracy": 0.7233333333333334,
+          "argument_accuracy": 0.659138888888889,
+          "argument_exact_match": 0.54,
+          "decision_exact": 0.54,
+          "semantic_exact": 0.54,
+          "error_counts": {
+            "argument_error": 33,
+            "distractor_selection_error": 1,
+            "incompatible_substitute_selection": 57,
+            "interface_argument_mapping_error": 22,
+            "interface_tool_mapping_error": 3,
+            "none": 162,
+            "parse_error": 8,
+            "tool_selection_error": 7,
+            "unavailable_tool_hallucination": 6,
+            "unnecessary_refusal": 1
+          }
+        },
+        "by_world": {
+          "capability_removal": {
+            "samples": 60,
+            "parse_rate": 0.9833333333333333,
+            "tool_accuracy": 0.8333333333333334,
+            "argument_accuracy": 0.8263888888888888,
+            "argument_exact_match": 0.8,
+            "decision_exact": 0.8,
+            "semantic_exact": 0.8,
+            "error_counts": {
+              "argument_error": 2,
+              "none": 48,
+              "parse_error": 1,
+              "tool_selection_error": 2,
+              "unavailable_tool_hallucination": 6,
+              "unnecessary_refusal": 1
+            }
+          },
+          "capability_substitution": {
+            "samples": 60,
+            "parse_rate": 0.9666666666666667,
+            "tool_accuracy": 0.016666666666666666,
+            "argument_accuracy": 0.016666666666666666,
+            "argument_exact_match": 0.016666666666666666,
+            "decision_exact": 0.016666666666666666,
+            "semantic_exact": 0.016666666666666666,
+            "error_counts": {
+              "incompatible_substitute_selection": 57,
+              "none": 1,
+              "parse_error": 2
+            }
+          },
+          "distractor": {
+            "samples": 60,
+            "parse_rate": 0.9833333333333333,
+            "tool_accuracy": 0.9166666666666666,
+            "argument_accuracy": 0.8274537037037036,
+            "argument_exact_match": 0.6666666666666666,
+            "decision_exact": 0.6666666666666666,
+            "semantic_exact": 0.6666666666666666,
+            "error_counts": {
+              "argument_error": 15,
+              "distractor_selection_error": 1,
+              "none": 40,
+              "parse_error": 1,
+              "tool_selection_error": 3
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 60,
+            "parse_rate": 0.95,
+            "tool_accuracy": 0.9,
+            "argument_accuracy": 0.7681018518518516,
+            "argument_exact_match": 0.5333333333333333,
+            "decision_exact": 0.5333333333333333,
+            "semantic_exact": 0.5333333333333333,
+            "error_counts": {
+              "interface_argument_mapping_error": 22,
+              "interface_tool_mapping_error": 3,
+              "none": 32,
+              "parse_error": 3
+            }
+          },
+          "original": {
+            "samples": 60,
+            "parse_rate": 0.9833333333333333,
+            "tool_accuracy": 0.95,
+            "argument_accuracy": 0.8570833333333333,
+            "argument_exact_match": 0.6833333333333333,
+            "decision_exact": 0.6833333333333333,
+            "semantic_exact": 0.6833333333333333,
+            "error_counts": {
+              "argument_error": 16,
+              "none": 41,
+              "parse_error": 1,
+              "tool_selection_error": 2
+            }
+          }
+        },
+        "interface_equivariance_accuracy": 0.5333333333333333,
+        "counterfactual_pair_accuracy": {
+          "capability_removal": {
+            "pairs": 60,
+            "both_correct": 36,
+            "accuracy": 0.6
+          },
+          "capability_substitution": {
+            "pairs": 60,
+            "both_correct": 1,
+            "accuracy": 0.016666666666666666
+          },
+          "distractor": {
+            "pairs": 60,
+            "both_correct": 35,
+            "accuracy": 0.5833333333333334
+          },
+          "ephemeral_interface": {
+            "pairs": 60,
+            "both_correct": 31,
+            "accuracy": 0.5166666666666667
+          }
+        },
+        "all_worlds_group_accuracy": {
+          "groups": 60,
+          "all_correct": 0,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "key": "failure_weighted",
+      "display_name": "Failure-Weighted CTW",
+      "summary": {
+        "overall": {
+          "samples": 300,
+          "parse_rate": 0.9866666666666667,
+          "tool_accuracy": 0.7866666666666666,
+          "argument_accuracy": 0.7308240740740739,
+          "argument_exact_match": 0.6266666666666667,
+          "decision_exact": 0.6233333333333333,
+          "semantic_exact": 0.6266666666666667,
+          "error_counts": {
+            "argument_error": 28,
+            "distractor_selection_error": 1,
+            "incompatible_substitute_selection": 25,
+            "interface_argument_mapping_error": 20,
+            "interface_tool_mapping_error": 2,
+            "none": 187,
+            "parse_error": 4,
+            "schema_validation_error": 1,
+            "tool_selection_error": 8,
+            "unavailable_tool_hallucination": 4,
+            "unnecessary_refusal": 20
+          }
+        },
+        "by_world": {
+          "capability_removal": {
+            "samples": 60,
+            "parse_rate": 1.0,
+            "tool_accuracy": 0.8333333333333334,
+            "argument_accuracy": 0.8263888888888888,
+            "argument_exact_match": 0.8,
+            "decision_exact": 0.8,
+            "semantic_exact": 0.8,
+            "error_counts": {
+              "argument_error": 2,
+              "none": 48,
+              "tool_selection_error": 4,
+              "unavailable_tool_hallucination": 4,
+              "unnecessary_refusal": 2
+            }
+          },
+          "capability_substitution": {
+            "samples": 60,
+            "parse_rate": 1.0,
+            "tool_accuracy": 0.5666666666666667,
+            "argument_accuracy": 0.5666666666666667,
+            "argument_exact_match": 0.5666666666666667,
+            "decision_exact": 0.5666666666666667,
+            "semantic_exact": 0.5666666666666667,
+            "error_counts": {
+              "incompatible_substitute_selection": 25,
+              "none": 34,
+              "unnecessary_refusal": 1
+            }
+          },
+          "distractor": {
+            "samples": 60,
+            "parse_rate": 1.0,
+            "tool_accuracy": 0.7166666666666667,
+            "argument_accuracy": 0.6641203703703703,
+            "argument_exact_match": 0.5333333333333333,
+            "decision_exact": 0.5333333333333333,
+            "semantic_exact": 0.5333333333333333,
+            "error_counts": {
+              "argument_error": 11,
+              "distractor_selection_error": 1,
+              "none": 32,
+              "tool_selection_error": 2,
+              "unnecessary_refusal": 14
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 60,
+            "parse_rate": 0.9333333333333333,
+            "tool_accuracy": 0.8666666666666667,
+            "argument_accuracy": 0.7300462962962962,
+            "argument_exact_match": 0.5333333333333333,
+            "decision_exact": 0.5166666666666667,
+            "semantic_exact": 0.5333333333333333,
+            "error_counts": {
+              "interface_argument_mapping_error": 20,
+              "interface_tool_mapping_error": 2,
+              "none": 31,
+              "parse_error": 4,
+              "schema_validation_error": 1,
+              "unnecessary_refusal": 2
+            }
+          },
+          "original": {
+            "samples": 60,
+            "parse_rate": 1.0,
+            "tool_accuracy": 0.95,
+            "argument_accuracy": 0.8668981481481481,
+            "argument_exact_match": 0.7,
+            "decision_exact": 0.7,
+            "semantic_exact": 0.7,
+            "error_counts": {
+              "argument_error": 15,
+              "none": 42,
+              "tool_selection_error": 2,
+              "unnecessary_refusal": 1
+            }
+          }
+        },
+        "interface_equivariance_accuracy": 0.5333333333333333,
+        "counterfactual_pair_accuracy": {
+          "capability_removal": {
+            "pairs": 60,
+            "both_correct": 37,
+            "accuracy": 0.6166666666666667
+          },
+          "capability_substitution": {
+            "pairs": 60,
+            "both_correct": 25,
+            "accuracy": 0.4166666666666667
+          },
+          "distractor": {
+            "pairs": 60,
+            "both_correct": 30,
+            "accuracy": 0.5
+          },
+          "ephemeral_interface": {
+            "pairs": 60,
+            "both_correct": 30,
+            "accuracy": 0.5
+          }
+        },
+        "all_worlds_group_accuracy": {
+          "groups": 60,
+          "all_correct": 11,
+          "accuracy": 0.18333333333333332
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "reference": "fdsrc",
+      "reference_display": "FDSRC",
+      "candidate": "failure_weighted",
+      "candidate_display": "Failure-Weighted CTW",
+      "bootstrap": {
+        "overall": {
+          "samples": 300,
+          "delta": 0.09666666666666666,
+          "ci95_low": 0.04666666666666667,
+          "ci95_high": 0.14666666666666667
+        },
+        "original": {
+          "samples": 60,
+          "delta": 0.016666666666666666,
+          "ci95_low": -0.05,
+          "ci95_high": 0.08333333333333333
+        },
+        "ephemeral_interface": {
+          "samples": 60,
+          "delta": -0.03333333333333333,
+          "ci95_low": -0.11666666666666667,
+          "ci95_high": 0.05
+        },
+        "capability_removal": {
+          "samples": 60,
+          "delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0
+        },
+        "capability_substitution": {
+          "samples": 60,
+          "delta": 0.5666666666666667,
+          "ci95_low": 0.43333333333333335,
+          "ci95_high": 0.6833333333333333
+        },
+        "distractor": {
+          "samples": 60,
+          "delta": -0.06666666666666667,
+          "ci95_low": -0.2,
+          "ci95_high": 0.06666666666666667
+        }
+      },
+      "cases": {
+        "improved": [
+          {
+            "id": "tw_multiple_139__distractor",
+            "world_type": "distractor",
+            "user_request": "Find details of patent lawsuits involving the company 'Apple Inc.' from the year 2010.",
+            "transformation": {
+              "allowed_value": "unsupported_0c161f94",
+              "distractor_tool": "distractor_e0c7f7d8b9",
+              "kind": "capability_changing",
+              "restricted_parameter": "case_type",
+              "seed": 20261019,
+              "source_tool": "lawsuit_details.find"
+            },
+            "expected_calls": [
+              {
+                "arguments": {
+                  "case_type": [
+                    "Patent"
+                  ],
+                  "company_name": [
+                    "Apple Inc."
+                  ],
+                  "year": [
+                    2010
+                  ]
+                },
+                "name": "lawsuit_details.find"
+              }
+            ],
+            "reference_predicted_calls": [
+              {
+                "arguments": {
+                  "company_name": "Apple Inc.",
+                  "year": 2010
+                },
+                "name": "lawsuit_details.find"
+              }
+            ],
+            "reference_error": "argument_error",
+            "candidate_predicted_calls": [
+              {
+                "arguments": {
+                  "case_type": "Patent",
+                  "company_name": "Apple Inc.",
+                  "year": 2010
+                },
+                "name": "lawsuit_details.find"
+              }
+            ],
+            "candidate_error": "none"
+          },
+          {
+            "id": "tw_multiple_139__original",
+            "world_type": "original",
+            "user_request": "Find details of patent lawsuits involving the company 'Apple Inc.' from the year 2010.",
+            "transformation": {},
+            "expected_calls": [
+              {
+                "arguments": {
+                  "case_type": [
+                    "Patent"
+                  ],
+                  "company_name": [
+                    "Apple Inc."
+                  ],
+                  "year": [
+                    2010
+                  ]
+                },
+                "name": "lawsuit_details.find"
+              }
+            ],
+            "reference_predicted_calls": [
+              {
+                "arguments": {
+                  "company_name": "Apple Inc.",
+                  "year": 2010
+                },
+                "name": "lawsuit_details.find"
+              }
+            ],
+            "reference_error": "argument_error",
+            "candidate_predicted_calls": [
+              {
+                "arguments": {
+                  "case_type": "Patent",
+                  "company_name": "Apple Inc.",
+                  "year": 2010
+                },
+                "name": "lawsuit_details.find"
+              }
+            ],
+            "candidate_error": "none"
+          }
+        ],
+        "regressed": [
+          {
+            "id": "tw_parallel_152__distractor",
+            "world_type": "distractor",
+            "user_request": "\"Can you calculate the result of the following mathematical operation: first, raise the number 3 to the power of 5, then raise the number 2 to the power of 3.\"",
+            "transformation": {
+              "allowed_value": 7922,
+              "distractor_tool": "distractor_f6d387052d",
+              "kind": "capability_changing",
+              "restricted_parameter": "base",
+              "seed": 20261019,
+              "source_tool": "math.power"
+            },
+            "expected_calls": [
+              {
+                "arguments": {
+                  "base": [
+                    2
+                  ],
+                  "exponent": [
+                    3
+                  ],
+                  "mod": [
+                    "",
+                    null
+                  ]
+                },
+                "name": "math.power"
+              },
+              {
+                "arguments": {
+                  "base": [
+                    3
+                  ],
+                  "exponent": [
+                    5
+                  ],
+                  "mod": [
+                    "",
+                    null
+                  ]
+                },
+                "name": "math.power"
+              }
+            ],
+            "reference_predicted_calls": [
+              {
+                "arguments": {
+                  "base": 3,
+                  "exponent": 5
+                },
+                "name": "math.power"
+              },
+              {
+                "arguments": {
+                  "base": 2,
+                  "exponent": 3
+                },
+                "name": "math.power"
+              }
+            ],
+            "reference_error": "none",
+            "candidate_predicted_calls": [],
+            "candidate_error": "unnecessary_refusal"
+          }
+        ]
+      }
+    },
+    {
+      "reference": "world_randomization",
+      "reference_display": "World Randomization",
+      "candidate": "counterfactual_paired",
+      "candidate_display": "Counterfactual Paired",
+      "bootstrap": {
+        "overall": {
+          "samples": 300,
+          "delta": -0.013333333333333334,
+          "ci95_low": -0.03666666666666667,
+          "ci95_high": 0.01
+        },
+        "original": {
+          "samples": 60,
+          "delta": -0.03333333333333333,
+          "ci95_low": -0.13333333333333333,
+          "ci95_high": 0.05
+        },
+        "ephemeral_interface": {
+          "samples": 60,
+          "delta": -0.03333333333333333,
+          "ci95_low": -0.1,
+          "ci95_high": 0.03333333333333333
+        },
+        "capability_removal": {
+          "samples": 60,
+          "delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0
+        },
+        "capability_substitution": {
+          "samples": 60,
+          "delta": -0.016666666666666666,
+          "ci95_low": -0.05,
+          "ci95_high": 0.0
+        },
+        "distractor": {
+          "samples": 60,
+          "delta": 0.016666666666666666,
+          "ci95_low": 0.0,
+          "ci95_high": 0.05
+        }
+      },
+      "cases": {
+        "improved": [
+          {
+            "id": "tw_parallel_125__original",
+            "world_type": "original",
+            "user_request": "In the African savannah, a group of researchers have been observing a herd of elephants for a few years. They have noticed that the current population of elephants is 500 and the annual population growth rate is 2%. They are interested in knowing the estimated population of elephants in 10 years. However, due to the unpredictable nature of the wild, they also want to consider a scenario where the growth rate drops to 1.5% and another scenario where it increases to 2.5%. Can you provide the estimated elephant population for these three scenarios in 10 years?",
+            "transformation": {},
+            "expected_calls": [
+              {
+                "arguments": {
+                  "current_population": [
+                    500
+                  ],
+                  "growth_rate": [
+                    0.02
+                  ],
+                  "years": [
+                    10
+                  ]
+                },
+                "name": "elephant_population_estimate"
+              },
+              {
+                "arguments": {
+                  "current_population": [
+                    500
+                  ],
+                  "growth_rate": [
+                    0.015
+                  ],
+                  "years": [
+                    10
+                  ]
+                },
+                "name": "elephant_population_estimate"
+              },
+              {
+                "arguments": {
+                  "current_population": [
+                    500
+                  ],
+                  "growth_rate": [
+                    0.025
+                  ],
+                  "years": [
+                    10
+                  ]
+                },
+                "name": "elephant_population_estimate"
+              }
+            ],
+            "reference_predicted_calls": [
+              {
+                "arguments": {
+                  "current_population": 500,
+                  "growth_rate": 2.0,
+                  "years": 10
+                },
+                "name": "elephant_population_estimate"
+              },
+              {
+                "arguments": {
+                  "current_population": 500,
+                  "growth_rate": 1.5,
+                  "years": 10
+                },
+                "name": "elephant_population_estimate"
+              },
+              {
+                "arguments": {
+                  "current_population": 500,
+                  "growth_rate": 2.5,
+                  "years": 10
+                },
+                "name": "elephant_population_estimate"
+              }
+            ],
+            "reference_error": "argument_error",
+            "candidate_predicted_calls": [
+              {
+                "arguments": {
+                  "current_population": 500,
+                  "growth_rate": 0.02,
+                  "years": 10
+                },
+                "name": "elephant_population_estimate"
+              },
+              {
+                "arguments": {
+                  "current_population": 500,
+                  "growth_rate": 0.015,
+                  "years": 10
+                },
+                "name": "elephant_population_estimate"
+              },
+              {
+                "arguments": {
+                  "current_population": 500,
+                  "growth_rate": 0.025,
+                  "years": 10
+                },
+                "name": "elephant_population_estimate"
+              }
+            ],
+            "candidate_error": "none"
+          },
+          {
+            "id": "tw_parallel_51__distractor",
+            "world_type": "distractor",
+            "user_request": "Search for a Chicken Noodle Soup recipe and a Vegan Salad recipe.",
+            "transformation": {
+              "allowed_value": "unsupported_df717bbb",
+              "distractor_tool": "distractor_d4d798d139",
+              "kind": "capability_changing",
+              "restricted_parameter": "diet",
+              "seed": 20261019,
+              "source_tool": "recipe_search.find"
+            },
+            "expected_calls": [
+              {
+                "arguments": {
+                  "diet": [
+                    "",
+                    "Keto"
+                  ],
+                  "dish": [
+                    "Chicken Noodle Soup"
+                  ]
+                },
+                "name": "recipe_search.find"
+              },
+              {
+                "arguments": {
+                  "diet": [
+                    "Vegan"
+                  ],
+                  "dish": [
+                    "Salad",
+                    "salad",
+                    "Vegan Salad",
+                    "vegan salad"
+                  ]
+                },
+                "name": "recipe_search.find"
+              }
+            ],
+            "reference_predicted_calls": [
+              {
+                "arguments": {
+                  "dish": "Chicken Noodle Soup"
+                },
+                "name": "recipe_search.find"
+              },
+              {
+                "arguments": {
+                  "dish": "Vegan Salad"
+                },
+                "name": "recipe_search.find"
+              }
+            ],
+            "reference_error": "argument_error",
+            "candidate_predicted_calls": [
+              {
+                "arguments": {
+                  "diet": "Keto",
+                  "dish": "Chicken Noodle Soup"
+                },
+                "name": "recipe_search.find"
+              },
+              {
+                "arguments": {
+                  "diet": "Vegan",
+                  "dish": "Salad"
+                },
+                "name": "recipe_search.find"
+              }
+            ],
+            "candidate_error": "none"
+          }
+        ],
+        "regressed": [
+          {
+            "id": "tw_multiple_189__original",
+            "world_type": "original",
+            "user_request": "Convert time 3pm from New York time zone to London time zone.",
+            "transformation": {},
+            "expected_calls": [
+              {
+                "arguments": {
+                  "from_timezone": [
+                    "America/New_York",
+                    "New York",
+                    "New York, NY",
+                    "NY",
+                    "NYC",
+                    "Eastern Standard Time",
+                    "EST"
+                  ],
+                  "time": [
+                    "3pm"
+                  ],
+                  "to_timezone": [
+                    "Europe/London",
+                    "London",
+                    "British Summer Time",
+                    "BST",
+                    "Greenwich Mean Time",
+                    "GMT"
+                  ]
+                },
+                "name": "timezone.convert"
+              }
+            ],
+            "reference_predicted_calls": [
+              {
+                "arguments": {
+                  "from_timezone": "New York",
+                  "time": "3pm",
+                  "to_timezone": "London"
+                },
+                "name": "timezone.convert"
+              }
+            ],
+            "reference_error": "none",
+            "candidate_predicted_calls": [
+              {
+                "arguments": {
+                  "from_timezone": "America/New_York",
+                  "time": "15:00",
+                  "to_timezone": "Europe/London"
+                },
+                "name": "timezone.convert"
+              }
+            ],
+            "candidate_error": "argument_error"
+          }
+        ]
+      }
+    },
+    {
+      "reference": "world_randomization",
+      "reference_display": "World Randomization",
+      "candidate": "failure_weighted",
+      "candidate_display": "Failure-Weighted CTW",
+      "bootstrap": {
+        "overall": {
+          "samples": 300,
+          "delta": 0.07,
+          "ci95_low": 0.023333333333333334,
+          "ci95_high": 0.11333333333333331
+        },
+        "original": {
+          "samples": 60,
+          "delta": -0.016666666666666666,
+          "ci95_low": -0.08333333333333333,
+          "ci95_high": 0.05
+        },
+        "ephemeral_interface": {
+          "samples": 60,
+          "delta": -0.05,
+          "ci95_low": -0.13333333333333333,
+          "ci95_high": 0.016666666666666666
+        },
+        "capability_removal": {
+          "samples": 60,
+          "delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0
+        },
+        "capability_substitution": {
+          "samples": 60,
+          "delta": 0.5333333333333333,
+          "ci95_low": 0.4166666666666667,
+          "ci95_high": 0.65
+        },
+        "distractor": {
+          "samples": 60,
+          "delta": -0.11666666666666667,
+          "ci95_low": -0.21666666666666667,
+          "ci95_high": -0.03333333333333333
+        }
+      },
+      "cases": {
+        "improved": [
+          {
+            "id": "tw_multiple_139__original",
+            "world_type": "original",
+            "user_request": "Find details of patent lawsuits involving the company 'Apple Inc.' from the year 2010.",
+            "transformation": {},
+            "expected_calls": [
+              {
+                "arguments": {
+                  "case_type": [
+                    "Patent"
+                  ],
+                  "company_name": [
+                    "Apple Inc."
+                  ],
+                  "year": [
+                    2010
+                  ]
+                },
+                "name": "lawsuit_details.find"
+              }
+            ],
+            "reference_predicted_calls": [
+              {
+                "arguments": {
+                  "company_name": "Apple Inc.",
+                  "year": 2010
+                },
+                "name": "lawsuit_details.find"
+              }
+            ],
+            "reference_error": "argument_error",
+            "candidate_predicted_calls": [
+              {
+                "arguments": {
+                  "case_type": "Patent",
+                  "company_name": "Apple Inc.",
+                  "year": 2010
+                },
+                "name": "lawsuit_details.find"
+              }
+            ],
+            "candidate_error": "none"
+          },
+          {
+            "id": "tw_multiple_189__capability_substitution",
+            "world_type": "capability_substitution",
+            "user_request": "Convert time 3pm from New York time zone to London time zone.",
+            "transformation": {
+              "allowed_value": "unsupported_4248e63d",
+              "kind": "capability_changing",
+              "replaced_tool": "timezone.convert",
+              "replacement_tool": "limited_c81630e635",
+              "restricted_parameter": "to_timezone",
+              "seed": 20261019
+            },
+            "expected_calls": [],
+            "reference_predicted_calls": [
+              {
+                "arguments": {
+                  "from_timezone": "New York",
+                  "time": "3pm",
+                  "to_timezone": "London"
+                },
+                "name": "limited_c81630e635"
+              }
+            ],
+            "reference_error": "incompatible_substitute_selection",
+            "candidate_predicted_calls": [],
+            "candidate_error": "none"
+          }
+        ],
+        "regressed": [
+          {
+            "id": "tw_parallel_152__distractor",
+            "world_type": "distractor",
+            "user_request": "\"Can you calculate the result of the following mathematical operation: first, raise the number 3 to the power of 5, then raise the number 2 to the power of 3.\"",
+            "transformation": {
+              "allowed_value": 7922,
+              "distractor_tool": "distractor_f6d387052d",
+              "kind": "capability_changing",
+              "restricted_parameter": "base",
+              "seed": 20261019,
+              "source_tool": "math.power"
+            },
+            "expected_calls": [
+              {
+                "arguments": {
+                  "base": [
+                    2
+                  ],
+                  "exponent": [
+                    3
+                  ],
+                  "mod": [
+                    "",
+                    null
+                  ]
+                },
+                "name": "math.power"
+              },
+              {
+                "arguments": {
+                  "base": [
+                    3
+                  ],
+                  "exponent": [
+                    5
+                  ],
+                  "mod": [
+                    "",
+                    null
+                  ]
+                },
+                "name": "math.power"
+              }
+            ],
+            "reference_predicted_calls": [
+              {
+                "arguments": {
+                  "base": 3,
+                  "exponent": 5
+                },
+                "name": "math.power"
+              },
+              {
+                "arguments": {
+                  "base": 2,
+                  "exponent": 3
+                },
+                "name": "math.power"
+              }
+            ],
+            "reference_error": "none",
+            "candidate_predicted_calls": [],
+            "candidate_error": "unnecessary_refusal"
+          }
+        ]
+      }
+    }
+  ]
+}

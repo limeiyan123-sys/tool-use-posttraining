@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.partial
+*.tar.gz
+
+# 大体积或可从上游恢复的产物不进入源码仓库。
+vendor/
+checkpoints/*
+!checkpoints/README.md
+logs/*
+!logs/README.md
+
+# SFT 正文可能包含上游数据中的令牌样例，仅公开构建脚本与清单。
+data/sft/*/train.json
+data/sft/*/dev.json
+

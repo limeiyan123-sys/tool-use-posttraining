@@ -1,0 +1,39 @@
+{
+  "version": "failure_weighted_tool_world_sft_v1",
+  "seed": 20261018,
+  "method": "Failure-Weighted Counterfactual Tool-World SFT",
+  "hypothesis": "配对本身不足以产生跨世界约束学习，需要提高诊断最差能力变换的监督密度。",
+  "base": {
+    "dataset": "failure_driven_v1",
+    "train_samples": 2429,
+    "train_sha256": "73c7ed0d30dc249bf279f0e4c6aa2abcf47bd0db6221e19970c4a47c25281afd",
+    "dev_samples": 150,
+    "dev_sha256": "633d9f4c95f1d59a9be651a1ff8d72c8ab869bf9093bea1a3c59bd68b07a6940"
+  },
+  "controlled_budget": {
+    "added_samples": 400,
+    "unique_added_intents": 250,
+    "world_counts": {
+      "capability_removal": 50,
+      "capability_substitution": 150,
+      "distractor": 25,
+      "ephemeral_interface": 25,
+      "original": 150
+    }
+  },
+  "data": {
+    "train": {
+      "samples": 2829,
+      "sha256": "e76038016cf0ef23256b930b91451a7b9c599b664fa4829eeb5c9a4c0069aa72"
+    },
+    "dev": {
+      "samples": 150,
+      "sha256": "633d9f4c95f1d59a9be651a1ff8d72c8ab869bf9093bea1a3c59bd68b07a6940"
+    }
+  },
+  "excluded_evaluation_source_ids": 290,
+  "limitations": [
+    "该方法改变了工具世界类型分配，改进只能归因于失败加权数据策略，不能归因于新优化目标。",
+    "能力替换仍由标量 enum 约束构造，尚未覆盖复杂组合能力变化。"
+  ]
+}

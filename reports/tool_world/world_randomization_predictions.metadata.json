@@ -1,0 +1,21 @@
+{
+  "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": "/root/autodl-tmp/tool-use-posttraining/checkpoints/stage4_world_randomization",
+  "adapter_hashes": {
+    "adapter_config.json": "5b29f9c705145063d554c6c54a6adef6e7dde9f869ad6b6100b2b09bc48c2257",
+    "adapter_model.safetensors": "0719f21153c27903d5a16693df2354d76d5989a9e01a749b120bae9de5be7182"
+  },
+  "frozen_dir": "/root/autodl-tmp/tool-use-posttraining/data/evaluation/tool_world_v1",
+  "frozen_manifest_sha256": "d9e283c81e3cf4a3f846594e43c3e70f96e3f6de743b48e8533ce0c037c4123c",
+  "model_class": "PeftModelForCausalLM",
+  "dtype": "torch.bfloat16",
+  "seed": 20261016,
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 256
+  },
+  "samples": 750,
+  "runtime_seconds": 1583.247,
+  "peak_memory_gib": 3.123,
+  "prediction_sha256": "602f2144d2a46bd88b49c3239b85fa9bc8467c65cc2e5d2399554725a1aa39d5"
+}

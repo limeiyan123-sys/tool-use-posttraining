@@ -1,0 +1,106 @@
+{
+  "stage0_tool_smoke": {
+    "file_name": "stage0_tool_smoke.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "tools": "tools"
+    }
+  },
+  "toolace_baseline_train": {
+    "file_name": "sft/baseline_v1/train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "tools": "tools"
+    }
+  },
+  "toolace_baseline_dev": {
+    "file_name": "sft/baseline_v1/dev.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "tools": "tools"
+    }
+  },
+  "toolace_schema_only_train": {
+    "file_name": "sft/schema_only_v1/train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "tools": "tools"
+    }
+  },
+  "toolace_schema_only_dev": {
+    "file_name": "sft/schema_only_v1/dev.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "tools": "tools"
+    }
+  },
+  "toolace_failure_driven_train": {
+    "file_name": "sft/failure_driven_v1/train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "tools": "tools"
+    }
+  },
+  "toolace_failure_driven_dev": {
+    "file_name": "sft/failure_driven_v1/dev.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "tools": "tools"
+    }
+  },
+  "toolace_world_randomization_train": {
+    "file_name": "sft/world_randomization_v1/train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "tools": "tools"
+    }
+  },
+  "toolace_world_randomization_dev": {
+    "file_name": "sft/world_randomization_v1/dev.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "tools": "tools"
+    }
+  },
+  "toolace_counterfactual_paired_train": {
+    "file_name": "sft/counterfactual_paired_v1/train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "tools": "tools"
+    }
+  },
+  "toolace_counterfactual_paired_dev": {
+    "file_name": "sft/counterfactual_paired_v1/dev.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "tools": "tools"
+    }
+  },
+  "toolace_failure_weighted_train": {
+    "file_name": "sft/failure_weighted_v1/train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "tools": "tools"
+    }
+  },
+  "toolace_failure_weighted_dev": {
+    "file_name": "sft/failure_weighted_v1/dev.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "tools": "tools"
+    }
+  }
+}

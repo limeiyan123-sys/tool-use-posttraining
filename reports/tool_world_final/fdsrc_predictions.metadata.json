@@ -1,0 +1,27 @@
+{
+  "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": "/root/autodl-tmp/tool-use-posttraining/checkpoints/stage3_failure_driven",
+  "adapter_hashes": {
+    "adapter_config.json": "e0f5ba462273b537aa53a2995d903ec1112638a65de72094567afeceadfeed34",
+    "adapter_model.safetensors": "e2ee428936015e57d2eb9919c76266dd80fee68a5fa9f8d0f81be5c67f6ffda4"
+  },
+  "frozen_dir": "/root/autodl-tmp/tool-use-posttraining/data/evaluation/tool_world_final_v1",
+  "frozen_manifest_sha256": "4a3ed549153bc8fcf23a04506de6d9bdb60c25c373d96d28faf137f13bc7b231",
+  "model_class": "PeftModelForCausalLM",
+  "dtype": "torch.bfloat16",
+  "seed": 20261019,
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 256
+  },
+  "samples": 300,
+  "runtime_seconds": 186.382,
+  "resume": {
+    "enabled": true,
+    "existing_samples": 216,
+    "generated_this_process": 84,
+    "runtime_scope": "仅记录本次进程；中断前耗时未知，不作估算。"
+  },
+  "peak_memory_gib": 3.04,
+  "prediction_sha256": "38a89119c7f7261e23a703511624b48bfa6e4e3022ee72aae5f2c67536ecbd94"
+}

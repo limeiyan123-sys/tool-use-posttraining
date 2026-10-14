@@ -1,0 +1,6 @@
+project_root: /root/autodl-tmp/tool-use-posttraining
+model_path: /root/autodl-tmp/models/Qwen2.5-1.5B-Instruct
+adapter_path: /root/autodl-tmp/tool-use-posttraining/checkpoints/stage1_lora_baseline
+output_path: /root/autodl-tmp/tool-use-posttraining/reports/stage1/lora_predictions.jsonl
+seed: 20261014
+max_new_tokens: 256

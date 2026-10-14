@@ -1,0 +1,40 @@
+{
+  "seed": 20261014,
+  "source": {
+    "train": {
+      "path": "data/sft/baseline_v1/train.json",
+      "samples": 1350,
+      "sha256": "8e2712f507e202970e0602cbf56bf53d983cbabef3b1f5fdb08c81f11cead9a5"
+    },
+    "dev": {
+      "path": "data/sft/baseline_v1/dev.json",
+      "samples": 150,
+      "sha256": "633d9f4c95f1d59a9be651a1ff8d72c8ab869bf9093bea1a3c59bd68b07a6940"
+    }
+  },
+  "selection": {
+    "schema_alias": 400,
+    "hard_no_tool": 180,
+    "multi_call": 546
+  },
+  "schema_only": {
+    "train": {
+      "samples": 1750,
+      "sha256": "720736bbae0b4aed5de88d4244b14746de49d4041c21863bdcaa382c15192c72"
+    },
+    "dev": {
+      "samples": 150,
+      "sha256": "633d9f4c95f1d59a9be651a1ff8d72c8ab869bf9093bea1a3c59bd68b07a6940"
+    }
+  },
+  "failure_driven": {
+    "train": {
+      "samples": 2429,
+      "sha256": "73c7ed0d30dc249bf279f0e4c6aa2abcf47bd0db6221e19970c4a47c25281afd"
+    },
+    "dev": {
+      "samples": 150,
+      "sha256": "633d9f4c95f1d59a9be651a1ff8d72c8ab869bf9093bea1a3c59bd68b07a6940"
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "overall": {
+    "samples": 750,
+    "parse_rate": 0.9706666666666667,
+    "tool_accuracy": 0.7,
+    "argument_accuracy": 0.6667037037037036,
+    "argument_exact_match": 0.6,
+    "decision_exact": 0.6,
+    "semantic_exact": 0.6,
+    "error_counts": {
+      "argument_error": 54,
+      "distractor_selection_error": 7,
+      "incompatible_substitute_selection": 140,
+      "interface_argument_mapping_error": 21,
+      "interface_tool_mapping_error": 9,
+      "none": 450,
+      "parse_error": 22,
+      "tool_selection_error": 31,
+      "unavailable_tool_hallucination": 12,
+      "unnecessary_refusal": 4
+    }
+  },
+  "by_world": {
+    "capability_removal": {
+      "samples": 150,
+      "parse_rate": 0.9866666666666667,
+      "tool_accuracy": 0.7733333333333333,
+      "argument_accuracy": 0.7722222222222221,
+      "argument_exact_match": 0.7666666666666667,
+      "decision_exact": 0.7666666666666667,
+      "semantic_exact": 0.7666666666666667,
+      "error_counts": {
+        "argument_error": 1,
+        "none": 115,
+        "parse_error": 2,
+        "tool_selection_error": 16,
+        "unavailable_tool_hallucination": 12,
+        "unnecessary_refusal": 4
+      }
+    },
+    "capability_substitution": {
+      "samples": 150,
+      "parse_rate": 0.9866666666666667,
+      "tool_accuracy": 0.03333333333333333,
+      "argument_accuracy": 0.03333333333333333,
+      "argument_exact_match": 0.03333333333333333,
+      "decision_exact": 0.03333333333333333,
+      "semantic_exact": 0.03333333333333333,
+      "error_counts": {
+        "incompatible_substitute_selection": 140,
+        "none": 5,
+        "parse_error": 2,
+        "tool_selection_error": 3
+      }
+    },
+    "distractor": {
+      "samples": 150,
+      "parse_rate": 0.9933333333333333,
+      "tool_accuracy": 0.9066666666666666,
+      "argument_accuracy": 0.8409259259259259,
+      "argument_exact_match": 0.7333333333333333,
+      "decision_exact": 0.7333333333333333,
+      "semantic_exact": 0.7333333333333333,
+      "error_counts": {
+        "argument_error": 26,
+        "distractor_selection_error": 7,
+        "none": 110,
+        "parse_error": 1,
+        "tool_selection_error": 6
+      }
+    },
+    "ephemeral_interface": {
+      "samples": 150,
+      "parse_rate": 0.9066666666666666,
+      "tool_accuracy": 0.8466666666666667,
+      "argument_accuracy": 0.801111111111111,
+      "argument_exact_match": 0.7066666666666667,
+      "decision_exact": 0.7066666666666667,
+      "semantic_exact": 0.7066666666666667,
+      "error_counts": {
+        "interface_argument_mapping_error": 21,
+        "interface_tool_mapping_error": 9,
+        "none": 106,
+        "parse_error": 14
+      }
+    },
+    "original": {
+      "samples": 150,
+      "parse_rate": 0.98,
+      "tool_accuracy": 0.94,
+      "argument_accuracy": 0.8859259259259259,
+      "argument_exact_match": 0.76,
+      "decision_exact": 0.76,
+      "semantic_exact": 0.76,
+      "error_counts": {
+        "argument_error": 27,
+        "none": 114,
+        "parse_error": 3,
+        "tool_selection_error": 6
+      }
+    }
+  },
+  "interface_equivariance_accuracy": 0.7066666666666667,
+  "counterfactual_pair_accuracy": {
+    "capability_removal": {
+      "pairs": 150,
+      "both_correct": 91,
+      "accuracy": 0.6066666666666667
+    },
+    "capability_substitution": {
+      "pairs": 150,
+      "both_correct": 4,
+      "accuracy": 0.02666666666666667
+    },
+    "distractor": {
+      "pairs": 150,
+      "both_correct": 105,
+      "accuracy": 0.7
+    },
+    "ephemeral_interface": {
+      "pairs": 150,
+      "both_correct": 100,
+      "accuracy": 0.6666666666666666
+    }
+  },
+  "all_worlds_group_accuracy": {
+    "groups": 150,
+    "all_correct": 4,
+    "accuracy": 0.02666666666666667
+  }
+}

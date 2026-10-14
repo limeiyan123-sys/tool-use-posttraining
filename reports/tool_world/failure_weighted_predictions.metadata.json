@@ -1,0 +1,21 @@
+{
+  "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": "/root/autodl-tmp/tool-use-posttraining/checkpoints/stage4_failure_weighted",
+  "adapter_hashes": {
+    "adapter_config.json": "bdb45acf1760b9f3ec9a64c1fcfd011b7d3f5d8f13058cd75f0bce8dbfa9ceff",
+    "adapter_model.safetensors": "8e173e08027b248b025ccab909b5fdb5fa0b0407a398ab324685e0d8b3ed561c"
+  },
+  "frozen_dir": "/root/autodl-tmp/tool-use-posttraining/data/evaluation/tool_world_v1",
+  "frozen_manifest_sha256": "d9e283c81e3cf4a3f846594e43c3e70f96e3f6de743b48e8533ce0c037c4123c",
+  "model_class": "PeftModelForCausalLM",
+  "dtype": "torch.bfloat16",
+  "seed": 20261016,
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 256
+  },
+  "samples": 750,
+  "runtime_seconds": 1311.282,
+  "peak_memory_gib": 3.123,
+  "prediction_sha256": "101b86abe434965150b801d1b632f3feda40a26271a07a79f6df80b8291993d6"
+}

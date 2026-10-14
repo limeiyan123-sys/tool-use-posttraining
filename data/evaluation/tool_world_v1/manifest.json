@@ -1,0 +1,33 @@
+{
+  "version": "tool_world_v1",
+  "seed": 20261016,
+  "policy": "同一基础请求的五个世界保持同组；不读取旧测试答案生成训练数据。",
+  "base_tasks": 150,
+  "worlds_per_task": 5,
+  "world_samples": 750,
+  "category_sizes": {
+    "simple_python": 45,
+    "multiple": 40,
+    "parallel": 35,
+    "parallel_multiple": 30
+  },
+  "excluded_source_ids": 140,
+  "datasets": {
+    "tool_world_v1.jsonl": {
+      "samples": 750,
+      "sha256": "7439a9d9b800d881f02e50520f1de564c3622aea369453dcb0cd6a0f5dda3d80"
+    }
+  },
+  "world_types": [
+    "original",
+    "ephemeral_interface",
+    "capability_removal",
+    "capability_substitution",
+    "distractor"
+  ],
+  "limitations": [
+    "能力替换通过收紧一个标量参数的 enum 构造，不代表所有现实工具能力变化。",
+    "多调用任务允许继续调用仍可独立完成的工具，不把所有能力移除样本标为 no-tool。",
+    "该诊断集用于方法选择，不能作为后续新方法的独立最终测试集。"
+  ]
+}

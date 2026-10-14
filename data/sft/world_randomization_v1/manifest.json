@@ -1,0 +1,56 @@
+{
+  "version": "counterfactual_tool_world_sft_v1",
+  "seed": 20261017,
+  "base": {
+    "dataset": "failure_driven_v1",
+    "train_samples": 2429,
+    "train_sha256": "73c7ed0d30dc249bf279f0e4c6aa2abcf47bd0db6221e19970c4a47c25281afd",
+    "dev_samples": 150,
+    "dev_sha256": "633d9f4c95f1d59a9be651a1ff8d72c8ab869bf9093bea1a3c59bd68b07a6940"
+  },
+  "controlled_budget": {
+    "added_samples": 400,
+    "original_worlds": 200,
+    "transformed_worlds": 200,
+    "transform_counts": {
+      "capability_removal": 50,
+      "capability_substitution": 50,
+      "distractor": 50,
+      "ephemeral_interface": 50
+    }
+  },
+  "world_randomization": {
+    "policy": "原始世界与变换世界来自互不重复的意图。",
+    "unique_added_intents": 400,
+    "data": {
+      "train": {
+        "samples": 2829,
+        "sha256": "ff5b55892c92c375db69c02a11a50a369477f1415bdc2e9a3bd801b2316e51f6"
+      },
+      "dev": {
+        "samples": 150,
+        "sha256": "633d9f4c95f1d59a9be651a1ff8d72c8ab869bf9093bea1a3c59bd68b07a6940"
+      }
+    }
+  },
+  "counterfactual_paired": {
+    "policy": "每个意图同时提供原始世界与一个变换世界。",
+    "unique_added_intents": 200,
+    "data": {
+      "train": {
+        "samples": 2829,
+        "sha256": "98e670ccca903212c144063c79840c300dc15c2c88f338302b49df6fedf9b9f6"
+      },
+      "dev": {
+        "samples": 150,
+        "sha256": "633d9f4c95f1d59a9be651a1ff8d72c8ab869bf9093bea1a3c59bd68b07a6940"
+      }
+    }
+  },
+  "excluded_evaluation_source_ids": 290,
+  "leakage_check": "训练 source ID 与 frozen_v1、final_holdout_v1、tool_world_v1 完全互斥。",
+  "limitations": [
+    "两个数据集的样本数和变换类型数量一致，但独立意图覆盖数有意不同。",
+    "标准 SFT 不显式计算跨世界损失；本实验检验重复意图下的反事实监督是否有额外价值。"
+  ]
+}

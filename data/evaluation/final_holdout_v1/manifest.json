@@ -1,0 +1,26 @@
+{
+  "version": "final_holdout_v1",
+  "seed": 20261015,
+  "policy": "方法定型后创建；所有模型仅运行一次；文件禁止覆盖。",
+  "development_set": "/root/autodl-tmp/tool-use-posttraining/data/evaluation/frozen_v1",
+  "excluded_source_ids": 70,
+  "gorilla_commit": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+  "datasets": {
+    "bfcl_holdout_v1.jsonl": {
+      "samples": 70,
+      "sha256": "93db438821f10e2483469a5d170d368dbcd67fe09526b33290d94311213893f3"
+    }
+  },
+  "bfcl_category_sizes": {
+    "simple_python": 20,
+    "multiple": 20,
+    "parallel": 10,
+    "parallel_multiple": 10,
+    "irrelevance": 10
+  },
+  "limitations": [
+    "这是固定 BFCL 子集，不是 BFCL 官方排行榜成绩。",
+    "公开 BFCL 样本可能进入过基础模型预训练语料。",
+    "holdout 不含本地可执行轨道，Execution Success 不适用。"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B-Instruct",
+  "model_class": "Qwen2ForCausalLM",
+  "dtype": "torch.bfloat16",
+  "seed": 20261014,
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 256
+  },
+  "samples": 98,
+  "runtime_seconds": 69.878,
+  "peak_memory_gib": 2.955,
+  "prediction_sha256": "19b4538ff0f5ca10b947847d9aab39725558e8d2483302d11a87e1ac819aea4e"
+}

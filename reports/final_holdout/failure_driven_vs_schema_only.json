@@ -1,0 +1,65 @@
+{
+  "seed": 20261014,
+  "bootstrap_samples": 10000,
+  "overall": {
+    "samples": 70,
+    "metrics": {
+      "tool_accuracy": {
+        "baseline": 0.9857142857142858,
+        "candidate": 1.0,
+        "delta": 0.014285714285714285,
+        "ci95_low": 0.0,
+        "ci95_high": 0.04285714285714286
+      },
+      "argument_accuracy": {
+        "baseline": 0.9155555555555553,
+        "candidate": 0.9393650793650794,
+        "delta": 0.023809523809523815,
+        "ci95_low": -0.009523809523809523,
+        "ci95_high": 0.06428571428571428
+      },
+      "argument_exact_match": {
+        "baseline": 0.7714285714285715,
+        "candidate": 0.8142857142857143,
+        "delta": 0.04285714285714286,
+        "ci95_low": -0.014285714285714285,
+        "ci95_high": 0.11428571428571428
+      }
+    }
+  },
+  "by_track": {
+    "bfcl_holdout_v1": {
+      "samples": 70,
+      "metrics": {
+        "tool_accuracy": {
+          "baseline": 0.9857142857142858,
+          "candidate": 1.0,
+          "delta": 0.014285714285714285,
+          "ci95_low": 0.0,
+          "ci95_high": 0.04285714285714286
+        },
+        "argument_accuracy": {
+          "baseline": 0.9155555555555553,
+          "candidate": 0.9393650793650794,
+          "delta": 0.023809523809523815,
+          "ci95_low": -0.009523809523809523,
+          "ci95_high": 0.06428571428571428
+        },
+        "argument_exact_match": {
+          "baseline": 0.7714285714285715,
+          "candidate": 0.8142857142857143,
+          "delta": 0.04285714285714286,
+          "ci95_low": -0.014285714285714285,
+          "ci95_high": 0.11428571428571428
+        }
+      }
+    }
+  },
+  "error_transitions": {
+    "argument_error -> argument_error": 12,
+    "argument_error -> none": 3,
+    "none -> argument_error": 1,
+    "none -> none": 53,
+    "tool_selection_error -> none": 1
+  }
+}

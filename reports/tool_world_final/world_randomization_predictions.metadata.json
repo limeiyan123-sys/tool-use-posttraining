@@ -1,0 +1,27 @@
+{
+  "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": "/root/autodl-tmp/tool-use-posttraining/checkpoints/stage4_world_randomization",
+  "adapter_hashes": {
+    "adapter_config.json": "5b29f9c705145063d554c6c54a6adef6e7dde9f869ad6b6100b2b09bc48c2257",
+    "adapter_model.safetensors": "0719f21153c27903d5a16693df2354d76d5989a9e01a749b120bae9de5be7182"
+  },
+  "frozen_dir": "/root/autodl-tmp/tool-use-posttraining/data/evaluation/tool_world_final_v1",
+  "frozen_manifest_sha256": "4a3ed549153bc8fcf23a04506de6d9bdb60c25c373d96d28faf137f13bc7b231",
+  "model_class": "PeftModelForCausalLM",
+  "dtype": "torch.bfloat16",
+  "seed": 20261019,
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 256
+  },
+  "samples": 300,
+  "runtime_seconds": 209.791,
+  "resume": {
+    "enabled": true,
+    "existing_samples": 191,
+    "generated_this_process": 109,
+    "runtime_scope": "仅记录本次进程；中断前耗时未知，不作估算。"
+  },
+  "peak_memory_gib": 3.04,
+  "prediction_sha256": "e89b50f9bb0f0729bbb706a7c9294ed3b7b04c07a001b4a76d09770d60e8b70b"
+}

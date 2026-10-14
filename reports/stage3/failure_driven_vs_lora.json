@@ -1,0 +1,93 @@
+{
+  "seed": 20261014,
+  "bootstrap_samples": 10000,
+  "overall": {
+    "samples": 98,
+    "metrics": {
+      "tool_accuracy": {
+        "baseline": 0.9387755102040817,
+        "candidate": 0.9489795918367347,
+        "delta": 0.01020408163265306,
+        "ci95_low": 0.0,
+        "ci95_high": 0.030612244897959183
+      },
+      "argument_accuracy": {
+        "baseline": 0.8874716553287981,
+        "candidate": 0.8976757369614512,
+        "delta": 0.01020408163265306,
+        "ci95_low": -0.012755102040816327,
+        "ci95_high": 0.03826530612244898
+      },
+      "argument_exact_match": {
+        "baseline": 0.8061224489795918,
+        "candidate": 0.8061224489795918,
+        "delta": 0.0,
+        "ci95_low": -0.04081632653061224,
+        "ci95_high": 0.04081632653061224
+      }
+    }
+  },
+  "by_track": {
+    "bfcl_lite_v1": {
+      "samples": 70,
+      "metrics": {
+        "tool_accuracy": {
+          "baseline": 0.9285714285714286,
+          "candidate": 0.9285714285714286,
+          "delta": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0
+        },
+        "argument_accuracy": {
+          "baseline": 0.8817460317460316,
+          "candidate": 0.8817460317460316,
+          "delta": -1.5860328923216522e-18,
+          "ci95_low": -0.02380952380952381,
+          "ci95_high": 0.02261904761904762
+        },
+        "argument_exact_match": {
+          "baseline": 0.8,
+          "candidate": 0.7857142857142857,
+          "delta": -0.014285714285714285,
+          "ci95_low": -0.05714285714285714,
+          "ci95_high": 0.02857142857142857
+        }
+      }
+    },
+    "controlled_v1": {
+      "samples": 28,
+      "metrics": {
+        "tool_accuracy": {
+          "baseline": 0.9642857142857143,
+          "candidate": 1.0,
+          "delta": 0.03571428571428571,
+          "ci95_low": 0.0,
+          "ci95_high": 0.10714285714285714
+        },
+        "argument_accuracy": {
+          "baseline": 0.9017857142857143,
+          "candidate": 0.9375,
+          "delta": 0.03571428571428571,
+          "ci95_low": 0.0,
+          "ci95_high": 0.10714285714285714
+        },
+        "argument_exact_match": {
+          "baseline": 0.8214285714285714,
+          "candidate": 0.8571428571428571,
+          "delta": 0.03571428571428571,
+          "ci95_low": 0.0,
+          "ci95_high": 0.10714285714285714
+        }
+      }
+    }
+  },
+  "error_transitions": {
+    "argument_error -> argument_error": 12,
+    "argument_error -> none": 1,
+    "none -> argument_error": 2,
+    "none -> none": 76,
+    "schema_validation_error -> schema_validation_error": 1,
+    "tool_selection_error -> none": 1,
+    "tool_selection_error -> tool_selection_error": 5
+  }
+}

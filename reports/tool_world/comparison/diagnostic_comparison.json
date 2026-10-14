@@ -1,0 +1,1552 @@
+{
+  "report_name": "diagnostic_comparison",
+  "seed": 20261020,
+  "bootstrap_samples": 10000,
+  "methods": [
+    {
+      "key": "zero_shot",
+      "display_name": "Zero-shot",
+      "summary": {
+        "overall": {
+          "samples": 750,
+          "parse_rate": 0.9853333333333333,
+          "tool_accuracy": 0.6733333333333333,
+          "argument_accuracy": 0.5978952380952383,
+          "argument_exact_match": 0.5066666666666667,
+          "decision_exact": 0.5066666666666667,
+          "semantic_exact": 0.5066666666666667,
+          "error_counts": {
+            "argument_error": 68,
+            "distractor_selection_error": 11,
+            "incompatible_substitute_selection": 141,
+            "interface_argument_mapping_error": 57,
+            "interface_tool_mapping_error": 13,
+            "none": 380,
+            "parse_error": 11,
+            "tool_selection_error": 37,
+            "unavailable_tool_hallucination": 30,
+            "unnecessary_refusal": 2
+          }
+        },
+        "by_world": {
+          "capability_removal": {
+            "samples": 150,
+            "parse_rate": 0.9933333333333333,
+            "tool_accuracy": 0.6733333333333333,
+            "argument_accuracy": 0.6725925925925925,
+            "argument_exact_match": 0.6666666666666666,
+            "decision_exact": 0.6666666666666666,
+            "semantic_exact": 0.6666666666666666,
+            "error_counts": {
+              "argument_error": 1,
+              "none": 100,
+              "parse_error": 1,
+              "tool_selection_error": 16,
+              "unavailable_tool_hallucination": 30,
+              "unnecessary_refusal": 2
+            }
+          },
+          "capability_substitution": {
+            "samples": 150,
+            "parse_rate": 0.9933333333333333,
+            "tool_accuracy": 0.0,
+            "argument_accuracy": 0.0,
+            "argument_exact_match": 0.0,
+            "decision_exact": 0.0,
+            "semantic_exact": 0.0,
+            "error_counts": {
+              "incompatible_substitute_selection": 141,
+              "parse_error": 1,
+              "tool_selection_error": 8
+            }
+          },
+          "distractor": {
+            "samples": 150,
+            "parse_rate": 0.9933333333333333,
+            "tool_accuracy": 0.88,
+            "argument_accuracy": 0.8016481481481482,
+            "argument_exact_match": 0.6666666666666666,
+            "decision_exact": 0.6666666666666666,
+            "semantic_exact": 0.6666666666666666,
+            "error_counts": {
+              "argument_error": 32,
+              "distractor_selection_error": 11,
+              "none": 100,
+              "parse_error": 1,
+              "tool_selection_error": 6
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 150,
+            "parse_rate": 0.9533333333333334,
+            "tool_accuracy": 0.8666666666666667,
+            "argument_accuracy": 0.6529391534391533,
+            "argument_exact_match": 0.4866666666666667,
+            "decision_exact": 0.4866666666666667,
+            "semantic_exact": 0.4866666666666667,
+            "error_counts": {
+              "interface_argument_mapping_error": 57,
+              "interface_tool_mapping_error": 13,
+              "none": 73,
+              "parse_error": 7
+            }
+          },
+          "original": {
+            "samples": 150,
+            "parse_rate": 0.9933333333333333,
+            "tool_accuracy": 0.9466666666666667,
+            "argument_accuracy": 0.8622962962962962,
+            "argument_exact_match": 0.7133333333333334,
+            "decision_exact": 0.7133333333333334,
+            "semantic_exact": 0.7133333333333334,
+            "error_counts": {
+              "argument_error": 35,
+              "none": 107,
+              "parse_error": 1,
+              "tool_selection_error": 7
+            }
+          }
+        },
+        "interface_equivariance_accuracy": 0.4866666666666667,
+        "counterfactual_pair_accuracy": {
+          "capability_removal": {
+            "pairs": 150,
+            "both_correct": 72,
+            "accuracy": 0.48
+          },
+          "capability_substitution": {
+            "pairs": 150,
+            "both_correct": 0,
+            "accuracy": 0.0
+          },
+          "distractor": {
+            "pairs": 150,
+            "both_correct": 92,
+            "accuracy": 0.6133333333333333
+          },
+          "ephemeral_interface": {
+            "pairs": 150,
+            "both_correct": 65,
+            "accuracy": 0.43333333333333335
+          }
+        },
+        "all_worlds_group_accuracy": {
+          "groups": 150,
+          "all_correct": 0,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "key": "lora",
+      "display_name": "LoRA SFT",
+      "summary": {
+        "overall": {
+          "samples": 750,
+          "parse_rate": 0.9746666666666667,
+          "tool_accuracy": 0.6786666666666666,
+          "argument_accuracy": 0.6243222222222224,
+          "argument_exact_match": 0.5413333333333333,
+          "decision_exact": 0.5413333333333333,
+          "semantic_exact": 0.5413333333333333,
+          "error_counts": {
+            "argument_error": 61,
+            "distractor_selection_error": 12,
+            "incompatible_substitute_selection": 144,
+            "interface_argument_mapping_error": 42,
+            "interface_tool_mapping_error": 15,
+            "none": 406,
+            "parse_error": 19,
+            "tool_selection_error": 36,
+            "unavailable_tool_hallucination": 10,
+            "unnecessary_refusal": 5
+          }
+        },
+        "by_world": {
+          "capability_removal": {
+            "samples": 150,
+            "parse_rate": 0.9933333333333333,
+            "tool_accuracy": 0.76,
+            "argument_accuracy": 0.7588888888888888,
+            "argument_exact_match": 0.7533333333333333,
+            "decision_exact": 0.7533333333333333,
+            "semantic_exact": 0.7533333333333333,
+            "error_counts": {
+              "argument_error": 1,
+              "none": 113,
+              "parse_error": 1,
+              "tool_selection_error": 20,
+              "unavailable_tool_hallucination": 10,
+              "unnecessary_refusal": 5
+            }
+          },
+          "capability_substitution": {
+            "samples": 150,
+            "parse_rate": 0.9933333333333333,
+            "tool_accuracy": 0.006666666666666667,
+            "argument_accuracy": 0.006666666666666667,
+            "argument_exact_match": 0.006666666666666667,
+            "decision_exact": 0.006666666666666667,
+            "semantic_exact": 0.006666666666666667,
+            "error_counts": {
+              "incompatible_substitute_selection": 144,
+              "none": 1,
+              "parse_error": 1,
+              "tool_selection_error": 4
+            }
+          },
+          "distractor": {
+            "samples": 150,
+            "parse_rate": 0.9866666666666667,
+            "tool_accuracy": 0.8666666666666667,
+            "argument_accuracy": 0.7971296296296299,
+            "argument_exact_match": 0.6733333333333333,
+            "decision_exact": 0.6733333333333333,
+            "semantic_exact": 0.6733333333333333,
+            "error_counts": {
+              "argument_error": 29,
+              "distractor_selection_error": 12,
+              "none": 101,
+              "parse_error": 2,
+              "tool_selection_error": 6
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 150,
+            "parse_rate": 0.9133333333333333,
+            "tool_accuracy": 0.8133333333333334,
+            "argument_accuracy": 0.6839259259259259,
+            "argument_exact_match": 0.5333333333333333,
+            "decision_exact": 0.5333333333333333,
+            "semantic_exact": 0.5333333333333333,
+            "error_counts": {
+              "interface_argument_mapping_error": 42,
+              "interface_tool_mapping_error": 15,
+              "none": 80,
+              "parse_error": 13
+            }
+          },
+          "original": {
+            "samples": 150,
+            "parse_rate": 0.9866666666666667,
+            "tool_accuracy": 0.9466666666666667,
+            "argument_accuracy": 0.8749999999999998,
+            "argument_exact_match": 0.74,
+            "decision_exact": 0.74,
+            "semantic_exact": 0.74,
+            "error_counts": {
+              "argument_error": 31,
+              "none": 111,
+              "parse_error": 2,
+              "tool_selection_error": 6
+            }
+          }
+        },
+        "interface_equivariance_accuracy": 0.5333333333333333,
+        "counterfactual_pair_accuracy": {
+          "capability_removal": {
+            "pairs": 150,
+            "both_correct": 87,
+            "accuracy": 0.58
+          },
+          "capability_substitution": {
+            "pairs": 150,
+            "both_correct": 1,
+            "accuracy": 0.006666666666666667
+          },
+          "distractor": {
+            "pairs": 150,
+            "both_correct": 96,
+            "accuracy": 0.64
+          },
+          "ephemeral_interface": {
+            "pairs": 150,
+            "both_correct": 74,
+            "accuracy": 0.49333333333333335
+          }
+        },
+        "all_worlds_group_accuracy": {
+          "groups": 150,
+          "all_correct": 1,
+          "accuracy": 0.006666666666666667
+        }
+      }
+    },
+    {
+      "key": "schema_only",
+      "display_name": "Schema-only",
+      "summary": {
+        "overall": {
+          "samples": 750,
+          "parse_rate": 0.9813333333333333,
+          "tool_accuracy": 0.6933333333333334,
+          "argument_accuracy": 0.6454444444444446,
+          "argument_exact_match": 0.5586666666666666,
+          "decision_exact": 0.5586666666666666,
+          "semantic_exact": 0.5586666666666666,
+          "error_counts": {
+            "argument_error": 67,
+            "distractor_selection_error": 10,
+            "incompatible_substitute_selection": 144,
+            "interface_argument_mapping_error": 34,
+            "interface_tool_mapping_error": 11,
+            "none": 419,
+            "parse_error": 14,
+            "tool_selection_error": 33,
+            "unavailable_tool_hallucination": 14,
+            "unnecessary_refusal": 4
+          }
+        },
+        "by_world": {
+          "capability_removal": {
+            "samples": 150,
+            "parse_rate": 0.9933333333333333,
+            "tool_accuracy": 0.7666666666666667,
+            "argument_accuracy": 0.762962962962963,
+            "argument_exact_match": 0.7533333333333333,
+            "decision_exact": 0.7533333333333333,
+            "semantic_exact": 0.7533333333333333,
+            "error_counts": {
+              "argument_error": 2,
+              "none": 113,
+              "parse_error": 1,
+              "tool_selection_error": 16,
+              "unavailable_tool_hallucination": 14,
+              "unnecessary_refusal": 4
+            }
+          },
+          "capability_substitution": {
+            "samples": 150,
+            "parse_rate": 1.0,
+            "tool_accuracy": 0.0,
+            "argument_accuracy": 0.0,
+            "argument_exact_match": 0.0,
+            "decision_exact": 0.0,
+            "semantic_exact": 0.0,
+            "error_counts": {
+              "incompatible_substitute_selection": 144,
+              "tool_selection_error": 6
+            }
+          },
+          "distractor": {
+            "samples": 150,
+            "parse_rate": 0.9866666666666667,
+            "tool_accuracy": 0.8933333333333333,
+            "argument_accuracy": 0.8175925925925925,
+            "argument_exact_match": 0.68,
+            "decision_exact": 0.68,
+            "semantic_exact": 0.68,
+            "error_counts": {
+              "argument_error": 32,
+              "distractor_selection_error": 10,
+              "none": 102,
+              "parse_error": 2,
+              "tool_selection_error": 4
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 150,
+            "parse_rate": 0.9333333333333333,
+            "tool_accuracy": 0.86,
+            "argument_accuracy": 0.7796296296296297,
+            "argument_exact_match": 0.6333333333333333,
+            "decision_exact": 0.6333333333333333,
+            "semantic_exact": 0.6333333333333333,
+            "error_counts": {
+              "interface_argument_mapping_error": 34,
+              "interface_tool_mapping_error": 11,
+              "none": 95,
+              "parse_error": 10
+            }
+          },
+          "original": {
+            "samples": 150,
+            "parse_rate": 0.9933333333333333,
+            "tool_accuracy": 0.9466666666666667,
+            "argument_accuracy": 0.8670370370370369,
+            "argument_exact_match": 0.7266666666666667,
+            "decision_exact": 0.7266666666666667,
+            "semantic_exact": 0.7266666666666667,
+            "error_counts": {
+              "argument_error": 33,
+              "none": 109,
+              "parse_error": 1,
+              "tool_selection_error": 7
+            }
+          }
+        },
+        "interface_equivariance_accuracy": 0.6333333333333333,
+        "counterfactual_pair_accuracy": {
+          "capability_removal": {
+            "pairs": 150,
+            "both_correct": 87,
+            "accuracy": 0.58
+          },
+          "capability_substitution": {
+            "pairs": 150,
+            "both_correct": 0,
+            "accuracy": 0.0
+          },
+          "distractor": {
+            "pairs": 150,
+            "both_correct": 98,
+            "accuracy": 0.6533333333333333
+          },
+          "ephemeral_interface": {
+            "pairs": 150,
+            "both_correct": 90,
+            "accuracy": 0.6
+          }
+        },
+        "all_worlds_group_accuracy": {
+          "groups": 150,
+          "all_correct": 0,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "key": "fdsrc",
+      "display_name": "FDSRC",
+      "summary": {
+        "overall": {
+          "samples": 750,
+          "parse_rate": 0.9733333333333334,
+          "tool_accuracy": 0.664,
+          "argument_accuracy": 0.620925925925926,
+          "argument_exact_match": 0.5466666666666666,
+          "decision_exact": 0.5466666666666666,
+          "semantic_exact": 0.5466666666666666,
+          "error_counts": {
+            "argument_error": 54,
+            "distractor_selection_error": 24,
+            "incompatible_substitute_selection": 144,
+            "interface_argument_mapping_error": 34,
+            "interface_tool_mapping_error": 10,
+            "none": 410,
+            "parse_error": 20,
+            "tool_selection_error": 38,
+            "unavailable_tool_hallucination": 12,
+            "unnecessary_refusal": 4
+          }
+        },
+        "by_world": {
+          "capability_removal": {
+            "samples": 150,
+            "parse_rate": 0.9933333333333333,
+            "tool_accuracy": 0.7533333333333333,
+            "argument_accuracy": 0.7522222222222222,
+            "argument_exact_match": 0.7466666666666667,
+            "decision_exact": 0.7466666666666667,
+            "semantic_exact": 0.7466666666666667,
+            "error_counts": {
+              "argument_error": 1,
+              "none": 112,
+              "parse_error": 1,
+              "tool_selection_error": 20,
+              "unavailable_tool_hallucination": 12,
+              "unnecessary_refusal": 4
+            }
+          },
+          "capability_substitution": {
+            "samples": 150,
+            "parse_rate": 0.9933333333333333,
+            "tool_accuracy": 0.006666666666666667,
+            "argument_accuracy": 0.006666666666666667,
+            "argument_exact_match": 0.006666666666666667,
+            "decision_exact": 0.006666666666666667,
+            "semantic_exact": 0.006666666666666667,
+            "error_counts": {
+              "incompatible_substitute_selection": 144,
+              "none": 1,
+              "parse_error": 1,
+              "tool_selection_error": 4
+            }
+          },
+          "distractor": {
+            "samples": 150,
+            "parse_rate": 0.9866666666666667,
+            "tool_accuracy": 0.7866666666666666,
+            "argument_accuracy": 0.7220370370370369,
+            "argument_exact_match": 0.62,
+            "decision_exact": 0.62,
+            "semantic_exact": 0.62,
+            "error_counts": {
+              "argument_error": 25,
+              "distractor_selection_error": 24,
+              "none": 93,
+              "parse_error": 2,
+              "tool_selection_error": 6
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 150,
+            "parse_rate": 0.9066666666666666,
+            "tool_accuracy": 0.84,
+            "argument_accuracy": 0.7531481481481482,
+            "argument_exact_match": 0.6133333333333333,
+            "decision_exact": 0.6133333333333333,
+            "semantic_exact": 0.6133333333333333,
+            "error_counts": {
+              "interface_argument_mapping_error": 34,
+              "interface_tool_mapping_error": 10,
+              "none": 92,
+              "parse_error": 14
+            }
+          },
+          "original": {
+            "samples": 150,
+            "parse_rate": 0.9866666666666667,
+            "tool_accuracy": 0.9333333333333333,
+            "argument_accuracy": 0.8705555555555552,
+            "argument_exact_match": 0.7466666666666667,
+            "decision_exact": 0.7466666666666667,
+            "semantic_exact": 0.7466666666666667,
+            "error_counts": {
+              "argument_error": 28,
+              "none": 112,
+              "parse_error": 2,
+              "tool_selection_error": 8
+            }
+          }
+        },
+        "interface_equivariance_accuracy": 0.6133333333333333,
+        "counterfactual_pair_accuracy": {
+          "capability_removal": {
+            "pairs": 150,
+            "both_correct": 87,
+            "accuracy": 0.58
+          },
+          "capability_substitution": {
+            "pairs": 150,
+            "both_correct": 1,
+            "accuracy": 0.006666666666666667
+          },
+          "distractor": {
+            "pairs": 150,
+            "both_correct": 88,
+            "accuracy": 0.5866666666666667
+          },
+          "ephemeral_interface": {
+            "pairs": 150,
+            "both_correct": 86,
+            "accuracy": 0.5733333333333334
+          }
+        },
+        "all_worlds_group_accuracy": {
+          "groups": 150,
+          "all_correct": 1,
+          "accuracy": 0.006666666666666667
+        }
+      }
+    },
+    {
+      "key": "world_randomization",
+      "display_name": "World Randomization",
+      "summary": {
+        "overall": {
+          "samples": 750,
+          "parse_rate": 0.9706666666666667,
+          "tool_accuracy": 0.7,
+          "argument_accuracy": 0.6667037037037036,
+          "argument_exact_match": 0.6,
+          "decision_exact": 0.6,
+          "semantic_exact": 0.6,
+          "error_counts": {
+            "argument_error": 54,
+            "distractor_selection_error": 7,
+            "incompatible_substitute_selection": 140,
+            "interface_argument_mapping_error": 21,
+            "interface_tool_mapping_error": 9,
+            "none": 450,
+            "parse_error": 22,
+            "tool_selection_error": 31,
+            "unavailable_tool_hallucination": 12,
+            "unnecessary_refusal": 4
+          }
+        },
+        "by_world": {
+          "capability_removal": {
+            "samples": 150,
+            "parse_rate": 0.9866666666666667,
+            "tool_accuracy": 0.7733333333333333,
+            "argument_accuracy": 0.7722222222222221,
+            "argument_exact_match": 0.7666666666666667,
+            "decision_exact": 0.7666666666666667,
+            "semantic_exact": 0.7666666666666667,
+            "error_counts": {
+              "argument_error": 1,
+              "none": 115,
+              "parse_error": 2,
+              "tool_selection_error": 16,
+              "unavailable_tool_hallucination": 12,
+              "unnecessary_refusal": 4
+            }
+          },
+          "capability_substitution": {
+            "samples": 150,
+            "parse_rate": 0.9866666666666667,
+            "tool_accuracy": 0.03333333333333333,
+            "argument_accuracy": 0.03333333333333333,
+            "argument_exact_match": 0.03333333333333333,
+            "decision_exact": 0.03333333333333333,
+            "semantic_exact": 0.03333333333333333,
+            "error_counts": {
+              "incompatible_substitute_selection": 140,
+              "none": 5,
+              "parse_error": 2,
+              "tool_selection_error": 3
+            }
+          },
+          "distractor": {
+            "samples": 150,
+            "parse_rate": 0.9933333333333333,
+            "tool_accuracy": 0.9066666666666666,
+            "argument_accuracy": 0.8409259259259259,
+            "argument_exact_match": 0.7333333333333333,
+            "decision_exact": 0.7333333333333333,
+            "semantic_exact": 0.7333333333333333,
+            "error_counts": {
+              "argument_error": 26,
+              "distractor_selection_error": 7,
+              "none": 110,
+              "parse_error": 1,
+              "tool_selection_error": 6
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 150,
+            "parse_rate": 0.9066666666666666,
+            "tool_accuracy": 0.8466666666666667,
+            "argument_accuracy": 0.801111111111111,
+            "argument_exact_match": 0.7066666666666667,
+            "decision_exact": 0.7066666666666667,
+            "semantic_exact": 0.7066666666666667,
+            "error_counts": {
+              "interface_argument_mapping_error": 21,
+              "interface_tool_mapping_error": 9,
+              "none": 106,
+              "parse_error": 14
+            }
+          },
+          "original": {
+            "samples": 150,
+            "parse_rate": 0.98,
+            "tool_accuracy": 0.94,
+            "argument_accuracy": 0.8859259259259259,
+            "argument_exact_match": 0.76,
+            "decision_exact": 0.76,
+            "semantic_exact": 0.76,
+            "error_counts": {
+              "argument_error": 27,
+              "none": 114,
+              "parse_error": 3,
+              "tool_selection_error": 6
+            }
+          }
+        },
+        "interface_equivariance_accuracy": 0.7066666666666667,
+        "counterfactual_pair_accuracy": {
+          "capability_removal": {
+            "pairs": 150,
+            "both_correct": 91,
+            "accuracy": 0.6066666666666667
+          },
+          "capability_substitution": {
+            "pairs": 150,
+            "both_correct": 4,
+            "accuracy": 0.02666666666666667
+          },
+          "distractor": {
+            "pairs": 150,
+            "both_correct": 105,
+            "accuracy": 0.7
+          },
+          "ephemeral_interface": {
+            "pairs": 150,
+            "both_correct": 100,
+            "accuracy": 0.6666666666666666
+          }
+        },
+        "all_worlds_group_accuracy": {
+          "groups": 150,
+          "all_correct": 4,
+          "accuracy": 0.02666666666666667
+        }
+      }
+    },
+    {
+      "key": "counterfactual_paired",
+      "display_name": "Counterfactual Paired",
+      "summary": {
+        "overall": {
+          "samples": 750,
+          "parse_rate": 0.9746666666666667,
+          "tool_accuracy": 0.6973333333333334,
+          "argument_accuracy": 0.6621962962962964,
+          "argument_exact_match": 0.5866666666666667,
+          "decision_exact": 0.5866666666666667,
+          "semantic_exact": 0.5866666666666667,
+          "error_counts": {
+            "argument_error": 57,
+            "distractor_selection_error": 5,
+            "incompatible_substitute_selection": 144,
+            "interface_argument_mapping_error": 26,
+            "interface_tool_mapping_error": 10,
+            "none": 440,
+            "parse_error": 19,
+            "tool_selection_error": 34,
+            "unavailable_tool_hallucination": 12,
+            "unnecessary_refusal": 3
+          }
+        },
+        "by_world": {
+          "capability_removal": {
+            "samples": 150,
+            "parse_rate": 0.9866666666666667,
+            "tool_accuracy": 0.7666666666666667,
+            "argument_accuracy": 0.7648148148148147,
+            "argument_exact_match": 0.7533333333333333,
+            "decision_exact": 0.7533333333333333,
+            "semantic_exact": 0.7533333333333333,
+            "error_counts": {
+              "argument_error": 2,
+              "none": 113,
+              "parse_error": 2,
+              "tool_selection_error": 18,
+              "unavailable_tool_hallucination": 12,
+              "unnecessary_refusal": 3
+            }
+          },
+          "capability_substitution": {
+            "samples": 150,
+            "parse_rate": 1.0,
+            "tool_accuracy": 0.006666666666666667,
+            "argument_accuracy": 0.006666666666666667,
+            "argument_exact_match": 0.006666666666666667,
+            "decision_exact": 0.006666666666666667,
+            "semantic_exact": 0.006666666666666667,
+            "error_counts": {
+              "incompatible_substitute_selection": 144,
+              "none": 1,
+              "tool_selection_error": 5
+            }
+          },
+          "distractor": {
+            "samples": 150,
+            "parse_rate": 0.9866666666666667,
+            "tool_accuracy": 0.9266666666666666,
+            "argument_accuracy": 0.866611111111111,
+            "argument_exact_match": 0.74,
+            "decision_exact": 0.74,
+            "semantic_exact": 0.74,
+            "error_counts": {
+              "argument_error": 28,
+              "distractor_selection_error": 5,
+              "none": 111,
+              "parse_error": 2,
+              "tool_selection_error": 4
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 150,
+            "parse_rate": 0.9133333333333333,
+            "tool_accuracy": 0.8466666666666667,
+            "argument_accuracy": 0.7882962962962962,
+            "argument_exact_match": 0.6733333333333333,
+            "decision_exact": 0.6733333333333333,
+            "semantic_exact": 0.6733333333333333,
+            "error_counts": {
+              "interface_argument_mapping_error": 26,
+              "interface_tool_mapping_error": 10,
+              "none": 101,
+              "parse_error": 13
+            }
+          },
+          "original": {
+            "samples": 150,
+            "parse_rate": 0.9866666666666667,
+            "tool_accuracy": 0.94,
+            "argument_accuracy": 0.8845925925925925,
+            "argument_exact_match": 0.76,
+            "decision_exact": 0.76,
+            "semantic_exact": 0.76,
+            "error_counts": {
+              "argument_error": 27,
+              "none": 114,
+              "parse_error": 2,
+              "tool_selection_error": 7
+            }
+          }
+        },
+        "interface_equivariance_accuracy": 0.6733333333333333,
+        "counterfactual_pair_accuracy": {
+          "capability_removal": {
+            "pairs": 150,
+            "both_correct": 89,
+            "accuracy": 0.5933333333333334
+          },
+          "capability_substitution": {
+            "pairs": 150,
+            "both_correct": 1,
+            "accuracy": 0.006666666666666667
+          },
+          "distractor": {
+            "pairs": 150,
+            "both_correct": 106,
+            "accuracy": 0.7066666666666667
+          },
+          "ephemeral_interface": {
+            "pairs": 150,
+            "both_correct": 94,
+            "accuracy": 0.6266666666666667
+          }
+        },
+        "all_worlds_group_accuracy": {
+          "groups": 150,
+          "all_correct": 1,
+          "accuracy": 0.006666666666666667
+        }
+      }
+    },
+    {
+      "key": "failure_weighted",
+      "display_name": "Failure-Weighted CTW",
+      "summary": {
+        "overall": {
+          "samples": 750,
+          "parse_rate": 0.9706666666666667,
+          "tool_accuracy": 0.744,
+          "argument_accuracy": 0.7076481481481482,
+          "argument_exact_match": 0.6413333333333333,
+          "decision_exact": 0.6413333333333333,
+          "semantic_exact": 0.6413333333333333,
+          "error_counts": {
+            "argument_error": 52,
+            "distractor_selection_error": 1,
+            "incompatible_substitute_selection": 74,
+            "interface_argument_mapping_error": 25,
+            "interface_tool_mapping_error": 7,
+            "none": 481,
+            "parse_error": 22,
+            "tool_selection_error": 28,
+            "unavailable_tool_hallucination": 10,
+            "unnecessary_refusal": 50
+          }
+        },
+        "by_world": {
+          "capability_removal": {
+            "samples": 150,
+            "parse_rate": 0.9866666666666667,
+            "tool_accuracy": 0.7866666666666666,
+            "argument_accuracy": 0.7833333333333333,
+            "argument_exact_match": 0.7733333333333333,
+            "decision_exact": 0.7733333333333333,
+            "semantic_exact": 0.7733333333333333,
+            "error_counts": {
+              "argument_error": 2,
+              "none": 116,
+              "parse_error": 2,
+              "tool_selection_error": 12,
+              "unavailable_tool_hallucination": 10,
+              "unnecessary_refusal": 8
+            }
+          },
+          "capability_substitution": {
+            "samples": 150,
+            "parse_rate": 0.9933333333333333,
+            "tool_accuracy": 0.47333333333333333,
+            "argument_accuracy": 0.47333333333333333,
+            "argument_exact_match": 0.47333333333333333,
+            "decision_exact": 0.47333333333333333,
+            "semantic_exact": 0.47333333333333333,
+            "error_counts": {
+              "incompatible_substitute_selection": 74,
+              "none": 71,
+              "parse_error": 1,
+              "tool_selection_error": 3,
+              "unnecessary_refusal": 1
+            }
+          },
+          "distractor": {
+            "samples": 150,
+            "parse_rate": 0.9866666666666667,
+            "tool_accuracy": 0.7466666666666667,
+            "argument_accuracy": 0.6843518518518519,
+            "argument_exact_match": 0.5866666666666667,
+            "decision_exact": 0.5866666666666667,
+            "semantic_exact": 0.5866666666666667,
+            "error_counts": {
+              "argument_error": 24,
+              "distractor_selection_error": 1,
+              "none": 88,
+              "parse_error": 2,
+              "tool_selection_error": 7,
+              "unnecessary_refusal": 28
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 150,
+            "parse_rate": 0.9066666666666666,
+            "tool_accuracy": 0.8133333333333334,
+            "argument_accuracy": 0.7522222222222223,
+            "argument_exact_match": 0.6466666666666666,
+            "decision_exact": 0.6466666666666666,
+            "semantic_exact": 0.6466666666666666,
+            "error_counts": {
+              "interface_argument_mapping_error": 25,
+              "interface_tool_mapping_error": 7,
+              "none": 97,
+              "parse_error": 14,
+              "unnecessary_refusal": 7
+            }
+          },
+          "original": {
+            "samples": 150,
+            "parse_rate": 0.98,
+            "tool_accuracy": 0.9,
+            "argument_accuracy": 0.8449999999999999,
+            "argument_exact_match": 0.7266666666666667,
+            "decision_exact": 0.7266666666666667,
+            "semantic_exact": 0.7266666666666667,
+            "error_counts": {
+              "argument_error": 26,
+              "none": 109,
+              "parse_error": 3,
+              "tool_selection_error": 6,
+              "unnecessary_refusal": 6
+            }
+          }
+        },
+        "interface_equivariance_accuracy": 0.6466666666666666,
+        "counterfactual_pair_accuracy": {
+          "capability_removal": {
+            "pairs": 150,
+            "both_correct": 88,
+            "accuracy": 0.5866666666666667
+          },
+          "capability_substitution": {
+            "pairs": 150,
+            "both_correct": 52,
+            "accuracy": 0.3466666666666667
+          },
+          "distractor": {
+            "pairs": 150,
+            "both_correct": 84,
+            "accuracy": 0.56
+          },
+          "ephemeral_interface": {
+            "pairs": 150,
+            "both_correct": 91,
+            "accuracy": 0.6066666666666667
+          }
+        },
+        "all_worlds_group_accuracy": {
+          "groups": 150,
+          "all_correct": 21,
+          "accuracy": 0.14
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "reference": "fdsrc",
+      "reference_display": "FDSRC",
+      "candidate": "failure_weighted",
+      "candidate_display": "Failure-Weighted CTW",
+      "bootstrap": {
+        "overall": {
+          "samples": 750,
+          "delta": 0.09466666666666666,
+          "ci95_low": 0.064,
+          "ci95_high": 0.12533333333333332
+        },
+        "original": {
+          "samples": 150,
+          "delta": -0.02,
+          "ci95_low": -0.06666666666666667,
+          "ci95_high": 0.02
+        },
+        "ephemeral_interface": {
+          "samples": 150,
+          "delta": 0.03333333333333333,
+          "ci95_low": -0.02,
+          "ci95_high": 0.09333333333333334
+        },
+        "capability_removal": {
+          "samples": 150,
+          "delta": 0.02666666666666667,
+          "ci95_low": -0.006666666666666667,
+          "ci95_high": 0.06666666666666667
+        },
+        "capability_substitution": {
+          "samples": 150,
+          "delta": 0.4666666666666667,
+          "ci95_low": 0.38666666666666666,
+          "ci95_high": 0.5466666666666666
+        },
+        "distractor": {
+          "samples": 150,
+          "delta": -0.03333333333333333,
+          "ci95_low": -0.12,
+          "ci95_high": 0.05333333333333334
+        }
+      },
+      "cases": {
+        "improved": [
+          {
+            "id": "tw_multiple_108__capability_substitution",
+            "world_type": "capability_substitution",
+            "user_request": "Calculate the heat capacity at constant pressure for air, given its temperature is 298K and volume is 10 m^3.",
+            "transformation": {
+              "allowed_value": 7929,
+              "kind": "capability_changing",
+              "replaced_tool": "calc_heat_capacity",
+              "replacement_tool": "limited_708d5fb525",
+              "restricted_parameter": "volume",
+              "seed": 20261016
+            },
+            "expected_calls": [],
+            "reference_predicted_calls": [
+              {
+                "arguments": {
+                  "gas": "air",
+                  "temp": 298,
+                  "volume": 10
+                },
+                "name": "limited_708d5fb525"
+              }
+            ],
+            "reference_error": "incompatible_substitute_selection",
+            "candidate_predicted_calls": [],
+            "candidate_error": "none"
+          },
+          {
+            "id": "tw_multiple_108__distractor",
+            "world_type": "distractor",
+            "user_request": "Calculate the heat capacity at constant pressure for air, given its temperature is 298K and volume is 10 m^3.",
+            "transformation": {
+              "allowed_value": 7929,
+              "distractor_tool": "distractor_823f47b848",
+              "kind": "capability_changing",
+              "restricted_parameter": "volume",
+              "seed": 20261016,
+              "source_tool": "calc_heat_capacity"
+            },
+            "expected_calls": [
+              {
+                "arguments": {
+                  "gas": [
+                    "air",
+                    ""
+                  ],
+                  "temp": [
+                    298
+                  ],
+                  "volume": [
+                    10
+                  ]
+                },
+                "name": "calc_heat_capacity"
+              }
+            ],
+            "reference_predicted_calls": [
+              {
+                "arguments": {
+                  "gas": "air",
+                  "temp": 298,
+                  "volume": 10
+                },
+                "name": "distractor_823f47b848"
+              }
+            ],
+            "reference_error": "distractor_selection_error",
+            "candidate_predicted_calls": [
+              {
+                "arguments": {
+                  "gas": "air",
+                  "temp": 298,
+                  "volume": 10
+                },
+                "name": "calc_heat_capacity"
+              }
+            ],
+            "candidate_error": "none"
+          }
+        ],
+        "regressed": [
+          {
+            "id": "tw_multiple_193__ephemeral_interface",
+            "world_type": "ephemeral_interface",
+            "user_request": "Get me the travel distance and duration from the Eiffel Tower to the Louvre Museum",
+            "transformation": {
+              "kind": "interface_preserving",
+              "seed": 20261016
+            },
+            "expected_calls": [
+              {
+                "arguments": {
+                  "arg_37b6ced1e5": [
+                    "",
+                    false
+                  ],
+                  "arg_6bdb8bf67f": [
+                    "Eiffel Tower"
+                  ],
+                  "arg_6fe5f1495e": [
+                    "Louvre Museum"
+                  ]
+                },
+                "name": "tool_5f42d68c71"
+              }
+            ],
+            "reference_predicted_calls": [
+              {
+                "arguments": {
+                  "arg_6bdb8bf67f": "Eiffel Tower",
+                  "arg_6fe5f1495e": "Louvre Museum"
+                },
+                "name": "tool_5f42d68c71"
+              }
+            ],
+            "reference_error": "none",
+            "candidate_predicted_calls": [],
+            "candidate_error": "unnecessary_refusal"
+          }
+        ]
+      }
+    },
+    {
+      "reference": "world_randomization",
+      "reference_display": "World Randomization",
+      "candidate": "counterfactual_paired",
+      "candidate_display": "Counterfactual Paired",
+      "bootstrap": {
+        "overall": {
+          "samples": 750,
+          "delta": -0.013333333333333334,
+          "ci95_low": -0.02666666666666667,
+          "ci95_high": 0.0
+        },
+        "original": {
+          "samples": 150,
+          "delta": 0.0,
+          "ci95_low": -0.02666666666666667,
+          "ci95_high": 0.02666666666666667
+        },
+        "ephemeral_interface": {
+          "samples": 150,
+          "delta": -0.03333333333333333,
+          "ci95_low": -0.07333333333333333,
+          "ci95_high": 0.006666666666666667
+        },
+        "capability_removal": {
+          "samples": 150,
+          "delta": -0.013333333333333334,
+          "ci95_low": -0.03333333333333333,
+          "ci95_high": 0.0
+        },
+        "capability_substitution": {
+          "samples": 150,
+          "delta": -0.02666666666666667,
+          "ci95_low": -0.05333333333333334,
+          "ci95_high": -0.006666666666666667
+        },
+        "distractor": {
+          "samples": 150,
+          "delta": 0.006666666666666667,
+          "ci95_low": -0.02666666666666667,
+          "ci95_high": 0.04
+        }
+      },
+      "cases": {
+        "improved": [
+          {
+            "id": "tw_multiple_120__distractor",
+            "world_type": "distractor",
+            "user_request": "How much time will it take for the light to reach earth from a star 4 light years away?",
+            "transformation": {
+              "allowed_value": 7923,
+              "distractor_tool": "distractor_88f193c6f6",
+              "kind": "capability_changing",
+              "restricted_parameter": "distance_in_light_years",
+              "seed": 20261016,
+              "source_tool": "light_travel_time"
+            },
+            "expected_calls": [
+              {
+                "arguments": {
+                  "distance_in_light_years": [
+                    4
+                  ],
+                  "speed_of_light": [
+                    299792458,
+                    ""
+                  ]
+                },
+                "name": "light_travel_time"
+              }
+            ],
+            "reference_predicted_calls": [
+              {
+                "arguments": {
+                  "distance_in_light_years": 4
+                },
+                "name": "distractor_88f193c6f6"
+              }
+            ],
+            "reference_error": "distractor_selection_error",
+            "candidate_predicted_calls": [
+              {
+                "arguments": {
+                  "distance_in_light_years": 4
+                },
+                "name": "light_travel_time"
+              }
+            ],
+            "candidate_error": "none"
+          },
+          {
+            "id": "tw_parallel_105__ephemeral_interface",
+            "world_type": "ephemeral_interface",
+            "user_request": "\"Can you calculate the heat capacity at constant pressure of air for a science experiment I am conducting? I have a container with a volume of 2.5 m^3 and I am able to maintain the temperature at 300 Kelvin. I will be repeating the experiment at a higher temperature of 350 Kelvin and then at a lower volume of 1.5 m^3. I am using air for all these experiments. Can you provide the heat capacity for these three different conditions?\"",
+            "transformation": {
+              "kind": "interface_preserving",
+              "seed": 20261016
+            },
+            "expected_calls": [
+              {
+                "arguments": {
+                  "arg_a443591174": [
+                    300
+                  ],
+                  "arg_baed2f20ea": [
+                    2.5
+                  ],
+                  "arg_df48871d83": [
+                    "air",
+                    ""
+                  ]
+                },
+                "name": "tool_85b0ba8d8a"
+              },
+              {
+                "arguments": {
+                  "arg_a443591174": [
+                    350
+                  ],
+                  "arg_baed2f20ea": [
+                    2.5
+                  ],
+                  "arg_df48871d83": [
+                    "air",
+                    ""
+                  ]
+                },
+                "name": "tool_85b0ba8d8a"
+              },
+              {
+                "arguments": {
+                  "arg_a443591174": [
+                    300
+                  ],
+                  "arg_baed2f20ea": [
+                    1.5
+                  ],
+                  "arg_df48871d83": [
+                    "air",
+                    ""
+                  ]
+                },
+                "name": "tool_85b0ba8d8a"
+              }
+            ],
+            "reference_predicted_calls": [
+              {
+                "arguments": {
+                  "arg_a443591174": 300,
+                  "arg_baed2f20ea": 2.5,
+                  "arg_df48871d83": "air"
+                },
+                "name": "tool_85b0ba8d8a"
+              },
+              {
+                "arguments": {
+                  "arg_a443591174": 350,
+                  "arg_baed2f20ea": 2.5,
+                  "arg_df48871d83": "air"
+                },
+                "name": "tool_85b0ba8d8a"
+              },
+              {
+                "arguments": {
+                  "arg_a443591174": 1.5,
+                  "arg_baed2f20ea": 2.5,
+                  "arg_df48871d83": "air"
+                },
+                "name": "tool_85b0ba8d8a"
+              }
+            ],
+            "reference_error": "interface_argument_mapping_error",
+            "candidate_predicted_calls": [
+              {
+                "arguments": {
+                  "arg_a443591174": 300,
+                  "arg_baed2f20ea": 2.5,
+                  "arg_df48871d83": "air"
+                },
+                "name": "tool_85b0ba8d8a"
+              },
+              {
+                "arguments": {
+                  "arg_a443591174": 350,
+                  "arg_baed2f20ea": 2.5,
+                  "arg_df48871d83": "air"
+                },
+                "name": "tool_85b0ba8d8a"
+              },
+              {
+                "arguments": {
+                  "arg_a443591174": 300,
+                  "arg_baed2f20ea": 1.5,
+                  "arg_df48871d83": "air"
+                },
+                "name": "tool_85b0ba8d8a"
+              }
+            ],
+            "candidate_error": "none"
+          }
+        ],
+        "regressed": [
+          {
+            "id": "tw_multiple_167__ephemeral_interface",
+            "world_type": "ephemeral_interface",
+            "user_request": "Generate a melody in C major scale, starting with the note C4, 16 measures long, at 120 beats per minute.",
+            "transformation": {
+              "kind": "interface_preserving",
+              "seed": 20261016
+            },
+            "expected_calls": [
+              {
+                "arguments": {
+                  "arg_01f76fe559": [
+                    120,
+                    ""
+                  ],
+                  "arg_7a4733f7a2": [
+                    16
+                  ],
+                  "arg_f1789c8ac0": [
+                    "C4"
+                  ],
+                  "arg_fc7beb3437": [
+                    "C"
+                  ]
+                },
+                "name": "tool_d4ae4461ea"
+              }
+            ],
+            "reference_predicted_calls": [
+              {
+                "arguments": {
+                  "arg_01f76fe559": 120,
+                  "arg_7a4733f7a2": 16,
+                  "arg_f1789c8ac0": "C4",
+                  "arg_fc7beb3437": "C"
+                },
+                "name": "tool_d4ae4461ea"
+              }
+            ],
+            "reference_error": "none",
+            "candidate_predicted_calls": [
+              {
+                "arguments": {
+                  "arg_01f76fe559": 120,
+                  "arg_7a4733f7a2": 16,
+                  "arg_fc7beb3437": "C"
+                },
+                "name": "tool_d4ae4461ea"
+              }
+            ],
+            "candidate_error": "interface_argument_mapping_error"
+          }
+        ]
+      }
+    },
+    {
+      "reference": "world_randomization",
+      "reference_display": "World Randomization",
+      "candidate": "failure_weighted",
+      "candidate_display": "Failure-Weighted CTW",
+      "bootstrap": {
+        "overall": {
+          "samples": 750,
+          "delta": 0.04133333333333333,
+          "ci95_low": 0.012,
+          "ci95_high": 0.07066666666666667
+        },
+        "original": {
+          "samples": 150,
+          "delta": -0.03333333333333333,
+          "ci95_low": -0.06666666666666667,
+          "ci95_high": 0.0
+        },
+        "ephemeral_interface": {
+          "samples": 150,
+          "delta": -0.06,
+          "ci95_low": -0.11333333333333333,
+          "ci95_high": -0.013333333333333334
+        },
+        "capability_removal": {
+          "samples": 150,
+          "delta": 0.006666666666666667,
+          "ci95_low": -0.02666666666666667,
+          "ci95_high": 0.04
+        },
+        "capability_substitution": {
+          "samples": 150,
+          "delta": 0.44,
+          "ci95_low": 0.36,
+          "ci95_high": 0.52
+        },
+        "distractor": {
+          "samples": 150,
+          "delta": -0.14666666666666667,
+          "ci95_low": -0.22,
+          "ci95_high": -0.08
+        }
+      },
+      "cases": {
+        "improved": [
+          {
+            "id": "tw_multiple_108__capability_substitution",
+            "world_type": "capability_substitution",
+            "user_request": "Calculate the heat capacity at constant pressure for air, given its temperature is 298K and volume is 10 m^3.",
+            "transformation": {
+              "allowed_value": 7929,
+              "kind": "capability_changing",
+              "replaced_tool": "calc_heat_capacity",
+              "replacement_tool": "limited_708d5fb525",
+              "restricted_parameter": "volume",
+              "seed": 20261016
+            },
+            "expected_calls": [],
+            "reference_predicted_calls": [
+              {
+                "arguments": {
+                  "gas": "air",
+                  "temp": 298,
+                  "volume": 10
+                },
+                "name": "limited_708d5fb525"
+              }
+            ],
+            "reference_error": "incompatible_substitute_selection",
+            "candidate_predicted_calls": [],
+            "candidate_error": "none"
+          },
+          {
+            "id": "tw_multiple_120__distractor",
+            "world_type": "distractor",
+            "user_request": "How much time will it take for the light to reach earth from a star 4 light years away?",
+            "transformation": {
+              "allowed_value": 7923,
+              "distractor_tool": "distractor_88f193c6f6",
+              "kind": "capability_changing",
+              "restricted_parameter": "distance_in_light_years",
+              "seed": 20261016,
+              "source_tool": "light_travel_time"
+            },
+            "expected_calls": [
+              {
+                "arguments": {
+                  "distance_in_light_years": [
+                    4
+                  ],
+                  "speed_of_light": [
+                    299792458,
+                    ""
+                  ]
+                },
+                "name": "light_travel_time"
+              }
+            ],
+            "reference_predicted_calls": [
+              {
+                "arguments": {
+                  "distance_in_light_years": 4
+                },
+                "name": "distractor_88f193c6f6"
+              }
+            ],
+            "reference_error": "distractor_selection_error",
+            "candidate_predicted_calls": [
+              {
+                "arguments": {
+                  "distance_in_light_years": 4
+                },
+                "name": "light_travel_time"
+              }
+            ],
+            "candidate_error": "none"
+          }
+        ],
+        "regressed": [
+          {
+            "id": "tw_multiple_167__ephemeral_interface",
+            "world_type": "ephemeral_interface",
+            "user_request": "Generate a melody in C major scale, starting with the note C4, 16 measures long, at 120 beats per minute.",
+            "transformation": {
+              "kind": "interface_preserving",
+              "seed": 20261016
+            },
+            "expected_calls": [
+              {
+                "arguments": {
+                  "arg_01f76fe559": [
+                    120,
+                    ""
+                  ],
+                  "arg_7a4733f7a2": [
+                    16
+                  ],
+                  "arg_f1789c8ac0": [
+                    "C4"
+                  ],
+                  "arg_fc7beb3437": [
+                    "C"
+                  ]
+                },
+                "name": "tool_d4ae4461ea"
+              }
+            ],
+            "reference_predicted_calls": [
+              {
+                "arguments": {
+                  "arg_01f76fe559": 120,
+                  "arg_7a4733f7a2": 16,
+                  "arg_f1789c8ac0": "C4",
+                  "arg_fc7beb3437": "C"
+                },
+                "name": "tool_d4ae4461ea"
+              }
+            ],
+            "reference_error": "none",
+            "candidate_predicted_calls": [
+              {
+                "arguments": {
+                  "arg_01f76fe559": 120,
+                  "arg_7a4733f7a2": 16,
+                  "arg_fc7beb3437": "C"
+                },
+                "name": "tool_d4ae4461ea"
+              }
+            ],
+            "candidate_error": "interface_argument_mapping_error"
+          }
+        ]
+      }
+    }
+  ]
+}

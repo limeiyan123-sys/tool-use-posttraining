@@ -1,0 +1,19 @@
+{
+  "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": "/root/autodl-tmp/tool-use-posttraining/checkpoints/stage1_lora_baseline",
+  "adapter_hashes": {
+    "adapter_config.json": "ec7849240312d6a8e4c64d478e8b16e3a36dd6f274bd246422033c19726c3b80",
+    "adapter_model.safetensors": "dcf40498b1d5eb2459ae924438af362a1bd5b3e6851a9499698652ac40431b36"
+  },
+  "model_class": "PeftModelForCausalLM",
+  "dtype": "torch.bfloat16",
+  "seed": 20261014,
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 256
+  },
+  "samples": 98,
+  "runtime_seconds": 128.081,
+  "peak_memory_gib": 3.067,
+  "prediction_sha256": "15ab2dd9b22cb5b49fdae4e776e3b45f1390084c56ab272736bf8fed5e5bb6c5"
+}

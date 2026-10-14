@@ -1,0 +1,18 @@
+{
+  "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B-Instruct",
+  "model_class": "Qwen2ForCausalLM",
+  "dtype": "torch.bfloat16",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "prompt": "<|im_start|>system\n你是工具调用助手。需要外部信息时只输出结构化工具调用。\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{\"type\": \"function\", \"function\": {\"name\": \"weather_api\", \"description\": \"查询指定城市和日期的天气。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"city\": {\"type\": \"string\", \"description\": \"城市名称\"}, \"date\": {\"type\": \"string\", \"description\": \"ISO 8601 日期\"}}, \"required\": [\"city\", \"date\"]}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call><|im_end|>\n<|im_start|>user\n请查询北京在 2026-10-15 的天气。<|im_end|>\n<|im_start|>assistant\n",
+  "response": "<tool_call>\n{\"name\": \"weather_api\", \"arguments\": {\"city\": \"北京\", \"date\": \"2026-10-15\"}}\n</tool_call><|im_end|>",
+  "tool_call_valid": true,
+  "tool_call": {
+    "name": "weather_api",
+    "arguments": {
+      "city": "北京",
+      "date": "2026-10-15"
+    }
+  },
+  "parse_error": null,
+  "peak_memory_gib": 2.904
+}

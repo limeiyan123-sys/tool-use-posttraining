@@ -1,0 +1,6 @@
+project_root: /root/autodl-tmp/tool-use-posttraining
+frozen_dir: /root/autodl-tmp/tool-use-posttraining/data/evaluation/final_holdout_v1
+model_path: /root/autodl-tmp/models/Qwen2.5-1.5B-Instruct
+output_path: /root/autodl-tmp/tool-use-posttraining/reports/final_holdout/zero_shot_predictions.jsonl
+seed: 20261014
+max_new_tokens: 256

@@ -1,0 +1,21 @@
+{
+  "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": "/root/autodl-tmp/tool-use-posttraining/checkpoints/stage1_lora_baseline",
+  "adapter_hashes": {
+    "adapter_config.json": "ec7849240312d6a8e4c64d478e8b16e3a36dd6f274bd246422033c19726c3b80",
+    "adapter_model.safetensors": "dcf40498b1d5eb2459ae924438af362a1bd5b3e6851a9499698652ac40431b36"
+  },
+  "frozen_dir": "/root/autodl-tmp/tool-use-posttraining/data/evaluation/final_holdout_v1",
+  "frozen_manifest_sha256": "ea632c0ab8f1a126b041b4a9a2adbfaeeb2b12ccd4a244b63f68b99bb15be044",
+  "model_class": "PeftModelForCausalLM",
+  "dtype": "torch.bfloat16",
+  "seed": 20261014,
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 256
+  },
+  "samples": 70,
+  "runtime_seconds": 104.346,
+  "peak_memory_gib": 3.076,
+  "prediction_sha256": "56b2d9211f0393fa89f177a40ccaa44b87747739a8029e16a6d53b9cf7df5a07"
+}

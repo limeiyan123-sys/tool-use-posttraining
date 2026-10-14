@@ -1,0 +1,21 @@
+{
+  "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": "/root/autodl-tmp/tool-use-posttraining/checkpoints/stage4_counterfactual_paired",
+  "adapter_hashes": {
+    "adapter_config.json": "bbdbd2a043847a1c66d7fe2c2b0b7e77d69992be0589d2da6236ef0e635e5869",
+    "adapter_model.safetensors": "2d12583264bf32f4038ddd886a5e6139f7b57f02b9b421030a4825a6b10af6c5"
+  },
+  "frozen_dir": "/root/autodl-tmp/tool-use-posttraining/data/evaluation/tool_world_v1",
+  "frozen_manifest_sha256": "d9e283c81e3cf4a3f846594e43c3e70f96e3f6de743b48e8533ce0c037c4123c",
+  "model_class": "PeftModelForCausalLM",
+  "dtype": "torch.bfloat16",
+  "seed": 20261016,
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 256
+  },
+  "samples": 750,
+  "runtime_seconds": 1538.552,
+  "peak_memory_gib": 3.123,
+  "prediction_sha256": "7df9f7a763b0216729165a1784bc4877312745bb20984576797a454a20679287"
+}

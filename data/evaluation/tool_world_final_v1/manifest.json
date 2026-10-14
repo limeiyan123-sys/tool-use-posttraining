@@ -1,0 +1,47 @@
+{
+  "version": "tool_world_final_v1",
+  "seed": 20261019,
+  "status": "方法与超参数冻结后一次性评测，不再据此修改方法。",
+  "base_tasks": 60,
+  "worlds_per_task": 5,
+  "world_samples": 300,
+  "category_sizes": {
+    "simple_python": 28,
+    "multiple": 2,
+    "parallel": 15,
+    "parallel_multiple": 15
+  },
+  "datasets": {
+    "tool_world_final_v1.jsonl": {
+      "samples": 300,
+      "sha256": "a40b6d464c74b39a9c7fccdcd8a68fe02599aa1840896f1d1cf9cf3f2793c4e9"
+    }
+  },
+  "source_id_audit": {
+    "evaluation": {
+      "count": 290,
+      "sha256": "155413cec8100fc4e0bf1cd7ee91c9d841d35be0477727dcc838c4b5f41666db"
+    },
+    "failure_weighted": {
+      "count": 250,
+      "sha256": "d07076c6c7332c2284387be20c8bf2a8b730c1c59f00b05698fa1a4f62353ac3"
+    },
+    "world_randomization_and_paired": {
+      "count": 400,
+      "sha256": "e6de2ef02edbd78292a20b04db38e9bf7570366eb002cb1e3d7fe9a19a497a54"
+    }
+  },
+  "all_excluded_source_ids": {
+    "count": 756,
+    "sha256": "754afbafe922561b7f9b841dfdec7040d0a4bac3cbc261faa4ef3ff342233302"
+  },
+  "final_source_ids": {
+    "count": 60,
+    "sha256": "ed6b4b6e014b57cb0febb70c493f84c3b926d56942c33985a63a98d77f432e67"
+  },
+  "leakage_check": "最终 source ID 与旧评测、Tool-World 方法选择集及全部 Stage 4 BFCL 训练来源完全互斥。",
+  "limitations": [
+    "最终集规模为 60 个基础任务、300 个工具世界，置信区间仍可能较宽。",
+    "能力替换仍只覆盖单个标量参数的 enum 收紧。"
+  ]
+}

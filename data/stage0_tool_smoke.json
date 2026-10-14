@@ -1,0 +1,30 @@
+[
+  {
+    "conversations": [
+      {"from": "human", "value": "查询北京在 2026-10-15 的天气。"},
+      {"from": "function_call", "value": "{\"name\": \"weather_api\", \"arguments\": {\"city\": \"北京\", \"date\": \"2026-10-15\"}}"}
+    ],
+    "tools": "[{\"name\": \"weather_api\", \"description\": \"查询指定城市和日期的天气\", \"parameters\": {\"type\": \"object\", \"properties\": {\"city\": {\"type\": \"string\"}, \"date\": {\"type\": \"string\"}}, \"required\": [\"city\", \"date\"]}}]"
+  },
+  {
+    "conversations": [
+      {"from": "human", "value": "查询上海到杭州在 2026-10-20 的高铁票。"},
+      {"from": "function_call", "value": "{\"name\": \"train_ticket_api\", \"arguments\": {\"origin\": \"上海\", \"destination\": \"杭州\", \"date\": \"2026-10-20\"}}"}
+    ],
+    "tools": "[{\"name\": \"train_ticket_api\", \"description\": \"查询指定日期的高铁票\", \"parameters\": {\"type\": \"object\", \"properties\": {\"origin\": {\"type\": \"string\"}, \"destination\": {\"type\": \"string\"}, \"date\": {\"type\": \"string\"}}, \"required\": [\"origin\", \"destination\", \"date\"]}}]"
+  },
+  {
+    "conversations": [
+      {"from": "human", "value": "把会议安排到 2026-10-21 14:30，主题是工具调用评审。"},
+      {"from": "function_call", "value": "{\"name\": \"calendar_api\", \"arguments\": {\"datetime\": \"2026-10-21T14:30:00+08:00\", \"title\": \"工具调用评审\"}}"}
+    ],
+    "tools": "[{\"name\": \"calendar_api\", \"description\": \"创建日历事件\", \"parameters\": {\"type\": \"object\", \"properties\": {\"datetime\": {\"type\": \"string\"}, \"title\": {\"type\": \"string\"}}, \"required\": [\"datetime\", \"title\"]}}]"
+  },
+  {
+    "conversations": [
+      {"from": "human", "value": "计算 17 乘以 29。"},
+      {"from": "function_call", "value": "{\"name\": \"calculator_api\", \"arguments\": {\"expression\": \"17*29\"}}"}
+    ],
+    "tools": "[{\"name\": \"calculator_api\", \"description\": \"计算数学表达式\", \"parameters\": {\"type\": \"object\", \"properties\": {\"expression\": {\"type\": \"string\"}}, \"required\": [\"expression\"]}}]"
+  }
+]

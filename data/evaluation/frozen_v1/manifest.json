@@ -1,0 +1,28 @@
+{
+  "version": "frozen_v1",
+  "seed": 20261014,
+  "policy": "文件创建后禁止覆盖；如需修订必须创建新版本目录。",
+  "gorilla_commit": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+  "datasets": {
+    "controlled_v1.jsonl": {
+      "samples": 28,
+      "sha256": "575f59108eaefa46a61d0fe73a8d8f7465d469ea37a6e8179271895e843cc967"
+    },
+    "bfcl_lite_v1.jsonl": {
+      "samples": 70,
+      "sha256": "a0386d395adc25bde140211a27cb93ceaaffbabc7d8c6cedb4544e36cea96861"
+    }
+  },
+  "bfcl_category_sizes": {
+    "simple_python": 20,
+    "multiple": 20,
+    "parallel": 10,
+    "parallel_multiple": 10,
+    "irrelevance": 10
+  },
+  "limitations": [
+    "bfcl_lite_v1 是固定子集，不是 BFCL 官方排行榜成绩。",
+    "受控集由本项目构造，主要用于消融、执行验证和未见 Schema 测试。",
+    "公开 BFCL 样本可能已出现在基础模型预训练数据中，不能据此证明严格未见。"
+  ]
+}

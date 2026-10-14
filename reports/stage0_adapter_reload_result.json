@@ -1,0 +1,8 @@
+{
+  "base_model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": "/root/autodl-tmp/tool-use-posttraining/checkpoints/stage0_qlora_smoke",
+  "adapter_loaded": true,
+  "quantization": "bitsandbytes-nf4-double-quant",
+  "response": "<tool_call>\n{\"name\": \"calculator_api\", \"arguments\": {\"expression\": \"17 * 29\"}}\n</tool_call><|im_end|>",
+  "peak_memory_gib": 1.157
+}

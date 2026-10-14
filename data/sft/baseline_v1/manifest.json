@@ -1,0 +1,26 @@
+{
+  "version": "toolace_baseline_v1",
+  "source": "Team-ACE/ToolACE",
+  "source_url": "https://huggingface.co/datasets/Team-ACE/ToolACE",
+  "download_mirror": "https://hf-mirror.com/datasets/Team-ACE/ToolACE/resolve/main/data.json",
+  "license": "Apache-2.0",
+  "source_sha256": "ba12c083fca7e8da48c67ad5b895e495447da7c66e39a2e19742c082e6cb537e",
+  "seed": 20261014,
+  "raw_rows": 11300,
+  "valid_tool_rows": 8441,
+  "valid_no_tool_rows": 1502,
+  "selected_tool_rows": 1200,
+  "selected_no_tool_rows": 300,
+  "train_rows": 1350,
+  "dev_rows": 150,
+  "train_sha256": "8e2712f507e202970e0602cbf56bf53d983cbabef3b1f5fdb08c81f11cead9a5",
+  "dev_sha256": "633d9f4c95f1d59a9be651a1ff8d72c8ab869bf9093bea1a3c59bd68b07a6940",
+  "rejection_counts": {
+    "exact_duplicate": 3,
+    "invalid::JSONDecodeError": 288,
+    "invalid::SyntaxError": 91,
+    "invalid::TypeError": 641,
+    "invalid::ValueError": 330,
+    "tool_name_overlap": 4
+  }
+}

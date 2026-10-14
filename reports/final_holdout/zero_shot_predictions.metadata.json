@@ -1,0 +1,16 @@
+{
+  "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B-Instruct",
+  "frozen_dir": "/root/autodl-tmp/tool-use-posttraining/data/evaluation/final_holdout_v1",
+  "frozen_manifest_sha256": "ea632c0ab8f1a126b041b4a9a2adbfaeeb2b12ccd4a244b63f68b99bb15be044",
+  "model_class": "Qwen2ForCausalLM",
+  "dtype": "torch.bfloat16",
+  "seed": 20261014,
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 256
+  },
+  "samples": 70,
+  "runtime_seconds": 51.226,
+  "peak_memory_gib": 2.959,
+  "prediction_sha256": "f8e993e9269cf00adb9c1948231676e4011c1cf6bb68e8afa37b6e47aedb8af6"
+}
