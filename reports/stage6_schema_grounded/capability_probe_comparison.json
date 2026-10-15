@@ -1,0 +1,67 @@
+{
+  "zero_shot": {
+    "direct_overall": 0.5888888888888889,
+    "explicit_overall": 0.7666666666666667,
+    "near_miss_direct": 0.0,
+    "near_miss_explicit": 1.0,
+    "valid_direct": 0.9333333333333333,
+    "valid_explicit": 0.3,
+    "functional_direct": 0.8333333333333334,
+    "decision_consistency": 0.40476190476190477,
+    "localization_exact": 0.26666666666666666,
+    "localization_field": 0.45,
+    "localization_constraint": 0.2833333333333333
+  },
+  "lora": {
+    "direct_overall": 0.6333333333333333,
+    "explicit_overall": 0.6888888888888889,
+    "near_miss_direct": 0.0,
+    "near_miss_explicit": 1.0,
+    "valid_direct": 0.9333333333333333,
+    "valid_explicit": 0.06666666666666667,
+    "functional_direct": 0.9666666666666667,
+    "decision_consistency": 0.36046511627906974,
+    "localization_exact": 0.016666666666666666,
+    "localization_field": 0.18333333333333332,
+    "localization_constraint": 0.05
+  },
+  "fdsrc": {
+    "direct_overall": 0.6444444444444445,
+    "explicit_overall": 0.7777777777777778,
+    "near_miss_direct": 0.0,
+    "near_miss_explicit": 1.0,
+    "valid_direct": 0.9333333333333333,
+    "valid_explicit": 0.4,
+    "functional_direct": 1.0,
+    "decision_consistency": 0.47619047619047616,
+    "localization_exact": 0.0,
+    "localization_field": 0.2,
+    "localization_constraint": 0.0
+  },
+  "fwct": {
+    "direct_overall": 0.7222222222222222,
+    "explicit_overall": 0.7333333333333333,
+    "near_miss_direct": 0.4666666666666667,
+    "near_miss_explicit": 0.8666666666666667,
+    "valid_direct": 0.7,
+    "valid_explicit": 0.36666666666666664,
+    "functional_direct": 1.0,
+    "decision_consistency": 0.675,
+    "localization_exact": 0.0,
+    "localization_field": 0.21666666666666667,
+    "localization_constraint": 0.0
+  },
+  "fctw": {
+    "direct_overall": 0.6666666666666666,
+    "explicit_overall": 0.7777777777777778,
+    "near_miss_direct": 0.13333333333333333,
+    "near_miss_explicit": 0.9666666666666667,
+    "valid_direct": 0.8666666666666667,
+    "valid_explicit": 0.4,
+    "functional_direct": 1.0,
+    "decision_consistency": 0.5662650602409639,
+    "localization_exact": 0.0,
+    "localization_field": 0.2,
+    "localization_constraint": 0.05
+  }
+}

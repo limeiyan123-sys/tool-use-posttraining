@@ -1,0 +1,10 @@
+{
+  "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": null,
+  "dataset_manifest_sha256": "b8e8dd6c263fb87d1a634289e17498d3356043c993bdb0234302325d04c0dc61",
+  "seed": 20261022,
+  "samples": 90,
+  "runtime_seconds": 91.198,
+  "peak_memory_gib": 2.925,
+  "prediction_sha256": "3f652242309b5a27eb7ad4226a3cfa6208f13b23ee37abb5e61048cabdabbc3b"
+}

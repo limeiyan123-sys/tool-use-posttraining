@@ -1,0 +1,24 @@
+{
+  "run_name": "fwct",
+  "samples": 300,
+  "original_metrics": {
+    "overall": 0.6233333333333333,
+    "capability_substitution": 0.5666666666666667,
+    "distractor": 0.5333333333333333,
+    "original": 0.7
+  },
+  "filtered_metrics": {
+    "overall": 0.68,
+    "capability_substitution": 0.8,
+    "distractor": 0.5333333333333333,
+    "original": 0.7
+  },
+  "blocked_calls": 39,
+  "affected_samples": 30,
+  "wrong_to_correct": 17,
+  "correct_to_wrong": 0,
+  "blocked_reason_counts": {
+    "schema_violation": 35,
+    "unknown_tool": 4
+  }
+}

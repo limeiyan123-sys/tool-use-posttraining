@@ -1,0 +1,229 @@
+{
+  "methods": {
+    "FDSRC": {
+      "overall": {
+        "samples": 300,
+        "should_call_samples": 203,
+        "call_reject_correct": 247,
+        "call_reject_accuracy": 0.8233333333333334,
+        "correct_tool": 166,
+        "tool_selection_accuracy_on_should_call": 0.8177339901477833,
+        "argument_exact_on_correct_tool": 113,
+        "argument_exact_accuracy_on_correct_tool": 0.6807228915662651,
+        "decision_exact": 158,
+        "decision_exact_accuracy": 0.5266666666666666,
+        "error_counts": {
+          "argument_failure": 53,
+          "correct": 158,
+          "false_call": 47,
+          "false_reject": 1,
+          "invalid_output": 5,
+          "wrong_tool": 36
+        }
+      },
+      "capability_substitution": {
+        "samples": 60,
+        "should_call_samples": 14,
+        "call_reject_correct": 14,
+        "call_reject_accuracy": 0.23333333333333334,
+        "correct_tool": 0,
+        "tool_selection_accuracy_on_should_call": 0.0,
+        "argument_exact_on_correct_tool": 0,
+        "argument_exact_accuracy_on_correct_tool": null,
+        "decision_exact": 0,
+        "decision_exact_accuracy": 0.0,
+        "error_counts": {
+          "false_call": 46,
+          "wrong_tool": 14
+        }
+      },
+      "distractor": {
+        "samples": 60,
+        "should_call_samples": 59,
+        "call_reject_correct": 59,
+        "call_reject_accuracy": 0.9833333333333333,
+        "correct_tool": 53,
+        "tool_selection_accuracy_on_should_call": 0.8983050847457628,
+        "argument_exact_on_correct_tool": 36,
+        "argument_exact_accuracy_on_correct_tool": 0.6792452830188679,
+        "decision_exact": 36,
+        "decision_exact_accuracy": 0.6,
+        "error_counts": {
+          "argument_failure": 17,
+          "correct": 36,
+          "invalid_output": 1,
+          "wrong_tool": 6
+        }
+      },
+      "original": {
+        "samples": 60,
+        "should_call_samples": 60,
+        "call_reject_correct": 60,
+        "call_reject_accuracy": 1.0,
+        "correct_tool": 57,
+        "tool_selection_accuracy_on_should_call": 0.95,
+        "argument_exact_on_correct_tool": 41,
+        "argument_exact_accuracy_on_correct_tool": 0.7192982456140351,
+        "decision_exact": 41,
+        "decision_exact_accuracy": 0.6833333333333333,
+        "error_counts": {
+          "argument_failure": 16,
+          "correct": 41,
+          "wrong_tool": 3
+        }
+      }
+    },
+    "FWCT": {
+      "overall": {
+        "samples": 300,
+        "should_call_samples": 204,
+        "call_reject_correct": 263,
+        "call_reject_accuracy": 0.8766666666666667,
+        "correct_tool": 157,
+        "tool_selection_accuracy_on_should_call": 0.7696078431372549,
+        "argument_exact_on_correct_tool": 109,
+        "argument_exact_accuracy_on_correct_tool": 0.6942675159235668,
+        "decision_exact": 187,
+        "decision_exact_accuracy": 0.6233333333333333,
+        "error_counts": {
+          "argument_failure": 48,
+          "correct": 187,
+          "false_call": 13,
+          "false_reject": 20,
+          "invalid_output": 4,
+          "schema_or_protocol_failure": 1,
+          "wrong_tool": 27
+        }
+      },
+      "capability_substitution": {
+        "samples": 60,
+        "should_call_samples": 14,
+        "call_reject_correct": 47,
+        "call_reject_accuracy": 0.7833333333333333,
+        "correct_tool": 0,
+        "tool_selection_accuracy_on_should_call": 0.0,
+        "argument_exact_on_correct_tool": 0,
+        "argument_exact_accuracy_on_correct_tool": null,
+        "decision_exact": 34,
+        "decision_exact_accuracy": 0.5666666666666667,
+        "error_counts": {
+          "correct": 34,
+          "false_call": 12,
+          "false_reject": 1,
+          "wrong_tool": 13
+        }
+      },
+      "distractor": {
+        "samples": 60,
+        "should_call_samples": 60,
+        "call_reject_correct": 46,
+        "call_reject_accuracy": 0.7666666666666667,
+        "correct_tool": 43,
+        "tool_selection_accuracy_on_should_call": 0.7166666666666667,
+        "argument_exact_on_correct_tool": 32,
+        "argument_exact_accuracy_on_correct_tool": 0.7441860465116279,
+        "decision_exact": 32,
+        "decision_exact_accuracy": 0.5333333333333333,
+        "error_counts": {
+          "argument_failure": 11,
+          "correct": 32,
+          "false_reject": 14,
+          "wrong_tool": 3
+        }
+      },
+      "original": {
+        "samples": 60,
+        "should_call_samples": 60,
+        "call_reject_correct": 59,
+        "call_reject_accuracy": 0.9833333333333333,
+        "correct_tool": 57,
+        "tool_selection_accuracy_on_should_call": 0.95,
+        "argument_exact_on_correct_tool": 42,
+        "argument_exact_accuracy_on_correct_tool": 0.7368421052631579,
+        "decision_exact": 42,
+        "decision_exact_accuracy": 0.7,
+        "error_counts": {
+          "argument_failure": 15,
+          "correct": 42,
+          "false_reject": 1,
+          "wrong_tool": 2
+        }
+      }
+    },
+    "FCTW": {
+      "overall": {
+        "samples": 300,
+        "should_call_samples": 202,
+        "call_reject_correct": 248,
+        "call_reject_accuracy": 0.8266666666666667,
+        "correct_tool": 169,
+        "tool_selection_accuracy_on_should_call": 0.8366336633663366,
+        "argument_exact_on_correct_tool": 116,
+        "argument_exact_accuracy_on_correct_tool": 0.6863905325443787,
+        "decision_exact": 162,
+        "decision_exact_accuracy": 0.54,
+        "error_counts": {
+          "argument_failure": 53,
+          "correct": 162,
+          "false_call": 45,
+          "false_reject": 1,
+          "invalid_output": 6,
+          "schema_or_protocol_failure": 1,
+          "wrong_tool": 32
+        }
+      },
+      "capability_substitution": {
+        "samples": 60,
+        "should_call_samples": 14,
+        "call_reject_correct": 16,
+        "call_reject_accuracy": 0.26666666666666666,
+        "correct_tool": 0,
+        "tool_selection_accuracy_on_should_call": 0.0,
+        "argument_exact_on_correct_tool": 0,
+        "argument_exact_accuracy_on_correct_tool": null,
+        "decision_exact": 2,
+        "decision_exact_accuracy": 0.03333333333333333,
+        "error_counts": {
+          "correct": 2,
+          "false_call": 44,
+          "wrong_tool": 14
+        }
+      },
+      "distractor": {
+        "samples": 60,
+        "should_call_samples": 59,
+        "call_reject_correct": 59,
+        "call_reject_accuracy": 0.9833333333333333,
+        "correct_tool": 56,
+        "tool_selection_accuracy_on_should_call": 0.9491525423728814,
+        "argument_exact_on_correct_tool": 40,
+        "argument_exact_accuracy_on_correct_tool": 0.7142857142857143,
+        "decision_exact": 40,
+        "decision_exact_accuracy": 0.6666666666666666,
+        "error_counts": {
+          "argument_failure": 16,
+          "correct": 40,
+          "invalid_output": 1,
+          "wrong_tool": 3
+        }
+      },
+      "original": {
+        "samples": 60,
+        "should_call_samples": 60,
+        "call_reject_correct": 60,
+        "call_reject_accuracy": 1.0,
+        "correct_tool": 58,
+        "tool_selection_accuracy_on_should_call": 0.9666666666666667,
+        "argument_exact_on_correct_tool": 41,
+        "argument_exact_accuracy_on_correct_tool": 0.7068965517241379,
+        "decision_exact": 41,
+        "decision_exact_accuracy": 0.6833333333333333,
+        "error_counts": {
+          "argument_failure": 17,
+          "correct": 41,
+          "wrong_tool": 2
+        }
+      }
+    }
+  }
+}

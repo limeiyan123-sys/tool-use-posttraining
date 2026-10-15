@@ -1,0 +1,10 @@
+{
+  "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": "/root/autodl-tmp/tool-use-posttraining/checkpoints/stage4_failure_weighted",
+  "dataset_manifest_sha256": "b8e8dd6c263fb87d1a634289e17498d3356043c993bdb0234302325d04c0dc61",
+  "seed": 20261022,
+  "samples": 90,
+  "runtime_seconds": 162.479,
+  "peak_memory_gib": 3.02,
+  "prediction_sha256": "1640498d813293b6516df231d360c4bbae8f0817da41c79ee08d5510a3bfd927"
+}

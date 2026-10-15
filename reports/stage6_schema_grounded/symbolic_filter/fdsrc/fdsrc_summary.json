@@ -1,0 +1,24 @@
+{
+  "run_name": "fdsrc",
+  "samples": 300,
+  "original_metrics": {
+    "overall": 0.5266666666666666,
+    "capability_substitution": 0.0,
+    "distractor": 0.6,
+    "original": 0.6833333333333333
+  },
+  "filtered_metrics": {
+    "overall": 0.6733333333333333,
+    "capability_substitution": 0.6666666666666666,
+    "distractor": 0.6,
+    "original": 0.6833333333333333
+  },
+  "blocked_calls": 86,
+  "affected_samples": 62,
+  "wrong_to_correct": 44,
+  "correct_to_wrong": 0,
+  "blocked_reason_counts": {
+    "schema_violation": 78,
+    "unknown_tool": 8
+  }
+}

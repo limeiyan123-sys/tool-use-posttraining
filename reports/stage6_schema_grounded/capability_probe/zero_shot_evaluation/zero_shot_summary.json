@@ -1,0 +1,102 @@
+{
+  "overall": {
+    "samples": 90,
+    "direct_format_rate": 0.9444444444444444,
+    "direct_compatibility_accuracy": 0.5888888888888889,
+    "explicit_format_rate": 0.9888888888888889,
+    "explicit_compatibility_accuracy": 0.7666666666666667,
+    "explicit_semantic_accuracy_when_parseable": 0.7752808988764045,
+    "violation_localization_accuracy": 0.26666666666666666,
+    "violation_field_accuracy": 0.45,
+    "violation_constraint_accuracy": 0.2833333333333333,
+    "decision_consistency": 0.40476190476190477
+  },
+  "by_sample_type": {
+    "functional_mismatch": {
+      "samples": 30,
+      "direct_format_rate": 0.9666666666666667,
+      "direct_compatibility_accuracy": 0.8333333333333334,
+      "explicit_format_rate": 1.0,
+      "explicit_compatibility_accuracy": 1.0,
+      "explicit_semantic_accuracy_when_parseable": 1.0,
+      "violation_localization_accuracy": 0.5333333333333333,
+      "violation_field_accuracy": 0.5666666666666667,
+      "violation_constraint_accuracy": 0.5666666666666667,
+      "decision_consistency": 0.8620689655172413
+    },
+    "near_miss": {
+      "samples": 30,
+      "direct_format_rate": 0.9333333333333333,
+      "direct_compatibility_accuracy": 0.0,
+      "explicit_format_rate": 1.0,
+      "explicit_compatibility_accuracy": 1.0,
+      "explicit_semantic_accuracy_when_parseable": 1.0,
+      "violation_localization_accuracy": 0.0,
+      "violation_field_accuracy": 0.3333333333333333,
+      "violation_constraint_accuracy": 0.0,
+      "decision_consistency": 0.0
+    },
+    "valid": {
+      "samples": 30,
+      "direct_format_rate": 0.9333333333333333,
+      "direct_compatibility_accuracy": 0.9333333333333333,
+      "explicit_format_rate": 0.9666666666666667,
+      "explicit_compatibility_accuracy": 0.3,
+      "explicit_semantic_accuracy_when_parseable": 0.3103448275862069,
+      "violation_localization_accuracy": null,
+      "violation_field_accuracy": null,
+      "violation_constraint_accuracy": null,
+      "decision_consistency": 0.3333333333333333
+    }
+  },
+  "by_constraint_family": {
+    "enum": {
+      "samples": 20,
+      "direct_format_rate": 1.0,
+      "direct_compatibility_accuracy": 0.5,
+      "explicit_format_rate": 0.95,
+      "explicit_compatibility_accuracy": 0.65,
+      "explicit_semantic_accuracy_when_parseable": 0.6842105263157895,
+      "violation_localization_accuracy": 0.0,
+      "violation_field_accuracy": 0.3,
+      "violation_constraint_accuracy": 0.0,
+      "decision_consistency": 0.15789473684210525
+    },
+    "functional_mismatch": {
+      "samples": 30,
+      "direct_format_rate": 0.9666666666666667,
+      "direct_compatibility_accuracy": 0.8333333333333334,
+      "explicit_format_rate": 1.0,
+      "explicit_compatibility_accuracy": 1.0,
+      "explicit_semantic_accuracy_when_parseable": 1.0,
+      "violation_localization_accuracy": 0.5333333333333333,
+      "violation_field_accuracy": 0.5666666666666667,
+      "violation_constraint_accuracy": 0.5666666666666667,
+      "decision_consistency": 0.8620689655172413
+    },
+    "numeric_range": {
+      "samples": 20,
+      "direct_format_rate": 0.9,
+      "direct_compatibility_accuracy": 0.45,
+      "explicit_format_rate": 1.0,
+      "explicit_compatibility_accuracy": 0.75,
+      "explicit_semantic_accuracy_when_parseable": 0.75,
+      "violation_localization_accuracy": 0.0,
+      "violation_field_accuracy": 0.5,
+      "violation_constraint_accuracy": 0.0,
+      "decision_consistency": 0.2777777777777778
+    },
+    "string_pattern": {
+      "samples": 20,
+      "direct_format_rate": 0.9,
+      "direct_compatibility_accuracy": 0.45,
+      "explicit_format_rate": 1.0,
+      "explicit_compatibility_accuracy": 0.55,
+      "explicit_semantic_accuracy_when_parseable": 0.55,
+      "violation_localization_accuracy": 0.0,
+      "violation_field_accuracy": 0.2,
+      "violation_constraint_accuracy": 0.0,
+      "decision_consistency": 0.05555555555555555
+    }
+  }
+}

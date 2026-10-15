@@ -1,0 +1,29 @@
+{
+  "version": "capability_probe_v1",
+  "seed": 20261021,
+  "source": "data/evaluation/fctw_eval_v1/fctw_eval_v1.jsonl",
+  "source_sha256": "77196e6dc80a6b34be4e64d609dc5b4230fed47d6eb68dca10cc6e343ea176b4",
+  "base_tasks": 30,
+  "samples": 90,
+  "sample_type_counts": {
+    "functional_mismatch": 30,
+    "near_miss": 30,
+    "valid": 30
+  },
+  "constraint_family_counts": {
+    "enum": 20,
+    "functional_mismatch": 30,
+    "numeric_range": 20,
+    "string_pattern": 20
+  },
+  "protocols": [
+    "direct_tool_call",
+    "explicit_compatibility_json"
+  ],
+  "data_sha256": "7f74220b070413d77e74992f5a112e26c010e26a76eabdeecbea72fe32aaa96a",
+  "limitations": [
+    "能力约束覆盖 enum、numeric_range、string_pattern 与功能不匹配。",
+    "未覆盖需要澄清、多步执行和外部权限等非 Schema 能力。",
+    "显式协议未经过训练，其格式错误与语义错误必须分开报告。"
+  ]
+}

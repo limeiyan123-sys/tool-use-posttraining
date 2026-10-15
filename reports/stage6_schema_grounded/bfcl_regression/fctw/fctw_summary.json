@@ -1,0 +1,16 @@
+{
+  "run_name": "fctw",
+  "samples": 70,
+  "original": {
+    "tool_accuracy": 0.9714285714285714,
+    "argument_accuracy": 0.9286507936507937,
+    "argument_exact": 0.8428571428571429
+  },
+  "filtered": {
+    "tool_accuracy": 0.9285714285714286,
+    "argument_accuracy": 0.9007936507936508,
+    "argument_exact": 0.8428571428571429
+  },
+  "blocked_calls": 4,
+  "correct_to_wrong": 0
+}

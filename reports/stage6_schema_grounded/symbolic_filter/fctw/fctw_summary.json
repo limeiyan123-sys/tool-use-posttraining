@@ -1,0 +1,24 @@
+{
+  "run_name": "fctw",
+  "samples": 300,
+  "original_metrics": {
+    "overall": 0.54,
+    "capability_substitution": 0.03333333333333333,
+    "distractor": 0.6666666666666666,
+    "original": 0.6833333333333333
+  },
+  "filtered_metrics": {
+    "overall": 0.6766666666666666,
+    "capability_substitution": 0.6666666666666666,
+    "distractor": 0.6666666666666666,
+    "original": 0.6833333333333333
+  },
+  "blocked_calls": 72,
+  "affected_samples": 54,
+  "wrong_to_correct": 41,
+  "correct_to_wrong": 0,
+  "blocked_reason_counts": {
+    "schema_violation": 67,
+    "unknown_tool": 5
+  }
+}

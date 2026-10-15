@@ -1,0 +1,10 @@
+{
+  "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": "/root/autodl-tmp/tool-use-posttraining/checkpoints/stage5_fctw",
+  "dataset_manifest_sha256": "b8e8dd6c263fb87d1a634289e17498d3356043c993bdb0234302325d04c0dc61",
+  "seed": 20261022,
+  "samples": 90,
+  "runtime_seconds": 154.592,
+  "peak_memory_gib": 3.02,
+  "prediction_sha256": "2645069346f0d4f108c4be72fbebd8d36932d3e7e0e2ddbf282bb4f83c33f68c"
+}

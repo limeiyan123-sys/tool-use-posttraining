@@ -1,0 +1,16 @@
+{
+  "run_name": "fdsrc",
+  "samples": 70,
+  "original": {
+    "tool_accuracy": 1.0,
+    "argument_accuracy": 0.9393650793650794,
+    "argument_exact": 0.8142857142857143
+  },
+  "filtered": {
+    "tool_accuracy": 0.9714285714285714,
+    "argument_accuracy": 0.9186507936507935,
+    "argument_exact": 0.8142857142857143
+  },
+  "blocked_calls": 3,
+  "correct_to_wrong": 0
+}
