@@ -1,0 +1,72 @@
+{
+  "base_tasks": 24,
+  "bootstrap_95_ci": {
+    "original_accuracy": [
+      1.0,
+      1.0
+    ],
+    "pair_success_rate": [
+      1.0,
+      1.0
+    ],
+    "stale_choice_rate_all_updated": [
+      0.0,
+      0.0
+    ],
+    "updated_accuracy": [
+      1.0,
+      1.0
+    ],
+    "updated_minus_original": [
+      0.0,
+      0.0
+    ]
+  },
+  "by_family": {
+    "archive_pack": {
+      "original_accuracy": 1.0,
+      "stale_choice_rate_all_updated": 0.0,
+      "updated_accuracy": 1.0
+    },
+    "chart_render": {
+      "original_accuracy": 1.0,
+      "stale_choice_rate_all_updated": 0.0,
+      "updated_accuracy": 1.0
+    },
+    "document_translate": {
+      "original_accuracy": 1.0,
+      "stale_choice_rate_all_updated": 0.0,
+      "updated_accuracy": 1.0
+    },
+    "image_convert": {
+      "original_accuracy": 1.0,
+      "stale_choice_rate_all_updated": 0.0,
+      "updated_accuracy": 1.0
+    },
+    "invoice_currency": {
+      "original_accuracy": 1.0,
+      "stale_choice_rate_all_updated": 0.0,
+      "updated_accuracy": 1.0
+    },
+    "report_export": {
+      "original_accuracy": 1.0,
+      "stale_choice_rate_all_updated": 0.0,
+      "updated_accuracy": 1.0
+    }
+  },
+  "error_counts": {
+    "none": 48
+  },
+  "false_reject_rate": 0.0,
+  "original_accuracy": 1.0,
+  "pair_success_rate": 1.0,
+  "semantic_error_rate": 0.0,
+  "stale_choice_all_updated_denominator": 24,
+  "stale_choice_all_updated_numerator": 0,
+  "stale_choice_given_original_correct_denominator": 24,
+  "stale_choice_given_original_correct_numerator": 0,
+  "stale_choice_rate_all_updated": 0.0,
+  "stale_choice_rate_given_original_correct": 0.0,
+  "updated_accuracy": 1.0,
+  "updated_minus_original": 0.0
+}

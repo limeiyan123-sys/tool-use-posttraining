@@ -1,0 +1,16 @@
+{
+  "adapter_path": "/home/limeiyan/tool-use-posttraining/checkpoints/stage1_lora_baseline",
+  "dataset": "pilot_v1.jsonl",
+  "dataset_sha256": "f32d293d69db13e24dac907642f0140c3344dd236bd27ad4f33de58faa693a75",
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 96
+  },
+  "device": "cpu",
+  "model_path": "/home/limeiyan/models/Qwen2.5-1.5B-Instruct",
+  "peak_memory_gib": 0.0,
+  "prediction_sha256": "c2a9d2e69524d1bb86e7c1162272452ee2dd9e570591abd338cbce37c3e32d90",
+  "runtime_seconds": 425.996,
+  "samples": 48,
+  "seed": 20261016
+}

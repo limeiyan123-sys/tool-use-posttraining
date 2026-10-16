@@ -1,0 +1,34 @@
+{
+  "experiment": "stage7_historical_tool_dependency",
+  "dataset_sha256": "f32d293d69db13e24dac907642f0140c3344dd236bd27ad4f33de58faa693a75",
+  "base_tasks": 24,
+  "environment_samples": 48,
+  "methods": {
+    "base": {
+      "original_accuracy": 1.0,
+      "updated_accuracy": 1.0,
+      "pair_success_rate": 1.0,
+      "stale_choice_rate_all_updated": 0.0
+    },
+    "lora": {
+      "original_accuracy": 1.0,
+      "updated_accuracy": 1.0,
+      "pair_success_rate": 1.0,
+      "stale_choice_rate_all_updated": 0.0
+    },
+    "fdsrc": {
+      "original_accuracy": 1.0,
+      "updated_accuracy": 1.0,
+      "pair_success_rate": 1.0,
+      "stale_choice_rate_all_updated": 0.0
+    },
+    "controlled_sft": {
+      "original_accuracy": 1.0,
+      "updated_accuracy": 1.0,
+      "pair_success_rate": 1.0,
+      "stale_choice_rate_all_updated": 0.0
+    }
+  },
+  "decision": "H1_not_supported_in_current_controlled_setting",
+  "next_focus": "requirement_to_schema_binding"
+}

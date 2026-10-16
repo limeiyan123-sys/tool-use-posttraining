@@ -1,0 +1,43 @@
+{
+  "dataset_audit": {
+    "train": {
+      "samples": 48,
+      "min_tokens": 351,
+      "max_tokens": 364,
+      "min_supervised_tokens": 22,
+      "max_supervised_tokens": 22
+    },
+    "dev": {
+      "samples": 12,
+      "min_tokens": 351,
+      "max_tokens": 364,
+      "min_supervised_tokens": 22,
+      "max_supervised_tokens": 22
+    }
+  },
+  "train_metrics": {
+    "train_runtime": 43.6493,
+    "train_samples_per_second": 4.399,
+    "train_steps_per_second": 0.55,
+    "total_flos": 542692866981888.0,
+    "train_loss": 0.10892717163369525,
+    "epoch": 4.0
+  },
+  "eval_metrics": {
+    "eval_loss": 0.0006862028385512531,
+    "eval_runtime": 0.6686,
+    "eval_samples_per_second": 17.949,
+    "eval_steps_per_second": 17.949,
+    "epoch": 4.0
+  },
+  "seed": 20261016,
+  "epochs": 4.0,
+  "learning_rate": 0.0001,
+  "cuda_memory_fraction": 0.2,
+  "lora": {
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "target": "all-linear"
+  }
+}

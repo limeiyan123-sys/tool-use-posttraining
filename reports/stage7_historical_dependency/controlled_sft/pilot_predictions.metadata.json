@@ -1,0 +1,17 @@
+{
+  "adapter_path": "/home/limeiyan/tool-use-posttraining/checkpoints/stage7_controlled_history_sft",
+  "cuda_memory_fraction": 0.2,
+  "dataset": "pilot_v1.jsonl",
+  "dataset_sha256": "f32d293d69db13e24dac907642f0140c3344dd236bd27ad4f33de58faa693a75",
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 96
+  },
+  "device": "auto",
+  "model_path": "/home/limeiyan/models/Qwen2.5-1.5B-Instruct",
+  "peak_memory_gib": 2.968,
+  "prediction_sha256": "2bb3e37fc402a2a7af21c72bf805ac86de0d2c3a477af3f83d47fd2f0056f8a0",
+  "runtime_seconds": 42.952,
+  "samples": 48,
+  "seed": 20261016
+}

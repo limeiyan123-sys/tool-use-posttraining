@@ -1,0 +1,68 @@
+{
+  "archive_pack": {
+    "argument": "dataset_id",
+    "original_capabilities": {
+      "archive_node_alpha": "ZIP",
+      "archive_node_beta": "TAR"
+    },
+    "tool_names": [
+      "archive_node_alpha",
+      "archive_node_beta"
+    ]
+  },
+  "chart_render": {
+    "argument": "table_id",
+    "original_capabilities": {
+      "chart_node_alpha": "柱状图",
+      "chart_node_beta": "折线图"
+    },
+    "tool_names": [
+      "chart_node_alpha",
+      "chart_node_beta"
+    ]
+  },
+  "document_translate": {
+    "argument": "document_id",
+    "original_capabilities": {
+      "language_node_alpha": "英语",
+      "language_node_beta": "西班牙语"
+    },
+    "tool_names": [
+      "language_node_alpha",
+      "language_node_beta"
+    ]
+  },
+  "image_convert": {
+    "argument": "image_id",
+    "original_capabilities": {
+      "image_node_alpha": "PNG",
+      "image_node_beta": "JPEG"
+    },
+    "tool_names": [
+      "image_node_alpha",
+      "image_node_beta"
+    ]
+  },
+  "invoice_currency": {
+    "argument": "invoice_id",
+    "original_capabilities": {
+      "finance_node_alpha": "美元",
+      "finance_node_beta": "欧元"
+    },
+    "tool_names": [
+      "finance_node_alpha",
+      "finance_node_beta"
+    ]
+  },
+  "report_export": {
+    "argument": "report_id",
+    "original_capabilities": {
+      "report_node_alpha": "PDF",
+      "report_node_beta": "CSV"
+    },
+    "tool_names": [
+      "report_node_alpha",
+      "report_node_beta"
+    ]
+  }
+}

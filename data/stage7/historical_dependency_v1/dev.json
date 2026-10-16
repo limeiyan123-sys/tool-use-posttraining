@@ -1,0 +1,158 @@
+[
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "请处理编号 RTR009 的报表，目标是导出为PDF。"
+      },
+      {
+        "from": "function_call",
+        "value": "{\"name\": \"report_node_alpha\", \"arguments\": {\"report_id\": \"RTR009\"}}"
+      }
+    ],
+    "tools": "[{\"name\": \"report_node_alpha\", \"description\": \"处理报表。当前能力仅支持将报表导出为PDF；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"report_id\": {\"type\": \"string\", \"description\": \"待处理报表的唯一编号\"}}, \"required\": [\"report_id\"], \"additionalProperties\": false}}, {\"name\": \"report_node_beta\", \"description\": \"处理报表。当前能力仅支持将报表导出为CSV；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"report_id\": {\"type\": \"string\", \"description\": \"待处理报表的唯一编号\"}}, \"required\": [\"report_id\"], \"additionalProperties\": false}}]"
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "请处理编号 RTR010 的报表，目标是导出为CSV。"
+      },
+      {
+        "from": "function_call",
+        "value": "{\"name\": \"report_node_beta\", \"arguments\": {\"report_id\": \"RTR010\"}}"
+      }
+    ],
+    "tools": "[{\"name\": \"report_node_alpha\", \"description\": \"处理报表。当前能力仅支持将报表导出为PDF；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"report_id\": {\"type\": \"string\", \"description\": \"待处理报表的唯一编号\"}}, \"required\": [\"report_id\"], \"additionalProperties\": false}}, {\"name\": \"report_node_beta\", \"description\": \"处理报表。当前能力仅支持将报表导出为CSV；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"report_id\": {\"type\": \"string\", \"description\": \"待处理报表的唯一编号\"}}, \"required\": [\"report_id\"], \"additionalProperties\": false}}]"
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "请处理编号 IMGTR009 的图片，目标是转换为PNG。"
+      },
+      {
+        "from": "function_call",
+        "value": "{\"name\": \"image_node_alpha\", \"arguments\": {\"image_id\": \"IMGTR009\"}}"
+      }
+    ],
+    "tools": "[{\"name\": \"image_node_alpha\", \"description\": \"处理图片。当前能力仅支持将图片转换为PNG；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"image_id\": {\"type\": \"string\", \"description\": \"待处理图片的唯一编号\"}}, \"required\": [\"image_id\"], \"additionalProperties\": false}}, {\"name\": \"image_node_beta\", \"description\": \"处理图片。当前能力仅支持将图片转换为JPEG；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"image_id\": {\"type\": \"string\", \"description\": \"待处理图片的唯一编号\"}}, \"required\": [\"image_id\"], \"additionalProperties\": false}}]"
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "请处理编号 IMGTR010 的图片，目标是转换为JPEG。"
+      },
+      {
+        "from": "function_call",
+        "value": "{\"name\": \"image_node_beta\", \"arguments\": {\"image_id\": \"IMGTR010\"}}"
+      }
+    ],
+    "tools": "[{\"name\": \"image_node_alpha\", \"description\": \"处理图片。当前能力仅支持将图片转换为PNG；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"image_id\": {\"type\": \"string\", \"description\": \"待处理图片的唯一编号\"}}, \"required\": [\"image_id\"], \"additionalProperties\": false}}, {\"name\": \"image_node_beta\", \"description\": \"处理图片。当前能力仅支持将图片转换为JPEG；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"image_id\": {\"type\": \"string\", \"description\": \"待处理图片的唯一编号\"}}, \"required\": [\"image_id\"], \"additionalProperties\": false}}]"
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "请处理编号 DSTR009 的数据集，目标是打包为ZIP。"
+      },
+      {
+        "from": "function_call",
+        "value": "{\"name\": \"archive_node_alpha\", \"arguments\": {\"dataset_id\": \"DSTR009\"}}"
+      }
+    ],
+    "tools": "[{\"name\": \"archive_node_alpha\", \"description\": \"处理数据集。当前能力仅支持将数据集打包为ZIP；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"dataset_id\": {\"type\": \"string\", \"description\": \"待处理数据集的唯一编号\"}}, \"required\": [\"dataset_id\"], \"additionalProperties\": false}}, {\"name\": \"archive_node_beta\", \"description\": \"处理数据集。当前能力仅支持将数据集打包为TAR；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"dataset_id\": {\"type\": \"string\", \"description\": \"待处理数据集的唯一编号\"}}, \"required\": [\"dataset_id\"], \"additionalProperties\": false}}]"
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "请处理编号 DSTR010 的数据集，目标是打包为TAR。"
+      },
+      {
+        "from": "function_call",
+        "value": "{\"name\": \"archive_node_beta\", \"arguments\": {\"dataset_id\": \"DSTR010\"}}"
+      }
+    ],
+    "tools": "[{\"name\": \"archive_node_alpha\", \"description\": \"处理数据集。当前能力仅支持将数据集打包为ZIP；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"dataset_id\": {\"type\": \"string\", \"description\": \"待处理数据集的唯一编号\"}}, \"required\": [\"dataset_id\"], \"additionalProperties\": false}}, {\"name\": \"archive_node_beta\", \"description\": \"处理数据集。当前能力仅支持将数据集打包为TAR；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"dataset_id\": {\"type\": \"string\", \"description\": \"待处理数据集的唯一编号\"}}, \"required\": [\"dataset_id\"], \"additionalProperties\": false}}]"
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "请处理编号 DOCTR009 的文档，目标是翻译成英语。"
+      },
+      {
+        "from": "function_call",
+        "value": "{\"name\": \"language_node_alpha\", \"arguments\": {\"document_id\": \"DOCTR009\"}}"
+      }
+    ],
+    "tools": "[{\"name\": \"language_node_alpha\", \"description\": \"处理文档。当前能力仅支持将文档翻译成英语；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"document_id\": {\"type\": \"string\", \"description\": \"待处理文档的唯一编号\"}}, \"required\": [\"document_id\"], \"additionalProperties\": false}}, {\"name\": \"language_node_beta\", \"description\": \"处理文档。当前能力仅支持将文档翻译成西班牙语；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"document_id\": {\"type\": \"string\", \"description\": \"待处理文档的唯一编号\"}}, \"required\": [\"document_id\"], \"additionalProperties\": false}}]"
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "请处理编号 DOCTR010 的文档，目标是翻译成西班牙语。"
+      },
+      {
+        "from": "function_call",
+        "value": "{\"name\": \"language_node_beta\", \"arguments\": {\"document_id\": \"DOCTR010\"}}"
+      }
+    ],
+    "tools": "[{\"name\": \"language_node_alpha\", \"description\": \"处理文档。当前能力仅支持将文档翻译成英语；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"document_id\": {\"type\": \"string\", \"description\": \"待处理文档的唯一编号\"}}, \"required\": [\"document_id\"], \"additionalProperties\": false}}, {\"name\": \"language_node_beta\", \"description\": \"处理文档。当前能力仅支持将文档翻译成西班牙语；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"document_id\": {\"type\": \"string\", \"description\": \"待处理文档的唯一编号\"}}, \"required\": [\"document_id\"], \"additionalProperties\": false}}]"
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "请处理编号 INVTR009 的账单，目标是换算为美元。"
+      },
+      {
+        "from": "function_call",
+        "value": "{\"name\": \"finance_node_alpha\", \"arguments\": {\"invoice_id\": \"INVTR009\"}}"
+      }
+    ],
+    "tools": "[{\"name\": \"finance_node_alpha\", \"description\": \"处理账单。当前能力仅支持将账单换算为美元；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"invoice_id\": {\"type\": \"string\", \"description\": \"待处理账单的唯一编号\"}}, \"required\": [\"invoice_id\"], \"additionalProperties\": false}}, {\"name\": \"finance_node_beta\", \"description\": \"处理账单。当前能力仅支持将账单换算为欧元；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"invoice_id\": {\"type\": \"string\", \"description\": \"待处理账单的唯一编号\"}}, \"required\": [\"invoice_id\"], \"additionalProperties\": false}}]"
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "请处理编号 INVTR010 的账单，目标是换算为欧元。"
+      },
+      {
+        "from": "function_call",
+        "value": "{\"name\": \"finance_node_beta\", \"arguments\": {\"invoice_id\": \"INVTR010\"}}"
+      }
+    ],
+    "tools": "[{\"name\": \"finance_node_alpha\", \"description\": \"处理账单。当前能力仅支持将账单换算为美元；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"invoice_id\": {\"type\": \"string\", \"description\": \"待处理账单的唯一编号\"}}, \"required\": [\"invoice_id\"], \"additionalProperties\": false}}, {\"name\": \"finance_node_beta\", \"description\": \"处理账单。当前能力仅支持将账单换算为欧元；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"invoice_id\": {\"type\": \"string\", \"description\": \"待处理账单的唯一编号\"}}, \"required\": [\"invoice_id\"], \"additionalProperties\": false}}]"
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "请处理编号 TABTR009 的数据表，目标是渲染为柱状图。"
+      },
+      {
+        "from": "function_call",
+        "value": "{\"name\": \"chart_node_alpha\", \"arguments\": {\"table_id\": \"TABTR009\"}}"
+      }
+    ],
+    "tools": "[{\"name\": \"chart_node_alpha\", \"description\": \"处理数据表。当前能力仅支持将数据表渲染为柱状图；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"table_id\": {\"type\": \"string\", \"description\": \"待处理数据表的唯一编号\"}}, \"required\": [\"table_id\"], \"additionalProperties\": false}}, {\"name\": \"chart_node_beta\", \"description\": \"处理数据表。当前能力仅支持将数据表渲染为折线图；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"table_id\": {\"type\": \"string\", \"description\": \"待处理数据表的唯一编号\"}}, \"required\": [\"table_id\"], \"additionalProperties\": false}}]"
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "请处理编号 TABTR010 的数据表，目标是渲染为折线图。"
+      },
+      {
+        "from": "function_call",
+        "value": "{\"name\": \"chart_node_beta\", \"arguments\": {\"table_id\": \"TABTR010\"}}"
+      }
+    ],
+    "tools": "[{\"name\": \"chart_node_alpha\", \"description\": \"处理数据表。当前能力仅支持将数据表渲染为柱状图；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"table_id\": {\"type\": \"string\", \"description\": \"待处理数据表的唯一编号\"}}, \"required\": [\"table_id\"], \"additionalProperties\": false}}, {\"name\": \"chart_node_beta\", \"description\": \"处理数据表。当前能力仅支持将数据表渲染为折线图；不支持另一种目标格式或类型。\", \"parameters\": {\"type\": \"object\", \"properties\": {\"table_id\": {\"type\": \"string\", \"description\": \"待处理数据表的唯一编号\"}}, \"required\": [\"table_id\"], \"additionalProperties\": false}}]"
+  }
+]

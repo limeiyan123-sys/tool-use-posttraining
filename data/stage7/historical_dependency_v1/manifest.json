@@ -1,0 +1,37 @@
+{
+  "base_test_tasks": 24,
+  "dev_samples": 12,
+  "families": 6,
+  "files": {
+    "contracts.json": {
+      "bytes": 1472,
+      "sha256": "1d3a1ae09fe70756b68615c2ea2b7a6b4004659e2b5e2d8df51445e056170761"
+    },
+    "dataset_info.json": {
+      "bytes": 349,
+      "sha256": "d7aa9c0045a6992d307fb6b0b6fd0961b791507982f7b2abc4a59016faf8e01d"
+    },
+    "dev.json": {
+      "bytes": 13070,
+      "sha256": "bea61d8aa1f59617571faf0fe5f86b904335a004b9a02f02e6cff38c0bc8fbc2"
+    },
+    "pilot_order_swapped_v1.jsonl": {
+      "bytes": 65904,
+      "sha256": "92c82f367bcaccd05578b5d87a36cc29ce38f1fba41cec25f5d89bc826e84314"
+    },
+    "pilot_v1.jsonl": {
+      "bytes": 65232,
+      "sha256": "f32d293d69db13e24dac907642f0140c3344dd236bd27ad4f33de58faa693a75"
+    },
+    "train.json": {
+      "bytes": 52271,
+      "sha256": "dfae587094d99fd8fae5b7e8853995caa9378e561a3c9bef3f04017239b8f058"
+    }
+  },
+  "gold_rule": "当前工具描述中的能力必须与用户目标完全一致",
+  "pilot_samples": 48,
+  "seed": 20261016,
+  "test_requests_disjoint_from_training": true,
+  "train_samples": 48,
+  "version": "stage7_historical_dependency_v1"
+}

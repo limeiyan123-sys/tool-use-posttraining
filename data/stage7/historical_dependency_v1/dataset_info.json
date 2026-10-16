@@ -1,0 +1,18 @@
+{
+  "stage7_history_dev": {
+    "columns": {
+      "messages": "conversations",
+      "tools": "tools"
+    },
+    "file_name": "dev.json",
+    "formatting": "sharegpt"
+  },
+  "stage7_history_train": {
+    "columns": {
+      "messages": "conversations",
+      "tools": "tools"
+    },
+    "file_name": "train.json",
+    "formatting": "sharegpt"
+  }
+}
