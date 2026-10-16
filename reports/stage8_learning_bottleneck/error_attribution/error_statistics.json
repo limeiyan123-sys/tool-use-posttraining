@@ -1,0 +1,787 @@
+{
+  "methods": {
+    "FDSRC": {
+      "raw": {
+        "samples": 300,
+        "correct": 158,
+        "accuracy": 0.5266666666666666,
+        "errors": 142,
+        "error_counts": {
+          "argument_grounding_error": 24,
+          "call_cardinality_error": 10,
+          "correct": 158,
+          "false_call": 47,
+          "false_reject": 1,
+          "output_or_parsing_error": 5,
+          "requirement_omission": 29,
+          "tool_selection_error": 26
+        },
+        "legal_but_semantically_wrong": 74,
+        "legal_but_semantically_wrong_rate_among_errors": 0.5211267605633803,
+        "by_world": {
+          "capability_removal": {
+            "samples": 60,
+            "correct": 48,
+            "accuracy": 0.8,
+            "errors": 12,
+            "error_counts": {
+              "argument_grounding_error": 2,
+              "call_cardinality_error": 2,
+              "false_call": 1,
+              "false_reject": 1,
+              "tool_selection_error": 6
+            }
+          },
+          "capability_substitution": {
+            "samples": 60,
+            "correct": 0,
+            "accuracy": 0.0,
+            "errors": 60,
+            "error_counts": {
+              "false_call": 46,
+              "tool_selection_error": 14
+            }
+          },
+          "distractor": {
+            "samples": 60,
+            "correct": 36,
+            "accuracy": 0.6,
+            "errors": 24,
+            "error_counts": {
+              "argument_grounding_error": 9,
+              "call_cardinality_error": 2,
+              "output_or_parsing_error": 1,
+              "requirement_omission": 8,
+              "tool_selection_error": 4
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 60,
+            "correct": 33,
+            "accuracy": 0.55,
+            "errors": 27,
+            "error_counts": {
+              "argument_grounding_error": 7,
+              "call_cardinality_error": 3,
+              "output_or_parsing_error": 4,
+              "requirement_omission": 11,
+              "tool_selection_error": 2
+            }
+          },
+          "original": {
+            "samples": 60,
+            "correct": 41,
+            "accuracy": 0.6833333333333333,
+            "errors": 19,
+            "error_counts": {
+              "argument_grounding_error": 6,
+              "call_cardinality_error": 3,
+              "requirement_omission": 10
+            }
+          }
+        }
+      },
+      "filtered": {
+        "samples": 300,
+        "correct": 202,
+        "accuracy": 0.6733333333333333,
+        "errors": 98,
+        "error_counts": {
+          "argument_grounding_error": 31,
+          "call_cardinality_error": 11,
+          "correct": 202,
+          "false_call": 12,
+          "false_reject": 9,
+          "output_or_parsing_error": 5,
+          "requirement_omission": 26,
+          "tool_selection_error": 4
+        },
+        "legal_but_semantically_wrong": 84,
+        "legal_but_semantically_wrong_rate_among_errors": 0.8571428571428571,
+        "by_world": {
+          "capability_removal": {
+            "samples": 60,
+            "correct": 52,
+            "accuracy": 0.8666666666666667,
+            "errors": 8,
+            "error_counts": {
+              "argument_grounding_error": 3,
+              "call_cardinality_error": 2,
+              "false_call": 1,
+              "false_reject": 1,
+              "tool_selection_error": 1
+            }
+          },
+          "capability_substitution": {
+            "samples": 60,
+            "correct": 40,
+            "accuracy": 0.6666666666666666,
+            "errors": 20,
+            "error_counts": {
+              "argument_grounding_error": 6,
+              "false_call": 11,
+              "false_reject": 1,
+              "requirement_omission": 1,
+              "tool_selection_error": 1
+            }
+          },
+          "distractor": {
+            "samples": 60,
+            "correct": 36,
+            "accuracy": 0.6,
+            "errors": 24,
+            "error_counts": {
+              "argument_grounding_error": 9,
+              "call_cardinality_error": 3,
+              "false_reject": 4,
+              "output_or_parsing_error": 1,
+              "requirement_omission": 6,
+              "tool_selection_error": 1
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 60,
+            "correct": 33,
+            "accuracy": 0.55,
+            "errors": 27,
+            "error_counts": {
+              "argument_grounding_error": 7,
+              "call_cardinality_error": 3,
+              "false_reject": 2,
+              "output_or_parsing_error": 4,
+              "requirement_omission": 10,
+              "tool_selection_error": 1
+            }
+          },
+          "original": {
+            "samples": 60,
+            "correct": 41,
+            "accuracy": 0.6833333333333333,
+            "errors": 19,
+            "error_counts": {
+              "argument_grounding_error": 6,
+              "call_cardinality_error": 3,
+              "false_reject": 1,
+              "requirement_omission": 9
+            }
+          }
+        }
+      },
+      "filtered_high_confidence_gold": {
+        "samples": 287,
+        "correct": 199,
+        "accuracy": 0.6933797909407665,
+        "errors": 88,
+        "error_counts": {
+          "argument_grounding_error": 31,
+          "call_cardinality_error": 11,
+          "correct": 199,
+          "false_call": 3,
+          "false_reject": 9,
+          "output_or_parsing_error": 5,
+          "requirement_omission": 26,
+          "tool_selection_error": 3
+        },
+        "legal_but_semantically_wrong": 74,
+        "legal_but_semantically_wrong_rate_among_errors": 0.8409090909090909,
+        "by_world": {
+          "capability_removal": {
+            "samples": 60,
+            "correct": 52,
+            "accuracy": 0.8666666666666667,
+            "errors": 8,
+            "error_counts": {
+              "argument_grounding_error": 3,
+              "call_cardinality_error": 2,
+              "false_call": 1,
+              "false_reject": 1,
+              "tool_selection_error": 1
+            }
+          },
+          "capability_substitution": {
+            "samples": 47,
+            "correct": 37,
+            "accuracy": 0.7872340425531915,
+            "errors": 10,
+            "error_counts": {
+              "argument_grounding_error": 6,
+              "false_call": 2,
+              "false_reject": 1,
+              "requirement_omission": 1
+            }
+          },
+          "distractor": {
+            "samples": 60,
+            "correct": 36,
+            "accuracy": 0.6,
+            "errors": 24,
+            "error_counts": {
+              "argument_grounding_error": 9,
+              "call_cardinality_error": 3,
+              "false_reject": 4,
+              "output_or_parsing_error": 1,
+              "requirement_omission": 6,
+              "tool_selection_error": 1
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 60,
+            "correct": 33,
+            "accuracy": 0.55,
+            "errors": 27,
+            "error_counts": {
+              "argument_grounding_error": 7,
+              "call_cardinality_error": 3,
+              "false_reject": 2,
+              "output_or_parsing_error": 4,
+              "requirement_omission": 10,
+              "tool_selection_error": 1
+            }
+          },
+          "original": {
+            "samples": 60,
+            "correct": 41,
+            "accuracy": 0.6833333333333333,
+            "errors": 19,
+            "error_counts": {
+              "argument_grounding_error": 6,
+              "call_cardinality_error": 3,
+              "false_reject": 1,
+              "requirement_omission": 9
+            }
+          }
+        }
+      },
+      "affected_samples": 62,
+      "blocked_calls": 86,
+      "wrong_to_correct": 44,
+      "correct_to_wrong": 0
+    },
+    "FWCT": {
+      "raw": {
+        "samples": 300,
+        "correct": 187,
+        "accuracy": 0.6233333333333333,
+        "errors": 113,
+        "error_counts": {
+          "argument_grounding_error": 30,
+          "call_cardinality_error": 8,
+          "correct": 187,
+          "false_call": 13,
+          "false_reject": 20,
+          "output_or_parsing_error": 4,
+          "requirement_omission": 18,
+          "schema_constraint_error": 1,
+          "tool_selection_error": 19
+        },
+        "legal_but_semantically_wrong": 59,
+        "legal_but_semantically_wrong_rate_among_errors": 0.5221238938053098,
+        "by_world": {
+          "capability_removal": {
+            "samples": 60,
+            "correct": 48,
+            "accuracy": 0.8,
+            "errors": 12,
+            "error_counts": {
+              "argument_grounding_error": 2,
+              "call_cardinality_error": 2,
+              "false_call": 1,
+              "false_reject": 2,
+              "tool_selection_error": 5
+            }
+          },
+          "capability_substitution": {
+            "samples": 60,
+            "correct": 34,
+            "accuracy": 0.5666666666666667,
+            "errors": 26,
+            "error_counts": {
+              "false_call": 12,
+              "false_reject": 1,
+              "tool_selection_error": 13
+            }
+          },
+          "distractor": {
+            "samples": 60,
+            "correct": 32,
+            "accuracy": 0.5333333333333333,
+            "errors": 28,
+            "error_counts": {
+              "argument_grounding_error": 9,
+              "call_cardinality_error": 2,
+              "false_reject": 14,
+              "requirement_omission": 2,
+              "tool_selection_error": 1
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 60,
+            "correct": 31,
+            "accuracy": 0.5166666666666667,
+            "errors": 29,
+            "error_counts": {
+              "argument_grounding_error": 9,
+              "call_cardinality_error": 2,
+              "false_reject": 2,
+              "output_or_parsing_error": 4,
+              "requirement_omission": 11,
+              "schema_constraint_error": 1
+            }
+          },
+          "original": {
+            "samples": 60,
+            "correct": 42,
+            "accuracy": 0.7,
+            "errors": 18,
+            "error_counts": {
+              "argument_grounding_error": 10,
+              "call_cardinality_error": 2,
+              "false_reject": 1,
+              "requirement_omission": 5
+            }
+          }
+        }
+      },
+      "filtered": {
+        "samples": 300,
+        "correct": 204,
+        "accuracy": 0.68,
+        "errors": 96,
+        "error_counts": {
+          "argument_grounding_error": 37,
+          "call_cardinality_error": 8,
+          "correct": 204,
+          "false_call": 4,
+          "false_reject": 26,
+          "output_or_parsing_error": 4,
+          "requirement_omission": 15,
+          "tool_selection_error": 2
+        },
+        "legal_but_semantically_wrong": 66,
+        "legal_but_semantically_wrong_rate_among_errors": 0.6875,
+        "by_world": {
+          "capability_removal": {
+            "samples": 60,
+            "correct": 51,
+            "accuracy": 0.85,
+            "errors": 9,
+            "error_counts": {
+              "argument_grounding_error": 3,
+              "call_cardinality_error": 2,
+              "false_call": 1,
+              "false_reject": 2,
+              "tool_selection_error": 1
+            }
+          },
+          "capability_substitution": {
+            "samples": 60,
+            "correct": 48,
+            "accuracy": 0.8,
+            "errors": 12,
+            "error_counts": {
+              "argument_grounding_error": 6,
+              "false_call": 3,
+              "false_reject": 2,
+              "tool_selection_error": 1
+            }
+          },
+          "distractor": {
+            "samples": 60,
+            "correct": 32,
+            "accuracy": 0.5333333333333333,
+            "errors": 28,
+            "error_counts": {
+              "argument_grounding_error": 9,
+              "call_cardinality_error": 2,
+              "false_reject": 15,
+              "requirement_omission": 2
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 60,
+            "correct": 31,
+            "accuracy": 0.5166666666666667,
+            "errors": 29,
+            "error_counts": {
+              "argument_grounding_error": 9,
+              "call_cardinality_error": 2,
+              "false_reject": 5,
+              "output_or_parsing_error": 4,
+              "requirement_omission": 9
+            }
+          },
+          "original": {
+            "samples": 60,
+            "correct": 42,
+            "accuracy": 0.7,
+            "errors": 18,
+            "error_counts": {
+              "argument_grounding_error": 10,
+              "call_cardinality_error": 2,
+              "false_reject": 2,
+              "requirement_omission": 4
+            }
+          }
+        }
+      },
+      "filtered_high_confidence_gold": {
+        "samples": 287,
+        "correct": 195,
+        "accuracy": 0.6794425087108014,
+        "errors": 92,
+        "error_counts": {
+          "argument_grounding_error": 37,
+          "call_cardinality_error": 8,
+          "correct": 195,
+          "false_call": 1,
+          "false_reject": 26,
+          "output_or_parsing_error": 4,
+          "requirement_omission": 15,
+          "tool_selection_error": 1
+        },
+        "legal_but_semantically_wrong": 62,
+        "legal_but_semantically_wrong_rate_among_errors": 0.6739130434782609,
+        "by_world": {
+          "capability_removal": {
+            "samples": 60,
+            "correct": 51,
+            "accuracy": 0.85,
+            "errors": 9,
+            "error_counts": {
+              "argument_grounding_error": 3,
+              "call_cardinality_error": 2,
+              "false_call": 1,
+              "false_reject": 2,
+              "tool_selection_error": 1
+            }
+          },
+          "capability_substitution": {
+            "samples": 47,
+            "correct": 39,
+            "accuracy": 0.8297872340425532,
+            "errors": 8,
+            "error_counts": {
+              "argument_grounding_error": 6,
+              "false_reject": 2
+            }
+          },
+          "distractor": {
+            "samples": 60,
+            "correct": 32,
+            "accuracy": 0.5333333333333333,
+            "errors": 28,
+            "error_counts": {
+              "argument_grounding_error": 9,
+              "call_cardinality_error": 2,
+              "false_reject": 15,
+              "requirement_omission": 2
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 60,
+            "correct": 31,
+            "accuracy": 0.5166666666666667,
+            "errors": 29,
+            "error_counts": {
+              "argument_grounding_error": 9,
+              "call_cardinality_error": 2,
+              "false_reject": 5,
+              "output_or_parsing_error": 4,
+              "requirement_omission": 9
+            }
+          },
+          "original": {
+            "samples": 60,
+            "correct": 42,
+            "accuracy": 0.7,
+            "errors": 18,
+            "error_counts": {
+              "argument_grounding_error": 10,
+              "call_cardinality_error": 2,
+              "false_reject": 2,
+              "requirement_omission": 4
+            }
+          }
+        }
+      },
+      "affected_samples": 30,
+      "blocked_calls": 39,
+      "wrong_to_correct": 17,
+      "correct_to_wrong": 0
+    },
+    "FCTW": {
+      "raw": {
+        "samples": 300,
+        "correct": 162,
+        "accuracy": 0.54,
+        "errors": 138,
+        "error_counts": {
+          "argument_grounding_error": 31,
+          "call_cardinality_error": 11,
+          "correct": 162,
+          "false_call": 45,
+          "false_reject": 1,
+          "output_or_parsing_error": 6,
+          "requirement_omission": 22,
+          "schema_constraint_error": 1,
+          "tool_selection_error": 21
+        },
+        "legal_but_semantically_wrong": 77,
+        "legal_but_semantically_wrong_rate_among_errors": 0.5579710144927537,
+        "by_world": {
+          "capability_removal": {
+            "samples": 60,
+            "correct": 48,
+            "accuracy": 0.8,
+            "errors": 12,
+            "error_counts": {
+              "argument_grounding_error": 2,
+              "call_cardinality_error": 2,
+              "false_call": 1,
+              "false_reject": 1,
+              "tool_selection_error": 6
+            }
+          },
+          "capability_substitution": {
+            "samples": 60,
+            "correct": 2,
+            "accuracy": 0.03333333333333333,
+            "errors": 58,
+            "error_counts": {
+              "false_call": 44,
+              "tool_selection_error": 14
+            }
+          },
+          "distractor": {
+            "samples": 60,
+            "correct": 40,
+            "accuracy": 0.6666666666666666,
+            "errors": 20,
+            "error_counts": {
+              "argument_grounding_error": 11,
+              "call_cardinality_error": 2,
+              "output_or_parsing_error": 1,
+              "requirement_omission": 5,
+              "tool_selection_error": 1
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 60,
+            "correct": 31,
+            "accuracy": 0.5166666666666667,
+            "errors": 29,
+            "error_counts": {
+              "argument_grounding_error": 9,
+              "call_cardinality_error": 5,
+              "output_or_parsing_error": 5,
+              "requirement_omission": 9,
+              "schema_constraint_error": 1
+            }
+          },
+          "original": {
+            "samples": 60,
+            "correct": 41,
+            "accuracy": 0.6833333333333333,
+            "errors": 19,
+            "error_counts": {
+              "argument_grounding_error": 9,
+              "call_cardinality_error": 2,
+              "requirement_omission": 8
+            }
+          }
+        }
+      },
+      "filtered": {
+        "samples": 300,
+        "correct": 203,
+        "accuracy": 0.6766666666666666,
+        "errors": 97,
+        "error_counts": {
+          "argument_grounding_error": 40,
+          "call_cardinality_error": 11,
+          "correct": 203,
+          "false_call": 11,
+          "false_reject": 4,
+          "output_or_parsing_error": 6,
+          "requirement_omission": 23,
+          "tool_selection_error": 2
+        },
+        "legal_but_semantically_wrong": 87,
+        "legal_but_semantically_wrong_rate_among_errors": 0.8969072164948454,
+        "by_world": {
+          "capability_removal": {
+            "samples": 60,
+            "correct": 51,
+            "accuracy": 0.85,
+            "errors": 9,
+            "error_counts": {
+              "argument_grounding_error": 4,
+              "call_cardinality_error": 2,
+              "false_call": 1,
+              "false_reject": 1,
+              "tool_selection_error": 1
+            }
+          },
+          "capability_substitution": {
+            "samples": 60,
+            "correct": 40,
+            "accuracy": 0.6666666666666666,
+            "errors": 20,
+            "error_counts": {
+              "argument_grounding_error": 7,
+              "false_call": 10,
+              "false_reject": 1,
+              "requirement_omission": 1,
+              "tool_selection_error": 1
+            }
+          },
+          "distractor": {
+            "samples": 60,
+            "correct": 40,
+            "accuracy": 0.6666666666666666,
+            "errors": 20,
+            "error_counts": {
+              "argument_grounding_error": 11,
+              "call_cardinality_error": 2,
+              "false_reject": 1,
+              "output_or_parsing_error": 1,
+              "requirement_omission": 5
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 60,
+            "correct": 31,
+            "accuracy": 0.5166666666666667,
+            "errors": 29,
+            "error_counts": {
+              "argument_grounding_error": 9,
+              "call_cardinality_error": 5,
+              "false_reject": 1,
+              "output_or_parsing_error": 5,
+              "requirement_omission": 9
+            }
+          },
+          "original": {
+            "samples": 60,
+            "correct": 41,
+            "accuracy": 0.6833333333333333,
+            "errors": 19,
+            "error_counts": {
+              "argument_grounding_error": 9,
+              "call_cardinality_error": 2,
+              "requirement_omission": 8
+            }
+          }
+        }
+      },
+      "filtered_high_confidence_gold": {
+        "samples": 287,
+        "correct": 199,
+        "accuracy": 0.6933797909407665,
+        "errors": 88,
+        "error_counts": {
+          "argument_grounding_error": 40,
+          "call_cardinality_error": 11,
+          "correct": 199,
+          "false_call": 3,
+          "false_reject": 4,
+          "output_or_parsing_error": 6,
+          "requirement_omission": 23,
+          "tool_selection_error": 1
+        },
+        "legal_but_semantically_wrong": 78,
+        "legal_but_semantically_wrong_rate_among_errors": 0.8863636363636364,
+        "by_world": {
+          "capability_removal": {
+            "samples": 60,
+            "correct": 51,
+            "accuracy": 0.85,
+            "errors": 9,
+            "error_counts": {
+              "argument_grounding_error": 4,
+              "call_cardinality_error": 2,
+              "false_call": 1,
+              "false_reject": 1,
+              "tool_selection_error": 1
+            }
+          },
+          "capability_substitution": {
+            "samples": 47,
+            "correct": 36,
+            "accuracy": 0.7659574468085106,
+            "errors": 11,
+            "error_counts": {
+              "argument_grounding_error": 7,
+              "false_call": 2,
+              "false_reject": 1,
+              "requirement_omission": 1
+            }
+          },
+          "distractor": {
+            "samples": 60,
+            "correct": 40,
+            "accuracy": 0.6666666666666666,
+            "errors": 20,
+            "error_counts": {
+              "argument_grounding_error": 11,
+              "call_cardinality_error": 2,
+              "false_reject": 1,
+              "output_or_parsing_error": 1,
+              "requirement_omission": 5
+            }
+          },
+          "ephemeral_interface": {
+            "samples": 60,
+            "correct": 31,
+            "accuracy": 0.5166666666666667,
+            "errors": 29,
+            "error_counts": {
+              "argument_grounding_error": 9,
+              "call_cardinality_error": 5,
+              "false_reject": 1,
+              "output_or_parsing_error": 5,
+              "requirement_omission": 9
+            }
+          },
+          "original": {
+            "samples": 60,
+            "correct": 41,
+            "accuracy": 0.6833333333333333,
+            "errors": 19,
+            "error_counts": {
+              "argument_grounding_error": 9,
+              "call_cardinality_error": 2,
+              "requirement_omission": 8
+            }
+          }
+        }
+      },
+      "affected_samples": 54,
+      "blocked_calls": 72,
+      "wrong_to_correct": 41,
+      "correct_to_wrong": 0
+    }
+  },
+  "cross_method": {
+    "all_three_common_filtered_errors": 75,
+    "all_three_common_rate_over_dataset": 0.25,
+    "all_three_common_rate_over_error_union": 0.625,
+    "filtered_error_union": 120,
+    "pairwise_common": {
+      "FDSRC_FWCT": 77,
+      "FDSRC_FCTW": 88,
+      "FWCT_FCTW": 81
+    }
+  },
+  "gold_audit": {
+    "samples": 300,
+    "confidence_counts": {
+      "high": 287,
+      "medium": 13
+    },
+    "flag_counts": {
+      "default_behavior_unclear": 13,
+      "optional_restricted_parameter": 13
+    }
+  }
+}

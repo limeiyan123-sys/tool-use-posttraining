@@ -1,0 +1,21 @@
+# Stage 8 仅复用冻结预测，不启动新的模型推理或训练。
+stage: stage8_learning_bottleneck
+mode: offline_attribution
+dataset: data/evaluation/tool_world_final_v1/tool_world_final_v1.jsonl
+dataset_sha256: a40b6d464c74b39a9c7fccdcd8a68fe02599aa1840896f1d1cf9cf2793c4e9
+models:
+  - name: FDSRC
+    prediction: reports/tool_world_final/fdsrc_predictions.jsonl
+    prediction_sha256: 38a89119c7f7261e23a703511624b48bfa6e4e3022ee72aae5f2c67536ecbd94
+  - name: FWCT
+    prediction: reports/tool_world_final/failure_weighted_predictions.jsonl
+    prediction_sha256: 5755b0aaf553eda6871519913b5008204d65c6164335673ea0096520e4dd3b8e
+  - name: FCTW
+    prediction: reports/stage5_fctw/tool_world_final/fctw_predictions.jsonl
+    prediction_sha256: 43db72e91583c026fe4a47c1e05240cdd1a6af744f5b92f5d5b28123d6001848
+symbolic_filter: scripts/evaluate_symbolic_schema_filter.py
+error_attribution: scripts/stage8_error_attribution.py
+pair_diagnosis: scripts/stage8_pair_diagnosis.py
+gpu_used: false
+new_inference: false
+new_training: false
