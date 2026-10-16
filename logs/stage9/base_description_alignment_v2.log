@@ -1,0 +1,28 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+已完成 1/48
+已完成 12/48
+已完成 24/48
+已完成 36/48
+已完成 48/48
+{
+  "model_path": "/home/limeiyan/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": null,
+  "dataset": "factorial_v1.jsonl",
+  "dataset_sha256": "511b0bd46572e780c10506009461bfae8a1fc1ab96bc532a24f1487970d135c7",
+  "strategy": "description_alignment",
+  "conditions": [
+    "B",
+    "D"
+  ],
+  "seed": 20261016,
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 160
+  },
+  "samples": 48,
+  "runtime_seconds": 55.731,
+  "cuda_memory_fraction": 0.16,
+  "peak_memory_gib": 2.918,
+  "prediction_sha256": "16a700457102a4fa14cf14b21ec21b1c5ad8bc669d9c00b31c3dcfaf171ac6f5"
+}

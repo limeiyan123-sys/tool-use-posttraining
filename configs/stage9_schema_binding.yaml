@@ -1,0 +1,43 @@
+stage: 9
+data_version: stage9_schema_binding_factorial_v2
+formal_dataset_sha256: 511b0bd46572e780c10506009461bfae8a1fc1ab96bc532a24f1487970d135cc7
+experiment_name: schema_parameter_binding_factorial
+seed: 20261016
+base_model: /home/limeiyan/models/Qwen2.5-1.5B-Instruct
+models:
+  base:
+    adapter: null
+  fdsrc:
+    adapter: checkpoints/stage3_failure_driven
+  fctw:
+    adapter: checkpoints/stage5_fctw
+    restored_adapter: /home/limeiyan/stage9-restored/fctw
+    adapter_sha256: e408b8230d945288b54bbb07294ebe301bfe4cc3f1c8b666652e7f52b24013d2
+design:
+  base_tasks: 24
+  pilot_tasks: 6
+  conditions:
+    A: semantic_identifier_original_order
+    B: opaque_identifier_original_order
+    C: semantic_identifier_reversed_order
+    D: opaque_identifier_reversed_order
+inference:
+  do_sample: false
+  max_new_tokens: 160
+  cuda_memory_fraction: 0.16
+  device: cuda_0_if_available
+statistics:
+  bootstrap_samples: 5000
+  bootstrap_unit: base_task
+  sensitivity_bootstrap_unit: tool_family
+field_probe:
+  dataset: data/evaluation/stage9_field_probe_v1/field_probe.jsonl
+  max_new_tokens: 32
+  samples_per_model: 48
+training_free_baselines:
+  - explicit_identifier_mapping
+  - description_derived_naming_alignment
+notes:
+  - 本阶段不训练模型，不修改已有检查点。
+  - 四条件共享用户请求、工具名、类型、描述、约束、必填字段和默认行为。
+  - 参数顺序变换同时重排 properties 与 required 的序列表示，但不改变集合语义。

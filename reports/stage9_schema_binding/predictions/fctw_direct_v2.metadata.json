@@ -1,0 +1,23 @@
+{
+  "adapter_path": "/home/limeiyan/stage9-restored/fctw",
+  "conditions": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "cuda_memory_fraction": 0.16,
+  "dataset": "factorial_v1.jsonl",
+  "dataset_sha256": "511b0bd46572e780c10506009461bfae8a1fc1ab96bc532a24f1487970d135c7",
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 160
+  },
+  "model_path": "/home/limeiyan/models/Qwen2.5-1.5B-Instruct",
+  "peak_memory_gib": 3.007,
+  "prediction_sha256": "5d954b1b6a9b84e652e5a8bb929347c49378ea2c7138474b1076ea3cd35570e9",
+  "runtime_seconds": 185.078,
+  "samples": 96,
+  "seed": 20261016,
+  "strategy": "direct"
+}

@@ -1,0 +1,21 @@
+{
+  "adapter_path": "/home/limeiyan/tool-use-posttraining/checkpoints/stage3_failure_driven",
+  "conditions": [
+    "B",
+    "D"
+  ],
+  "cuda_memory_fraction": 0.16,
+  "dataset": "factorial_v1.jsonl",
+  "dataset_sha256": "511b0bd46572e780c10506009461bfae8a1fc1ab96bc532a24f1487970d135c7",
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 160
+  },
+  "model_path": "/home/limeiyan/models/Qwen2.5-1.5B-Instruct",
+  "peak_memory_gib": 3.008,
+  "prediction_sha256": "cad74794b1c10ce25ab85234a4088f19be8b3ec17ab1ed457ed8f07b0340d466",
+  "runtime_seconds": 105.633,
+  "samples": 48,
+  "seed": 20261016,
+  "strategy": "description_alignment"
+}

@@ -1,0 +1,32 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+/opt/anaconda3/envs/llama-factory-env/lib/python3.10/site-packages/peft/config.py:165: UserWarning: Unexpected keyword arguments ['alora_invocation_tokens', 'arrow_config', 'ensure_weight_tying', 'peft_version'] for class LoraConfig, these are ignored. This probably means that you're loading a configuration file that was saved using a higher version of the library and additional parameters have been introduced since. It is highly recommended to upgrade the PEFT version before continuing (e.g. by running `pip install -U peft`).
+  warnings.warn(
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+已完成 1/48
+已完成 12/48
+已完成 24/48
+已完成 36/48
+已完成 48/48
+{
+  "model_path": "/home/limeiyan/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": "/home/limeiyan/stage9-restored/fctw",
+  "dataset": "field_probe.jsonl",
+  "dataset_sha256": "3dd6ee74fa555140c9732903175de2f92e64f72f59b9bb23cf98d5fbb869d148",
+  "strategy": "direct",
+  "conditions": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "seed": 20261016,
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 32
+  },
+  "samples": 48,
+  "runtime_seconds": 6.594,
+  "cuda_memory_fraction": 0.16,
+  "peak_memory_gib": 3.001,
+  "prediction_sha256": "7c626b31e537113927f1a8f87ce65f9ffec736c33507563b2dc180b31c45e487"
+}

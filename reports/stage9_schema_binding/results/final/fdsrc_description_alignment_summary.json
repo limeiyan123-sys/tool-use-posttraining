@@ -1,0 +1,52 @@
+{
+  "by_condition": {
+    "B": {
+      "argument_exact": 0.7083333333333334,
+      "binding_accuracy_given_correct_call": 0.9166666666666666,
+      "correct_call_field_denominator": 84,
+      "cross_type_misbinding_samples": 0,
+      "decision_exact": 0.7083333333333334,
+      "error_counts": {
+        "none": 17,
+        "omission": 7
+      },
+      "false_rejection_rate": 0.0,
+      "omission_rate": 0.08333333333333333,
+      "omission_rate_given_correct_call": 0.08333333333333333,
+      "optional_required_by_user_omitted": 7,
+      "optional_required_by_user_total": 12,
+      "parameter_binding_accuracy": 0.9166666666666666,
+      "parsing_failure_rate": 0.0,
+      "same_type_misbinding_samples": 0,
+      "same_type_swap_samples": 0,
+      "samples": 24,
+      "tool_accuracy": 1.0,
+      "value_misbinding_rate": 0.0
+    },
+    "D": {
+      "argument_exact": 0.5833333333333334,
+      "binding_accuracy_given_correct_call": 0.8571428571428571,
+      "correct_call_field_denominator": 84,
+      "cross_type_misbinding_samples": 0,
+      "decision_exact": 0.5833333333333334,
+      "error_counts": {
+        "extra_argument": 1,
+        "none": 14,
+        "omission": 9
+      },
+      "false_rejection_rate": 0.0,
+      "omission_rate": 0.14285714285714285,
+      "omission_rate_given_correct_call": 0.14285714285714285,
+      "optional_required_by_user_omitted": 7,
+      "optional_required_by_user_total": 12,
+      "parameter_binding_accuracy": 0.8571428571428571,
+      "parsing_failure_rate": 0.0,
+      "same_type_misbinding_samples": 0,
+      "same_type_swap_samples": 0,
+      "samples": 24,
+      "tool_accuracy": 1.0,
+      "value_misbinding_rate": 0.0
+    }
+  },
+  "subset": true
+}

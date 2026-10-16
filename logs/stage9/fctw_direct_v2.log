@@ -1,0 +1,19 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+/opt/anaconda3/envs/llama-factory-env/lib/python3.10/site-packages/peft/config.py:165: UserWarning: Unexpected keyword arguments ['alora_invocation_tokens', 'arrow_config', 'ensure_weight_tying', 'peft_version'] for class LoraConfig, these are ignored. This probably means that you're loading a configuration file that was saved using a higher version of the library and additional parameters have been introduced since. It is highly recommended to upgrade the PEFT version before continuing (e.g. by running `pip install -U peft`).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/limeiyan/tool-use-posttraining/scripts/stage9_schema_binding.py", line 1038, in <module>
+    main()
+  File "/home/limeiyan/tool-use-posttraining/scripts/stage9_schema_binding.py", line 1028, in main
+    run_inference(args)
+  File "/home/limeiyan/tool-use-posttraining/scripts/stage9_schema_binding.py", line 568, in run_inference
+    PeftModel.from_pretrained(base_model, adapter_path, local_files_only=True)
+  File "/opt/anaconda3/envs/llama-factory-env/lib/python3.10/site-packages/peft/peft_model.py", line 555, in from_pretrained
+    load_result = model.load_adapter(
+  File "/opt/anaconda3/envs/llama-factory-env/lib/python3.10/site-packages/peft/peft_model.py", line 1320, in load_adapter
+    adapters_weights = load_peft_weights(
+  File "/opt/anaconda3/envs/llama-factory-env/lib/python3.10/site-packages/peft/utils/save_and_load.py", line 652, in load_peft_weights
+    adapters_weights = safe_load_file(filename, device=device)
+  File "/opt/anaconda3/envs/llama-factory-env/lib/python3.10/site-packages/safetensors/torch.py", line 313, in load_file
+    with safe_open(filename, framework="pt", device=device) as f:
+safetensors_rust.SafetensorError: Error while deserializing header: HeaderTooLarge

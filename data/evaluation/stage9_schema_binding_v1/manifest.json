@@ -1,0 +1,42 @@
+{
+  "construction": "人工定义的新请求与新工具家族；确定性脚本派生四条件",
+  "design": "2x2: identifier semantic/opaque x order original/reversed",
+  "files": {
+    "factorial_v1.jsonl": {
+      "bytes": 199060,
+      "sha256": "ddc094c614883f99f5b66ec71b49149fe3c19e999c4ca6fa168eab3f37ebca58"
+    },
+    "identifier_tokenization.jsonl": {
+      "bytes": 31140,
+      "sha256": "879c322d4df2465ce0aef311d07cd26f62ed09fc69b97612addad6b1fd050d01"
+    },
+    "pilot_v1.jsonl": {
+      "bytes": 49174,
+      "sha256": "57bb009464849059646715de11a1f47be9cf387fec377af75eec6e88d703fea9"
+    }
+  },
+  "independent_from_stage8": true,
+  "pilot_base_tasks": 6,
+  "pilot_samples": 24,
+  "seed": 20261016,
+  "validation": {
+    "base_tasks": 24,
+    "conditions": {
+      "A": 24,
+      "B": 24,
+      "C": 24,
+      "D": 24
+    },
+    "families": {
+      "catalog_filter": 16,
+      "currency_alert": 16,
+      "hotel_booking": 16,
+      "meeting_room": 16,
+      "sensor_report": 16,
+      "shipment_quote": 16
+    },
+    "optional_mentioned_base_tasks": 12,
+    "samples": 96
+  },
+  "version": "stage9_schema_binding_factorial_v1"
+}

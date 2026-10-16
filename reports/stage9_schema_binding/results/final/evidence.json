@@ -1,0 +1,3303 @@
+{
+  "baseline_comparisons": {
+    "base_description_alignment": {
+      "B": {
+        "decision_delta": 0.0,
+        "paired_task_ci": [
+          -0.125,
+          0.125
+        ],
+        "recoveries": 1,
+        "regressions": 1,
+        "samples": 24
+      },
+      "BD": {
+        "decision_delta": 0.041666666666666664,
+        "paired_task_ci": [
+          -0.08333333333333333,
+          0.16666666666666666
+        ],
+        "recoveries": 6,
+        "regressions": 4,
+        "samples": 48
+      },
+      "D": {
+        "decision_delta": 0.08333333333333333,
+        "paired_task_ci": [
+          -0.125,
+          0.2916666666666667
+        ],
+        "recoveries": 5,
+        "regressions": 3,
+        "samples": 24
+      }
+    },
+    "base_explicit_mapping": {
+      "B": {
+        "decision_delta": 0.041666666666666664,
+        "paired_task_ci": [
+          0.0,
+          0.125
+        ],
+        "recoveries": 1,
+        "regressions": 0,
+        "samples": 24
+      },
+      "BD": {
+        "decision_delta": -0.08333333333333333,
+        "paired_task_ci": [
+          -0.22916666666666666,
+          0.0625
+        ],
+        "recoveries": 5,
+        "regressions": 9,
+        "samples": 48
+      },
+      "D": {
+        "decision_delta": -0.20833333333333334,
+        "paired_task_ci": [
+          -0.4583333333333333,
+          0.08333333333333333
+        ],
+        "recoveries": 4,
+        "regressions": 9,
+        "samples": 24
+      }
+    },
+    "fctw_description_alignment": {
+      "B": {
+        "decision_delta": -0.125,
+        "paired_task_ci": [
+          -0.25,
+          0.0
+        ],
+        "recoveries": 0,
+        "regressions": 3,
+        "samples": 24
+      },
+      "BD": {
+        "decision_delta": -0.08333333333333333,
+        "paired_task_ci": [
+          -0.22916666666666666,
+          0.0625
+        ],
+        "recoveries": 4,
+        "regressions": 8,
+        "samples": 48
+      },
+      "D": {
+        "decision_delta": -0.041666666666666664,
+        "paired_task_ci": [
+          -0.2916666666666667,
+          0.20833333333333334
+        ],
+        "recoveries": 4,
+        "regressions": 5,
+        "samples": 24
+      }
+    },
+    "fctw_explicit_mapping": {
+      "B": {
+        "decision_delta": 0.08333333333333333,
+        "paired_task_ci": [
+          0.0,
+          0.20833333333333334
+        ],
+        "recoveries": 2,
+        "regressions": 0,
+        "samples": 24
+      },
+      "BD": {
+        "decision_delta": 0.14583333333333334,
+        "paired_task_ci": [
+          0.041666666666666664,
+          0.25
+        ],
+        "recoveries": 8,
+        "regressions": 1,
+        "samples": 48
+      },
+      "D": {
+        "decision_delta": 0.20833333333333334,
+        "paired_task_ci": [
+          0.0,
+          0.4166666666666667
+        ],
+        "recoveries": 6,
+        "regressions": 1,
+        "samples": 24
+      }
+    },
+    "fdsrc_description_alignment": {
+      "B": {
+        "decision_delta": -0.041666666666666664,
+        "paired_task_ci": [
+          -0.125,
+          0.0
+        ],
+        "recoveries": 0,
+        "regressions": 1,
+        "samples": 24
+      },
+      "BD": {
+        "decision_delta": 0.0,
+        "paired_task_ci": [
+          -0.125,
+          0.125
+        ],
+        "recoveries": 5,
+        "regressions": 5,
+        "samples": 48
+      },
+      "D": {
+        "decision_delta": 0.041666666666666664,
+        "paired_task_ci": [
+          -0.20833333333333334,
+          0.2916666666666667
+        ],
+        "recoveries": 5,
+        "regressions": 4,
+        "samples": 24
+      }
+    },
+    "fdsrc_explicit_mapping": {
+      "B": {
+        "decision_delta": 0.0,
+        "paired_task_ci": [
+          0.0,
+          0.0
+        ],
+        "recoveries": 0,
+        "regressions": 0,
+        "samples": 24
+      },
+      "BD": {
+        "decision_delta": 0.08333333333333333,
+        "paired_task_ci": [
+          0.020833333333333332,
+          0.16666666666666666
+        ],
+        "recoveries": 4,
+        "regressions": 0,
+        "samples": 48
+      },
+      "D": {
+        "decision_delta": 0.16666666666666666,
+        "paired_task_ci": [
+          0.041666666666666664,
+          0.3333333333333333
+        ],
+        "recoveries": 4,
+        "regressions": 0,
+        "samples": 24
+      }
+    }
+  },
+  "confidence": {
+    "base": {
+      "binding:B-A": {
+        "estimate": 0.04761904761904767,
+        "family_ci": [
+          0.0,
+          0.11904761904761907
+        ],
+        "task_ci": [
+          0.011494252873563204,
+          0.09523809523809523
+        ]
+      },
+      "binding:C-A": {
+        "estimate": -0.023809523809523836,
+        "family_ci": [
+          -0.0714285714285714,
+          0.0
+        ],
+        "task_ci": [
+          -0.07317073170731703,
+          0.0
+        ]
+      },
+      "binding:D-A": {
+        "estimate": -0.1071428571428571,
+        "family_ci": [
+          -0.22619047619047616,
+          0.0
+        ],
+        "task_ci": [
+          -0.21176470588235297,
+          -0.022727272727272818
+        ]
+      },
+      "binding:interaction": {
+        "estimate": -0.13095238095238093,
+        "family_ci": [
+          -0.2500000000000002,
+          -0.023809523809523725
+        ],
+        "task_ci": [
+          -0.23255813953488358,
+          -0.04761904761904756
+        ]
+      },
+      "decision:B-A": {
+        "estimate": 0.125,
+        "family_ci": [
+          -0.08333333333333337,
+          0.37500000000000006
+        ],
+        "task_ci": [
+          -0.04166666666666674,
+          0.29166666666666674
+        ]
+      },
+      "decision:C-A": {
+        "estimate": -0.37499999999999994,
+        "family_ci": [
+          -0.5833333333333333,
+          -0.16666666666666663
+        ],
+        "task_ci": [
+          -0.5833333333333333,
+          -0.16666666666666674
+        ]
+      },
+      "decision:D-A": {
+        "estimate": -0.3333333333333333,
+        "family_ci": [
+          -0.5833333333333333,
+          -0.04166666666666674
+        ],
+        "task_ci": [
+          -0.5416666666666667,
+          -0.125
+        ]
+      },
+      "decision:interaction": {
+        "estimate": -0.08333333333333337,
+        "family_ci": [
+          -0.375,
+          0.12499999999999989
+        ],
+        "task_ci": [
+          -0.33333333333333337,
+          0.16666666666666674
+        ]
+      }
+    },
+    "fctw": {
+      "binding:B-A": {
+        "estimate": 0.0714285714285714,
+        "family_ci": [
+          0.0,
+          0.2142857142857143
+        ],
+        "task_ci": [
+          0.0,
+          0.18292682926829273
+        ]
+      },
+      "binding:C-A": {
+        "estimate": -0.023809523809523836,
+        "family_ci": [
+          -0.1428571428571428,
+          0.0714285714285714
+        ],
+        "task_ci": [
+          -0.09411764705882353,
+          0.03614457831325302
+        ]
+      },
+      "binding:D-A": {
+        "estimate": -0.1071428571428572,
+        "family_ci": [
+          -0.2142857142857143,
+          -0.023809523809523725
+        ],
+        "task_ci": [
+          -0.20000000000000007,
+          -0.034482758620689724
+        ]
+      },
+      "binding:interaction": {
+        "estimate": -0.15476190476190477,
+        "family_ci": [
+          -0.34523809523809534,
+          0.023809523809523836
+        ],
+        "task_ci": [
+          -0.2894736842105262,
+          -0.03529411764705881
+        ]
+      },
+      "decision:B-A": {
+        "estimate": 0.08333333333333326,
+        "family_ci": [
+          0.0,
+          0.25
+        ],
+        "task_ci": [
+          0.0,
+          0.20833333333333337
+        ]
+      },
+      "decision:C-A": {
+        "estimate": -0.08333333333333337,
+        "family_ci": [
+          -0.33333333333333337,
+          0.16666666666666674
+        ],
+        "task_ci": [
+          -0.2916666666666667,
+          0.125
+        ]
+      },
+      "decision:D-A": {
+        "estimate": -0.25000000000000006,
+        "family_ci": [
+          -0.4166666666666667,
+          -0.08333333333333326
+        ],
+        "task_ci": [
+          -0.4166666666666667,
+          -0.08333333333333337
+        ]
+      },
+      "decision:interaction": {
+        "estimate": -0.2499999999999999,
+        "family_ci": [
+          -0.5833333333333333,
+          0.0
+        ],
+        "task_ci": [
+          -0.4583333333333335,
+          0.0
+        ]
+      }
+    },
+    "fdsrc": {
+      "binding:B-A": {
+        "estimate": 0.0,
+        "family_ci": [
+          -0.0357142857142857,
+          0.0357142857142857
+        ],
+        "task_ci": [
+          -0.03529411764705881,
+          0.0357142857142857
+        ]
+      },
+      "binding:C-A": {
+        "estimate": -0.023809523809523836,
+        "family_ci": [
+          -0.16666666666666663,
+          0.08333333333333326
+        ],
+        "task_ci": [
+          -0.09876543209876543,
+          0.04761904761904756
+        ]
+      },
+      "binding:D-A": {
+        "estimate": -0.08333333333333337,
+        "family_ci": [
+          -0.15476190476190477,
+          -0.023809523809523725
+        ],
+        "task_ci": [
+          -0.14814814814814814,
+          -0.024691358024691357
+        ]
+      },
+      "binding:interaction": {
+        "estimate": -0.059523809523809534,
+        "family_ci": [
+          -0.19047619047619047,
+          0.059523809523809645
+        ],
+        "task_ci": [
+          -0.15294117647058814,
+          0.03529411764705881
+        ]
+      },
+      "decision:B-A": {
+        "estimate": 0.0,
+        "family_ci": [
+          -0.125,
+          0.125
+        ],
+        "task_ci": [
+          -0.125,
+          0.125
+        ]
+      },
+      "decision:C-A": {
+        "estimate": -0.08333333333333337,
+        "family_ci": [
+          -0.4166666666666667,
+          0.25
+        ],
+        "task_ci": [
+          -0.33333333333333326,
+          0.16666666666666663
+        ]
+      },
+      "decision:D-A": {
+        "estimate": -0.20833333333333337,
+        "family_ci": [
+          -0.37500000000000006,
+          -0.04166666666666663
+        ],
+        "task_ci": [
+          -0.375,
+          -0.04166666666666674
+        ]
+      },
+      "decision:interaction": {
+        "estimate": -0.125,
+        "family_ci": [
+          -0.45833333333333337,
+          0.16666666666666674
+        ],
+        "task_ci": [
+          -0.41666666666666674,
+          0.16666666666666663
+        ]
+      }
+    }
+  },
+  "details": {
+    "base": {
+      "A": {
+        "by_type": {
+          "boolean": {
+            "correct": 5,
+            "omitted": 1,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 16,
+            "omitted": 0,
+            "total": 16
+          },
+          "string": {
+            "correct": 44,
+            "omitted": 0,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 0,
+        "omitted_optional": 1,
+        "required_binding_perfect_samples": 19,
+        "same_type_swaps": 0
+      },
+      "B": {
+        "by_type": {
+          "boolean": {
+            "correct": 5,
+            "omitted": 0,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 16,
+            "omitted": 0,
+            "total": 16
+          },
+          "string": {
+            "correct": 48,
+            "omitted": 0,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 1,
+        "omitted_optional": 0,
+        "required_binding_perfect_samples": 23,
+        "same_type_swaps": 0
+      },
+      "C": {
+        "by_type": {
+          "boolean": {
+            "correct": 5,
+            "omitted": 1,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 16,
+            "omitted": 0,
+            "total": 16
+          },
+          "string": {
+            "correct": 42,
+            "omitted": 0,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 9,
+        "omitted_optional": 1,
+        "required_binding_perfect_samples": 18,
+        "same_type_swaps": 0
+      },
+      "D": {
+        "by_type": {
+          "boolean": {
+            "correct": 4,
+            "omitted": 1,
+            "total": 6
+          },
+          "integer": {
+            "correct": 12,
+            "omitted": 2,
+            "total": 14
+          },
+          "number": {
+            "correct": 16,
+            "omitted": 0,
+            "total": 16
+          },
+          "string": {
+            "correct": 38,
+            "omitted": 1,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 4,
+        "omitted_optional": 4,
+        "required_binding_perfect_samples": 15,
+        "same_type_swaps": 2
+      }
+    },
+    "base_description_alignment": {
+      "B": {
+        "by_type": {
+          "boolean": {
+            "correct": 5,
+            "omitted": 0,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 16,
+            "omitted": 0,
+            "total": 16
+          },
+          "string": {
+            "correct": 47,
+            "omitted": 0,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 0,
+        "omitted_optional": 0,
+        "required_binding_perfect_samples": 22,
+        "same_type_swaps": 0
+      },
+      "D": {
+        "by_type": {
+          "boolean": {
+            "correct": 5,
+            "omitted": 0,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 16,
+            "omitted": 0,
+            "total": 16
+          },
+          "string": {
+            "correct": 45,
+            "omitted": 0,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 8,
+        "omitted_optional": 0,
+        "required_binding_perfect_samples": 21,
+        "same_type_swaps": 0
+      }
+    },
+    "base_explicit_mapping": {
+      "B": {
+        "by_type": {
+          "boolean": {
+            "correct": 6,
+            "omitted": 0,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 16,
+            "omitted": 0,
+            "total": 16
+          },
+          "string": {
+            "correct": 48,
+            "omitted": 0,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 1,
+        "omitted_optional": 0,
+        "required_binding_perfect_samples": 24,
+        "same_type_swaps": 0
+      },
+      "D": {
+        "by_type": {
+          "boolean": {
+            "correct": 0,
+            "omitted": 6,
+            "total": 6
+          },
+          "integer": {
+            "correct": 6,
+            "omitted": 8,
+            "total": 14
+          },
+          "number": {
+            "correct": 4,
+            "omitted": 12,
+            "total": 16
+          },
+          "string": {
+            "correct": 31,
+            "omitted": 17,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 17,
+        "omitted_optional": 7,
+        "required_binding_perfect_samples": 11,
+        "same_type_swaps": 0
+      }
+    },
+    "fctw": {
+      "A": {
+        "by_type": {
+          "boolean": {
+            "correct": 2,
+            "omitted": 3,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 13,
+            "omitted": 3,
+            "total": 16
+          },
+          "string": {
+            "correct": 41,
+            "omitted": 7,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 0,
+        "omitted_optional": 4,
+        "required_binding_perfect_samples": 17,
+        "same_type_swaps": 0
+      },
+      "B": {
+        "by_type": {
+          "boolean": {
+            "correct": 2,
+            "omitted": 3,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 15,
+            "omitted": 1,
+            "total": 16
+          },
+          "string": {
+            "correct": 45,
+            "omitted": 3,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 0,
+        "omitted_optional": 4,
+        "required_binding_perfect_samples": 19,
+        "same_type_swaps": 0
+      },
+      "C": {
+        "by_type": {
+          "boolean": {
+            "correct": 3,
+            "omitted": 3,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 13,
+            "omitted": 3,
+            "total": 16
+          },
+          "string": {
+            "correct": 38,
+            "omitted": 10,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 2,
+        "omitted_optional": 4,
+        "required_binding_perfect_samples": 17,
+        "same_type_swaps": 0
+      },
+      "D": {
+        "by_type": {
+          "boolean": {
+            "correct": 1,
+            "omitted": 5,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 9,
+            "omitted": 5,
+            "total": 16
+          },
+          "string": {
+            "correct": 37,
+            "omitted": 11,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 0,
+        "omitted_optional": 8,
+        "required_binding_perfect_samples": 11,
+        "same_type_swaps": 1
+      }
+    },
+    "fctw_description_alignment": {
+      "B": {
+        "by_type": {
+          "boolean": {
+            "correct": 2,
+            "omitted": 4,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 12,
+            "omitted": 4,
+            "total": 16
+          },
+          "string": {
+            "correct": 39,
+            "omitted": 9,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 0,
+        "omitted_optional": 5,
+        "required_binding_perfect_samples": 16,
+        "same_type_swaps": 0
+      },
+      "D": {
+        "by_type": {
+          "boolean": {
+            "correct": 2,
+            "omitted": 3,
+            "total": 6
+          },
+          "integer": {
+            "correct": 12,
+            "omitted": 2,
+            "total": 14
+          },
+          "number": {
+            "correct": 10,
+            "omitted": 6,
+            "total": 16
+          },
+          "string": {
+            "correct": 35,
+            "omitted": 13,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 1,
+        "omitted_optional": 6,
+        "required_binding_perfect_samples": 11,
+        "same_type_swaps": 0
+      }
+    },
+    "fctw_explicit_mapping": {
+      "B": {
+        "by_type": {
+          "boolean": {
+            "correct": 4,
+            "omitted": 1,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 15,
+            "omitted": 1,
+            "total": 16
+          },
+          "string": {
+            "correct": 45,
+            "omitted": 3,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 0,
+        "omitted_optional": 2,
+        "required_binding_perfect_samples": 21,
+        "same_type_swaps": 0
+      },
+      "D": {
+        "by_type": {
+          "boolean": {
+            "correct": 0,
+            "omitted": 6,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 13,
+            "omitted": 1,
+            "total": 16
+          },
+          "string": {
+            "correct": 45,
+            "omitted": 3,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 0,
+        "omitted_optional": 7,
+        "required_binding_perfect_samples": 16,
+        "same_type_swaps": 1
+      }
+    },
+    "fdsrc": {
+      "A": {
+        "by_type": {
+          "boolean": {
+            "correct": 2,
+            "omitted": 4,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 16,
+            "omitted": 0,
+            "total": 16
+          },
+          "string": {
+            "correct": 46,
+            "omitted": 2,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 0,
+        "omitted_optional": 6,
+        "required_binding_perfect_samples": 18,
+        "same_type_swaps": 0
+      },
+      "B": {
+        "by_type": {
+          "boolean": {
+            "correct": 1,
+            "omitted": 5,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 16,
+            "omitted": 0,
+            "total": 16
+          },
+          "string": {
+            "correct": 47,
+            "omitted": 1,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 0,
+        "omitted_optional": 6,
+        "required_binding_perfect_samples": 18,
+        "same_type_swaps": 0
+      },
+      "C": {
+        "by_type": {
+          "boolean": {
+            "correct": 3,
+            "omitted": 3,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 16,
+            "omitted": 0,
+            "total": 16
+          },
+          "string": {
+            "correct": 43,
+            "omitted": 5,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 2,
+        "omitted_optional": 4,
+        "required_binding_perfect_samples": 18,
+        "same_type_swaps": 0
+      },
+      "D": {
+        "by_type": {
+          "boolean": {
+            "correct": 1,
+            "omitted": 5,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 16
+          },
+          "string": {
+            "correct": 42,
+            "omitted": 6,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 0,
+        "omitted_optional": 9,
+        "required_binding_perfect_samples": 13,
+        "same_type_swaps": 1
+      }
+    },
+    "fdsrc_description_alignment": {
+      "B": {
+        "by_type": {
+          "boolean": {
+            "correct": 0,
+            "omitted": 6,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 16,
+            "omitted": 0,
+            "total": 16
+          },
+          "string": {
+            "correct": 47,
+            "omitted": 1,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 0,
+        "omitted_optional": 7,
+        "required_binding_perfect_samples": 17,
+        "same_type_swaps": 0
+      },
+      "D": {
+        "by_type": {
+          "boolean": {
+            "correct": 2,
+            "omitted": 4,
+            "total": 6
+          },
+          "integer": {
+            "correct": 11,
+            "omitted": 3,
+            "total": 14
+          },
+          "number": {
+            "correct": 16,
+            "omitted": 0,
+            "total": 16
+          },
+          "string": {
+            "correct": 43,
+            "omitted": 5,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 1,
+        "omitted_optional": 7,
+        "required_binding_perfect_samples": 15,
+        "same_type_swaps": 0
+      }
+    },
+    "fdsrc_explicit_mapping": {
+      "B": {
+        "by_type": {
+          "boolean": {
+            "correct": 1,
+            "omitted": 4,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 16,
+            "omitted": 0,
+            "total": 16
+          },
+          "string": {
+            "correct": 47,
+            "omitted": 1,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 0,
+        "omitted_optional": 5,
+        "required_binding_perfect_samples": 18,
+        "same_type_swaps": 0
+      },
+      "D": {
+        "by_type": {
+          "boolean": {
+            "correct": 1,
+            "omitted": 5,
+            "total": 6
+          },
+          "integer": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 14
+          },
+          "number": {
+            "correct": 14,
+            "omitted": 0,
+            "total": 16
+          },
+          "string": {
+            "correct": 47,
+            "omitted": 1,
+            "total": 48
+          }
+        },
+        "cross_type_misbindings": 0,
+        "extra_argument_samples": 0,
+        "omitted_optional": 6,
+        "required_binding_perfect_samples": 17,
+        "same_type_swaps": 1
+      }
+    }
+  },
+  "field_protocol": {
+    "executed": true,
+    "models": {
+      "base": {
+        "by_group_condition": {
+          "control:A": {
+            "full_field_correct": 6,
+            "full_only_success": 1,
+            "n": 6,
+            "recognition_correct": 5,
+            "recognition_only_success": 0
+          },
+          "control:B": {
+            "full_field_correct": 6,
+            "full_only_success": 3,
+            "n": 6,
+            "recognition_correct": 3,
+            "recognition_only_success": 0
+          },
+          "control:C": {
+            "full_field_correct": 6,
+            "full_only_success": 1,
+            "n": 6,
+            "recognition_correct": 5,
+            "recognition_only_success": 0
+          },
+          "control:D": {
+            "full_field_correct": 4,
+            "full_only_success": 0,
+            "n": 6,
+            "recognition_correct": 5,
+            "recognition_only_success": 1
+          },
+          "regression:A": {
+            "full_field_correct": 6,
+            "full_only_success": 1,
+            "n": 6,
+            "recognition_correct": 5,
+            "recognition_only_success": 0
+          },
+          "regression:B": {
+            "full_field_correct": 5,
+            "full_only_success": 2,
+            "n": 6,
+            "recognition_correct": 4,
+            "recognition_only_success": 1
+          },
+          "regression:C": {
+            "full_field_correct": 6,
+            "full_only_success": 4,
+            "n": 6,
+            "recognition_correct": 2,
+            "recognition_only_success": 0
+          },
+          "regression:D": {
+            "full_field_correct": 2,
+            "full_only_success": 0,
+            "n": 6,
+            "recognition_correct": 6,
+            "recognition_only_success": 4
+          }
+        },
+        "cases": [
+          {
+            "condition": "A",
+            "expected": "maximum_price",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_01_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "maximum_price",
+            "source_error_type": "wrong_value",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_01_B_field_probe",
+            "recognition_correct": false,
+            "recognized": "arg_b",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "C",
+            "expected": "maximum_price",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_01_C_field_probe",
+            "recognition_correct": false,
+            "recognized": "product_category",
+            "source_error_type": "wrong_value",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_c",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_01_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "wrong_value",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "A",
+            "expected": "include_out_of_stock",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_02_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "include_out_of_stock",
+            "source_error_type": "wrong_value",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_d",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_02_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "C",
+            "expected": "include_out_of_stock",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_02_C_field_probe",
+            "recognition_correct": false,
+            "recognized": "product_category",
+            "source_error_type": "wrong_value",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_d",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_02_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "A",
+            "expected": "maximum_price",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_03_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "maximum_price",
+            "source_error_type": "wrong_value",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_03_B_field_probe",
+            "recognition_correct": false,
+            "recognized": "arg_b",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "C",
+            "expected": "maximum_price",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_03_C_field_probe",
+            "recognition_correct": false,
+            "recognized": "product_category",
+            "source_error_type": "wrong_value",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_c",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_03_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "wrong_value",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "A",
+            "expected": "include_out_of_stock",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_04_A_field_probe",
+            "recognition_correct": false,
+            "recognized": "product_category",
+            "source_error_type": "wrong_value",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_d",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_04_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "wrong_value",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "C",
+            "expected": "include_out_of_stock",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_04_C_field_probe",
+            "recognition_correct": false,
+            "recognized": "product_category",
+            "source_error_type": "wrong_value",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_d",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_04_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "wrong_value",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "A",
+            "expected": "base_currency",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_currency_alert_03_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "base_currency",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_a",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_currency_alert_03_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_a",
+            "source_error_type": "extra_argument",
+            "source_tool_correct": true,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "C",
+            "expected": "base_currency",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_currency_alert_03_C_field_probe",
+            "recognition_correct": true,
+            "recognized": "base_currency",
+            "source_error_type": "extra_argument",
+            "source_tool_correct": true,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_a",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_currency_alert_03_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_a",
+            "source_error_type": "value_misbinding",
+            "source_tool_correct": true,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "A",
+            "expected": "base_currency",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_currency_alert_04_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "base_currency",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_a",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_currency_alert_04_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_a",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "C",
+            "expected": "base_currency",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_currency_alert_04_C_field_probe",
+            "recognition_correct": true,
+            "recognized": "base_currency",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_a",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_currency_alert_04_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_a",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "A",
+            "expected": "rate_threshold",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_currency_alert_01_A_field_probe",
+            "recognition_correct": false,
+            "recognized": "base_currency",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "rate_threshold"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_currency_alert_01_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "rate_threshold"
+          },
+          {
+            "condition": "C",
+            "expected": "rate_threshold",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_currency_alert_01_C_field_probe",
+            "recognition_correct": true,
+            "recognized": "rate_threshold",
+            "source_error_type": "extra_argument",
+            "source_tool_correct": true,
+            "target_field": "rate_threshold"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_c",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_currency_alert_01_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "extra_argument",
+            "source_tool_correct": true,
+            "target_field": "rate_threshold"
+          },
+          {
+            "condition": "A",
+            "expected": "crossing_direction",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_currency_alert_02_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "crossing_direction",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "crossing_direction"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_d",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_currency_alert_02_B_field_probe",
+            "recognition_correct": false,
+            "recognized": "d",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "crossing_direction"
+          },
+          {
+            "condition": "C",
+            "expected": "crossing_direction",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_currency_alert_02_C_field_probe",
+            "recognition_correct": false,
+            "recognized": "rate_threshold",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "crossing_direction"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_d",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_currency_alert_02_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "crossing_direction"
+          },
+          {
+            "condition": "A",
+            "expected": "night_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_01_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "night_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_01_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "C",
+            "expected": "night_count",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_01_C_field_probe",
+            "recognition_correct": true,
+            "recognized": "night_count",
+            "source_error_type": "extra_argument",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_01_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "A",
+            "expected": "room_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_02_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "room_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_d",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_02_B_field_probe",
+            "recognition_correct": false,
+            "recognized": "d",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "C",
+            "expected": "room_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_02_C_field_probe",
+            "recognition_correct": true,
+            "recognized": "room_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_d",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "control",
+            "id": "s9_test_hotel_booking_02_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "A",
+            "expected": "night_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_03_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "night_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_03_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "C",
+            "expected": "night_count",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_03_C_field_probe",
+            "recognition_correct": true,
+            "recognized": "night_count",
+            "source_error_type": "extra_argument",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_03_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "A",
+            "expected": "room_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_04_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "room_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_d",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_04_B_field_probe",
+            "recognition_correct": false,
+            "recognized": "d",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "C",
+            "expected": "room_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_04_C_field_probe",
+            "recognition_correct": true,
+            "recognized": "room_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_d",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "control",
+            "id": "s9_test_hotel_booking_04_D_field_probe",
+            "recognition_correct": false,
+            "recognized": "arg_a",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          }
+        ]
+      },
+      "fctw": {
+        "by_group_condition": {
+          "control:A": {
+            "full_field_correct": 5,
+            "full_only_success": 1,
+            "n": 6,
+            "recognition_correct": 4,
+            "recognition_only_success": 0
+          },
+          "control:B": {
+            "full_field_correct": 6,
+            "full_only_success": 2,
+            "n": 6,
+            "recognition_correct": 4,
+            "recognition_only_success": 0
+          },
+          "control:C": {
+            "full_field_correct": 5,
+            "full_only_success": 1,
+            "n": 6,
+            "recognition_correct": 5,
+            "recognition_only_success": 1
+          },
+          "control:D": {
+            "full_field_correct": 5,
+            "full_only_success": 2,
+            "n": 6,
+            "recognition_correct": 4,
+            "recognition_only_success": 1
+          },
+          "regression:A": {
+            "full_field_correct": 2,
+            "full_only_success": 0,
+            "n": 6,
+            "recognition_correct": 5,
+            "recognition_only_success": 3
+          },
+          "regression:B": {
+            "full_field_correct": 3,
+            "full_only_success": 2,
+            "n": 6,
+            "recognition_correct": 4,
+            "recognition_only_success": 3
+          },
+          "regression:C": {
+            "full_field_correct": 4,
+            "full_only_success": 4,
+            "n": 6,
+            "recognition_correct": 0,
+            "recognition_only_success": 0
+          },
+          "regression:D": {
+            "full_field_correct": 0,
+            "full_only_success": 0,
+            "n": 6,
+            "recognition_correct": 4,
+            "recognition_only_success": 4
+          }
+        },
+        "cases": [
+          {
+            "condition": "A",
+            "expected": "maximum_price",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_01_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "maximum_price",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_01_B_field_probe",
+            "recognition_correct": false,
+            "recognized": "arg_b",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "C",
+            "expected": "maximum_price",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_01_C_field_probe",
+            "recognition_correct": false,
+            "recognized": "product_category",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_c",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_01_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "false_rejection",
+            "source_tool_correct": false,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "A",
+            "expected": "include_out_of_stock",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_02_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "include_out_of_stock",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_d",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_02_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "C",
+            "expected": "include_out_of_stock",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_02_C_field_probe",
+            "recognition_correct": false,
+            "recognized": "product_category",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_d",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_02_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "A",
+            "expected": "maximum_price",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_03_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "maximum_price",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_03_B_field_probe",
+            "recognition_correct": false,
+            "recognized": "arg_b",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "C",
+            "expected": "maximum_price",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_03_C_field_probe",
+            "recognition_correct": false,
+            "recognized": "product_category",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_c",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_03_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "value_misbinding",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "A",
+            "expected": "include_out_of_stock",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_04_A_field_probe",
+            "recognition_correct": false,
+            "recognized": "product_category",
+            "source_error_type": "wrong_value",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_d",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_04_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "C",
+            "expected": "include_out_of_stock",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_04_C_field_probe",
+            "recognition_correct": false,
+            "recognized": "product_category",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_d",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_04_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "A",
+            "expected": "base_currency",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_currency_alert_03_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "base_currency",
+            "source_error_type": "false_rejection",
+            "source_tool_correct": false,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_a",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_currency_alert_03_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_a",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "C",
+            "expected": "base_currency",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_currency_alert_03_C_field_probe",
+            "recognition_correct": false,
+            "recognized": "quote_currency",
+            "source_error_type": "false_rejection",
+            "source_tool_correct": false,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_a",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_currency_alert_03_D_field_probe",
+            "recognition_correct": false,
+            "recognized": "arg_b",
+            "source_error_type": "false_rejection",
+            "source_tool_correct": false,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "A",
+            "expected": "base_currency",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_currency_alert_04_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "base_currency",
+            "source_error_type": "false_rejection",
+            "source_tool_correct": false,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_a",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_currency_alert_04_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_a",
+            "source_error_type": "false_rejection",
+            "source_tool_correct": false,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "C",
+            "expected": "base_currency",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_currency_alert_04_C_field_probe",
+            "recognition_correct": false,
+            "recognized": "quote_currency",
+            "source_error_type": "false_rejection",
+            "source_tool_correct": false,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_a",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_currency_alert_04_D_field_probe",
+            "recognition_correct": false,
+            "recognized": "arg_b",
+            "source_error_type": "false_rejection",
+            "source_tool_correct": false,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "A",
+            "expected": "rate_threshold",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "control",
+            "id": "s9_test_currency_alert_01_A_field_probe",
+            "recognition_correct": false,
+            "recognized": "base_currency",
+            "source_error_type": "false_rejection",
+            "source_tool_correct": false,
+            "target_field": "rate_threshold"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_currency_alert_01_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "rate_threshold"
+          },
+          {
+            "condition": "C",
+            "expected": "rate_threshold",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "control",
+            "id": "s9_test_currency_alert_01_C_field_probe",
+            "recognition_correct": true,
+            "recognized": "rate_threshold",
+            "source_error_type": "false_rejection",
+            "source_tool_correct": false,
+            "target_field": "rate_threshold"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_c",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "control",
+            "id": "s9_test_currency_alert_01_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "false_rejection",
+            "source_tool_correct": false,
+            "target_field": "rate_threshold"
+          },
+          {
+            "condition": "A",
+            "expected": "crossing_direction",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_currency_alert_02_A_field_probe",
+            "recognition_correct": false,
+            "recognized": "base_currency",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "crossing_direction"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_d",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_currency_alert_02_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "crossing_direction"
+          },
+          {
+            "condition": "C",
+            "expected": "crossing_direction",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_currency_alert_02_C_field_probe",
+            "recognition_correct": false,
+            "recognized": "rate_threshold",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "crossing_direction"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_d",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_currency_alert_02_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "crossing_direction"
+          },
+          {
+            "condition": "A",
+            "expected": "night_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_01_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "night_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_01_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "C",
+            "expected": "night_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_01_C_field_probe",
+            "recognition_correct": true,
+            "recognized": "night_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_01_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "A",
+            "expected": "room_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_02_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "room_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_d",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_02_B_field_probe",
+            "recognition_correct": false,
+            "recognized": "d",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "C",
+            "expected": "room_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_02_C_field_probe",
+            "recognition_correct": true,
+            "recognized": "room_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_d",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_02_D_field_probe",
+            "recognition_correct": false,
+            "recognized": "arg_a",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "A",
+            "expected": "night_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_03_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "night_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_03_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "C",
+            "expected": "night_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_03_C_field_probe",
+            "recognition_correct": true,
+            "recognized": "night_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_03_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "A",
+            "expected": "room_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_04_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "room_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_d",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_04_B_field_probe",
+            "recognition_correct": false,
+            "recognized": "d",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "C",
+            "expected": "room_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_04_C_field_probe",
+            "recognition_correct": true,
+            "recognized": "room_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_d",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_04_D_field_probe",
+            "recognition_correct": false,
+            "recognized": "arg_a",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          }
+        ]
+      },
+      "fdsrc": {
+        "by_group_condition": {
+          "control:A": {
+            "full_field_correct": 5,
+            "full_only_success": 1,
+            "n": 6,
+            "recognition_correct": 4,
+            "recognition_only_success": 0
+          },
+          "control:B": {
+            "full_field_correct": 6,
+            "full_only_success": 0,
+            "n": 6,
+            "recognition_correct": 6,
+            "recognition_only_success": 0
+          },
+          "control:C": {
+            "full_field_correct": 6,
+            "full_only_success": 1,
+            "n": 6,
+            "recognition_correct": 5,
+            "recognition_only_success": 0
+          },
+          "control:D": {
+            "full_field_correct": 5,
+            "full_only_success": 1,
+            "n": 6,
+            "recognition_correct": 5,
+            "recognition_only_success": 1
+          },
+          "regression:A": {
+            "full_field_correct": 4,
+            "full_only_success": 1,
+            "n": 6,
+            "recognition_correct": 4,
+            "recognition_only_success": 1
+          },
+          "regression:B": {
+            "full_field_correct": 4,
+            "full_only_success": 1,
+            "n": 6,
+            "recognition_correct": 5,
+            "recognition_only_success": 2
+          },
+          "regression:C": {
+            "full_field_correct": 6,
+            "full_only_success": 4,
+            "n": 6,
+            "recognition_correct": 2,
+            "recognition_only_success": 0
+          },
+          "regression:D": {
+            "full_field_correct": 3,
+            "full_only_success": 1,
+            "n": 6,
+            "recognition_correct": 5,
+            "recognition_only_success": 3
+          }
+        },
+        "cases": [
+          {
+            "condition": "A",
+            "expected": "maximum_price",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_01_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "maximum_price",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_01_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "C",
+            "expected": "maximum_price",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_01_C_field_probe",
+            "recognition_correct": true,
+            "recognized": "maximum_price",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_01_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "A",
+            "expected": "include_out_of_stock",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_02_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "include_out_of_stock",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_d",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_02_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "C",
+            "expected": "include_out_of_stock",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_02_C_field_probe",
+            "recognition_correct": true,
+            "recognized": "include_out_of_stock",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_d",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_02_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "A",
+            "expected": "maximum_price",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_03_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "maximum_price",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_03_B_field_probe",
+            "recognition_correct": false,
+            "recognized": "arg_b",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "C",
+            "expected": "maximum_price",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_03_C_field_probe",
+            "recognition_correct": false,
+            "recognized": "product_category",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_c",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_03_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "value_misbinding",
+            "source_tool_correct": true,
+            "target_field": "maximum_price"
+          },
+          {
+            "condition": "A",
+            "expected": "include_out_of_stock",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_04_A_field_probe",
+            "recognition_correct": false,
+            "recognized": "product_category",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_d",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_04_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "C",
+            "expected": "include_out_of_stock",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_04_C_field_probe",
+            "recognition_correct": false,
+            "recognized": "filter_product_catalog",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_d",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "regression",
+            "id": "s9_test_catalog_filter_04_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "include_out_of_stock"
+          },
+          {
+            "condition": "A",
+            "expected": "base_currency",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_currency_alert_03_A_field_probe",
+            "recognition_correct": false,
+            "recognized": "create_exchange_rate_alert",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_a",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_currency_alert_03_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_a",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "C",
+            "expected": "base_currency",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_currency_alert_03_C_field_probe",
+            "recognition_correct": false,
+            "recognized": "crossing_direction",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_a",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_currency_alert_03_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_a",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "A",
+            "expected": "base_currency",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_currency_alert_04_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "base_currency",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_a",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_currency_alert_04_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_a",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "C",
+            "expected": "base_currency",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_currency_alert_04_C_field_probe",
+            "recognition_correct": false,
+            "recognized": "crossing_direction",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_a",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": true,
+            "group": "regression",
+            "id": "s9_test_currency_alert_04_D_field_probe",
+            "recognition_correct": false,
+            "recognized": "arg_b",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "base_currency"
+          },
+          {
+            "condition": "A",
+            "expected": "rate_threshold",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_currency_alert_01_A_field_probe",
+            "recognition_correct": false,
+            "recognized": "create_exchange_rate_alert",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "rate_threshold"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_currency_alert_01_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "rate_threshold"
+          },
+          {
+            "condition": "C",
+            "expected": "rate_threshold",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_currency_alert_01_C_field_probe",
+            "recognition_correct": false,
+            "recognized": "crossing_direction",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "rate_threshold"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_currency_alert_01_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "rate_threshold"
+          },
+          {
+            "condition": "A",
+            "expected": "crossing_direction",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "control",
+            "id": "s9_test_currency_alert_02_A_field_probe",
+            "recognition_correct": false,
+            "recognized": "create_exchange_rate_alert",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "crossing_direction"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_d",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_currency_alert_02_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "crossing_direction"
+          },
+          {
+            "condition": "C",
+            "expected": "crossing_direction",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_currency_alert_02_C_field_probe",
+            "recognition_correct": true,
+            "recognized": "crossing_direction",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "crossing_direction"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_d",
+            "full_call_decision_correct": false,
+            "full_call_field_correct": false,
+            "group": "control",
+            "id": "s9_test_currency_alert_02_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "omission",
+            "source_tool_correct": true,
+            "target_field": "crossing_direction"
+          },
+          {
+            "condition": "A",
+            "expected": "night_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_01_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "night_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_01_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "C",
+            "expected": "night_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_01_C_field_probe",
+            "recognition_correct": true,
+            "recognized": "night_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_01_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "A",
+            "expected": "room_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_02_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "room_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_d",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_02_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "C",
+            "expected": "room_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_02_C_field_probe",
+            "recognition_correct": true,
+            "recognized": "room_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_d",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_02_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "A",
+            "expected": "night_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_03_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "night_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_03_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "C",
+            "expected": "night_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_03_C_field_probe",
+            "recognition_correct": true,
+            "recognized": "night_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_c",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_03_D_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_c",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "night_count"
+          },
+          {
+            "condition": "A",
+            "expected": "room_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_04_A_field_probe",
+            "recognition_correct": true,
+            "recognized": "room_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "B",
+            "expected": "arg_d",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_04_B_field_probe",
+            "recognition_correct": true,
+            "recognized": "arg_d",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "C",
+            "expected": "room_count",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_04_C_field_probe",
+            "recognition_correct": true,
+            "recognized": "room_count",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          },
+          {
+            "condition": "D",
+            "expected": "arg_d",
+            "full_call_decision_correct": true,
+            "full_call_field_correct": true,
+            "group": "control",
+            "id": "s9_test_hotel_booking_04_D_field_probe",
+            "recognition_correct": false,
+            "recognized": "arg_a",
+            "source_error_type": "none",
+            "source_tool_correct": true,
+            "target_field": "room_count"
+          }
+        ]
+      }
+    },
+    "selection_manifest": {
+      "controls": [
+        "s9_test_currency_alert_01",
+        "s9_test_currency_alert_02",
+        "s9_test_hotel_booking_01",
+        "s9_test_hotel_booking_02",
+        "s9_test_hotel_booking_03",
+        "s9_test_hotel_booking_04"
+      ],
+      "failures": [
+        "s9_test_catalog_filter_01",
+        "s9_test_catalog_filter_02",
+        "s9_test_catalog_filter_03",
+        "s9_test_catalog_filter_04",
+        "s9_test_currency_alert_03",
+        "s9_test_currency_alert_04"
+      ],
+      "files": {
+        "field_probe.jsonl": {
+          "sha256": "3dd6ee74fa555140c9732903175de2f92e64f72f59b9bb23cf98d5fbb869d148"
+        }
+      },
+      "selection": "三个模型配对错误的并集，字典序选最多六个退化任务及六个无绑定错误控制；诊断性选择，不代表泛化评估",
+      "version": "stage9_field_probe_v1"
+    }
+  },
+  "resource": {
+    "currency_cost": "共享课题组设备，无已知新增付费；无电费或折旧账单，不能推算人民币成本",
+    "inference_samples_including_invalid_v1": 864,
+    "inference_seconds_including_invalid_v1": 1145.5720000000001,
+    "maximum_peak_memory_gib": 3.018,
+    "paid_api_calls": 0,
+    "training_runs": 0
+  },
+  "sources": {
+    "reports/stage9_schema_binding/results/final/base_cases.jsonl": "52dba2a66ea225f01ed2f6e0923f73b8240ccc5ce88981cb4181e7229ae3f35d",
+    "reports/stage9_schema_binding/results/final/base_description_alignment_cases.jsonl": "6910fc28a329c190d4571afda1d12a781d7b8e070ac93b7b6ea0831ed07b8521",
+    "reports/stage9_schema_binding/results/final/base_explicit_mapping_cases.jsonl": "bc2a7407da3d53c90c74871b33ecea3e8a5a3a62e70d7c8ba7ab82910556c893",
+    "reports/stage9_schema_binding/results/final/fctw_cases.jsonl": "012167758d1e68b658d3e1ffdfe5ea1c7f2e83319890bef163acba9f0e55504f",
+    "reports/stage9_schema_binding/results/final/fctw_description_alignment_cases.jsonl": "4f470fbacc92391c59209631c9cfe308909be46d1f97b57e156840f140672924",
+    "reports/stage9_schema_binding/results/final/fctw_explicit_mapping_cases.jsonl": "0dde9108700b005f8c6333499a4067692d4c01a54c8fc5bfa57f170ce3fe9693",
+    "reports/stage9_schema_binding/results/final/fdsrc_cases.jsonl": "6c6c2e80a8f7c0a8253a5028dd3ba49408de61543bbd40d04a6617803b8bcaaa",
+    "reports/stage9_schema_binding/results/final/fdsrc_description_alignment_cases.jsonl": "7588d26ed92fbdfbecb5a3165f3871a19d365efb49d3bac1caf528ea6cf70f43",
+    "reports/stage9_schema_binding/results/final/fdsrc_explicit_mapping_cases.jsonl": "d7579306866f44de2c8695c24a4f3e04c69abff0b4109117dec7c30176537f03"
+  },
+  "tokenization": {
+    "A": {
+      "max": 4,
+      "mean": 2.375,
+      "min": 2
+    },
+    "B": {
+      "max": 2,
+      "mean": 2.0,
+      "min": 2
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "adapter_path": null,
+  "conditions": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "cuda_memory_fraction": 0.16,
+  "dataset": "pilot_v1.jsonl",
+  "dataset_sha256": "ab4d991e28b9201d9591aa2b5650dde6373e75f3843961aac7a76956667cdb96",
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 160
+  },
+  "model_path": "/home/limeiyan/models/Qwen2.5-1.5B-Instruct",
+  "peak_memory_gib": 2.917,
+  "prediction_sha256": "67e5948ec295794836acb94bf565164428deac821ea87a9e3a74afcc3eebdbcd",
+  "runtime_seconds": 24.684,
+  "samples": 24,
+  "seed": 20261016,
+  "strategy": "direct"
+}

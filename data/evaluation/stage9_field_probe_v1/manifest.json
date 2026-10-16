@@ -1,0 +1,25 @@
+{
+  "controls": [
+    "s9_test_currency_alert_01",
+    "s9_test_currency_alert_02",
+    "s9_test_hotel_booking_01",
+    "s9_test_hotel_booking_02",
+    "s9_test_hotel_booking_03",
+    "s9_test_hotel_booking_04"
+  ],
+  "failures": [
+    "s9_test_catalog_filter_01",
+    "s9_test_catalog_filter_02",
+    "s9_test_catalog_filter_03",
+    "s9_test_catalog_filter_04",
+    "s9_test_currency_alert_03",
+    "s9_test_currency_alert_04"
+  ],
+  "files": {
+    "field_probe.jsonl": {
+      "sha256": "3dd6ee74fa555140c9732903175de2f92e64f72f59b9bb23cf98d5fbb869d148"
+    }
+  },
+  "selection": "三个模型配对错误的并集，字典序选最多六个退化任务及六个无绑定错误控制；诊断性选择，不代表泛化评估",
+  "version": "stage9_field_probe_v1"
+}

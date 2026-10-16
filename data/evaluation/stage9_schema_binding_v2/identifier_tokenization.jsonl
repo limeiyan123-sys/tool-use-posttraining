@@ -1,0 +1,192 @@
+{"base_id": "s9_test_hotel_booking_01", "condition": "A", "semantic_name": "destination_city", "actual_name": "destination_city", "token_ids": [17997, 24971], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_01", "condition": "A", "semantic_name": "check_in_date", "actual_name": "check_in_date", "token_ids": [2028, 1243, 4164], "token_count": 3}
+{"base_id": "s9_test_hotel_booking_01", "condition": "A", "semantic_name": "night_count", "actual_name": "night_count", "token_ids": [9287, 3180], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_01", "condition": "A", "semantic_name": "room_count", "actual_name": "room_count", "token_ids": [2966, 3180], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_01", "condition": "B", "semantic_name": "destination_city", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_01", "condition": "B", "semantic_name": "check_in_date", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_01", "condition": "B", "semantic_name": "night_count", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_01", "condition": "B", "semantic_name": "room_count", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_02", "condition": "A", "semantic_name": "destination_city", "actual_name": "destination_city", "token_ids": [17997, 24971], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_02", "condition": "A", "semantic_name": "check_in_date", "actual_name": "check_in_date", "token_ids": [2028, 1243, 4164], "token_count": 3}
+{"base_id": "s9_test_hotel_booking_02", "condition": "A", "semantic_name": "night_count", "actual_name": "night_count", "token_ids": [9287, 3180], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_02", "condition": "A", "semantic_name": "room_count", "actual_name": "room_count", "token_ids": [2966, 3180], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_02", "condition": "B", "semantic_name": "destination_city", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_02", "condition": "B", "semantic_name": "check_in_date", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_02", "condition": "B", "semantic_name": "night_count", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_02", "condition": "B", "semantic_name": "room_count", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_03", "condition": "A", "semantic_name": "destination_city", "actual_name": "destination_city", "token_ids": [17997, 24971], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_03", "condition": "A", "semantic_name": "check_in_date", "actual_name": "check_in_date", "token_ids": [2028, 1243, 4164], "token_count": 3}
+{"base_id": "s9_test_hotel_booking_03", "condition": "A", "semantic_name": "night_count", "actual_name": "night_count", "token_ids": [9287, 3180], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_03", "condition": "A", "semantic_name": "room_count", "actual_name": "room_count", "token_ids": [2966, 3180], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_03", "condition": "B", "semantic_name": "destination_city", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_03", "condition": "B", "semantic_name": "check_in_date", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_03", "condition": "B", "semantic_name": "night_count", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_03", "condition": "B", "semantic_name": "room_count", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_04", "condition": "A", "semantic_name": "destination_city", "actual_name": "destination_city", "token_ids": [17997, 24971], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_04", "condition": "A", "semantic_name": "check_in_date", "actual_name": "check_in_date", "token_ids": [2028, 1243, 4164], "token_count": 3}
+{"base_id": "s9_test_hotel_booking_04", "condition": "A", "semantic_name": "night_count", "actual_name": "night_count", "token_ids": [9287, 3180], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_04", "condition": "A", "semantic_name": "room_count", "actual_name": "room_count", "token_ids": [2966, 3180], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_04", "condition": "B", "semantic_name": "destination_city", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_04", "condition": "B", "semantic_name": "check_in_date", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_04", "condition": "B", "semantic_name": "night_count", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_hotel_booking_04", "condition": "B", "semantic_name": "room_count", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_01", "condition": "A", "semantic_name": "origin_postcode", "actual_name": "origin_postcode", "token_ids": [8611, 6333, 1851], "token_count": 3}
+{"base_id": "s9_test_shipment_quote_01", "condition": "A", "semantic_name": "destination_postcode", "actual_name": "destination_postcode", "token_ids": [17997, 6333, 1851], "token_count": 3}
+{"base_id": "s9_test_shipment_quote_01", "condition": "A", "semantic_name": "weight_kg", "actual_name": "weight_kg", "token_ids": [4765, 4698, 70], "token_count": 3}
+{"base_id": "s9_test_shipment_quote_01", "condition": "A", "semantic_name": "priority_service", "actual_name": "priority_service", "token_ids": [23582, 12267], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_01", "condition": "B", "semantic_name": "origin_postcode", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_01", "condition": "B", "semantic_name": "destination_postcode", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_01", "condition": "B", "semantic_name": "weight_kg", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_01", "condition": "B", "semantic_name": "priority_service", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_02", "condition": "A", "semantic_name": "origin_postcode", "actual_name": "origin_postcode", "token_ids": [8611, 6333, 1851], "token_count": 3}
+{"base_id": "s9_test_shipment_quote_02", "condition": "A", "semantic_name": "destination_postcode", "actual_name": "destination_postcode", "token_ids": [17997, 6333, 1851], "token_count": 3}
+{"base_id": "s9_test_shipment_quote_02", "condition": "A", "semantic_name": "weight_kg", "actual_name": "weight_kg", "token_ids": [4765, 4698, 70], "token_count": 3}
+{"base_id": "s9_test_shipment_quote_02", "condition": "A", "semantic_name": "priority_service", "actual_name": "priority_service", "token_ids": [23582, 12267], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_02", "condition": "B", "semantic_name": "origin_postcode", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_02", "condition": "B", "semantic_name": "destination_postcode", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_02", "condition": "B", "semantic_name": "weight_kg", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_02", "condition": "B", "semantic_name": "priority_service", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_03", "condition": "A", "semantic_name": "origin_postcode", "actual_name": "origin_postcode", "token_ids": [8611, 6333, 1851], "token_count": 3}
+{"base_id": "s9_test_shipment_quote_03", "condition": "A", "semantic_name": "destination_postcode", "actual_name": "destination_postcode", "token_ids": [17997, 6333, 1851], "token_count": 3}
+{"base_id": "s9_test_shipment_quote_03", "condition": "A", "semantic_name": "weight_kg", "actual_name": "weight_kg", "token_ids": [4765, 4698, 70], "token_count": 3}
+{"base_id": "s9_test_shipment_quote_03", "condition": "A", "semantic_name": "priority_service", "actual_name": "priority_service", "token_ids": [23582, 12267], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_03", "condition": "B", "semantic_name": "origin_postcode", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_03", "condition": "B", "semantic_name": "destination_postcode", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_03", "condition": "B", "semantic_name": "weight_kg", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_03", "condition": "B", "semantic_name": "priority_service", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_04", "condition": "A", "semantic_name": "origin_postcode", "actual_name": "origin_postcode", "token_ids": [8611, 6333, 1851], "token_count": 3}
+{"base_id": "s9_test_shipment_quote_04", "condition": "A", "semantic_name": "destination_postcode", "actual_name": "destination_postcode", "token_ids": [17997, 6333, 1851], "token_count": 3}
+{"base_id": "s9_test_shipment_quote_04", "condition": "A", "semantic_name": "weight_kg", "actual_name": "weight_kg", "token_ids": [4765, 4698, 70], "token_count": 3}
+{"base_id": "s9_test_shipment_quote_04", "condition": "A", "semantic_name": "priority_service", "actual_name": "priority_service", "token_ids": [23582, 12267], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_04", "condition": "B", "semantic_name": "origin_postcode", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_04", "condition": "B", "semantic_name": "destination_postcode", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_04", "condition": "B", "semantic_name": "weight_kg", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_shipment_quote_04", "condition": "B", "semantic_name": "priority_service", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_sensor_report_01", "condition": "A", "semantic_name": "sensor_id", "actual_name": "sensor_id", "token_ids": [29511, 842], "token_count": 2}
+{"base_id": "s9_test_sensor_report_01", "condition": "A", "semantic_name": "window_start", "actual_name": "window_start", "token_ids": [5507, 4906], "token_count": 2}
+{"base_id": "s9_test_sensor_report_01", "condition": "A", "semantic_name": "window_end", "actual_name": "window_end", "token_ids": [5507, 6213], "token_count": 2}
+{"base_id": "s9_test_sensor_report_01", "condition": "A", "semantic_name": "aggregation_method", "actual_name": "aggregation_method", "token_ids": [351, 34442, 9032], "token_count": 3}
+{"base_id": "s9_test_sensor_report_01", "condition": "B", "semantic_name": "sensor_id", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_sensor_report_01", "condition": "B", "semantic_name": "window_start", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_sensor_report_01", "condition": "B", "semantic_name": "window_end", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_sensor_report_01", "condition": "B", "semantic_name": "aggregation_method", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_sensor_report_02", "condition": "A", "semantic_name": "sensor_id", "actual_name": "sensor_id", "token_ids": [29511, 842], "token_count": 2}
+{"base_id": "s9_test_sensor_report_02", "condition": "A", "semantic_name": "window_start", "actual_name": "window_start", "token_ids": [5507, 4906], "token_count": 2}
+{"base_id": "s9_test_sensor_report_02", "condition": "A", "semantic_name": "window_end", "actual_name": "window_end", "token_ids": [5507, 6213], "token_count": 2}
+{"base_id": "s9_test_sensor_report_02", "condition": "A", "semantic_name": "aggregation_method", "actual_name": "aggregation_method", "token_ids": [351, 34442, 9032], "token_count": 3}
+{"base_id": "s9_test_sensor_report_02", "condition": "B", "semantic_name": "sensor_id", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_sensor_report_02", "condition": "B", "semantic_name": "window_start", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_sensor_report_02", "condition": "B", "semantic_name": "window_end", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_sensor_report_02", "condition": "B", "semantic_name": "aggregation_method", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_sensor_report_03", "condition": "A", "semantic_name": "sensor_id", "actual_name": "sensor_id", "token_ids": [29511, 842], "token_count": 2}
+{"base_id": "s9_test_sensor_report_03", "condition": "A", "semantic_name": "window_start", "actual_name": "window_start", "token_ids": [5507, 4906], "token_count": 2}
+{"base_id": "s9_test_sensor_report_03", "condition": "A", "semantic_name": "window_end", "actual_name": "window_end", "token_ids": [5507, 6213], "token_count": 2}
+{"base_id": "s9_test_sensor_report_03", "condition": "A", "semantic_name": "aggregation_method", "actual_name": "aggregation_method", "token_ids": [351, 34442, 9032], "token_count": 3}
+{"base_id": "s9_test_sensor_report_03", "condition": "B", "semantic_name": "sensor_id", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_sensor_report_03", "condition": "B", "semantic_name": "window_start", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_sensor_report_03", "condition": "B", "semantic_name": "window_end", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_sensor_report_03", "condition": "B", "semantic_name": "aggregation_method", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_sensor_report_04", "condition": "A", "semantic_name": "sensor_id", "actual_name": "sensor_id", "token_ids": [29511, 842], "token_count": 2}
+{"base_id": "s9_test_sensor_report_04", "condition": "A", "semantic_name": "window_start", "actual_name": "window_start", "token_ids": [5507, 4906], "token_count": 2}
+{"base_id": "s9_test_sensor_report_04", "condition": "A", "semantic_name": "window_end", "actual_name": "window_end", "token_ids": [5507, 6213], "token_count": 2}
+{"base_id": "s9_test_sensor_report_04", "condition": "A", "semantic_name": "aggregation_method", "actual_name": "aggregation_method", "token_ids": [351, 34442, 9032], "token_count": 3}
+{"base_id": "s9_test_sensor_report_04", "condition": "B", "semantic_name": "sensor_id", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_sensor_report_04", "condition": "B", "semantic_name": "window_start", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_sensor_report_04", "condition": "B", "semantic_name": "window_end", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_sensor_report_04", "condition": "B", "semantic_name": "aggregation_method", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_01", "condition": "A", "semantic_name": "product_category", "actual_name": "product_category", "token_ids": [3031, 11847], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_01", "condition": "A", "semantic_name": "minimum_price", "actual_name": "minimum_price", "token_ids": [37988, 9040], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_01", "condition": "A", "semantic_name": "maximum_price", "actual_name": "maximum_price", "token_ids": [39187, 9040], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_01", "condition": "A", "semantic_name": "include_out_of_stock", "actual_name": "include_out_of_stock", "token_ids": [997, 6068, 3575, 30541], "token_count": 4}
+{"base_id": "s9_test_catalog_filter_01", "condition": "B", "semantic_name": "product_category", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_01", "condition": "B", "semantic_name": "minimum_price", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_01", "condition": "B", "semantic_name": "maximum_price", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_01", "condition": "B", "semantic_name": "include_out_of_stock", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_02", "condition": "A", "semantic_name": "product_category", "actual_name": "product_category", "token_ids": [3031, 11847], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_02", "condition": "A", "semantic_name": "minimum_price", "actual_name": "minimum_price", "token_ids": [37988, 9040], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_02", "condition": "A", "semantic_name": "maximum_price", "actual_name": "maximum_price", "token_ids": [39187, 9040], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_02", "condition": "A", "semantic_name": "include_out_of_stock", "actual_name": "include_out_of_stock", "token_ids": [997, 6068, 3575, 30541], "token_count": 4}
+{"base_id": "s9_test_catalog_filter_02", "condition": "B", "semantic_name": "product_category", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_02", "condition": "B", "semantic_name": "minimum_price", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_02", "condition": "B", "semantic_name": "maximum_price", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_02", "condition": "B", "semantic_name": "include_out_of_stock", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_03", "condition": "A", "semantic_name": "product_category", "actual_name": "product_category", "token_ids": [3031, 11847], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_03", "condition": "A", "semantic_name": "minimum_price", "actual_name": "minimum_price", "token_ids": [37988, 9040], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_03", "condition": "A", "semantic_name": "maximum_price", "actual_name": "maximum_price", "token_ids": [39187, 9040], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_03", "condition": "A", "semantic_name": "include_out_of_stock", "actual_name": "include_out_of_stock", "token_ids": [997, 6068, 3575, 30541], "token_count": 4}
+{"base_id": "s9_test_catalog_filter_03", "condition": "B", "semantic_name": "product_category", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_03", "condition": "B", "semantic_name": "minimum_price", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_03", "condition": "B", "semantic_name": "maximum_price", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_03", "condition": "B", "semantic_name": "include_out_of_stock", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_04", "condition": "A", "semantic_name": "product_category", "actual_name": "product_category", "token_ids": [3031, 11847], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_04", "condition": "A", "semantic_name": "minimum_price", "actual_name": "minimum_price", "token_ids": [37988, 9040], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_04", "condition": "A", "semantic_name": "maximum_price", "actual_name": "maximum_price", "token_ids": [39187, 9040], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_04", "condition": "A", "semantic_name": "include_out_of_stock", "actual_name": "include_out_of_stock", "token_ids": [997, 6068, 3575, 30541], "token_count": 4}
+{"base_id": "s9_test_catalog_filter_04", "condition": "B", "semantic_name": "product_category", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_04", "condition": "B", "semantic_name": "minimum_price", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_04", "condition": "B", "semantic_name": "maximum_price", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_catalog_filter_04", "condition": "B", "semantic_name": "include_out_of_stock", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_currency_alert_01", "condition": "A", "semantic_name": "base_currency", "actual_name": "base_currency", "token_ids": [3152, 34710], "token_count": 2}
+{"base_id": "s9_test_currency_alert_01", "condition": "A", "semantic_name": "quote_currency", "actual_name": "quote_currency", "token_ids": [2949, 34710], "token_count": 2}
+{"base_id": "s9_test_currency_alert_01", "condition": "A", "semantic_name": "rate_threshold", "actual_name": "rate_threshold", "token_ids": [7698, 21858], "token_count": 2}
+{"base_id": "s9_test_currency_alert_01", "condition": "A", "semantic_name": "crossing_direction", "actual_name": "crossing_direction", "token_ids": [28842, 287, 25438], "token_count": 3}
+{"base_id": "s9_test_currency_alert_01", "condition": "B", "semantic_name": "base_currency", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_currency_alert_01", "condition": "B", "semantic_name": "quote_currency", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_currency_alert_01", "condition": "B", "semantic_name": "rate_threshold", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_currency_alert_01", "condition": "B", "semantic_name": "crossing_direction", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_currency_alert_02", "condition": "A", "semantic_name": "base_currency", "actual_name": "base_currency", "token_ids": [3152, 34710], "token_count": 2}
+{"base_id": "s9_test_currency_alert_02", "condition": "A", "semantic_name": "quote_currency", "actual_name": "quote_currency", "token_ids": [2949, 34710], "token_count": 2}
+{"base_id": "s9_test_currency_alert_02", "condition": "A", "semantic_name": "rate_threshold", "actual_name": "rate_threshold", "token_ids": [7698, 21858], "token_count": 2}
+{"base_id": "s9_test_currency_alert_02", "condition": "A", "semantic_name": "crossing_direction", "actual_name": "crossing_direction", "token_ids": [28842, 287, 25438], "token_count": 3}
+{"base_id": "s9_test_currency_alert_02", "condition": "B", "semantic_name": "base_currency", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_currency_alert_02", "condition": "B", "semantic_name": "quote_currency", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_currency_alert_02", "condition": "B", "semantic_name": "rate_threshold", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_currency_alert_02", "condition": "B", "semantic_name": "crossing_direction", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_currency_alert_03", "condition": "A", "semantic_name": "base_currency", "actual_name": "base_currency", "token_ids": [3152, 34710], "token_count": 2}
+{"base_id": "s9_test_currency_alert_03", "condition": "A", "semantic_name": "quote_currency", "actual_name": "quote_currency", "token_ids": [2949, 34710], "token_count": 2}
+{"base_id": "s9_test_currency_alert_03", "condition": "A", "semantic_name": "rate_threshold", "actual_name": "rate_threshold", "token_ids": [7698, 21858], "token_count": 2}
+{"base_id": "s9_test_currency_alert_03", "condition": "A", "semantic_name": "crossing_direction", "actual_name": "crossing_direction", "token_ids": [28842, 287, 25438], "token_count": 3}
+{"base_id": "s9_test_currency_alert_03", "condition": "B", "semantic_name": "base_currency", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_currency_alert_03", "condition": "B", "semantic_name": "quote_currency", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_currency_alert_03", "condition": "B", "semantic_name": "rate_threshold", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_currency_alert_03", "condition": "B", "semantic_name": "crossing_direction", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_currency_alert_04", "condition": "A", "semantic_name": "base_currency", "actual_name": "base_currency", "token_ids": [3152, 34710], "token_count": 2}
+{"base_id": "s9_test_currency_alert_04", "condition": "A", "semantic_name": "quote_currency", "actual_name": "quote_currency", "token_ids": [2949, 34710], "token_count": 2}
+{"base_id": "s9_test_currency_alert_04", "condition": "A", "semantic_name": "rate_threshold", "actual_name": "rate_threshold", "token_ids": [7698, 21858], "token_count": 2}
+{"base_id": "s9_test_currency_alert_04", "condition": "A", "semantic_name": "crossing_direction", "actual_name": "crossing_direction", "token_ids": [28842, 287, 25438], "token_count": 3}
+{"base_id": "s9_test_currency_alert_04", "condition": "B", "semantic_name": "base_currency", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_currency_alert_04", "condition": "B", "semantic_name": "quote_currency", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_currency_alert_04", "condition": "B", "semantic_name": "rate_threshold", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_currency_alert_04", "condition": "B", "semantic_name": "crossing_direction", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_meeting_room_01", "condition": "A", "semantic_name": "building_name", "actual_name": "building_name", "token_ids": [23296, 1269], "token_count": 2}
+{"base_id": "s9_test_meeting_room_01", "condition": "A", "semantic_name": "floor_number", "actual_name": "floor_number", "token_ids": [30449, 5500], "token_count": 2}
+{"base_id": "s9_test_meeting_room_01", "condition": "A", "semantic_name": "attendee_count", "actual_name": "attendee_count", "token_ids": [56458, 2127, 3180], "token_count": 3}
+{"base_id": "s9_test_meeting_room_01", "condition": "A", "semantic_name": "video_required", "actual_name": "video_required", "token_ids": [9986, 18743], "token_count": 2}
+{"base_id": "s9_test_meeting_room_01", "condition": "B", "semantic_name": "building_name", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_meeting_room_01", "condition": "B", "semantic_name": "floor_number", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_meeting_room_01", "condition": "B", "semantic_name": "attendee_count", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_meeting_room_01", "condition": "B", "semantic_name": "video_required", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_meeting_room_02", "condition": "A", "semantic_name": "building_name", "actual_name": "building_name", "token_ids": [23296, 1269], "token_count": 2}
+{"base_id": "s9_test_meeting_room_02", "condition": "A", "semantic_name": "floor_number", "actual_name": "floor_number", "token_ids": [30449, 5500], "token_count": 2}
+{"base_id": "s9_test_meeting_room_02", "condition": "A", "semantic_name": "attendee_count", "actual_name": "attendee_count", "token_ids": [56458, 2127, 3180], "token_count": 3}
+{"base_id": "s9_test_meeting_room_02", "condition": "A", "semantic_name": "video_required", "actual_name": "video_required", "token_ids": [9986, 18743], "token_count": 2}
+{"base_id": "s9_test_meeting_room_02", "condition": "B", "semantic_name": "building_name", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_meeting_room_02", "condition": "B", "semantic_name": "floor_number", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_meeting_room_02", "condition": "B", "semantic_name": "attendee_count", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_meeting_room_02", "condition": "B", "semantic_name": "video_required", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_meeting_room_03", "condition": "A", "semantic_name": "building_name", "actual_name": "building_name", "token_ids": [23296, 1269], "token_count": 2}
+{"base_id": "s9_test_meeting_room_03", "condition": "A", "semantic_name": "floor_number", "actual_name": "floor_number", "token_ids": [30449, 5500], "token_count": 2}
+{"base_id": "s9_test_meeting_room_03", "condition": "A", "semantic_name": "attendee_count", "actual_name": "attendee_count", "token_ids": [56458, 2127, 3180], "token_count": 3}
+{"base_id": "s9_test_meeting_room_03", "condition": "A", "semantic_name": "video_required", "actual_name": "video_required", "token_ids": [9986, 18743], "token_count": 2}
+{"base_id": "s9_test_meeting_room_03", "condition": "B", "semantic_name": "building_name", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_meeting_room_03", "condition": "B", "semantic_name": "floor_number", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_meeting_room_03", "condition": "B", "semantic_name": "attendee_count", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_meeting_room_03", "condition": "B", "semantic_name": "video_required", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}
+{"base_id": "s9_test_meeting_room_04", "condition": "A", "semantic_name": "building_name", "actual_name": "building_name", "token_ids": [23296, 1269], "token_count": 2}
+{"base_id": "s9_test_meeting_room_04", "condition": "A", "semantic_name": "floor_number", "actual_name": "floor_number", "token_ids": [30449, 5500], "token_count": 2}
+{"base_id": "s9_test_meeting_room_04", "condition": "A", "semantic_name": "attendee_count", "actual_name": "attendee_count", "token_ids": [56458, 2127, 3180], "token_count": 3}
+{"base_id": "s9_test_meeting_room_04", "condition": "A", "semantic_name": "video_required", "actual_name": "video_required", "token_ids": [9986, 18743], "token_count": 2}
+{"base_id": "s9_test_meeting_room_04", "condition": "B", "semantic_name": "building_name", "actual_name": "arg_a", "token_ids": [858, 4306], "token_count": 2}
+{"base_id": "s9_test_meeting_room_04", "condition": "B", "semantic_name": "floor_number", "actual_name": "arg_b", "token_ids": [858, 880], "token_count": 2}
+{"base_id": "s9_test_meeting_room_04", "condition": "B", "semantic_name": "attendee_count", "actual_name": "arg_c", "token_ids": [858, 666], "token_count": 2}
+{"base_id": "s9_test_meeting_room_04", "condition": "B", "semantic_name": "video_required", "actual_name": "arg_d", "token_ids": [858, 814], "token_count": 2}

@@ -1,0 +1,48 @@
+{
+  "construction": "人工定义的新请求与新工具家族；确定性脚本派生四条件",
+  "design": "2x2: identifier semantic/opaque x order original/reversed",
+  "files": {
+    "factorial_v1.jsonl": {
+      "bytes": 205192,
+      "sha256": "511b0bd46572e780c10506009461bfae8a1fc1ab96bc532a24f1487970d135c7"
+    },
+    "identifier_tokenization.jsonl": {
+      "bytes": 32100,
+      "sha256": "4895ce248fc338fcc9b96d5776198bafac0ea238b418ece874a63e087d3b237b"
+    },
+    "pilot_v1.jsonl": {
+      "bytes": 50818,
+      "sha256": "ab4d991e28b9201d9591aa2b5650dde6373e75f3843961aac7a76956667cdb96"
+    },
+    "rendered_prompts.jsonl": {
+      "bytes": 161656,
+      "sha256": "d206250d0d1afa6a5c5c849a680cee7e297cc8a7ff3879d169d57ac1ecbb6d2b"
+    }
+  },
+  "pilot_base_tasks": 6,
+  "pilot_samples": 24,
+  "pilot_test_request_disjoint": true,
+  "seed": 20261016,
+  "source_script_sha256": "48bb7ee1b9790ca5fee9adad639410a376c786fafe817dc4c3a99ba663dc0aa7",
+  "stage8_overlap_status": "新人工构造任务；不宣称基础模型预训练去污染",
+  "validation": {
+    "base_tasks": 24,
+    "conditions": {
+      "A": 24,
+      "B": 24,
+      "C": 24,
+      "D": 24
+    },
+    "families": {
+      "catalog_filter": 16,
+      "currency_alert": 16,
+      "hotel_booking": 16,
+      "meeting_room": 16,
+      "sensor_report": 16,
+      "shipment_quote": 16
+    },
+    "optional_mentioned_base_tasks": 12,
+    "samples": 96
+  },
+  "version": "stage9_schema_binding_factorial_v2"
+}
