@@ -1,0 +1,13 @@
+{
+  "model_name": "base",
+  "model_path": "/home/limeiyan/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": null,
+  "pairs": 60,
+  "samples": 120,
+  "seed": 20261017,
+  "max_new_tokens": 128,
+  "runtime_seconds": 157.595,
+  "peak_memory_gib": 2.93,
+  "pairs_sha256": "e5b5eedcf104396cc11c358904ba873b09989da48d86825b7191aebaadf7c70d",
+  "predictions_sha256": "8d320b333c8fedd1ebc951ab1a6fe6ac5a77d83cd51fdab4a432d9b10921aafb"
+}

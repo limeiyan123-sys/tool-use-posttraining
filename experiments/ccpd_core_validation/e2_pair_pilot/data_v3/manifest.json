@@ -1,0 +1,35 @@
+{
+  "version": "ccpd_e2_pilot_v1",
+  "seed": 20261017,
+  "source": "data\\sft\\fctw_v1\\worlds.jsonl",
+  "source_sha256": "9c86a3d0e0fe8193e5a8d3b197d9b5a6f7801c874d54bbd8b563f89ad34fa7e9",
+  "pairs": 60,
+  "splits": {
+    "train": 40,
+    "dev": 10,
+    "test": 10
+  },
+  "constraint_families": {
+    "enum": 33,
+    "numeric_range": 27
+  },
+  "categories": {
+    "simple_python": 20,
+    "multiple": 17,
+    "parallel": 20,
+    "parallel_multiple": 3
+  },
+  "data_sha256": "e5788137bae54d0c13089023e4a0e36eaa971f9ac03e03ec1f97b3f7b82e549f",
+  "guarantees": [
+    "目标字段为必填且没有 default",
+    "Gold 目标值在用户请求中具有直接文本证据",
+    "E+ 与 E- 从同一工具复制并使用相同类型的约束编辑",
+    "E+ Gold 通过合同子集检查，E- Gold 被合同子集检查拒绝",
+    "两侧均为单工具闭世界且使用等长不透明名称"
+  ],
+  "limitations": [
+    "来源任务参与过 FCTW 训练数据构造，不能作为历史 Adapter 的独立泛化集",
+    "执行检查仅覆盖 required、enum、maximum，不证明真实外部 API 业务语义",
+    "已完成 14 对分层语义抽查；样本量不足以证明总体标签一致率达到 95%"
+  ]
+}

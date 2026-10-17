@@ -1,0 +1,995 @@
+{
+  "base": {
+    "pairs": 60,
+    "pair_success": 0.0,
+    "valid_call_rate": 0.9166666666666666,
+    "false_reject_rate": 0.0,
+    "invalid_call_rate": 0.9166666666666666,
+    "plus_invalid_output_rate": 0.08333333333333333,
+    "minus_invalid_output_rate": 0.08333333333333333,
+    "decision_pair_counts": {
+      "CALL/CALL": 54,
+      "CALL/INVALID": 1,
+      "INVALID/CALL": 1,
+      "INVALID/INVALID": 4
+    },
+    "cases": [
+      {
+        "pair_id": "ccpd_fctw_simple_python_4",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_146",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_158",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_106",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_3",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_82",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_96",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_73",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_multiple_43",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_5",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_67",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_30",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_179",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_68",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_44",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_358",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_141",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_186",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_210",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_13",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_multiple_13",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "INVALID",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_362",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_273",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_93",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_multiple_30",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_51",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_162",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "INVALID",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_127",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "INVALID",
+        "minus_decision": "INVALID",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_152",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_115",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_90",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "INVALID",
+        "minus_decision": "INVALID",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_140",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_39",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_152",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_31",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_194",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_159",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_145",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_71",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_103",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_187",
+        "split": "dev",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_86",
+        "split": "dev",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_104",
+        "split": "dev",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_165",
+        "split": "dev",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_178",
+        "split": "dev",
+        "constraint_family": "enum",
+        "plus_decision": "INVALID",
+        "minus_decision": "INVALID",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_70",
+        "split": "dev",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_138",
+        "split": "dev",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_111",
+        "split": "dev",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_57",
+        "split": "dev",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_89",
+        "split": "dev",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_282",
+        "split": "test",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_42",
+        "split": "test",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_129",
+        "split": "test",
+        "constraint_family": "enum",
+        "plus_decision": "INVALID",
+        "minus_decision": "INVALID",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_70",
+        "split": "test",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_101",
+        "split": "test",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_333",
+        "split": "test",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_183",
+        "split": "test",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_148",
+        "split": "test",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_79",
+        "split": "test",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_24",
+        "split": "test",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      }
+    ]
+  },
+  "fdsrc": {
+    "pairs": 60,
+    "pair_success": 0.0,
+    "valid_call_rate": 0.9,
+    "false_reject_rate": 0.0,
+    "invalid_call_rate": 0.9166666666666666,
+    "plus_invalid_output_rate": 0.1,
+    "minus_invalid_output_rate": 0.08333333333333333,
+    "decision_pair_counts": {
+      "CALL/CALL": 54,
+      "INVALID/CALL": 1,
+      "INVALID/INVALID": 5
+    },
+    "cases": [
+      {
+        "pair_id": "ccpd_fctw_simple_python_4",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_146",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_158",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_106",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_3",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_82",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_96",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_73",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_multiple_43",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_5",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_67",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_30",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_179",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_68",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_44",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_358",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_141",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_186",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_210",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_13",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_multiple_13",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_362",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_273",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_93",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_multiple_30",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_51",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_162",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "INVALID",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_127",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "INVALID",
+        "minus_decision": "INVALID",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_152",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_115",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "INVALID",
+        "minus_decision": "INVALID",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_90",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "INVALID",
+        "minus_decision": "INVALID",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_140",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_39",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_152",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_31",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_194",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_159",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_145",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_71",
+        "split": "train",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_103",
+        "split": "train",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_187",
+        "split": "dev",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_86",
+        "split": "dev",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_104",
+        "split": "dev",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_165",
+        "split": "dev",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_178",
+        "split": "dev",
+        "constraint_family": "enum",
+        "plus_decision": "INVALID",
+        "minus_decision": "INVALID",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_70",
+        "split": "dev",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_138",
+        "split": "dev",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_111",
+        "split": "dev",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_57",
+        "split": "dev",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_89",
+        "split": "dev",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_282",
+        "split": "test",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_42",
+        "split": "test",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_129",
+        "split": "test",
+        "constraint_family": "enum",
+        "plus_decision": "INVALID",
+        "minus_decision": "INVALID",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_70",
+        "split": "test",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_101",
+        "split": "test",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_simple_python_333",
+        "split": "test",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_183",
+        "split": "test",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_148",
+        "split": "test",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_parallel_79",
+        "split": "test",
+        "constraint_family": "numeric_range",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      },
+      {
+        "pair_id": "ccpd_fctw_multiple_24",
+        "split": "test",
+        "constraint_family": "enum",
+        "plus_decision": "CALL",
+        "minus_decision": "CALL",
+        "pair_success": false
+      }
+    ]
+  }
+}

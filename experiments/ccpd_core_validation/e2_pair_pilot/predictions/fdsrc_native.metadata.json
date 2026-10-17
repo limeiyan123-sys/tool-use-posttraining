@@ -1,0 +1,13 @@
+{
+  "model_name": "fdsrc",
+  "model_path": "/home/limeiyan/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": "/home/limeiyan/tool-use-posttraining/checkpoints/stage3_failure_driven",
+  "pairs": 60,
+  "samples": 120,
+  "seed": 20261017,
+  "max_new_tokens": 128,
+  "runtime_seconds": 341.66,
+  "peak_memory_gib": 3.028,
+  "pairs_sha256": "e5b5eedcf104396cc11c358904ba873b09989da48d86825b7191aebaadf7c70d",
+  "predictions_sha256": "06524f0eb8c1f80c0565b9c414c4807880b03ca14e5cf3705de275ff3001f145"
+}

@@ -1,0 +1,26 @@
+{
+  "source_probe": "data\\evaluation\\capability_probe_v1\\capability_probe_v1.jsonl",
+  "source_probe_sha256": "a39f5a70109c8028fd0e40f7c0f5e7696288e97b6ea833ea9c076d3000beb536",
+  "source_world": "data\\evaluation\\fctw_eval_v1\\fctw_eval_v1.jsonl",
+  "source_world_sha256": "4c202f0923d8bc79fc7cf8b1cde2d5cc9ffac80b58ef81ba93171fc9d3347a1b",
+  "pairs_total": 30,
+  "strict_required_pairs": 21,
+  "optional_sensitivity_pairs": 9,
+  "strict_constraint_families": {
+    "numeric_range": 8,
+    "enum": 7,
+    "string_pattern": 6
+  },
+  "optional_base_ids": [
+    "fctw_eval_multiple_107",
+    "fctw_eval_multiple_146",
+    "fctw_eval_multiple_174",
+    "fctw_eval_multiple_21",
+    "fctw_eval_parallel_101",
+    "fctw_eval_simple_python_0",
+    "fctw_eval_simple_python_155",
+    "fctw_eval_simple_python_306",
+    "fctw_eval_simple_python_396"
+  ],
+  "exclusion_rule": "主分析仅保留目标字段必填且约束排除全部冻结 Gold 值的配对"
+}

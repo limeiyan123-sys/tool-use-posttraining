@@ -1,0 +1,18 @@
+{
+  "source_groups": 100,
+  "candidate_outcomes": {
+    "accepted": 64,
+    "no_direct_query_evidence": 18,
+    "strict_upper_bound_ambiguity": 2,
+    "target_optional": 16
+  },
+  "accepted_before_sampling": 64,
+  "pilot_pairs": 60,
+  "shortcut_counts": {
+    "constraint_presence_distinguishes": 0,
+    "restriction_marker_distinguishes": 0,
+    "tool_name_prefix_distinguishes": 0,
+    "minus_serialized_longer": 25
+  },
+  "manual_review_status": "14_stratified_pairs_passed_after_rule_revision"
+}

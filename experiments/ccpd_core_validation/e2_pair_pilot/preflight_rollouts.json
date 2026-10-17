@@ -1,0 +1,571 @@
+{
+  "config": {
+    "project_root": "/home/limeiyan/tool-use-posttraining",
+    "pairs": "/home/limeiyan/ccpd-e1/data/e2_pilot_pairs.jsonl",
+    "model_path": "/home/limeiyan/models/Qwen2.5-1.5B-Instruct",
+    "output": "/home/limeiyan/ccpd-e1/results/preflight_rollouts.json",
+    "pair_count": 8,
+    "rollouts_per_side": 4,
+    "max_new_tokens": 96,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "seed": 20261017,
+    "gpu_memory_fraction": 0.16
+  },
+  "summary": {
+    "pairs": 8,
+    "rollouts_per_side": 4,
+    "plus_decision_success_rate": 0.84375,
+    "minus_decision_success_rate": 0.0,
+    "plus_content_success_rate": 0.375,
+    "minus_content_success_rate": 0.0,
+    "joint_pair_success_rate": 0.0,
+    "b1_plus_zero_variance_rate": 0.75,
+    "b1_minus_zero_variance_rate": 1.0,
+    "b2_mixed_zero_variance_rate": 0.5,
+    "b3_paired_zero_variance_rate": 1.0,
+    "b2_effective_advantage_fraction": 0.5,
+    "b3_effective_advantage_fraction": 0.0,
+    "runtime_seconds": 20.541,
+    "peak_memory_gib": 3.073,
+    "pairs_sha256": "e5b5eedcf104396cc11c358904ba873b09989da48d86825b7191aebaadf7c70d"
+  },
+  "pair_records": [
+    {
+      "pair_id": "ccpd_fctw_simple_python_4",
+      "plus": [
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_cfcfcb005709\", \"arguments\": {\"a\": 2, \"b\": 6, \"c\": 5}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": true
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_cfcfcb005709\", \"arguments\": {\"a\": 2, \"b\": 6, \"c\": 5}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": true
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_cfcfcb005709\", \"arguments\": {\"a\": 2, \"b\": 6, \"c\": 5}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": true
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_cfcfcb005709\", \"arguments\": {\"a\": 2, \"b\": 6, \"c\": 5}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": true
+        }
+      ],
+      "minus": [
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_f4e8c15776bc\", \"arguments\": {\"a\": 2, \"b\": 6, \"c\": 5}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_f4e8c15776bc\", \"arguments\": {\"a\": 2, \"b\": 6, \"c\": 5}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_f4e8c15776bc\", \"arguments\": {\"a\": 2, \"b\": 6, \"c\": 5}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_f4e8c15776bc\", \"arguments\": {\"a\": 2, \"b\": 6, \"c\": 5}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        }
+      ],
+      "b1_plus_zero_variance": true,
+      "b1_minus_zero_variance": true,
+      "b2_mixed_zero_variance": false,
+      "b3_paired_zero_variance": true,
+      "b2_effective_advantages": 8,
+      "b3_effective_advantages": 0,
+      "pair_rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair_id": "ccpd_fctw_simple_python_146",
+      "plus": [
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_440e3c18bd53\", \"arguments\": {\"company\": \"Amazon\", \"days\": 3}}\n</tool_call><|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_440e3c18bd53\", \"arguments\": {\"company\": \"Amazon\", \"days\": 3, \"data_type\": \"Close\"}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": true
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_440e3c18bd53\", \"arguments\": {\"company\": \"Amazon\", \"days\": 3}}\n</tool_call><|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_440e3c18bd53\", \"arguments\": {\"company\": \"Amazon\", \"days\": 3, \"data_type\": \"Close\"}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": true
+        }
+      ],
+      "minus": [
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_fd492a5232fd\", \"arguments\": {\"company\": \"Amazon\", \"data_type\": \"Close\", \"days\": 3}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_fd492a5232fd\", \"arguments\": {\"company\": \"Amazon\", \"days\": 3}}\n</tool_call><|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_fd492a5232fd\", \"arguments\": {\"company\": \"Amazon\", \"data_type\": \"Close\", \"days\": 3}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_fd492a5232fd\", \"arguments\": {\"company\": \"Amazon\", \"days\": 3}}\n</tool_call><|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        }
+      ],
+      "b1_plus_zero_variance": false,
+      "b1_minus_zero_variance": true,
+      "b2_mixed_zero_variance": false,
+      "b3_paired_zero_variance": true,
+      "b2_effective_advantages": 8,
+      "b3_effective_advantages": 0,
+      "pair_rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair_id": "ccpd_fctw_simple_python_158",
+      "plus": [
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_3eb23d3375a9\", \"arguments\": {\"from_year\": 2012, \"location\": \"New York, NY\", \"name\": \"Mr. X\", \"to_year\": 2015}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": true
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_3eb23d3375a9\", \"arguments\": {\"from_year\": 2012, \"location\": \"New York, NY\", \"name\": \"X\", \"to_year\": 2015}}\n</tool_call><|im_end|><|endoftext|><|endoftext|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_3eb23d3375a9\", \"arguments\": {\"name\": \"X\", \"location\": \"New York, NY\", \"to_year\": 2015, \"from_year\": 2012}}\n</tool_call><|im_end|><|endoftext|><|endoftext|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_3eb23d3375a9\", \"arguments\": {\"from_year\": 2012, \"location\": \"New York, NY\", \"name\": \"Mr. X\", \"to_year\": 2015}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": true
+        }
+      ],
+      "minus": [
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_524ae36f4143\", \"arguments\": {\"name\": \"Mr. X\", \"location\": \"New York, NY\", \"to_year\": 2015, \"from_year\": 2012}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_524ae36f4143\", \"arguments\": {\"name\": \"X\", \"location\": \"New York, NY\", \"to_year\": 2015, \"from_year\": 2012}}\n</tool_call><|im_end|><|endoftext|><|endoftext|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_524ae36f4143\", \"arguments\": {\"from_year\": 2012, \"location\": \"New York, NY\", \"name\": \"Mr. X\", \"to_year\": 2015}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_524ae36f4143\", \"arguments\": {\"name\": \"X\", \"location\": \"New York, NY\", \"to_year\": 2015, \"from_year\": 2012}}\n</tool_call><|im_end|><|endoftext|><|endoftext|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        }
+      ],
+      "b1_plus_zero_variance": false,
+      "b1_minus_zero_variance": true,
+      "b2_mixed_zero_variance": false,
+      "b3_paired_zero_variance": true,
+      "b2_effective_advantages": 8,
+      "b3_effective_advantages": 0,
+      "pair_rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair_id": "ccpd_fctw_multiple_106",
+      "plus": [
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_623e31b556ed\", \"arguments\": {\"distance\": 4, \"charge\": 0.01}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_623e31b556ed\", \"arguments\": {\"charge\": 0.01, \"distance\": 4}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_623e31b556ed\", \"arguments\": {\"charge\": 0.01, \"distance\": 4}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_623e31b556ed\", \"arguments\": {\"charge\": 0.01, \"distance\": 4}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": false
+        }
+      ],
+      "minus": [
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_c52f2b3d4a78\", \"arguments\": {\"charge\": 0.01, \"distance\": 4}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_c52f2b3d4a78\", \"arguments\": {\"charge\": 0.01, \"distance\": 4}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_c52f2b3d4a78\", \"arguments\": {\"charge\": 0.01, \"distance\": 4}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_c52f2b3d4a78\", \"arguments\": {\"charge\": 0.01, \"distance\": 4}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        }
+      ],
+      "b1_plus_zero_variance": true,
+      "b1_minus_zero_variance": true,
+      "b2_mixed_zero_variance": true,
+      "b3_paired_zero_variance": true,
+      "b2_effective_advantages": 0,
+      "b3_effective_advantages": 0,
+      "pair_rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair_id": "ccpd_fctw_simple_python_3",
+      "plus": [
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_e6c04284c3b4\", \"arguments\": {\"a\": 1, \"b\": -3, \"c\": 2}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": true
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_e6c04284c3b4\", \"arguments\": {\"a\": 1, \"b\": -3, \"c\": 2}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": true
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_e6c04284c3b4\", \"arguments\": {\"a\": 1, \"b\": -3, \"c\": 2}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": true
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_e6c04284c3b4\", \"arguments\": {\"a\": 1, \"b\": -3, \"c\": 2}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": true
+        }
+      ],
+      "minus": [
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_f567c3b5589a\", \"arguments\": {\"a\": 1, \"b\": -3, \"c\": 2}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_f567c3b5589a\", \"arguments\": {\"a\": 1, \"b\": -3, \"c\": 2}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_f567c3b5589a\", \"arguments\": {\"a\": 1, \"b\": -3, \"c\": 2}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_f567c3b5589a\", \"arguments\": {\"a\": 1, \"b\": -3, \"c\": 2}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        }
+      ],
+      "b1_plus_zero_variance": true,
+      "b1_minus_zero_variance": true,
+      "b2_mixed_zero_variance": false,
+      "b3_paired_zero_variance": true,
+      "b2_effective_advantages": 8,
+      "b3_effective_advantages": 0,
+      "pair_rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair_id": "ccpd_fctw_multiple_82",
+      "plus": [
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_825bf54fa18e\", \"arguments\": {\"key\": \"C Major\", \"tempo\": 120}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_825bf54fa18e\", \"arguments\": {\"key\": \"C Major\", \"tempo\": 120}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_825bf54fa18e\", \"arguments\": {\"key\": \"C Major\", \"tempo\": 120}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_825bf54fa18e\", \"arguments\": {\"key\": \"C Major\", \"tempo\": 120}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": false
+        }
+      ],
+      "minus": [
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_fd0019bdb5b8\", \"arguments\": {\"key\": \"C Major\", \"tempo\": 120}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_fd0019bdb5b8\", \"arguments\": {\"key\": \"C Major\", \"tempo\": 120}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_fd0019bdb5b8\", \"arguments\": {\"key\": \"C Major\", \"tempo\": 120}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_fd0019bdb5b8\", \"arguments\": {\"key\": \"C Major\", \"tempo\": 120}}\n</tool_call><|im_end|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        }
+      ],
+      "b1_plus_zero_variance": true,
+      "b1_minus_zero_variance": true,
+      "b2_mixed_zero_variance": true,
+      "b3_paired_zero_variance": true,
+      "b2_effective_advantages": 0,
+      "b3_effective_advantages": 0,
+      "pair_rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair_id": "ccpd_fctw_parallel_96",
+      "plus": [
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_b8678958b602\", \"arguments\": {\"charge1\": 5, \"charge2\": 10, \"distance\": 2}}\n</tool_call>\n<tool_call>\n{\"name\": \"tool_b8678958b602\", \"arguments\": {\"charge1\": 5, \"charge2\": 10, \"distance\": 2, \"medium_permittivity\":",
+          "format_valid": false,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_b8678958b602\", \"arguments\": {\"charge1\": 5, \"charge2\": 10, \"distance\": 2}}\n</tool_call><|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_b8678958b602\", \"arguments\": {\"charge1\": 5, \"charge2\": 10, \"distance\": 2}}\n</tool_call><|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_b8678958b602\", \"arguments\": {\"charge1\": 5, \"charge2\": 10, \"distance\": 2}}\n</tool_call><|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+          "format_valid": true,
+          "decision_correct": true,
+          "content_correct": false
+        }
+      ],
+      "minus": [
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_6ebb19c886f3\", \"arguments\": {\"charge1\": 5, \"charge2\": 10, \"distance\": 2}}\n</tool_call>\n<tool_call>\n{\"name\": \"tool_6ebb19c886f3\", \"arguments\": {\"charge1\": 5, \"charge2\": 10, \"distance\": 2, \"medium_permittivity\": 5",
+          "format_valid": false,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_6ebb19c886f3\", \"arguments\": {\"charge1\": 5, \"charge2\": 10, \"distance\": 2}}\n</tool_call>\n<tool_call>\n{\"name\": \"tool_6ebb19c886f3\", \"arguments\": {\"charge1\": 5, \"charge2\": 10, \"distance\": 2, \"medium_permittivity\": 5",
+          "format_valid": false,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_6ebb19c886f3\", \"arguments\": {\"charge1\": 5, \"charge2\": 10, \"distance\": 2}}\n</tool_call><|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+          "format_valid": true,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_6ebb19c886f3\", \"arguments\": {\"charge1\": 5, \"charge2\": 10, \"distance\": 2, \"medium_permittivity\": 8.854 * 10^-12}}\n</tool_call>\n<tool_call>\n{\"name\": \"tool_6ebb19c886f3\", \"arguments\": {\"charge1\": 5, \"charge",
+          "format_valid": false,
+          "decision_correct": false,
+          "content_correct": false
+        }
+      ],
+      "b1_plus_zero_variance": true,
+      "b1_minus_zero_variance": true,
+      "b2_mixed_zero_variance": true,
+      "b3_paired_zero_variance": true,
+      "b2_effective_advantages": 0,
+      "b3_effective_advantages": 0,
+      "pair_rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair_id": "ccpd_fctw_parallel_73",
+      "plus": [
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_085a41c5362f\", \"arguments\": {\"function\": \"3*x**2 + 2*x - 1\", \"function_variable\": \"x\", \"value\": 5}}\n</tool_call>\n<tool_call>\n{\"name\": \"tool_085a41c5362f\", \"arguments\": {\"function\": \"4*y**3 - 3*y**2 + 2",
+          "format_valid": false,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_085a41c5362f\", \"arguments\": {\"function\": \"3*x**2 + 2*x - 1\", \"function_variable\": \"x\", \"value\": 5}}\n</tool_call>\n<tool_call>\n{\"name\": \"tool_085a41c5362f\", \"arguments\": {\"function\": \"4*y**3 - 3*y**2 + 2",
+          "format_valid": false,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_085a41c5362f\", \"arguments\": {\"function\": \"3*x**2 + 2*x - 1\", \"function_variable\": \"x\", \"value\": 5}}\n</tool_call>\n<tool_call>\n{\"name\": \"tool_085a41c5362f\", \"arguments\": {\"function\": \"-3*y**2 + 2*y - 1\", \"",
+          "format_valid": false,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_085a41c5362f\", \"arguments\": {\"function\": \"3*x**2 + 2*x - 1\", \"function_variable\": \"x\", \"value\": 5}}\n</tool_call>\n<tool_call>\n{\"name\": \"tool_085a41c5362f\", \"arguments\": {\"function\": \"4*y**3 - 3*y**2 + 2",
+          "format_valid": false,
+          "decision_correct": false,
+          "content_correct": false
+        }
+      ],
+      "minus": [
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_9607a6327fe7\", \"arguments\": {\"function\": \"3*x**2 + 2*x - 1\", \"function_variable\": \"x\", \"value\": 5}}\n</tool_call>\n<tool_call>\n{\"name\": \"tool_9607a6327fe7\", \"arguments\": {\"function\": \"4*y**3 - 3*y**2 + 2*y -",
+          "format_valid": false,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_9607a6327fe7\", \"arguments\": {\"function\": \"3*x**2 + 2*x - 1\", \"function_variable\": \"x\", \"value\": 5}}\n</tool_call>\n<tool_call>\n{\"name\": \"tool_9607a6327fe7\", \"arguments\": {\"function\": \"4*y**3 - 3*y**2 + 2*y -",
+          "format_valid": false,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_9607a6327fe7\", \"arguments\": {\"function\": \"3*x**2 + 2*x - 1\", \"function_variable\": \"x\", \"value\": 5}}\n</tool_call>\n<tool_call>\n{\"name\": \"tool_9607a6327fe7\", \"arguments\": {\"function\": \"4*y**3 - 3*y**2 + 2*y -",
+          "format_valid": false,
+          "decision_correct": false,
+          "content_correct": false
+        },
+        {
+          "response": "<tool_call>\n{\"name\": \"tool_9607a6327fe7\", \"arguments\": {\"function\": \"3*x**2 + 2*x - 1\", \"function_variable\": \"x\", \"value\": 5}}\n</tool_call>\n<tool_call>\n{\"name\": \"tool_9607a6327fe7\", \"arguments\": {\"function\": \"4*y**3 - 3*y**2 + 2*y -",
+          "format_valid": false,
+          "decision_correct": false,
+          "content_correct": false
+        }
+      ],
+      "b1_plus_zero_variance": true,
+      "b1_minus_zero_variance": true,
+      "b2_mixed_zero_variance": true,
+      "b3_paired_zero_variance": true,
+      "b2_effective_advantages": 0,
+      "b3_effective_advantages": 0,
+      "pair_rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

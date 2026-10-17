@@ -1,0 +1,1214 @@
+{
+  "bootstrap": {
+    "unit": "base_request",
+    "repeats": 10000,
+    "seed": 20261017
+  },
+  "models": {
+    "base": {
+      "strict_primary": {
+        "pairs": 21,
+        "native_pair_success": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "native_valid_call": {
+          "value": 0.9047619047619048,
+          "ci95": [
+            0.7619047619047619,
+            1.0
+          ]
+        },
+        "native_invalid_call": {
+          "value": 0.9047619047619048,
+          "ci95": [
+            0.7619047619047619,
+            1.0
+          ]
+        },
+        "native_false_reject": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "native_valid_invalid_output": {
+          "value": 0.09523809523809523,
+          "ci95": [
+            0.0,
+            0.23809523809523808
+          ]
+        },
+        "native_invalid_invalid_output": {
+          "value": 0.09523809523809523,
+          "ci95": [
+            0.0,
+            0.23809523809523808
+          ]
+        },
+        "probe_pair_success": {
+          "value": 0.5714285714285714,
+          "ci95": [
+            0.38095238095238093,
+            0.7619047619047619
+          ]
+        },
+        "probe_valid_call": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_invalid_call": {
+          "value": 0.42857142857142855,
+          "ci95": [
+            0.23809523809523808,
+            0.6666666666666666
+          ]
+        },
+        "probe_false_reject": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_valid_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_invalid_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_concordant": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_concordance_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_score_difference": {
+          "value": 6.693452380952381,
+          "ci95": [
+            5.470238095238095,
+            7.970312499999999
+          ]
+        },
+        "probe_mean_decision_score": {
+          "value": 2.8705357142857144,
+          "ci95": [
+            2.2410714285714284,
+            3.5148809523809526
+          ]
+        },
+        "probe_label_order_agreement_valid": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_label_order_agreement_invalid": {
+          "value": 0.7619047619047619,
+          "ci95": [
+            0.5714285714285714,
+            0.9523809523809523
+          ]
+        },
+        "native_probe_agreement_valid": {
+          "value": 0.9047619047619048,
+          "ci95": [
+            0.7619047619047619,
+            1.0
+          ]
+        },
+        "native_probe_agreement_invalid": {
+          "value": 0.42857142857142855,
+          "ci95": [
+            0.23809523809523808,
+            0.6190476190476191
+          ]
+        }
+      },
+      "all_30_sensitivity": {
+        "pairs": 30,
+        "native_pair_success": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "native_valid_call": {
+          "value": 0.9333333333333333,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ]
+        },
+        "native_invalid_call": {
+          "value": 0.9333333333333333,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ]
+        },
+        "native_false_reject": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "native_valid_invalid_output": {
+          "value": 0.06666666666666667,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "native_invalid_invalid_output": {
+          "value": 0.06666666666666667,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "probe_pair_success": {
+          "value": 0.5333333333333333,
+          "ci95": [
+            0.36666666666666664,
+            0.7
+          ]
+        },
+        "probe_valid_call": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_invalid_call": {
+          "value": 0.4666666666666667,
+          "ci95": [
+            0.3,
+            0.6333333333333333
+          ]
+        },
+        "probe_false_reject": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_valid_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_invalid_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_concordant": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_concordance_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_score_difference": {
+          "value": 6.575,
+          "ci95": [
+            5.583333333333333,
+            7.577135416666667
+          ]
+        },
+        "probe_mean_decision_score": {
+          "value": 3.160416666666667,
+          "ci95": [
+            2.6062239583333335,
+            3.7333593749999996
+          ]
+        },
+        "probe_label_order_agreement_valid": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_label_order_agreement_invalid": {
+          "value": 0.7333333333333333,
+          "ci95": [
+            0.5666666666666667,
+            0.9
+          ]
+        },
+        "native_probe_agreement_valid": {
+          "value": 0.9333333333333333,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ]
+        },
+        "native_probe_agreement_invalid": {
+          "value": 0.4666666666666667,
+          "ci95": [
+            0.3,
+            0.6333333333333333
+          ]
+        }
+      }
+    },
+    "fdsrc": {
+      "strict_primary": {
+        "pairs": 21,
+        "native_pair_success": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "native_valid_call": {
+          "value": 0.9047619047619048,
+          "ci95": [
+            0.7619047619047619,
+            1.0
+          ]
+        },
+        "native_invalid_call": {
+          "value": 0.9047619047619048,
+          "ci95": [
+            0.7619047619047619,
+            1.0
+          ]
+        },
+        "native_false_reject": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "native_valid_invalid_output": {
+          "value": 0.09523809523809523,
+          "ci95": [
+            0.0,
+            0.23809523809523808
+          ]
+        },
+        "native_invalid_invalid_output": {
+          "value": 0.09523809523809523,
+          "ci95": [
+            0.0,
+            0.23809523809523808
+          ]
+        },
+        "probe_pair_success": {
+          "value": 0.3333333333333333,
+          "ci95": [
+            0.14285714285714285,
+            0.5238095238095238
+          ]
+        },
+        "probe_valid_call": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_invalid_call": {
+          "value": 0.6666666666666666,
+          "ci95": [
+            0.47619047619047616,
+            0.8571428571428571
+          ]
+        },
+        "probe_false_reject": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_valid_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_invalid_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_concordant": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_concordance_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_score_difference": {
+          "value": 2.1964285714285716,
+          "ci95": [
+            1.809449404761905,
+            2.630952380952381
+          ]
+        },
+        "probe_mean_decision_score": {
+          "value": 1.3392857142857142,
+          "ci95": [
+            1.0758928571428572,
+            1.5907738095238095
+          ]
+        },
+        "probe_label_order_agreement_valid": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_label_order_agreement_invalid": {
+          "value": 0.5714285714285714,
+          "ci95": [
+            0.38095238095238093,
+            0.7619047619047619
+          ]
+        },
+        "native_probe_agreement_valid": {
+          "value": 0.9047619047619048,
+          "ci95": [
+            0.7619047619047619,
+            1.0
+          ]
+        },
+        "native_probe_agreement_invalid": {
+          "value": 0.5714285714285714,
+          "ci95": [
+            0.38095238095238093,
+            0.7619047619047619
+          ]
+        }
+      },
+      "all_30_sensitivity": {
+        "pairs": 30,
+        "native_pair_success": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "native_valid_call": {
+          "value": 0.9333333333333333,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ]
+        },
+        "native_invalid_call": {
+          "value": 0.9333333333333333,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ]
+        },
+        "native_false_reject": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "native_valid_invalid_output": {
+          "value": 0.06666666666666667,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "native_invalid_invalid_output": {
+          "value": 0.06666666666666667,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "probe_pair_success": {
+          "value": 0.26666666666666666,
+          "ci95": [
+            0.13333333333333333,
+            0.43333333333333335
+          ]
+        },
+        "probe_valid_call": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_invalid_call": {
+          "value": 0.7,
+          "ci95": [
+            0.5333333333333333,
+            0.8666666666666667
+          ]
+        },
+        "probe_false_reject": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_valid_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_invalid_tie": {
+          "value": 0.03333333333333333,
+          "ci95": [
+            0.0,
+            0.1
+          ]
+        },
+        "probe_concordant": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_concordance_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_score_difference": {
+          "value": 2.225,
+          "ci95": [
+            1.9104166666666667,
+            2.560468749999999
+          ]
+        },
+        "probe_mean_decision_score": {
+          "value": 1.4604166666666667,
+          "ci95": [
+            1.25,
+            1.6635416666666667
+          ]
+        },
+        "probe_label_order_agreement_valid": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_label_order_agreement_invalid": {
+          "value": 0.5666666666666667,
+          "ci95": [
+            0.4,
+            0.7333333333333333
+          ]
+        },
+        "native_probe_agreement_valid": {
+          "value": 0.9333333333333333,
+          "ci95": [
+            0.8333333333333334,
+            1.0
+          ]
+        },
+        "native_probe_agreement_invalid": {
+          "value": 0.6333333333333333,
+          "ci95": [
+            0.4666666666666667,
+            0.8
+          ]
+        }
+      }
+    },
+    "fwct": {
+      "strict_primary": {
+        "pairs": 21,
+        "native_pair_success": {
+          "value": 0.09523809523809523,
+          "ci95": [
+            0.0,
+            0.23809523809523808
+          ]
+        },
+        "native_valid_call": {
+          "value": 0.6666666666666666,
+          "ci95": [
+            0.47619047619047616,
+            0.8571428571428571
+          ]
+        },
+        "native_invalid_call": {
+          "value": 0.5714285714285714,
+          "ci95": [
+            0.38095238095238093,
+            0.7619047619047619
+          ]
+        },
+        "native_false_reject": {
+          "value": 0.23809523809523808,
+          "ci95": [
+            0.09523809523809523,
+            0.42857142857142855
+          ]
+        },
+        "native_valid_invalid_output": {
+          "value": 0.09523809523809523,
+          "ci95": [
+            0.0,
+            0.23809523809523808
+          ]
+        },
+        "native_invalid_invalid_output": {
+          "value": 0.047619047619047616,
+          "ci95": [
+            0.0,
+            0.14285714285714285
+          ]
+        },
+        "probe_pair_success": {
+          "value": 0.5238095238095238,
+          "ci95": [
+            0.3333333333333333,
+            0.7142857142857143
+          ]
+        },
+        "probe_valid_call": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_invalid_call": {
+          "value": 0.42857142857142855,
+          "ci95": [
+            0.23809523809523808,
+            0.6190476190476191
+          ]
+        },
+        "probe_false_reject": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_valid_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_invalid_tie": {
+          "value": 0.047619047619047616,
+          "ci95": [
+            0.0,
+            0.14285714285714285
+          ]
+        },
+        "probe_concordant": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_concordance_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_score_difference": {
+          "value": 2.4404761904761907,
+          "ci95": [
+            2.0833333333333335,
+            2.8273809523809526
+          ]
+        },
+        "probe_mean_decision_score": {
+          "value": 0.9940476190476191,
+          "ci95": [
+            0.7455357142857143,
+            1.232180059523809
+          ]
+        },
+        "probe_label_order_agreement_valid": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_label_order_agreement_invalid": {
+          "value": 0.5714285714285714,
+          "ci95": [
+            0.3333333333333333,
+            0.7619047619047619
+          ]
+        },
+        "native_probe_agreement_valid": {
+          "value": 0.6666666666666666,
+          "ci95": [
+            0.47619047619047616,
+            0.8571428571428571
+          ]
+        },
+        "native_probe_agreement_invalid": {
+          "value": 0.6190476190476191,
+          "ci95": [
+            0.42857142857142855,
+            0.8095238095238095
+          ]
+        }
+      },
+      "all_30_sensitivity": {
+        "pairs": 30,
+        "native_pair_success": {
+          "value": 0.2,
+          "ci95": [
+            0.06666666666666667,
+            0.36666666666666664
+          ]
+        },
+        "native_valid_call": {
+          "value": 0.7,
+          "ci95": [
+            0.5333333333333333,
+            0.8666666666666667
+          ]
+        },
+        "native_invalid_call": {
+          "value": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ]
+        },
+        "native_false_reject": {
+          "value": 0.23333333333333334,
+          "ci95": [
+            0.1,
+            0.4
+          ]
+        },
+        "native_valid_invalid_output": {
+          "value": 0.06666666666666667,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "native_invalid_invalid_output": {
+          "value": 0.03333333333333333,
+          "ci95": [
+            0.0,
+            0.1
+          ]
+        },
+        "probe_pair_success": {
+          "value": 0.5333333333333333,
+          "ci95": [
+            0.36666666666666664,
+            0.7
+          ]
+        },
+        "probe_valid_call": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_invalid_call": {
+          "value": 0.36666666666666664,
+          "ci95": [
+            0.2,
+            0.5333333333333333
+          ]
+        },
+        "probe_false_reject": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_valid_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_invalid_tie": {
+          "value": 0.1,
+          "ci95": [
+            0.0,
+            0.2
+          ]
+        },
+        "probe_concordant": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_concordance_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_score_difference": {
+          "value": 2.5875,
+          "ci95": [
+            2.285416666666667,
+            2.902083333333333
+          ]
+        },
+        "probe_mean_decision_score": {
+          "value": 1.05,
+          "ci95": [
+            0.8604166666666667,
+            1.2364583333333334
+          ]
+        },
+        "probe_label_order_agreement_valid": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_label_order_agreement_invalid": {
+          "value": 0.5666666666666667,
+          "ci95": [
+            0.4,
+            0.7333333333333333
+          ]
+        },
+        "native_probe_agreement_valid": {
+          "value": 0.7,
+          "ci95": [
+            0.5333333333333333,
+            0.8666666666666667
+          ]
+        },
+        "native_probe_agreement_invalid": {
+          "value": 0.6666666666666666,
+          "ci95": [
+            0.5,
+            0.8333333333333334
+          ]
+        }
+      }
+    },
+    "fctw": {
+      "strict_primary": {
+        "pairs": 21,
+        "native_pair_success": {
+          "value": 0.047619047619047616,
+          "ci95": [
+            0.0,
+            0.14285714285714285
+          ]
+        },
+        "native_valid_call": {
+          "value": 0.8095238095238095,
+          "ci95": [
+            0.6190476190476191,
+            0.9523809523809523
+          ]
+        },
+        "native_invalid_call": {
+          "value": 0.7619047619047619,
+          "ci95": [
+            0.5714285714285714,
+            0.9047619047619048
+          ]
+        },
+        "native_false_reject": {
+          "value": 0.09523809523809523,
+          "ci95": [
+            0.0,
+            0.23809523809523808
+          ]
+        },
+        "native_valid_invalid_output": {
+          "value": 0.09523809523809523,
+          "ci95": [
+            0.0,
+            0.23809523809523808
+          ]
+        },
+        "native_invalid_invalid_output": {
+          "value": 0.09523809523809523,
+          "ci95": [
+            0.0,
+            0.23809523809523808
+          ]
+        },
+        "probe_pair_success": {
+          "value": 0.6190476190476191,
+          "ci95": [
+            0.42857142857142855,
+            0.8095238095238095
+          ]
+        },
+        "probe_valid_call": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_invalid_call": {
+          "value": 0.38095238095238093,
+          "ci95": [
+            0.19047619047619047,
+            0.5714285714285714
+          ]
+        },
+        "probe_false_reject": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_valid_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_invalid_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_concordant": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_concordance_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_score_difference": {
+          "value": 3.1666666666666665,
+          "ci95": [
+            2.642857142857143,
+            3.72626488095238
+          ]
+        },
+        "probe_mean_decision_score": {
+          "value": 1.1636904761904763,
+          "ci95": [
+            0.8794642857142857,
+            1.4345238095238095
+          ]
+        },
+        "probe_label_order_agreement_valid": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_label_order_agreement_invalid": {
+          "value": 0.7619047619047619,
+          "ci95": [
+            0.5714285714285714,
+            0.9047619047619048
+          ]
+        },
+        "native_probe_agreement_valid": {
+          "value": 0.8095238095238095,
+          "ci95": [
+            0.6190476190476191,
+            0.9523809523809523
+          ]
+        },
+        "native_probe_agreement_invalid": {
+          "value": 0.38095238095238093,
+          "ci95": [
+            0.19047619047619047,
+            0.5714285714285714
+          ]
+        }
+      },
+      "all_30_sensitivity": {
+        "pairs": 30,
+        "native_pair_success": {
+          "value": 0.06666666666666667,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "native_valid_call": {
+          "value": 0.8666666666666667,
+          "ci95": [
+            0.7333333333333333,
+            0.9666666666666667
+          ]
+        },
+        "native_invalid_call": {
+          "value": 0.8,
+          "ci95": [
+            0.6333333333333333,
+            0.9333333333333333
+          ]
+        },
+        "native_false_reject": {
+          "value": 0.06666666666666667,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "native_valid_invalid_output": {
+          "value": 0.06666666666666667,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "native_invalid_invalid_output": {
+          "value": 0.06666666666666667,
+          "ci95": [
+            0.0,
+            0.16666666666666666
+          ]
+        },
+        "probe_pair_success": {
+          "value": 0.6,
+          "ci95": [
+            0.43333333333333335,
+            0.7666666666666667
+          ]
+        },
+        "probe_valid_call": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_invalid_call": {
+          "value": 0.4,
+          "ci95": [
+            0.23333333333333334,
+            0.5666666666666667
+          ]
+        },
+        "probe_false_reject": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_valid_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_invalid_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_concordant": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_concordance_tie": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "probe_score_difference": {
+          "value": 3.220833333333333,
+          "ci95": [
+            2.783333333333333,
+            3.6666666666666665
+          ]
+        },
+        "probe_mean_decision_score": {
+          "value": 1.2895833333333333,
+          "ci95": [
+            1.05625,
+            1.5219010416666665
+          ]
+        },
+        "probe_label_order_agreement_valid": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probe_label_order_agreement_invalid": {
+          "value": 0.7,
+          "ci95": [
+            0.5333333333333333,
+            0.8666666666666667
+          ]
+        },
+        "native_probe_agreement_valid": {
+          "value": 0.8666666666666667,
+          "ci95": [
+            0.7333333333333333,
+            0.9666666666666667
+          ]
+        },
+        "native_probe_agreement_invalid": {
+          "value": 0.36666666666666664,
+          "ci95": [
+            0.2,
+            0.5333333333333333
+          ]
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "fwct_minus_fdsrc_strict": {
+      "native_pair_success": {
+        "right_minus_left": 0.09523809523809523,
+        "ci95": [
+          0.0,
+          0.23809523809523808
+        ]
+      },
+      "native_valid_call": {
+        "right_minus_left": -0.23809523809523808,
+        "ci95": [
+          -0.42857142857142855,
+          -0.09523809523809523
+        ]
+      },
+      "native_invalid_call": {
+        "right_minus_left": -0.3333333333333333,
+        "ci95": [
+          -0.5238095238095238,
+          -0.14285714285714285
+        ]
+      },
+      "probe_pair_success": {
+        "right_minus_left": 0.19047619047619047,
+        "ci95": [
+          0.047619047619047616,
+          0.38095238095238093
+        ]
+      },
+      "probe_concordant": {
+        "right_minus_left": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "probe_score_difference": {
+        "right_minus_left": 0.24404761904761904,
+        "ci95": [
+          0.11011904761904762,
+          0.37202380952380953
+        ]
+      },
+      "probe_mean_decision_score": {
+        "right_minus_left": -0.34523809523809523,
+        "ci95": [
+          -0.4226190476190476,
+          -0.2693452380952381
+        ]
+      }
+    }
+  }
+}

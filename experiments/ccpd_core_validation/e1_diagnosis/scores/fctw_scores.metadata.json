@@ -1,0 +1,13 @@
+{
+  "model_name": "fctw",
+  "model_path": "/home/limeiyan/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": "/home/limeiyan/stage9-restored/fctw",
+  "pairs": 30,
+  "samples": 60,
+  "seed": 20261017,
+  "gpu_memory_fraction": 0.16,
+  "runtime_seconds": 5.841,
+  "peak_memory_gib": 3.082,
+  "pairs_sha256": "a15b90d1ef5304396c24c4e4cb9bdba6f98e90257de87d156c86340cb9b0e1ea",
+  "predictions_sha256": "d0af15fac216326177de5c4032c83725a757f3ede29cf5e955743532bb22dbef"
+}
