@@ -88,6 +88,13 @@ class F0ContractTests(unittest.TestCase):
         right = MODULE.query_template("Book a deluxe room for 8 nights", "deluxe room")
         self.assertEqual(left, right)
 
+    def test_normalize_schema_preserves_non_string_type(self) -> None:
+        """BFCL 中的复杂 type 对象必须保留，不能被错误映射或触发异常。"""
+        schema = {"type": {"kind": "union"}, "properties": {"x": {"type": "float"}}}
+        normalized = MODULE.normalize_schema(schema)
+        self.assertEqual(normalized["type"], {"kind": "union"})
+        self.assertEqual(normalized["properties"]["x"]["type"], "number")
+
 
 if __name__ == "__main__":
     unittest.main()

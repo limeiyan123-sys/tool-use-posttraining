@@ -79,8 +79,9 @@ def normalize_schema(schema: dict[str, Any]) -> dict[str, Any]:
     def walk(node: Any) -> None:
         """递归规范化嵌套 Schema。"""
         if isinstance(node, dict):
-            if node.get("type") in mapping:
-                node["type"] = mapping[node["type"]]
+            node_type = node.get("type")
+            if isinstance(node_type, str) and node_type in mapping:
+                node["type"] = mapping[node_type]
             for value in node.values():
                 walk(value)
         elif isinstance(node, list):
