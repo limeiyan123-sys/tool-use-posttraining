@@ -675,7 +675,7 @@ def main() -> None:
         for key, value in row["surface_shortcut_checks"].items():
             shortcut_counts[key] += int(value)
     manifest = {
-        "version": "ccpd_v11_f0_v1",
+        "version": "ccpd_v11_f0_v2",
         "seed": args.seed,
         "gorilla_commit": (
             __import__("subprocess").check_output(

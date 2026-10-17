@@ -1,0 +1,53 @@
+nohup: 忽略输入
+`torch_dtype` is deprecated! Use `dtype` instead!
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+base: 已完成 1/344
+base: 已完成 20/344
+base: 已完成 40/344
+base: 已完成 60/344
+base: 已完成 80/344
+base: 已完成 100/344
+base: 已完成 120/344
+base: 已完成 140/344
+base: 已完成 160/344
+base: 已完成 180/344
+base: 已完成 200/344
+base: 已完成 220/344
+base: 已完成 240/344
+base: 已完成 260/344
+base: 已完成 280/344
+base: 已完成 300/344
+base: 已完成 320/344
+base: 已完成 340/344
+base: 已完成 344/344
+{
+  "model_name": "base",
+  "model_path": "/home/limeiyan/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": null,
+  "pairs": 43,
+  "conditions": [
+    "A_native",
+    "B_rejection_allowed",
+    "C_fixed_rejection",
+    "D_contract_first"
+  ],
+  "splits": [
+    "dev",
+    "test_id",
+    "test_ood_constraint",
+    "test_ood_family"
+  ],
+  "samples": 344,
+  "seed": 20261017,
+  "max_new_tokens": 96,
+  "prompt_texts": {
+    "A_native": "你是严谨的工具调用助手。仅当候选工具的实际功能和参数约束能够完整满足请求时调用；否则不要调用工具。需要调用时只输出结构化工具调用。",
+    "B_rejection_allowed": "你是严谨的工具调用助手。仅当候选工具的实际功能和参数约束能够完整满足请求时调用；否则不要调用工具。需要调用时只输出结构化工具调用。如果当前提供的工具无法完整满足用户要求，拒绝执行是允许的；请明确拒绝，不要尝试生成违反当前参数约束的工具调用。",
+    "C_fixed_rejection": "你是严谨的工具调用助手。仅当候选工具的实际功能和参数约束能够完整满足请求时调用；否则不要调用工具。需要调用时只输出结构化工具调用。如果当前提供的工具无法完整满足用户要求，拒绝执行是允许的；不要生成不合法调用。拒绝时只输出：无法使用当前工具完成请求。",
+    "D_contract_first": "你是严谨的工具调用助手。回答前先在内部依据当前工具定义核对功能、必填参数以及enum、minimum、maximum、const 等参数约束。只有当前合同能够完整满足用户要求时才调用；否则明确拒绝且不要生成工具调用。需要调用时只输出结构化工具调用。不要输出判断过程。"
+  },
+  "runtime_seconds": 332.616,
+  "peak_memory_gib": 2.928,
+  "pairs_sha256": "1ff1e8ab5746eecc42510aeac083c12c4c0367e710e419e11f6404cee40b60bf",
+  "predictions_sha256": "442051bf1cd222a94fb7810a3386f9f556f10feb18001e01c88cc172e7a18428"
+}

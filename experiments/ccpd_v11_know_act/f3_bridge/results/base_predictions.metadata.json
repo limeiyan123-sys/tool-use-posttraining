@@ -1,0 +1,20 @@
+{
+  "model_name": "base",
+  "model_path": "/home/limeiyan/models/Qwen2.5-1.5B-Instruct",
+  "pairs": 43,
+  "conditions": [
+    "B_self_decision",
+    "C_oracle",
+    "D_late_probe",
+    "E_inverted"
+  ],
+  "samples": 344,
+  "seed": 20261017,
+  "base_system": "你是严谨的工具调用助手。仅当候选工具的实际功能和参数约束能够完整满足请求时调用；否则不要调用工具。需要调用时只输出结构化工具调用。",
+  "decision_system": "判断当前提供的工具合同能否完整满足用户请求。只能输出 <decision>CALL</decision> 或 <decision>DECLINE</decision>，不要输出其他内容。",
+  "runtime_seconds": 363.825,
+  "peak_memory_gib": 2.928,
+  "pairs_sha256": "1ff1e8ab5746eecc42510aeac083c12c4c0367e710e419e11f6404cee40b60bf",
+  "probe_summary_sha256": "b6cf561fa0df981bf67c71e4113b194d740458b3d0ae34393342309ca7e4c712",
+  "predictions_sha256": "02591a2a905e6a595c30bca2f6124efc6a63069d0e86f78516382b9a3f507e98"
+}

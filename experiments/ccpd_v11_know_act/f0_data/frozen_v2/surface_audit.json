@@ -1,0 +1,29 @@
+{
+  "feature_policy": "不读取用户请求，仅使用序列化长度、Token 数、字段数、约束键、基数和约束标量",
+  "by_split": {
+    "dev": {
+      "sides": 8,
+      "balanced_accuracy": 0.5,
+      "auroc": 0.5,
+      "paired_concordance": 0.25
+    },
+    "test_id": {
+      "sides": 20,
+      "balanced_accuracy": 0.5,
+      "auroc": 0.5,
+      "paired_concordance": 0.2
+    },
+    "test_ood_family": {
+      "sides": 50,
+      "balanced_accuracy": 0.5,
+      "auroc": 0.5048,
+      "paired_concordance": 0.32
+    },
+    "test_ood_constraint": {
+      "sides": 8,
+      "balanced_accuracy": 0.5,
+      "auroc": 0.5,
+      "paired_concordance": 0.25
+    }
+  }
+}

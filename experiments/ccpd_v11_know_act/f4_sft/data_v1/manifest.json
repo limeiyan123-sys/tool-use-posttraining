@@ -1,0 +1,14 @@
+{
+  "version": "f4_balanced_sft_v1",
+  "source_pairs": "experiments/ccpd_v11_know_act/f0_data/frozen_v2/pairs.jsonl",
+  "source_pairs_sha256": "1ff1e8ab5746eecc42510aeac083c12c4c0367e710e419e11f6404cee40b60bf",
+  "train_pairs": 160,
+  "train_examples": 320,
+  "dev_pairs": 4,
+  "dev_examples": 8,
+  "call_reject_ratio": "1:1",
+  "rejection_target": "无法使用当前工具完成请求。",
+  "train_sha256": "0100cc805abbcf072b2db8065e1f98b6ccfb0898ad3eea3c9624ab08c8ec141c",
+  "dev_sha256": "e0073c0bdda3e3933ce0db8ede1758fb000c306f20b5aa6ce5df9299cf2504a6",
+  "dataset_info_sha256": "547d74ae54b28c678d504810021668219649a08e8a8c198cceec1d2fdb30b84e"
+}

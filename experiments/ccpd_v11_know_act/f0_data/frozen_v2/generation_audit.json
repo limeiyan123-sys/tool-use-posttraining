@@ -1,0 +1,17 @@
+{
+  "candidate_outcomes": {
+    "accepted": 466,
+    "execution_check_failed": 4,
+    "no_strict_target": 130,
+    "not_single_call": 400
+  },
+  "surface_shortcut_counts": {
+    "tool_name_differs": 0,
+    "property_order_differs": 0,
+    "constraint_key_differs": 0,
+    "enum_cardinality_differs": 0,
+    "plus_serialized_longer": 5,
+    "equal_serialized_length": 196
+  },
+  "manual_review_status": "30_stratified_pairs_passed"
+}

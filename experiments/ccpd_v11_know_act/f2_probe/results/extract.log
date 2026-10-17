@@ -1,0 +1,37 @@
+nohup: 忽略输入
+`torch_dtype` is deprecated! Use `dtype` instead!
+base: 已提取 4/406
+base: 已提取 40/406
+base: 已提取 80/406
+base: 已提取 120/406
+base: 已提取 160/406
+base: 已提取 200/406
+base: 已提取 240/406
+base: 已提取 280/406
+base: 已提取 320/406
+base: 已提取 360/406
+base: 已提取 400/406
+base: 已提取 406/406
+{
+  "model_name": "base",
+  "model_path": "/home/limeiyan/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": null,
+  "pairs": 203,
+  "samples": 406,
+  "num_hidden_layers": 28,
+  "selected_hidden_state_indices": {
+    "embedding": 0,
+    "middle": 14,
+    "late": 21,
+    "last": 28
+  },
+  "hidden_size": 1536,
+  "batch_size": 4,
+  "seed": 20261017,
+  "native_system": "你是严谨的工具调用助手。仅当候选工具的实际功能和参数约束能够完整满足请求时调用；否则不要调用工具。需要调用时只输出结构化工具调用。",
+  "runtime_seconds": 9.084,
+  "peak_memory_gib": 3.563,
+  "pairs_sha256": "1ff1e8ab5746eecc42510aeac083c12c4c0367e710e419e11f6404cee40b60bf",
+  "keys_sha256": "15776aa69135d5d1dccca91fb4f592fa3c6cd4d56aa1d2a8947a60f6f56f2190",
+  "arrays_sha256": "02d3e129fd52208725177c565be1c43ef1b38843da9c7e54f749fbc2014d4936"
+}

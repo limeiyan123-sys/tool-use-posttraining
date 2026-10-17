@@ -1,0 +1,68 @@
+{
+  "version": "ccpd_v11_f0_v1",
+  "seed": 20261017,
+  "gorilla_commit": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+  "historical_source_ids": 480,
+  "candidate_count": 466,
+  "candidate_unexposed_count": 248,
+  "candidate_outcomes": {
+    "accepted": 466,
+    "execution_check_failed": 4,
+    "no_strict_target": 130,
+    "not_single_call": 400
+  },
+  "splits": {
+    "train": 160,
+    "dev": 4,
+    "test_id": 10,
+    "test_ood_family": 25,
+    "test_ood_constraint": 4
+  },
+  "historical_exposure_by_split": {
+    "train": 156,
+    "dev": 0,
+    "test_id": 0,
+    "test_ood_family": 0,
+    "test_ood_constraint": 0
+  },
+  "constraint_families": {
+    "numeric_maximum": 45,
+    "numeric_minimum": 51,
+    "enum": 103,
+    "const": 4
+  },
+  "categories": {
+    "simple_python": 125,
+    "multiple": 78
+  },
+  "tool_families_by_split": {
+    "train": 155,
+    "dev": 4,
+    "test_id": 10,
+    "test_ood_family": 25,
+    "test_ood_constraint": 4
+  },
+  "surface_shortcut_counts": {
+    "tool_name_differs": 0,
+    "property_order_differs": 0,
+    "constraint_key_differs": 0,
+    "enum_cardinality_differs": 0,
+    "plus_serialized_longer": 8,
+    "equal_serialized_length": 91
+  },
+  "data_sha256": "618eb499fa9a74e38c274cfc33f210d91adcc17605d331e36d113126ae906f4c",
+  "guarantees": [
+    "同一配对中请求、工具名、工具数量、属性顺序和约束类别保持一致",
+    "目标字段必填、无 default，Gold 目标值在请求中有直接文本证据",
+    "E+ Gold 通过执行合同，E- Gold 被执行合同拒绝",
+    "每侧仅提供同一个闭世界工具，不存在其他工具绕过约束",
+    "source_id 与归一化请求模板均不跨划分",
+    "test_ood_family 的工具家族与训练集完全隔离",
+    "test_ood_constraint 使用训练未出现的 const 约束"
+  ],
+  "limitations": [
+    "自动执行器验证 JSON Schema 子集，不代表真实外部 API 业务语义",
+    "训练集优先复用历史 BFCL 来源；开发与测试仅使用本项目此前未暴露 source_id",
+    "人工语义审核状态由 manual_review.md 单独记录"
+  ]
+}

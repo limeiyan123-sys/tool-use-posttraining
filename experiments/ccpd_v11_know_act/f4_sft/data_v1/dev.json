@@ -1,0 +1,162 @@
+[
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Search for current lawsuits filed against Apple in Santa Clara County."
+      },
+      {
+        "from": "function_call",
+        "value": "{\"arguments\": {\"county\": \"Santa Clara County\", \"entity\": \"Apple\", \"state\": \"California\"}, \"name\": \"tool_b49475791359\"}"
+      }
+    ],
+    "tools": "[{\"description\": \"Retrieve all lawsuits involving a particular entity from specified jurisdiction. The contract permits exactly these values for this field: \\\"Santa Clara County\\\".\", \"name\": \"tool_b49475791359\", \"parameters\": {\"properties\": {\"county\": {\"description\": \"The jurisdiction for the lawsuit search for example Alameda county. The contract permits exactly these values for this field: \\\"Santa Clara County\\\".\", \"enum\": [\"Santa Clara County\"], \"type\": \"string\"}, \"entity\": {\"description\": \"The entity involved in lawsuits.\", \"type\": \"string\"}, \"state\": {\"description\": \"The state for the lawsuit search. Default is California.\", \"type\": \"string\"}}, \"required\": [\"entity\", \"county\"], \"type\": \"object\"}}]",
+    "metadata": {
+      "pair_id": "f0_simple_python_183",
+      "side": "plus",
+      "split": "dev",
+      "constraint_family": "enum",
+      "tool_family": "lawsuit_search"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Search for current lawsuits filed against Apple in Santa Clara County."
+      },
+      {
+        "from": "gpt",
+        "value": "无法使用当前工具完成请求。"
+      }
+    ],
+    "tools": "[{\"description\": \"Retrieve all lawsuits involving a particular entity from specified jurisdiction. The contract permits exactly these values for this field: \\\"Hmfnl Nmjij Fmpifn\\\".\", \"name\": \"tool_b49475791359\", \"parameters\": {\"properties\": {\"county\": {\"description\": \"The jurisdiction for the lawsuit search for example Alameda county. The contract permits exactly these values for this field: \\\"Hmfnl Nmjij Fmpifn\\\".\", \"enum\": [\"Hmfnl Nmjij Fmpifn\"], \"type\": \"string\"}, \"entity\": {\"description\": \"The entity involved in lawsuits.\", \"type\": \"string\"}, \"state\": {\"description\": \"The state for the lawsuit search. Default is California.\", \"type\": \"string\"}}, \"required\": [\"entity\", \"county\"], \"type\": \"object\"}}]",
+    "metadata": {
+      "pair_id": "f0_simple_python_183",
+      "side": "minus",
+      "split": "dev",
+      "constraint_family": "enum",
+      "tool_family": "lawsuit_search"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What is the current time in Sydney, Australia?"
+      },
+      {
+        "from": "function_call",
+        "value": "{\"arguments\": {\"city\": \"Sydney\", \"country\": \"Australia\", \"format\": \"\"}, \"name\": \"tool_4d73ff7cb995\"}"
+      }
+    ],
+    "tools": "[{\"description\": \"Retrieve the current time for a specified city and country. The contract permits exactly these values for this field: \\\"Sydney\\\".\", \"name\": \"tool_4d73ff7cb995\", \"parameters\": {\"properties\": {\"city\": {\"description\": \"The city for which the current time is to be retrieved. The contract permits exactly these values for this field: \\\"Sydney\\\".\", \"enum\": [\"Sydney\"], \"type\": \"string\"}, \"country\": {\"description\": \"The country where the city is located.\", \"type\": \"string\"}, \"format\": {\"description\": \"The format in which the time is to be displayed, optional (defaults to 'HH:MM:SS').\", \"type\": \"string\"}}, \"required\": [\"city\", \"country\"], \"type\": \"object\"}}]",
+    "metadata": {
+      "pair_id": "f0_simple_python_377",
+      "side": "plus",
+      "split": "dev",
+      "constraint_family": "enum",
+      "tool_family": "get_current_time"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What is the current time in Sydney, Australia?"
+      },
+      {
+        "from": "gpt",
+        "value": "无法使用当前工具完成请求。"
+      }
+    ],
+    "tools": "[{\"description\": \"Retrieve the current time for a specified city and country. The contract permits exactly these values for this field: \\\"Pbpbll\\\".\", \"name\": \"tool_4d73ff7cb995\", \"parameters\": {\"properties\": {\"city\": {\"description\": \"The city for which the current time is to be retrieved. The contract permits exactly these values for this field: \\\"Pbpbll\\\".\", \"enum\": [\"Pbpbll\"], \"type\": \"string\"}, \"country\": {\"description\": \"The country where the city is located.\", \"type\": \"string\"}, \"format\": {\"description\": \"The format in which the time is to be displayed, optional (defaults to 'HH:MM:SS').\", \"type\": \"string\"}}, \"required\": [\"city\", \"country\"], \"type\": \"object\"}}]",
+    "metadata": {
+      "pair_id": "f0_simple_python_377",
+      "side": "minus",
+      "split": "dev",
+      "constraint_family": "enum",
+      "tool_family": "get_current_time"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Calculate the Future Value of a $5000 investment made today for a term of 10 years at an annual interest rate of 5%"
+      },
+      {
+        "from": "function_call",
+        "value": "{\"arguments\": {\"annual_interest_rate\": 0.05, \"compounds_per_year\": \"\", \"present_value\": 5000, \"years\": 10}, \"name\": \"tool_033cf999e81f\"}"
+      }
+    ],
+    "tools": "[{\"description\": \"Calculates the future value of an investment based on the present value, interest rate, and time period. The contract permits values no greater than 5000.\", \"name\": \"tool_033cf999e81f\", \"parameters\": {\"properties\": {\"annual_interest_rate\": {\"description\": \"The annual interest rate in decimal form. Example, 5% is 0.05.\", \"type\": \"number\"}, \"compounds_per_year\": {\"description\": \"The number of times the interest is compounded per year. Default is 1 (annual compounding).\", \"type\": \"integer\"}, \"present_value\": {\"description\": \"The present value or principal amount. The contract permits values no greater than 5000.\", \"maximum\": 5000, \"type\": \"integer\"}, \"years\": {\"description\": \"The time period in years for which the investment is made.\", \"type\": \"integer\"}}, \"required\": [\"present_value\", \"annual_interest_rate\", \"years\"], \"type\": \"object\"}}]",
+    "metadata": {
+      "pair_id": "f0_simple_python_154",
+      "side": "plus",
+      "split": "dev",
+      "constraint_family": "numeric_maximum",
+      "tool_family": "calculate_future_value"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Calculate the Future Value of a $5000 investment made today for a term of 10 years at an annual interest rate of 5%"
+      },
+      {
+        "from": "gpt",
+        "value": "无法使用当前工具完成请求。"
+      }
+    ],
+    "tools": "[{\"description\": \"Calculates the future value of an investment based on the present value, interest rate, and time period. The contract permits values no greater than 4500.\", \"name\": \"tool_033cf999e81f\", \"parameters\": {\"properties\": {\"annual_interest_rate\": {\"description\": \"The annual interest rate in decimal form. Example, 5% is 0.05.\", \"type\": \"number\"}, \"compounds_per_year\": {\"description\": \"The number of times the interest is compounded per year. Default is 1 (annual compounding).\", \"type\": \"integer\"}, \"present_value\": {\"description\": \"The present value or principal amount. The contract permits values no greater than 4500.\", \"maximum\": 4500, \"type\": \"integer\"}, \"years\": {\"description\": \"The time period in years for which the investment is made.\", \"type\": \"integer\"}}, \"required\": [\"present_value\", \"annual_interest_rate\", \"years\"], \"type\": \"object\"}}]",
+    "metadata": {
+      "pair_id": "f0_simple_python_154",
+      "side": "minus",
+      "split": "dev",
+      "constraint_family": "numeric_maximum",
+      "tool_family": "calculate_future_value"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Calculate the greatest common divisor of two given numbers, for example 12 and 15."
+      },
+      {
+        "from": "function_call",
+        "value": "{\"arguments\": {\"num1\": 12, \"num2\": 15}, \"name\": \"tool_3d659f51c02b\"}"
+      }
+    ],
+    "tools": "[{\"description\": \"Calculate the greatest common divisor (gcd) of the two integers. The contract permits values no smaller than 12.\", \"name\": \"tool_3d659f51c02b\", \"parameters\": {\"properties\": {\"num1\": {\"description\": \"The first number. The contract permits values no smaller than 12.\", \"minimum\": 12, \"type\": \"integer\"}, \"num2\": {\"description\": \"The second number.\", \"type\": \"integer\"}}, \"required\": [\"num1\", \"num2\"], \"type\": \"object\"}}]",
+    "metadata": {
+      "pair_id": "f0_simple_python_22",
+      "side": "plus",
+      "split": "dev",
+      "constraint_family": "numeric_minimum",
+      "tool_family": "math.gcd"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Calculate the greatest common divisor of two given numbers, for example 12 and 15."
+      },
+      {
+        "from": "gpt",
+        "value": "无法使用当前工具完成请求。"
+      }
+    ],
+    "tools": "[{\"description\": \"Calculate the greatest common divisor (gcd) of the two integers. The contract permits values no smaller than 13.\", \"name\": \"tool_3d659f51c02b\", \"parameters\": {\"properties\": {\"num1\": {\"description\": \"The first number. The contract permits values no smaller than 13.\", \"minimum\": 13, \"type\": \"integer\"}, \"num2\": {\"description\": \"The second number.\", \"type\": \"integer\"}}, \"required\": [\"num1\", \"num2\"], \"type\": \"object\"}}]",
+    "metadata": {
+      "pair_id": "f0_simple_python_22",
+      "side": "minus",
+      "split": "dev",
+      "constraint_family": "numeric_minimum",
+      "tool_family": "math.gcd"
+    }
+  }
+]
