@@ -467,12 +467,17 @@ def choose_ood_families(
 
 def choose_reserve(
     pool: list[dict[str, Any]], target: int, seed: int, label: str,
-    blocked_sources: set[str], blocked_templates: set[str], train_candidates: list[dict[str, Any]],
+    blocked_sources: set[str], blocked_templates: set[str], blocked_families: set[str],
+    train_candidates: list[dict[str, Any]],
 ) -> list[dict[str, Any]]:
     """选择未暴露的开发或测试任务，并确保同家族仍有独立训练模板。"""
     selected: list[dict[str, Any]] = []
     for row in rank_rows(pool, seed, label):
-        if row["source_id"] in blocked_sources or row["template_id"] in blocked_templates:
+        if (
+            row["source_id"] in blocked_sources
+            or row["template_id"] in blocked_templates
+            or row["tool_family"] in blocked_families
+        ):
             continue
         support = any(
             candidate["tool_family"] == row["tool_family"]
@@ -485,6 +490,7 @@ def choose_reserve(
         selected.append(row)
         blocked_sources.add(row["source_id"])
         blocked_templates.add(row["template_id"])
+        blocked_families.add(row["tool_family"])
         if len(selected) == target:
             return selected
     raise RuntimeError(f"{label} 仅选到 {len(selected)}/{target} 对")
@@ -592,16 +598,19 @@ def main() -> None:
     unused_non_ood = [row for row in non_ood if not row["historically_exposed"]]
     blocked_sources = {row["source_id"] for row in ood_family}
     blocked_templates = {row["template_id"] for row in ood_family}
+    reserve_families: set[str] = set()
 
     dev = choose_reserve(
-        unused_non_ood, args.dev, args.seed, "dev", blocked_sources, blocked_templates, non_ood
+        unused_non_ood, args.dev, args.seed, "dev", blocked_sources, blocked_templates,
+        reserve_families, non_ood,
     )
     test_id = choose_reserve(
-        unused_non_ood, args.test_id, args.seed, "test_id", blocked_sources, blocked_templates, non_ood
+        unused_non_ood, args.test_id, args.seed, "test_id", blocked_sources, blocked_templates,
+        reserve_families, non_ood,
     )
     ood_constraint_base = choose_reserve(
         unused_non_ood, args.test_ood_constraint, args.seed, "test_ood_constraint",
-        blocked_sources, blocked_templates, non_ood,
+        blocked_sources, blocked_templates, reserve_families, non_ood,
     )
     ood_constraint = [rebuild_as_const(row) for row in ood_constraint_base]
     required_families = {
