@@ -26,10 +26,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--seed", type=int, default=20261017)
     parser.add_argument("--train", type=int, default=160)
-    parser.add_argument("--dev", type=int, default=5)
+    parser.add_argument("--dev", type=int, default=4)
     parser.add_argument("--test-id", type=int, default=10)
     parser.add_argument("--test-ood-family", type=int, default=25)
-    parser.add_argument("--test-ood-constraint", type=int, default=5)
+    parser.add_argument("--test-ood-constraint", type=int, default=4)
     return parser.parse_args()
 
 
