@@ -95,6 +95,17 @@ class F0ContractTests(unittest.TestCase):
         self.assertEqual(normalized["type"], {"kind": "union"})
         self.assertEqual(normalized["properties"]["x"]["type"], "number")
 
+    def test_ood_family_selection_preserves_repeated_families(self) -> None:
+        """OOD 工具家族应优先使用单样本家族，保留重复家族用于 ID 对照。"""
+        rows = [
+            {"source_id": "single", "tool_family": "single_family"},
+            {"source_id": "repeat_a", "tool_family": "repeat_family"},
+            {"source_id": "repeat_b", "tool_family": "repeat_family"},
+        ]
+        selected, families = MODULE.choose_ood_families(rows, 1, 7)
+        self.assertEqual(selected[0]["tool_family"], "single_family")
+        self.assertEqual(families, {"single_family"})
+
 
 if __name__ == "__main__":
     unittest.main()

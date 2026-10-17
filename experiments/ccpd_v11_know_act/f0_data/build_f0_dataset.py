@@ -26,10 +26,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--seed", type=int, default=20261017)
     parser.add_argument("--train", type=int, default=160)
-    parser.add_argument("--dev", type=int, default=20)
-    parser.add_argument("--test-id", type=int, default=25)
+    parser.add_argument("--dev", type=int, default=5)
+    parser.add_argument("--test-id", type=int, default=10)
     parser.add_argument("--test-ood-family", type=int, default=25)
-    parser.add_argument("--test-ood-constraint", type=int, default=20)
+    parser.add_argument("--test-ood-constraint", type=int, default=5)
     return parser.parse_args()
 
 
@@ -446,7 +446,11 @@ def choose_ood_families(
         by_family[row["tool_family"]].append(row)
     selected: list[dict[str, Any]] = []
     families: set[str] = set()
-    ordered = sorted(by_family, key=lambda family: stable_digest(seed, "ood_family", family))
+    # 优先隔离单样本家族，把有限的重复家族留给严格 ID 开发/测试。
+    ordered = sorted(
+        by_family,
+        key=lambda family: (len(by_family[family]), stable_digest(seed, "ood_family", family)),
+    )
     for family in ordered:
         candidates = rank_rows(by_family[family], seed, "ood_family_rows")
         if not candidates:
