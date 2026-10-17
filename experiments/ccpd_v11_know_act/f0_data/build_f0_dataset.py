@@ -184,10 +184,31 @@ def materialize_arguments(arguments: dict[str, Any]) -> dict[str, Any] | None:
 
 
 def alternative_string(value: str, salt: str) -> str:
-    """构造不等于 Gold 的稳定合同枚举值。"""
-    candidate = f"unsupported_{stable_digest(salt, value)[:10]}"
+    """构造与 Gold 等长且形态相似的稳定伪值，避免显眼前缀捷径。"""
+    digest = stable_digest(salt, value)
+    letters = "abcdefghijklmnopqrstuvwxyz"
+    digits = "0123456789"
+    output: list[str] = []
+    cursor = 0
+    for character in value:
+        code = int(digest[cursor % len(digest)], 16)
+        cursor += 1
+        if character.isalpha():
+            replacement = letters[code % len(letters)]
+            output.append(replacement.upper() if character.isupper() else replacement)
+        elif character.isdigit():
+            output.append(digits[code % len(digits)])
+        else:
+            output.append(character)
+    candidate = "".join(output)
     if candidate.casefold() == value.casefold():
-        raise RuntimeError("替代枚举值意外等于 Gold")
+        for index, character in enumerate(candidate):
+            if character.isalpha():
+                replacement = "z" if character.casefold() != "z" else "y"
+                candidate = candidate[:index] + (replacement.upper() if character.isupper() else replacement) + candidate[index + 1 :]
+                break
+        else:
+            raise ValueError("无法为不含字母的字符串生成可靠替代值")
     return candidate
 
 
@@ -204,15 +225,8 @@ def build_constraints(value: Any, salt: str, family: str) -> tuple[dict[str, Any
             raise ValueError("const 仅支持字符串和数值标量")
         return {"const": value}, {"const": negative}, "const"
     if isinstance(value, str):
-        plus_other = alternative_string(value, f"{salt}:plus")
-        minus_first = alternative_string(value, f"{salt}:minus:0")
-        minus_second = alternative_string(value, f"{salt}:minus:1")
-        plus_values = [value, plus_other]
-        minus_values = [minus_first, minus_second]
-        if int(stable_digest(salt, "enum_order")[:2], 16) % 2:
-            plus_values.reverse()
-            minus_values.reverse()
-        return {"enum": plus_values}, {"enum": minus_values}, "enum"
+        negative = alternative_string(value, f"{salt}:minus")
+        return {"enum": [value]}, {"enum": [negative]}, "enum"
     if not isinstance(value, (int, float)) or isinstance(value, bool) or not math.isfinite(float(value)):
         raise ValueError("数值范围仅支持有限整数或浮点数")
     if isinstance(value, int):

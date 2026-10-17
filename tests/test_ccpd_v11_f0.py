@@ -53,8 +53,22 @@ class F0ContractTests(unittest.TestCase):
         plus, minus, family = MODULE.build_constraints("suite", "hotel", "seen")
         self.assertEqual(family, "enum")
         self.assertEqual(len(plus["enum"]), len(minus["enum"]))
+        self.assertEqual(len(plus["enum"]), 1)
         self.assertIn("suite", plus["enum"])
         self.assertNotIn("suite", minus["enum"])
+        self.assertEqual(len(plus["enum"][0]), len(minus["enum"][0]))
+
+    def test_alternative_string_preserves_surface_shape(self) -> None:
+        """伪值应保留长度、空格、标点和大小写形态，且不含固定标签前缀。"""
+        source = "Santa Clara County"
+        alternative = MODULE.alternative_string(source, "county")
+        self.assertNotEqual(source.casefold(), alternative.casefold())
+        self.assertEqual(len(source), len(alternative))
+        self.assertEqual(
+            [character.isspace() for character in source],
+            [character.isspace() for character in alternative],
+        )
+        self.assertNotIn("unsupported", alternative.casefold())
 
     def test_const_is_reserved_unseen_family(self) -> None:
         """未见约束划分使用同类 const 约束且两侧执行结果相反。"""
