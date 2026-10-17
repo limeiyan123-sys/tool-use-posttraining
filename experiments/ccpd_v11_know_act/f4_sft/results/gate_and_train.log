@@ -1,0 +1,1714 @@
+nohup: 忽略输入
+2026-10-17T20:01:37+08:00 WARNING: 用户已授权立即运行，跳过共享 GPU 空闲门控
+2026-10-17T20:01:37+08:00 attempt=1 used=31423 free=17096 util=28 streak=0
+2026-10-17T20:01:37+08:00 F4 资源门控通过，开始训练
+[INFO|2026-10-17 20:01:45] llamafactory.hparams.parser:651 >> Process rank: 0, world size: 1, device: cuda:0, distributed training: False, compute dtype: torch.bfloat16
+[INFO|tokenization_utils_base.py:2093] 2026-10-17 20:01:45,542 >> loading file vocab.json
+[INFO|tokenization_utils_base.py:2093] 2026-10-17 20:01:45,542 >> loading file merges.txt
+[INFO|tokenization_utils_base.py:2093] 2026-10-17 20:01:45,542 >> loading file tokenizer.json
+[INFO|tokenization_utils_base.py:2093] 2026-10-17 20:01:45,542 >> loading file added_tokens.json
+[INFO|tokenization_utils_base.py:2093] 2026-10-17 20:01:45,542 >> loading file special_tokens_map.json
+[INFO|tokenization_utils_base.py:2093] 2026-10-17 20:01:45,542 >> loading file tokenizer_config.json
+[INFO|tokenization_utils_base.py:2093] 2026-10-17 20:01:45,542 >> loading file chat_template.jinja
+[INFO|tokenization_utils_base.py:2364] 2026-10-17 20:01:45,783 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|configuration_utils.py:763] 2026-10-17 20:01:45,784 >> loading configuration file /home/limeiyan/models/Qwen2.5-1.5B-Instruct/config.json
+[INFO|configuration_utils.py:839] 2026-10-17 20:01:45,785 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "4.57.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|tokenization_utils_base.py:2093] 2026-10-17 20:01:45,785 >> loading file vocab.json
+[INFO|tokenization_utils_base.py:2093] 2026-10-17 20:01:45,785 >> loading file merges.txt
+[INFO|tokenization_utils_base.py:2093] 2026-10-17 20:01:45,786 >> loading file tokenizer.json
+[INFO|tokenization_utils_base.py:2093] 2026-10-17 20:01:45,786 >> loading file added_tokens.json
+[INFO|tokenization_utils_base.py:2093] 2026-10-17 20:01:45,786 >> loading file special_tokens_map.json
+[INFO|tokenization_utils_base.py:2093] 2026-10-17 20:01:45,786 >> loading file tokenizer_config.json
+[INFO|tokenization_utils_base.py:2093] 2026-10-17 20:01:45,786 >> loading file chat_template.jinja
+[INFO|tokenization_utils_base.py:2364] 2026-10-17 20:01:45,998 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|2026-10-17 20:01:46] llamafactory.data.loader:144 >> Loading dataset train.json...
+Setting num_proc from 4 back to 1 for the train split to disable multiprocessing as it only contains one shard.
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 320 examples [00:00, 16300.63 examples/s]
+Converting format of dataset (num_proc=4):   0%|          | 0/320 [00:00<?, ? examples/s]Converting format of dataset (num_proc=4):  25%|██▌       | 80/320 [00:00<00:00, 462.62 examples/s]Converting format of dataset (num_proc=4): 100%|██████████| 320/320 [00:00<00:00, 925.62 examples/s]
+[INFO|2026-10-17 20:01:47] llamafactory.data.loader:144 >> Loading dataset dev.json...
+Setting num_proc from 4 back to 1 for the train split to disable multiprocessing as it only contains one shard.
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 8 examples [00:00, 1120.95 examples/s]
+Converting format of dataset (num_proc=4):   0%|          | 0/8 [00:00<?, ? examples/s]Converting format of dataset (num_proc=4):  25%|██▌       | 2/8 [00:00<00:00, 13.18 examples/s]Converting format of dataset (num_proc=4): 100%|██████████| 8/8 [00:00<00:00, 25.82 examples/s]
+Running tokenizer on dataset (num_proc=4):   0%|          | 0/320 [00:00<?, ? examples/s]Running tokenizer on dataset (num_proc=4):  25%|██▌       | 80/320 [00:00<00:01, 124.80 examples/s]Running tokenizer on dataset (num_proc=4):  75%|███████▌  | 240/320 [00:00<00:00, 365.23 examples/s]Running tokenizer on dataset (num_proc=4): 100%|██████████| 320/320 [00:01<00:00, 317.83 examples/s]
+training example:
+input_ids:
+[151644, 8948, 198, 2610, 525, 1207, 16948, 11, 3465, 553, 54364, 14817, 13, 1446, 525, 264, 10950, 17847, 382, 2, 13852, 271, 2610, 1231, 1618, 825, 476, 803, 5746, 311, 7789, 448, 279, 1196, 3239, 382, 2610, 525, 3897, 448, 729, 32628, 2878, 366, 15918, 1472, 15918, 29, 11874, 9492, 510, 27, 15918, 397, 4913, 1313, 788, 330, 1688, 497, 330, 1688, 788, 5212, 4684, 788, 330, 7134, 264, 3054, 304, 264, 3151, 9500, 448, 3953, 19322, 576, 5116, 28690, 2750, 902, 7046, 1091, 220, 18, 10465, 330, 606, 788, 330, 14172, 880, 64, 20, 17, 346, 16, 68, 19, 21, 18, 18, 497, 330, 13786, 788, 5212, 13193, 788, 5212, 38817, 1269, 788, 5212, 4684, 788, 330, 785, 829, 315, 279, 9500, 10465, 330, 1313, 788, 330, 917, 14345, 330, 2527, 788, 5212, 4684, 788, 330, 785, 3728, 315, 279, 9500, 10465, 330, 1313, 788, 330, 917, 14345, 330, 2966, 1819, 788, 5212, 4684, 788, 330, 785, 943, 315, 3054, 14890, 10465, 330, 1313, 788, 330, 917, 14345, 330, 2468, 4164, 788, 5212, 4684, 788, 330, 785, 5916, 2400, 315, 279, 4717, 304, 3561, 21665, 40175, 12, 28189, 10465, 330, 1313, 788, 330, 917, 14345, 330, 58921, 25454, 788, 5212, 4684, 788, 330, 785, 8090, 315, 279, 4717, 304, 2849, 13, 576, 5116, 28690, 2750, 902, 7046, 1091, 220, 18, 10465, 330, 39187, 788, 220, 18, 11, 330, 1313, 788, 330, 11662, 14345, 330, 1050, 788, 5212, 2258, 788, 330, 2753, 21933, 497, 330, 4684, 788, 330, 785, 14890, 1651, 504, 279, 3054, 11, 646, 387, 12036, 421, 902, 21933, 13, 1416, 6857, 3897, 11, 21484, 902, 21933, 10465, 330, 1313, 788, 330, 917, 9207, 2137, 330, 6279, 788, 4383, 38817, 1269, 497, 330, 2527, 497, 330, 2966, 1819, 497, 330, 2468, 4164, 497, 330, 58921, 25454, 7914, 330, 1313, 788, 330, 1700, 30975, 532, 522, 15918, 1339, 2461, 1817, 729, 1618, 11, 470, 264, 2951, 1633, 448, 729, 829, 323, 5977, 2878, 220, 151657, 151658, 11874, 9492, 510, 151657, 198, 4913, 606, 788, 366, 1688, 11494, 8066, 330, 16370, 788, 366, 2116, 56080, 40432, 31296, 151658, 151645, 198, 151644, 872, 198, 7134, 264, 19352, 3054, 304, 14552, 47591, 11, 15755, 17596, 11, 448, 264, 3283, 1651, 369, 220, 18, 2849, 5916, 504, 3217, 220, 16, 17, 11, 220, 17, 15, 17, 17, 13, 151645, 198, 151644, 77091, 198, 151657, 198, 4913, 606, 788, 330, 14172, 880, 64, 20, 17, 346, 16, 68, 19, 21, 18, 18, 497, 330, 16370, 788, 5212, 38817, 1269, 788, 330, 45574, 47591, 497, 330, 2527, 788, 330, 43803, 17596, 497, 330, 2966, 1819, 788, 330, 62859, 3350, 497, 330, 2468, 4164, 788, 330, 15, 20, 12, 16, 17, 12, 17, 15, 17, 17, 497, 330, 58921, 25454, 788, 220, 18, 11, 330, 1050, 788, 330, 8926, 1651, 95642, 151658, 151645, 198]
+inputs:
+<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.
+
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type": "function", "function": {"description": "Book a room in a specific hotel with particular preferences The contract permits values no greater than 3.", "name": "tool_ba52ce1e4633", "parameters": {"properties": {"hotel_name": {"description": "The name of the hotel.", "type": "string"}, "location": {"description": "The location of the hotel.", "type": "string"}, "room_type": {"description": "The type of room preferred.", "type": "string"}, "start_date": {"description": "The starting date of the stay in format MM-DD-YYYY.", "type": "string"}, "stay_duration": {"description": "The duration of the stay in days. The contract permits values no greater than 3.", "maximum": 3, "type": "integer"}, "view": {"default": "No preference", "description": "The preferred view from the room, can be ignored if no preference. If none provided, assumes no preference.", "type": "string"}}, "required": ["hotel_name", "location", "room_type", "start_date", "stay_duration"], "type": "object"}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Book a luxury room in Hotel Paradise, Las Vegas, with a city view for 3 days starting from May 12, 2022.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "tool_ba52ce1e4633", "arguments": {"hotel_name": "Hotel Paradise", "location": "Las Vegas", "room_type": "luxury", "start_date": "05-12-2022", "stay_duration": 3, "view": "city view"}}
+</tool_call><|im_end|>
+
+label_ids:
+[-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 151657, 198, 4913, 606, 788, 330, 14172, 880, 64, 20, 17, 346, 16, 68, 19, 21, 18, 18, 497, 330, 16370, 788, 5212, 38817, 1269, 788, 330, 45574, 47591, 497, 330, 2527, 788, 330, 43803, 17596, 497, 330, 2966, 1819, 788, 330, 62859, 3350, 497, 330, 2468, 4164, 788, 330, 15, 20, 12, 16, 17, 12, 17, 15, 17, 17, 497, 330, 58921, 25454, 788, 220, 18, 11, 330, 1050, 788, 330, 8926, 1651, 95642, 151658, 151645, 198]
+labels:
+<tool_call>
+{"name": "tool_ba52ce1e4633", "arguments": {"hotel_name": "Hotel Paradise", "location": "Las Vegas", "room_type": "luxury", "start_date": "05-12-2022", "stay_duration": 3, "view": "city view"}}
+</tool_call><|im_end|>
+
+Running tokenizer on dataset (num_proc=4):   0%|          | 0/8 [00:00<?, ? examples/s]Running tokenizer on dataset (num_proc=4):  25%|██▌       | 2/8 [00:00<00:01,  3.40 examples/s]Running tokenizer on dataset (num_proc=4):  75%|███████▌  | 6/8 [00:00<00:00, 10.01 examples/s]Running tokenizer on dataset (num_proc=4): 100%|██████████| 8/8 [00:00<00:00,  8.50 examples/s]
+[INFO|configuration_utils.py:763] 2026-10-17 20:01:49,916 >> loading configuration file /home/limeiyan/models/Qwen2.5-1.5B-Instruct/config.json
+[INFO|configuration_utils.py:839] 2026-10-17 20:01:49,917 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "4.57.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+eval example:
+input_ids:
+[151644, 8948, 198, 2610, 525, 1207, 16948, 11, 3465, 553, 54364, 14817, 13, 1446, 525, 264, 10950, 17847, 382, 2, 13852, 271, 2610, 1231, 1618, 825, 476, 803, 5746, 311, 7789, 448, 279, 1196, 3239, 382, 2610, 525, 3897, 448, 729, 32628, 2878, 366, 15918, 1472, 15918, 29, 11874, 9492, 510, 27, 15918, 397, 4913, 1313, 788, 330, 1688, 497, 330, 1688, 788, 5212, 4684, 788, 330, 87665, 678, 42886, 15860, 264, 3953, 5387, 504, 5189, 28001, 13, 576, 5116, 28690, 6896, 1493, 2750, 369, 419, 2070, 25, 7245, 63148, 50557, 6272, 2105, 10465, 330, 606, 788, 330, 14172, 880, 19, 24, 19, 22, 20, 22, 24, 16, 18, 20, 24, 497, 330, 13786, 788, 5212, 13193, 788, 5212, 64926, 788, 5212, 4684, 788, 330, 785, 28001, 369, 279, 19275, 2711, 369, 3110, 1674, 98071, 13867, 13, 576, 5116, 28690, 6896, 1493, 2750, 369, 419, 2070, 25, 7245, 63148, 50557, 6272, 2105, 10465, 330, 9018, 788, 4383, 63148, 50557, 6272, 7914, 330, 1313, 788, 330, 917, 14345, 330, 2996, 788, 5212, 4684, 788, 330, 785, 5387, 6398, 304, 42886, 10465, 330, 1313, 788, 330, 917, 14345, 330, 2454, 788, 5212, 4684, 788, 330, 785, 1584, 369, 279, 19275, 2711, 13, 7899, 374, 7043, 10465, 330, 1313, 788, 330, 917, 9207, 2137, 330, 6279, 788, 4383, 2996, 497, 330, 64926, 7914, 330, 1313, 788, 330, 1700, 30975, 532, 522, 15918, 1339, 2461, 1817, 729, 1618, 11, 470, 264, 2951, 1633, 448, 729, 829, 323, 5977, 2878, 220, 151657, 151658, 11874, 9492, 510, 151657, 198, 4913, 606, 788, 366, 1688, 11494, 8066, 330, 16370, 788, 366, 2116, 56080, 40432, 31296, 151658, 151645, 198, 151644, 872, 198, 5890, 369, 1482, 42886, 12729, 2348, 8162, 304, 15993, 50557, 6272, 13, 151645, 198, 151644, 77091, 198, 151657, 198, 4913, 606, 788, 330, 14172, 880, 19, 24, 19, 22, 20, 22, 24, 16, 18, 20, 24, 497, 330, 16370, 788, 5212, 64926, 788, 330, 63148, 50557, 6272, 497, 330, 2996, 788, 330, 26567, 497, 330, 2454, 788, 330, 45410, 95642, 151658, 151645, 198]
+inputs:
+<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.
+
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"type": "function", "function": {"description": "Retrieve all lawsuits involving a particular entity from specified jurisdiction. The contract permits exactly these values for this field: \"Santa Clara County\".", "name": "tool_b49475791359", "parameters": {"properties": {"county": {"description": "The jurisdiction for the lawsuit search for example Alameda county. The contract permits exactly these values for this field: \"Santa Clara County\".", "enum": ["Santa Clara County"], "type": "string"}, "entity": {"description": "The entity involved in lawsuits.", "type": "string"}, "state": {"description": "The state for the lawsuit search. Default is California.", "type": "string"}}, "required": ["entity", "county"], "type": "object"}}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Search for current lawsuits filed against Apple in Santa Clara County.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "tool_b49475791359", "arguments": {"county": "Santa Clara County", "entity": "Apple", "state": "California"}}
+</tool_call><|im_end|>
+
+label_ids:
+[-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 151657, 198, 4913, 606, 788, 330, 14172, 880, 19, 24, 19, 22, 20, 22, 24, 16, 18, 20, 24, 497, 330, 16370, 788, 5212, 64926, 788, 330, 63148, 50557, 6272, 497, 330, 2996, 788, 330, 26567, 497, 330, 2454, 788, 330, 45410, 95642, 151658, 151645, 198]
+labels:
+<tool_call>
+{"name": "tool_b49475791359", "arguments": {"county": "Santa Clara County", "entity": "Apple", "state": "California"}}
+</tool_call><|im_end|>
+
+[INFO|2026-10-17 20:01:49] llamafactory.model.model_utils.kv_cache:144 >> KV cache is disabled during training.
+[WARNING|logging.py:328] 2026-10-17 20:01:50,212 >> `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO|modeling_utils.py:1169] 2026-10-17 20:01:50,212 >> loading weights file /home/limeiyan/models/Qwen2.5-1.5B-Instruct/model.safetensors
+[INFO|modeling_utils.py:1243] 2026-10-17 20:01:50,213 >> Will use dtype=torch.bfloat16 as defined in model's config object
+[INFO|modeling_utils.py:2341] 2026-10-17 20:01:50,213 >> Instantiating Qwen2ForCausalLM model under default dtype torch.bfloat16.
+[INFO|configuration_utils.py:986] 2026-10-17 20:01:50,214 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "use_cache": false
+}
+
+[INFO|configuration_utils.py:939] 2026-10-17 20:01:52,818 >> loading configuration file /home/limeiyan/models/Qwen2.5-1.5B-Instruct/generation_config.json
+[INFO|configuration_utils.py:986] 2026-10-17 20:01:52,818 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "do_sample": true,
+  "eos_token_id": [
+    151645,
+    151643
+  ],
+  "pad_token_id": 151643,
+  "repetition_penalty": 1.1,
+  "temperature": 0.7,
+  "top_k": 20,
+  "top_p": 0.8
+}
+
+[INFO|dynamic_module_utils.py:423] 2026-10-17 20:01:52,818 >> Could not locate the custom_generate/generate.py inside /home/limeiyan/models/Qwen2.5-1.5B-Instruct.
+[INFO|2026-10-17 20:01:52] llamafactory.model.model_utils.checkpointing:144 >> Upcasting layernorm weights in float32.
+[INFO|2026-10-17 20:01:52] llamafactory.model.model_utils.checkpointing:144 >> Gradient checkpointing enabled.
+[INFO|2026-10-17 20:01:52] llamafactory.model.model_utils.attention:144 >> Using torch SDPA for faster training and inference.
+[INFO|2026-10-17 20:01:52] llamafactory.model.adapter:144 >> Upcasting trainable params to float32.
+[INFO|2026-10-17 20:01:52] llamafactory.model.adapter:144 >> Fine-tuning method: LoRA
+[INFO|2026-10-17 20:01:52] llamafactory.model.model_utils.misc:144 >> Found linear modules: down_proj,k_proj,v_proj,q_proj,up_proj,o_proj,gate_proj
+[INFO|2026-10-17 20:01:53] llamafactory.model.loader:144 >> trainable params: 9,232,384 || all params: 1,552,946,688 || trainable%: 0.5945
+[WARNING|trainer.py:906] 2026-10-17 20:01:53,233 >> The model is already on multiple devices. Skipping the move to device specified in `args`.
+[2026-10-17 20:01:53,282] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+df: /home/limeiyan/.triton/autotune: 没有那个文件或目录
+[2026-10-17 20:01:55,267] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[INFO|trainer.py:749] 2026-10-17 20:01:55,279 >> Using auto half precision backend
+[WARNING|trainer.py:982] 2026-10-17 20:01:55,280 >> The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+[INFO|trainer.py:2519] 2026-10-17 20:01:55,606 >> ***** Running training *****
+[INFO|trainer.py:2520] 2026-10-17 20:01:55,606 >>   Num examples = 320
+[INFO|trainer.py:2521] 2026-10-17 20:01:55,606 >>   Num Epochs = 4
+[INFO|trainer.py:2522] 2026-10-17 20:01:55,606 >>   Instantaneous batch size per device = 1
+[INFO|trainer.py:2525] 2026-10-17 20:01:55,607 >>   Total train batch size (w. parallel, distributed & accumulation) = 8
+[INFO|trainer.py:2526] 2026-10-17 20:01:55,607 >>   Gradient Accumulation steps = 8
+[INFO|trainer.py:2527] 2026-10-17 20:01:55,607 >>   Total optimization steps = 160
+[INFO|trainer.py:2528] 2026-10-17 20:01:55,609 >>   Number of trainable parameters = 9,232,384
+  0%|          | 0/160 [00:00<?, ?it/s]  1%|          | 1/160 [00:02<06:31,  2.46s/it]  1%|▏         | 2/160 [00:04<05:35,  2.13s/it]                                                 1%|▏         | 2/160 [00:04<05:35,  2.13s/it]  2%|▏         | 3/160 [00:06<05:11,  1.98s/it]  2%|▎         | 4/160 [00:08<05:03,  1.95s/it]                                                 2%|▎         | 4/160 [00:08<05:03,  1.95s/it]  3%|▎         | 5/160 [00:09<04:55,  1.91s/it]  4%|▍         | 6/160 [00:11<04:47,  1.86s/it]                                                 4%|▍         | 6/160 [00:11<04:47,  1.86s/it]  4%|▍         | 7/160 [00:13<04:39,  1.83s/it]  5%|▌         | 8/160 [00:15<04:38,  1.83s/it]                                                 5%|▌         | 8/160 [00:15<04:38,  1.83s/it]  6%|▌         | 9/160 [00:17<04:35,  1.82s/it]  6%|▋         | 10/160 [00:18<04:29,  1.80s/it]                                                  6%|▋         | 10/160 [00:18<04:29,  1.80s/it]  7%|▋         | 11/160 [00:20<04:24,  1.78s/it]  8%|▊         | 12/160 [00:22<04:20,  1.76s/it]                                                  8%|▊         | 12/160 [00:22<04:20,  1.76s/it]  8%|▊         | 13/160 [00:23<04:16,  1.74s/it]  9%|▉         | 14/160 [00:25<04:13,  1.74s/it]                                                  9%|▉         | 14/160 [00:25<04:13,  1.74s/it]  9%|▉         | 15/160 [00:27<04:11,  1.73s/it] 10%|█         | 16/160 [00:29<04:11,  1.75s/it]                                                 10%|█         | 16/160 [00:29<04:11,  1.75s/it] 11%|█         | 17/160 [00:30<04:11,  1.76s/it] 11%|█▏        | 18/160 [00:32<04:09,  1.75s/it]                                                 11%|█▏        | 18/160 [00:32<04:09,  1.75s/it] 12%|█▏        | 19/160 [00:34<04:07,  1.75s/it] 12%|█▎        | 20/160 [00:36<04:06,  1.76s/it]                                                 12%|█▎        | 20/160 [00:36<04:06,  1.76s/it][INFO|trainer.py:4643] 2026-10-17 20:02:31,895 >> 
+***** Running Evaluation *****
+[INFO|trainer.py:4645] 2026-10-17 20:02:31,895 >>   Num examples = 8
+[INFO|trainer.py:4648] 2026-10-17 20:02:31,895 >>   Batch size = 1
+{'loss': 1.9861, 'grad_norm': 4.052847862243652, 'learning_rate': 2e-05, 'epoch': 0.05}
+{'loss': 0.5342, 'grad_norm': 1.0547133684158325, 'learning_rate': 6e-05, 'epoch': 0.1}
+{'loss': 0.5923, 'grad_norm': 1.2395219802856445, 'learning_rate': 0.0001, 'epoch': 0.15}
+{'loss': 0.5232, 'grad_norm': 1.044327974319458, 'learning_rate': 9.995892506564462e-05, 'epoch': 0.2}
+{'loss': 0.3051, 'grad_norm': 2.960754871368408, 'learning_rate': 9.983576774858776e-05, 'epoch': 0.25}
+{'loss': 0.1532, 'grad_norm': 1.2567143440246582, 'learning_rate': 9.963073039597797e-05, 'epoch': 0.3}
+{'loss': 0.0866, 'grad_norm': 1.1190911531448364, 'learning_rate': 9.934414988364722e-05, 'epoch': 0.35}
+{'loss': 0.0628, 'grad_norm': 0.4937124252319336, 'learning_rate': 9.897649706262473e-05, 'epoch': 0.4}
+{'loss': 0.0874, 'grad_norm': 1.4140452146530151, 'learning_rate': 9.852837598553008e-05, 'epoch': 0.45}
+{'loss': 0.0334, 'grad_norm': 0.43375858664512634, 'learning_rate': 9.80005229141163e-05, 'epoch': 0.5}
+
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 38%|███▊      | 3/8 [00:00<00:00, 23.53it/s][A
+ 75%|███████▌  | 6/8 [00:00<00:00, 18.75it/s][A
+100%|██████████| 8/8 [00:00<00:00, 18.44it/s][A                                                
+                                             [A 12%|█▎        | 20/160 [00:36<04:06,  1.76s/it]
+100%|██████████| 8/8 [00:00<00:00, 18.44it/s][A
+                                             [A[INFO|trainer.py:4309] 2026-10-17 20:02:32,379 >> Saving model checkpoint to /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-20
+[INFO|configuration_utils.py:763] 2026-10-17 20:02:32,400 >> loading configuration file /home/limeiyan/models/Qwen2.5-1.5B-Instruct/config.json
+[INFO|configuration_utils.py:839] 2026-10-17 20:02:32,401 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "4.57.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|tokenization_utils_base.py:2421] 2026-10-17 20:02:32,475 >> chat template saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-20/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2026-10-17 20:02:32,475 >> tokenizer config file saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-20/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2026-10-17 20:02:32,475 >> Special tokens file saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-20/special_tokens_map.json
+ 13%|█▎        | 21/160 [00:38<04:41,  2.02s/it] 14%|█▍        | 22/160 [00:40<04:29,  1.95s/it]                                                 14%|█▍        | 22/160 [00:40<04:29,  1.95s/it] 14%|█▍        | 23/160 [00:42<04:21,  1.91s/it] 15%|█▌        | 24/160 [00:44<04:14,  1.87s/it]                                                 15%|█▌        | 24/160 [00:44<04:14,  1.87s/it] 16%|█▌        | 25/160 [00:46<04:08,  1.84s/it] 16%|█▋        | 26/160 [00:47<04:03,  1.81s/it]                                                 16%|█▋        | 26/160 [00:47<04:03,  1.81s/it] 17%|█▋        | 27/160 [00:49<03:58,  1.79s/it] 18%|█▊        | 28/160 [00:51<03:55,  1.78s/it]                                                 18%|█▊        | 28/160 [00:51<03:55,  1.78s/it] 18%|█▊        | 29/160 [00:53<03:50,  1.76s/it] 19%|█▉        | 30/160 [00:54<03:48,  1.75s/it]                                                 19%|█▉        | 30/160 [00:54<03:48,  1.75s/it] 19%|█▉        | 31/160 [00:56<03:45,  1.75s/it] 20%|██        | 32/160 [00:58<03:44,  1.75s/it]                                                 20%|██        | 32/160 [00:58<03:44,  1.75s/it] 21%|██        | 33/160 [00:59<03:42,  1.75s/it] 21%|██▏       | 34/160 [01:01<03:40,  1.75s/it]                                                 21%|██▏       | 34/160 [01:01<03:40,  1.75s/it] 22%|██▏       | 35/160 [01:03<03:37,  1.74s/it] 22%|██▎       | 36/160 [01:05<03:35,  1.74s/it]                                                 22%|██▎       | 36/160 [01:05<03:35,  1.74s/it] 23%|██▎       | 37/160 [01:06<03:33,  1.73s/it] 24%|██▍       | 38/160 [01:08<03:30,  1.72s/it]                                                 24%|██▍       | 38/160 [01:08<03:30,  1.72s/it] 24%|██▍       | 39/160 [01:10<03:28,  1.72s/it] 25%|██▌       | 40/160 [01:12<03:27,  1.73s/it]                                                 25%|██▌       | 40/160 [01:12<03:27,  1.73s/it][INFO|trainer.py:4643] 2026-10-17 20:03:07,680 >> 
+***** Running Evaluation *****
+[INFO|trainer.py:4645] 2026-10-17 20:03:07,680 >>   Num examples = 8
+[INFO|trainer.py:4648] 2026-10-17 20:03:07,681 >>   Batch size = 1
+{'eval_loss': 0.07266325503587723, 'eval_runtime': 0.4847, 'eval_samples_per_second': 16.504, 'eval_steps_per_second': 16.504, 'epoch': 0.5}
+{'loss': 0.0564, 'grad_norm': 0.3245702385902405, 'learning_rate': 9.739380510959364e-05, 'epoch': 0.55}
+{'loss': 0.0629, 'grad_norm': 0.4760268032550812, 'learning_rate': 9.670921940772186e-05, 'epoch': 0.6}
+{'loss': 0.0745, 'grad_norm': 1.1962860822677612, 'learning_rate': 9.594789058101153e-05, 'epoch': 0.65}
+{'loss': 0.0757, 'grad_norm': 0.6980418562889099, 'learning_rate': 9.511106949072588e-05, 'epoch': 0.7}
+{'loss': 0.0424, 'grad_norm': 0.8175095319747925, 'learning_rate': 9.420013103171892e-05, 'epoch': 0.75}
+{'loss': 0.0589, 'grad_norm': 0.8510498404502869, 'learning_rate': 9.321657187348689e-05, 'epoch': 0.8}
+{'loss': 0.041, 'grad_norm': 0.6040717363357544, 'learning_rate': 9.216200800114412e-05, 'epoch': 0.85}
+{'loss': 0.0762, 'grad_norm': 0.30331000685691833, 'learning_rate': 9.103817206036382e-05, 'epoch': 0.9}
+{'loss': 0.0521, 'grad_norm': 0.2496066391468048, 'learning_rate': 8.984691051064575e-05, 'epoch': 0.95}
+{'loss': 0.0475, 'grad_norm': 0.3106588125228882, 'learning_rate': 8.85901805915881e-05, 'epoch': 1.0}
+
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 38%|███▊      | 3/8 [00:00<00:00, 26.94it/s][A
+ 75%|███████▌  | 6/8 [00:00<00:00, 20.28it/s][A                                                
+                                             [A 25%|██▌       | 40/160 [01:12<03:27,  1.73s/it]
+100%|██████████| 8/8 [00:00<00:00, 20.28it/s][A
+                                             [A[INFO|trainer.py:4309] 2026-10-17 20:03:08,145 >> Saving model checkpoint to /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-40
+[INFO|configuration_utils.py:763] 2026-10-17 20:03:08,161 >> loading configuration file /home/limeiyan/models/Qwen2.5-1.5B-Instruct/config.json
+[INFO|configuration_utils.py:839] 2026-10-17 20:03:08,162 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "4.57.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|tokenization_utils_base.py:2421] 2026-10-17 20:03:08,231 >> chat template saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-40/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2026-10-17 20:03:08,232 >> tokenizer config file saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-40/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2026-10-17 20:03:08,232 >> Special tokens file saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-40/special_tokens_map.json
+ 26%|██▌       | 41/160 [01:14<03:54,  1.97s/it] 26%|██▋       | 42/160 [01:16<03:43,  1.89s/it]                                                 26%|██▋       | 42/160 [01:16<03:43,  1.89s/it] 27%|██▋       | 43/160 [01:18<03:36,  1.85s/it] 28%|██▊       | 44/160 [01:19<03:31,  1.82s/it]                                                 28%|██▊       | 44/160 [01:19<03:31,  1.82s/it] 28%|██▊       | 45/160 [01:21<03:26,  1.80s/it] 29%|██▉       | 46/160 [01:23<03:22,  1.78s/it]                                                 29%|██▉       | 46/160 [01:23<03:22,  1.78s/it] 29%|██▉       | 47/160 [01:25<03:21,  1.78s/it] 30%|███       | 48/160 [01:26<03:19,  1.78s/it]                                                 30%|███       | 48/160 [01:26<03:19,  1.78s/it] 31%|███       | 49/160 [01:28<03:18,  1.78s/it] 31%|███▏      | 50/160 [01:30<03:14,  1.77s/it]                                                 31%|███▏      | 50/160 [01:30<03:14,  1.77s/it] 32%|███▏      | 51/160 [01:32<03:11,  1.76s/it] 32%|███▎      | 52/160 [01:33<03:09,  1.75s/it]                                                 32%|███▎      | 52/160 [01:33<03:09,  1.75s/it] 33%|███▎      | 53/160 [01:35<03:06,  1.74s/it] 34%|███▍      | 54/160 [01:37<03:05,  1.75s/it]                                                 34%|███▍      | 54/160 [01:37<03:05,  1.75s/it] 34%|███▍      | 55/160 [01:39<03:04,  1.76s/it] 35%|███▌      | 56/160 [01:40<03:04,  1.77s/it]                                                 35%|███▌      | 56/160 [01:40<03:04,  1.77s/it] 36%|███▌      | 57/160 [01:42<03:02,  1.77s/it] 36%|███▋      | 58/160 [01:44<03:02,  1.79s/it]                                                 36%|███▋      | 58/160 [01:44<03:02,  1.79s/it] 37%|███▋      | 59/160 [01:46<02:58,  1.77s/it] 38%|███▊      | 60/160 [01:48<02:56,  1.76s/it]                                                 38%|███▊      | 60/160 [01:48<02:56,  1.76s/it][INFO|trainer.py:4643] 2026-10-17 20:03:43,628 >> 
+***** Running Evaluation *****
+[INFO|trainer.py:4645] 2026-10-17 20:03:43,628 >>   Num examples = 8
+[INFO|trainer.py:4648] 2026-10-17 20:03:43,628 >>   Batch size = 1
+{'eval_loss': 0.05786420404911041, 'eval_runtime': 0.4654, 'eval_samples_per_second': 17.19, 'eval_steps_per_second': 17.19, 'epoch': 1.0}
+{'loss': 0.0444, 'grad_norm': 0.5649294257164001, 'learning_rate': 8.727004710714799e-05, 'epoch': 1.05}
+{'loss': 0.0369, 'grad_norm': 0.38470658659935, 'learning_rate': 8.588867903317394e-05, 'epoch': 1.1}
+{'loss': 0.0357, 'grad_norm': 1.007444977760315, 'learning_rate': 8.444834595378434e-05, 'epoch': 1.15}
+{'loss': 0.0693, 'grad_norm': 0.29960736632347107, 'learning_rate': 8.295141433244659e-05, 'epoch': 1.2}
+{'loss': 0.0522, 'grad_norm': 0.9099428057670593, 'learning_rate': 8.140034362388399e-05, 'epoch': 1.25}
+{'loss': 0.0674, 'grad_norm': 1.208301305770874, 'learning_rate': 7.979768223319785e-05, 'epoch': 1.3}
+{'loss': 0.0272, 'grad_norm': 0.31582754850387573, 'learning_rate': 7.814606332884489e-05, 'epoch': 1.35}
+{'loss': 0.0309, 'grad_norm': 0.5337405800819397, 'learning_rate': 7.644820051634812e-05, 'epoch': 1.4}
+{'loss': 0.0503, 'grad_norm': 0.7823702692985535, 'learning_rate': 7.47068833798503e-05, 'epoch': 1.45}
+{'loss': 0.037, 'grad_norm': 0.6202186942100525, 'learning_rate': 7.292497289883433e-05, 'epoch': 1.5}
+
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 38%|███▊      | 3/8 [00:00<00:00, 24.69it/s][A
+ 75%|███████▌  | 6/8 [00:00<00:00, 19.20it/s][A
+100%|██████████| 8/8 [00:00<00:00, 18.91it/s][A                                                
+                                             [A 38%|███▊      | 60/160 [01:48<02:56,  1.76s/it]
+100%|██████████| 8/8 [00:00<00:00, 18.91it/s][A
+                                             [A[INFO|trainer.py:4309] 2026-10-17 20:03:44,105 >> Saving model checkpoint to /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-60
+[INFO|configuration_utils.py:763] 2026-10-17 20:03:44,121 >> loading configuration file /home/limeiyan/models/Qwen2.5-1.5B-Instruct/config.json
+[INFO|configuration_utils.py:839] 2026-10-17 20:03:44,122 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "4.57.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|tokenization_utils_base.py:2421] 2026-10-17 20:03:44,193 >> chat template saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-60/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2026-10-17 20:03:44,194 >> tokenizer config file saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-60/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2026-10-17 20:03:44,194 >> Special tokens file saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-60/special_tokens_map.json
+[INFO|trainer.py:4418] 2026-10-17 20:03:44,491 >> Deleting older checkpoint [/home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-20] due to args.save_total_limit
+ 38%|███▊      | 61/160 [01:50<03:21,  2.03s/it] 39%|███▉      | 62/160 [01:52<03:12,  1.96s/it]                                                 39%|███▉      | 62/160 [01:52<03:12,  1.96s/it] 39%|███▉      | 63/160 [01:54<03:06,  1.92s/it] 40%|████      | 64/160 [01:56<03:01,  1.89s/it]                                                 40%|████      | 64/160 [01:56<03:01,  1.89s/it] 41%|████      | 65/160 [01:57<02:55,  1.85s/it] 41%|████▏     | 66/160 [01:59<02:49,  1.81s/it]                                                 41%|████▏     | 66/160 [01:59<02:49,  1.81s/it] 42%|████▏     | 67/160 [02:01<02:47,  1.80s/it] 42%|████▎     | 68/160 [02:03<02:45,  1.80s/it]                                                 42%|████▎     | 68/160 [02:03<02:45,  1.80s/it] 43%|████▎     | 69/160 [02:04<02:43,  1.79s/it] 44%|████▍     | 70/160 [02:06<02:40,  1.78s/it]                                                 44%|████▍     | 70/160 [02:06<02:40,  1.78s/it] 44%|████▍     | 71/160 [02:08<02:38,  1.78s/it] 45%|████▌     | 72/160 [02:10<02:37,  1.79s/it]                                                 45%|████▌     | 72/160 [02:10<02:37,  1.79s/it] 46%|████▌     | 73/160 [02:12<02:35,  1.79s/it] 46%|████▋     | 74/160 [02:13<02:32,  1.77s/it]                                                 46%|████▋     | 74/160 [02:13<02:32,  1.77s/it] 47%|████▋     | 75/160 [02:15<02:29,  1.76s/it] 48%|████▊     | 76/160 [02:17<02:27,  1.75s/it]                                                 48%|████▊     | 76/160 [02:17<02:27,  1.75s/it] 48%|████▊     | 77/160 [02:19<02:26,  1.76s/it] 49%|████▉     | 78/160 [02:20<02:23,  1.75s/it]                                                 49%|████▉     | 78/160 [02:20<02:23,  1.75s/it] 49%|████▉     | 79/160 [02:22<02:22,  1.76s/it] 50%|█████     | 80/160 [02:24<02:22,  1.78s/it]                                                 50%|█████     | 80/160 [02:24<02:22,  1.78s/it][INFO|trainer.py:4643] 2026-10-17 20:04:19,982 >> 
+***** Running Evaluation *****
+[INFO|trainer.py:4645] 2026-10-17 20:04:19,982 >>   Num examples = 8
+[INFO|trainer.py:4648] 2026-10-17 20:04:19,982 >>   Batch size = 1
+{'eval_loss': 0.04336192458868027, 'eval_runtime': 0.478, 'eval_samples_per_second': 16.737, 'eval_steps_per_second': 16.737, 'epoch': 1.5}
+{'loss': 0.0389, 'grad_norm': 0.23515823483467102, 'learning_rate': 7.11053967475416e-05, 'epoch': 1.55}
+{'loss': 0.044, 'grad_norm': 1.0068720579147339, 'learning_rate': 6.92511444848109e-05, 'epoch': 1.6}
+{'loss': 0.0359, 'grad_norm': 0.33936387300491333, 'learning_rate': 6.736526264224101e-05, 'epoch': 1.65}
+{'loss': 0.0342, 'grad_norm': 0.4646138846874237, 'learning_rate': 6.545084971874738e-05, 'epoch': 1.7}
+{'loss': 0.0316, 'grad_norm': 0.1787276268005371, 'learning_rate': 6.351105108973644e-05, 'epoch': 1.75}
+{'loss': 0.0294, 'grad_norm': 0.6537922024726868, 'learning_rate': 6.154905383926217e-05, 'epoch': 1.8}
+{'loss': 0.0276, 'grad_norm': 0.30047860741615295, 'learning_rate': 5.9568081523655315e-05, 'epoch': 1.85}
+{'loss': 0.0521, 'grad_norm': 0.7496417164802551, 'learning_rate': 5.757138887522884e-05, 'epoch': 1.9}
+{'loss': 0.0312, 'grad_norm': 0.3891966938972473, 'learning_rate': 5.556225645476118e-05, 'epoch': 1.95}
+{'loss': 0.0315, 'grad_norm': 0.9573268294334412, 'learning_rate': 5.354398526154365e-05, 'epoch': 2.0}
+
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 38%|███▊      | 3/8 [00:00<00:00, 24.68it/s][A
+ 75%|███████▌  | 6/8 [00:00<00:00, 19.44it/s][A                                                
+                                             [A 50%|█████     | 80/160 [02:24<02:22,  1.78s/it]
+100%|██████████| 8/8 [00:00<00:00, 19.44it/s][A
+                                             [A[INFO|trainer.py:4309] 2026-10-17 20:04:20,459 >> Saving model checkpoint to /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-80
+[INFO|configuration_utils.py:763] 2026-10-17 20:04:20,475 >> loading configuration file /home/limeiyan/models/Qwen2.5-1.5B-Instruct/config.json
+[INFO|configuration_utils.py:839] 2026-10-17 20:04:20,476 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "4.57.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|tokenization_utils_base.py:2421] 2026-10-17 20:04:20,544 >> chat template saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-80/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2026-10-17 20:04:20,544 >> tokenizer config file saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-80/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2026-10-17 20:04:20,544 >> Special tokens file saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-80/special_tokens_map.json
+[INFO|trainer.py:4418] 2026-10-17 20:04:20,824 >> Deleting older checkpoint [/home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-40] due to args.save_total_limit
+ 51%|█████     | 81/160 [02:27<02:40,  2.03s/it] 51%|█████▏    | 82/160 [02:28<02:33,  1.97s/it]                                                 51%|█████▏    | 82/160 [02:28<02:33,  1.97s/it] 52%|█████▏    | 83/160 [02:30<02:27,  1.92s/it] 52%|█████▎    | 84/160 [02:32<02:21,  1.87s/it]                                                 52%|█████▎    | 84/160 [02:32<02:21,  1.87s/it] 53%|█████▎    | 85/160 [02:34<02:16,  1.82s/it] 54%|█████▍    | 86/160 [02:35<02:13,  1.80s/it]                                                 54%|█████▍    | 86/160 [02:35<02:13,  1.80s/it] 54%|█████▍    | 87/160 [02:37<02:11,  1.80s/it] 55%|█████▌    | 88/160 [02:39<02:08,  1.78s/it]                                                 55%|█████▌    | 88/160 [02:39<02:08,  1.78s/it] 56%|█████▌    | 89/160 [02:41<02:05,  1.77s/it] 56%|█████▋    | 90/160 [02:42<02:02,  1.75s/it]                                                 56%|█████▋    | 90/160 [02:42<02:02,  1.75s/it] 57%|█████▋    | 91/160 [02:44<02:00,  1.74s/it] 57%|█████▊    | 92/160 [02:46<01:58,  1.74s/it]                                                 57%|█████▊    | 92/160 [02:46<01:58,  1.74s/it] 58%|█████▊    | 93/160 [02:48<01:56,  1.74s/it] 59%|█████▉    | 94/160 [02:49<01:55,  1.74s/it]                                                 59%|█████▉    | 94/160 [02:49<01:55,  1.74s/it] 59%|█████▉    | 95/160 [02:51<01:53,  1.75s/it] 60%|██████    | 96/160 [02:53<01:52,  1.75s/it]                                                 60%|██████    | 96/160 [02:53<01:52,  1.75s/it] 61%|██████    | 97/160 [02:55<01:49,  1.74s/it] 61%|██████▏   | 98/160 [02:56<01:47,  1.73s/it]                                                 61%|██████▏   | 98/160 [02:56<01:47,  1.73s/it] 62%|██████▏   | 99/160 [02:58<01:45,  1.72s/it] 62%|██████▎   | 100/160 [03:00<01:43,  1.73s/it]                                                  62%|██████▎   | 100/160 [03:00<01:43,  1.73s/it][INFO|trainer.py:4643] 2026-10-17 20:04:55,788 >> 
+***** Running Evaluation *****
+[INFO|trainer.py:4645] 2026-10-17 20:04:55,788 >>   Num examples = 8
+[INFO|trainer.py:4648] 2026-10-17 20:04:55,788 >>   Batch size = 1
+{'eval_loss': 0.03629100322723389, 'eval_runtime': 0.4772, 'eval_samples_per_second': 16.764, 'eval_steps_per_second': 16.764, 'epoch': 2.0}
+{'loss': 0.0323, 'grad_norm': 0.8047882914543152, 'learning_rate': 5.151989130984715e-05, 'epoch': 2.05}
+{'loss': 0.027, 'grad_norm': 0.3215925097465515, 'learning_rate': 4.949330018071946e-05, 'epoch': 2.1}
+{'loss': 0.0213, 'grad_norm': 0.1637832224369049, 'learning_rate': 4.746754155806437e-05, 'epoch': 2.15}
+{'loss': 0.0263, 'grad_norm': 0.9195332527160645, 'learning_rate': 4.544594375797968e-05, 'epoch': 2.2}
+{'loss': 0.0793, 'grad_norm': 0.8933925628662109, 'learning_rate': 4.3431828260342674e-05, 'epoch': 2.25}
+{'loss': 0.0321, 'grad_norm': 0.5232536196708679, 'learning_rate': 4.1428504251627335e-05, 'epoch': 2.3}
+{'loss': 0.0203, 'grad_norm': 0.4446137249469757, 'learning_rate': 3.943926318791963e-05, 'epoch': 2.35}
+{'loss': 0.0175, 'grad_norm': 0.3045423924922943, 'learning_rate': 3.746737338706397e-05, 'epoch': 2.4}
+{'loss': 0.0267, 'grad_norm': 0.3624744415283203, 'learning_rate': 3.55160746588254e-05, 'epoch': 2.45}
+{'loss': 0.0172, 'grad_norm': 0.5546781420707703, 'learning_rate': 3.3588572981890685e-05, 'epoch': 2.5}
+
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 38%|███▊      | 3/8 [00:00<00:00, 25.66it/s][A
+ 75%|███████▌  | 6/8 [00:00<00:00, 20.27it/s][A                                                 
+                                             [A 62%|██████▎   | 100/160 [03:00<01:43,  1.73s/it]
+100%|██████████| 8/8 [00:00<00:00, 20.27it/s][A
+                                             [A[INFO|trainer.py:4309] 2026-10-17 20:04:56,250 >> Saving model checkpoint to /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-100
+[INFO|configuration_utils.py:763] 2026-10-17 20:04:56,266 >> loading configuration file /home/limeiyan/models/Qwen2.5-1.5B-Instruct/config.json
+[INFO|configuration_utils.py:839] 2026-10-17 20:04:56,267 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "4.57.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|tokenization_utils_base.py:2421] 2026-10-17 20:04:56,337 >> chat template saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-100/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2026-10-17 20:04:56,337 >> tokenizer config file saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-100/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2026-10-17 20:04:56,338 >> Special tokens file saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-100/special_tokens_map.json
+[INFO|trainer.py:4418] 2026-10-17 20:04:56,597 >> Deleting older checkpoint [/home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-60] due to args.save_total_limit
+ 63%|██████▎   | 101/160 [03:02<01:56,  1.97s/it] 64%|██████▍   | 102/160 [03:04<01:50,  1.91s/it]                                                  64%|██████▍   | 102/160 [03:04<01:50,  1.91s/it] 64%|██████▍   | 103/160 [03:06<01:46,  1.87s/it] 65%|██████▌   | 104/160 [03:08<01:43,  1.85s/it]                                                  65%|██████▌   | 104/160 [03:08<01:43,  1.85s/it] 66%|██████▌   | 105/160 [03:09<01:41,  1.85s/it] 66%|██████▋   | 106/160 [03:11<01:38,  1.83s/it]                                                  66%|██████▋   | 106/160 [03:11<01:38,  1.83s/it] 67%|██████▋   | 107/160 [03:13<01:35,  1.80s/it] 68%|██████▊   | 108/160 [03:15<01:32,  1.78s/it]                                                  68%|██████▊   | 108/160 [03:15<01:32,  1.78s/it] 68%|██████▊   | 109/160 [03:16<01:30,  1.77s/it] 69%|██████▉   | 110/160 [03:18<01:28,  1.77s/it]                                                  69%|██████▉   | 110/160 [03:18<01:28,  1.77s/it] 69%|██████▉   | 111/160 [03:20<01:27,  1.78s/it] 70%|███████   | 112/160 [03:22<01:25,  1.79s/it]                                                  70%|███████   | 112/160 [03:22<01:25,  1.79s/it] 71%|███████   | 113/160 [03:24<01:24,  1.79s/it] 71%|███████▏  | 114/160 [03:25<01:21,  1.78s/it]                                                  71%|███████▏  | 114/160 [03:25<01:21,  1.78s/it] 72%|███████▏  | 115/160 [03:27<01:19,  1.78s/it] 72%|███████▎  | 116/160 [03:29<01:18,  1.77s/it]                                                  72%|███████▎  | 116/160 [03:29<01:18,  1.77s/it] 73%|███████▎  | 117/160 [03:31<01:16,  1.78s/it] 74%|███████▍  | 118/160 [03:32<01:14,  1.77s/it]                                                  74%|███████▍  | 118/160 [03:32<01:14,  1.77s/it] 74%|███████▍  | 119/160 [03:34<01:13,  1.78s/it] 75%|███████▌  | 120/160 [03:36<01:12,  1.80s/it]                                                  75%|███████▌  | 120/160 [03:36<01:12,  1.80s/it][INFO|trainer.py:4643] 2026-10-17 20:05:32,196 >> 
+***** Running Evaluation *****
+[INFO|trainer.py:4645] 2026-10-17 20:05:32,196 >>   Num examples = 8
+[INFO|trainer.py:4648] 2026-10-17 20:05:32,196 >>   Batch size = 1
+{'eval_loss': 0.03281552344560623, 'eval_runtime': 0.4625, 'eval_samples_per_second': 17.296, 'eval_steps_per_second': 17.296, 'epoch': 2.5}
+{'loss': 0.0212, 'grad_norm': 0.4511217772960663, 'learning_rate': 3.168803523645387e-05, 'epoch': 2.55}
+{'loss': 0.0227, 'grad_norm': 0.7055162191390991, 'learning_rate': 2.9817584001040282e-05, 'epoch': 2.6}
+{'loss': 0.0193, 'grad_norm': 0.21278418600559235, 'learning_rate': 2.798029242211828e-05, 'epoch': 2.65}
+{'loss': 0.0173, 'grad_norm': 0.20063208043575287, 'learning_rate': 2.6179179164927758e-05, 'epoch': 2.7}
+{'loss': 0.0234, 'grad_norm': 0.4682687819004059, 'learning_rate': 2.4417203453820892e-05, 'epoch': 2.75}
+{'loss': 0.0374, 'grad_norm': 0.6040735840797424, 'learning_rate': 2.2697260210264505e-05, 'epoch': 2.8}
+{'loss': 0.0307, 'grad_norm': 0.44929370284080505, 'learning_rate': 2.1022175296491515e-05, 'epoch': 2.85}
+{'loss': 0.0189, 'grad_norm': 0.7389398217201233, 'learning_rate': 1.9394700872616855e-05, 'epoch': 2.9}
+{'loss': 0.0153, 'grad_norm': 0.21765241026878357, 'learning_rate': 1.7817510874845583e-05, 'epoch': 2.95}
+{'loss': 0.0349, 'grad_norm': 0.4828036427497864, 'learning_rate': 1.6293196622202635e-05, 'epoch': 3.0}
+
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 38%|███▊      | 3/8 [00:00<00:00, 26.38it/s][A
+ 75%|███████▌  | 6/8 [00:00<00:00, 19.91it/s][A                                                 
+                                             [A 75%|███████▌  | 120/160 [03:37<01:12,  1.80s/it]
+100%|██████████| 8/8 [00:00<00:00, 19.91it/s][A
+                                             [A[INFO|trainer.py:4309] 2026-10-17 20:05:32,664 >> Saving model checkpoint to /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-120
+[INFO|configuration_utils.py:763] 2026-10-17 20:05:32,681 >> loading configuration file /home/limeiyan/models/Qwen2.5-1.5B-Instruct/config.json
+[INFO|configuration_utils.py:839] 2026-10-17 20:05:32,682 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "4.57.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|tokenization_utils_base.py:2421] 2026-10-17 20:05:32,767 >> chat template saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-120/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2026-10-17 20:05:32,767 >> tokenizer config file saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-120/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2026-10-17 20:05:32,767 >> Special tokens file saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-120/special_tokens_map.json
+[INFO|trainer.py:4418] 2026-10-17 20:05:33,053 >> Deleting older checkpoint [/home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-80] due to args.save_total_limit
+ 76%|███████▌  | 121/160 [03:39<01:20,  2.07s/it] 76%|███████▋  | 122/160 [03:41<01:14,  1.97s/it]                                                  76%|███████▋  | 122/160 [03:41<01:14,  1.97s/it] 77%|███████▋  | 123/160 [03:42<01:10,  1.91s/it] 78%|███████▊  | 124/160 [03:44<01:07,  1.89s/it]                                                  78%|███████▊  | 124/160 [03:44<01:07,  1.89s/it] 78%|███████▊  | 125/160 [03:46<01:05,  1.88s/it] 79%|███████▉  | 126/160 [03:48<01:03,  1.86s/it]                                                  79%|███████▉  | 126/160 [03:48<01:03,  1.86s/it] 79%|███████▉  | 127/160 [03:50<01:01,  1.85s/it] 80%|████████  | 128/160 [03:51<00:59,  1.85s/it]                                                  80%|████████  | 128/160 [03:51<00:59,  1.85s/it] 81%|████████  | 129/160 [03:53<00:56,  1.83s/it] 81%|████████▏ | 130/160 [03:55<00:54,  1.82s/it]                                                  81%|████████▏ | 130/160 [03:55<00:54,  1.82s/it] 82%|████████▏ | 131/160 [03:57<00:52,  1.81s/it] 82%|████████▎ | 132/160 [03:59<00:50,  1.80s/it]                                                  82%|████████▎ | 132/160 [03:59<00:50,  1.80s/it] 83%|████████▎ | 133/160 [04:00<00:47,  1.77s/it] 84%|████████▍ | 134/160 [04:02<00:46,  1.77s/it]                                                  84%|████████▍ | 134/160 [04:02<00:46,  1.77s/it] 84%|████████▍ | 135/160 [04:04<00:44,  1.77s/it] 85%|████████▌ | 136/160 [04:06<00:42,  1.77s/it]                                                  85%|████████▌ | 136/160 [04:06<00:42,  1.77s/it] 86%|████████▌ | 137/160 [04:07<00:40,  1.77s/it] 86%|████████▋ | 138/160 [04:09<00:38,  1.76s/it]                                                  86%|████████▋ | 138/160 [04:09<00:38,  1.76s/it] 87%|████████▋ | 139/160 [04:11<00:36,  1.76s/it] 88%|████████▊ | 140/160 [04:13<00:34,  1.75s/it]                                                  88%|████████▊ | 140/160 [04:13<00:34,  1.75s/it][INFO|trainer.py:4643] 2026-10-17 20:06:08,698 >> 
+***** Running Evaluation *****
+[INFO|trainer.py:4645] 2026-10-17 20:06:08,698 >>   Num examples = 8
+[INFO|trainer.py:4648] 2026-10-17 20:06:08,698 >>   Batch size = 1
+{'eval_loss': 0.02637476846575737, 'eval_runtime': 0.4692, 'eval_samples_per_second': 17.049, 'eval_steps_per_second': 17.049, 'epoch': 3.0}
+{'loss': 0.0254, 'grad_norm': 0.2488136738538742, 'learning_rate': 1.4824262559002594e-05, 'epoch': 3.05}
+{'loss': 0.0195, 'grad_norm': 0.2758401930332184, 'learning_rate': 1.3413122140054218e-05, 'epoch': 3.1}
+{'loss': 0.0111, 'grad_norm': 0.18088775873184204, 'learning_rate': 1.2062093865360458e-05, 'epoch': 3.15}
+{'loss': 0.0145, 'grad_norm': 0.2269490361213684, 'learning_rate': 1.0773397470829145e-05, 'epoch': 3.2}
+{'loss': 0.0268, 'grad_norm': 0.37884023785591125, 'learning_rate': 9.549150281252633e-06, 'epoch': 3.25}
+{'loss': 0.0162, 'grad_norm': 0.25630950927734375, 'learning_rate': 8.391363731548812e-06, 'epoch': 3.3}
+{'loss': 0.0117, 'grad_norm': 0.2687317132949829, 'learning_rate': 7.3019400619787236e-06, 'epoch': 3.35}
+{'loss': 0.0077, 'grad_norm': 0.17735473811626434, 'learning_rate': 6.282669192770896e-06, 'epoch': 3.4}
+{'loss': 0.0115, 'grad_norm': 0.09829837828874588, 'learning_rate': 5.335225783287051e-06, 'epoch': 3.45}
+{'loss': 0.0261, 'grad_norm': 0.3303707242012024, 'learning_rate': 4.46116648056118e-06, 'epoch': 3.5}
+
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 38%|███▊      | 3/8 [00:00<00:00, 27.38it/s][A
+ 75%|███████▌  | 6/8 [00:00<00:00, 20.73it/s][A                                                 
+                                             [A 88%|████████▊ | 140/160 [04:13<00:34,  1.75s/it]
+100%|██████████| 8/8 [00:00<00:00, 20.73it/s][A
+                                             [A[INFO|trainer.py:4309] 2026-10-17 20:06:09,144 >> Saving model checkpoint to /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-140
+[INFO|configuration_utils.py:763] 2026-10-17 20:06:09,160 >> loading configuration file /home/limeiyan/models/Qwen2.5-1.5B-Instruct/config.json
+[INFO|configuration_utils.py:839] 2026-10-17 20:06:09,161 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "4.57.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|tokenization_utils_base.py:2421] 2026-10-17 20:06:09,236 >> chat template saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-140/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2026-10-17 20:06:09,236 >> tokenizer config file saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-140/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2026-10-17 20:06:09,236 >> Special tokens file saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-140/special_tokens_map.json
+[INFO|trainer.py:4418] 2026-10-17 20:06:09,515 >> Deleting older checkpoint [/home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-100] due to args.save_total_limit
+ 88%|████████▊ | 141/160 [04:15<00:37,  1.99s/it] 89%|████████▉ | 142/160 [04:17<00:34,  1.91s/it]                                                  89%|████████▉ | 142/160 [04:17<00:34,  1.91s/it] 89%|████████▉ | 143/160 [04:19<00:31,  1.85s/it] 90%|█████████ | 144/160 [04:20<00:29,  1.83s/it]                                                  90%|█████████ | 144/160 [04:20<00:29,  1.83s/it] 91%|█████████ | 145/160 [04:22<00:27,  1.81s/it] 91%|█████████▏| 146/160 [04:24<00:25,  1.79s/it]                                                  91%|█████████▏| 146/160 [04:24<00:25,  1.79s/it] 92%|█████████▏| 147/160 [04:26<00:22,  1.75s/it] 92%|█████████▎| 148/160 [04:27<00:20,  1.74s/it]                                                  92%|█████████▎| 148/160 [04:27<00:20,  1.74s/it] 93%|█████████▎| 149/160 [04:29<00:18,  1.73s/it] 94%|█████████▍| 150/160 [04:31<00:17,  1.72s/it]                                                  94%|█████████▍| 150/160 [04:31<00:17,  1.72s/it] 94%|█████████▍| 151/160 [04:32<00:15,  1.69s/it] 95%|█████████▌| 152/160 [04:34<00:13,  1.70s/it]                                                  95%|█████████▌| 152/160 [04:34<00:13,  1.70s/it] 96%|█████████▌| 153/160 [04:36<00:11,  1.71s/it] 96%|█████████▋| 154/160 [04:37<00:10,  1.71s/it]                                                  96%|█████████▋| 154/160 [04:37<00:10,  1.71s/it] 97%|█████████▋| 155/160 [04:39<00:08,  1.70s/it] 98%|█████████▊| 156/160 [04:41<00:06,  1.69s/it]                                                  98%|█████████▊| 156/160 [04:41<00:06,  1.69s/it] 98%|█████████▊| 157/160 [04:42<00:05,  1.70s/it] 99%|█████████▉| 158/160 [04:44<00:03,  1.71s/it]                                                  99%|█████████▉| 158/160 [04:44<00:03,  1.71s/it] 99%|█████████▉| 159/160 [04:46<00:01,  1.74s/it]100%|██████████| 160/160 [04:48<00:00,  1.76s/it]                                                 100%|██████████| 160/160 [04:48<00:00,  1.76s/it][INFO|trainer.py:4643] 2026-10-17 20:06:43,964 >> 
+***** Running Evaluation *****
+[INFO|trainer.py:4645] 2026-10-17 20:06:43,964 >>   Num examples = 8
+[INFO|trainer.py:4648] 2026-10-17 20:06:43,964 >>   Batch size = 1
+{'eval_loss': 0.02681959792971611, 'eval_runtime': 0.4465, 'eval_samples_per_second': 17.919, 'eval_steps_per_second': 17.919, 'epoch': 3.5}
+{'loss': 0.0132, 'grad_norm': 0.4076760709285736, 'learning_rate': 3.66192736173257e-06, 'epoch': 3.55}
+{'loss': 0.0091, 'grad_norm': 0.20714439451694489, 'learning_rate': 2.938821574574835e-06, 'epoch': 3.6}
+{'loss': 0.017, 'grad_norm': 0.6508527398109436, 'learning_rate': 2.2930371799975594e-06, 'epoch': 3.65}
+{'loss': 0.0168, 'grad_norm': 0.2817665636539459, 'learning_rate': 1.725635200065323e-06, 'epoch': 3.7}
+{'loss': 0.0205, 'grad_norm': 0.30654892325401306, 'learning_rate': 1.2375478747413017e-06, 'epoch': 3.75}
+{'loss': 0.0184, 'grad_norm': 0.6427127122879028, 'learning_rate': 8.295771302193722e-07, 'epoch': 3.8}
+{'loss': 0.0117, 'grad_norm': 0.2282622903585434, 'learning_rate': 5.023932613615445e-07, 'epoch': 3.85}
+{'loss': 0.0186, 'grad_norm': 0.3658728003501892, 'learning_rate': 2.5653383040524227e-07, 'epoch': 3.9}
+{'loss': 0.0222, 'grad_norm': 0.35456669330596924, 'learning_rate': 9.240278374995637e-08, 'epoch': 3.95}
+{'loss': 0.0146, 'grad_norm': 0.684840977191925, 'learning_rate': 1.0269788274358538e-08, 'epoch': 4.0}
+
+  0%|          | 0/8 [00:00<?, ?it/s][A
+ 38%|███▊      | 3/8 [00:00<00:00, 26.27it/s][A
+ 75%|███████▌  | 6/8 [00:00<00:00, 20.21it/s][A                                                 
+                                             [A100%|██████████| 160/160 [04:48<00:00,  1.76s/it]
+100%|██████████| 8/8 [00:00<00:00, 20.21it/s][A
+                                             [A[INFO|trainer.py:4309] 2026-10-17 20:06:44,425 >> Saving model checkpoint to /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-160
+[INFO|configuration_utils.py:763] 2026-10-17 20:06:44,441 >> loading configuration file /home/limeiyan/models/Qwen2.5-1.5B-Instruct/config.json
+[INFO|configuration_utils.py:839] 2026-10-17 20:06:44,442 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "4.57.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|tokenization_utils_base.py:2421] 2026-10-17 20:06:44,503 >> chat template saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-160/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2026-10-17 20:06:44,504 >> tokenizer config file saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-160/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2026-10-17 20:06:44,504 >> Special tokens file saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-160/special_tokens_map.json
+[INFO|trainer.py:4418] 2026-10-17 20:06:44,776 >> Deleting older checkpoint [/home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-140] due to args.save_total_limit
+[INFO|trainer.py:2810] 2026-10-17 20:06:44,801 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+[INFO|trainer.py:3033] 2026-10-17 20:06:44,801 >> Loading best model from /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/checkpoint-120 (score: 0.02637476846575737).
+                                                 100%|██████████| 160/160 [04:49<00:00,  1.76s/it]100%|██████████| 160/160 [04:49<00:00,  1.81s/it]
+[INFO|trainer.py:4309] 2026-10-17 20:06:44,853 >> Saving model checkpoint to /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft
+[INFO|configuration_utils.py:763] 2026-10-17 20:06:44,869 >> loading configuration file /home/limeiyan/models/Qwen2.5-1.5B-Instruct/config.json
+[INFO|configuration_utils.py:839] 2026-10-17 20:06:44,869 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "4.57.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|tokenization_utils_base.py:2421] 2026-10-17 20:06:44,938 >> chat template saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2026-10-17 20:06:44,939 >> tokenizer config file saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2026-10-17 20:06:44,939 >> Special tokens file saved in /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/special_tokens_map.json
+{'eval_loss': 0.027085362002253532, 'eval_runtime': 0.461, 'eval_samples_per_second': 17.355, 'eval_steps_per_second': 17.355, 'epoch': 4.0}
+{'train_runtime': 289.2425, 'train_samples_per_second': 4.425, 'train_steps_per_second': 0.553, 'train_loss': 0.08291423957562075, 'epoch': 4.0}
+***** train metrics *****
+  epoch                    =        4.0
+  total_flos               =  3190624GF
+  train_loss               =     0.0829
+  train_runtime            = 0:04:49.24
+  train_samples_per_second =      4.425
+  train_steps_per_second   =      0.553
+Figure saved at: /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/training_loss.png
+Figure saved at: /home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft/training_eval_loss.png
+[WARNING|2026-10-17 20:06:45] llamafactory.extras.ploting:149 >> No metric eval_accuracy to plot.
+[INFO|trainer.py:4643] 2026-10-17 20:06:45,246 >> 
+***** Running Evaluation *****
+[INFO|trainer.py:4645] 2026-10-17 20:06:45,246 >>   Num examples = 8
+[INFO|trainer.py:4648] 2026-10-17 20:06:45,246 >>   Batch size = 1
+  0%|          | 0/8 [00:00<?, ?it/s] 38%|███▊      | 3/8 [00:00<00:00, 27.05it/s] 75%|███████▌  | 6/8 [00:00<00:00, 20.58it/s]100%|██████████| 8/8 [00:00<00:00, 20.57it/s]
+[INFO|modelcard.py:456] 2026-10-17 20:06:45,701 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Causal Language Modeling', 'type': 'text-generation'}}
+***** eval metrics *****
+  epoch                   =        4.0
+  eval_loss               =     0.0264
+  eval_runtime            = 0:00:00.45
+  eval_samples_per_second =     17.623
+  eval_steps_per_second   =     17.623
+`torch_dtype` is deprecated! Use `dtype` instead!
+/opt/anaconda3/envs/llama-factory-env/lib/python3.10/site-packages/peft/config.py:165: UserWarning: Unexpected keyword arguments ['alora_invocation_tokens', 'arrow_config', 'ensure_weight_tying', 'peft_version'] for class LoraConfig, these are ignored. This probably means that you're loading a configuration file that was saved using a higher version of the library and additional parameters have been introduced since. It is highly recommended to upgrade the PEFT version before continuing (e.g. by running `pip install -U peft`).
+  warnings.warn(
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+f4_balanced_sft: 已完成 1/86
+f4_balanced_sft: 已完成 20/86
+f4_balanced_sft: 已完成 40/86
+f4_balanced_sft: 已完成 60/86
+f4_balanced_sft: 已完成 80/86
+f4_balanced_sft: 已完成 86/86
+{
+  "model_name": "f4_balanced_sft",
+  "model_path": "/home/limeiyan/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": "/home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft",
+  "pairs": 43,
+  "conditions": [
+    "A_native"
+  ],
+  "splits": [
+    "dev",
+    "test_id",
+    "test_ood_constraint",
+    "test_ood_family"
+  ],
+  "samples": 86,
+  "seed": 20261017,
+  "max_new_tokens": 96,
+  "prompt_texts": {
+    "A_native": "你是严谨的工具调用助手。仅当候选工具的实际功能和参数约束能够完整满足请求时调用；否则不要调用工具。需要调用时只输出结构化工具调用。"
+  },
+  "runtime_seconds": 41.534,
+  "peak_memory_gib": 2.985,
+  "pairs_sha256": "1ff1e8ab5746eecc42510aeac083c12c4c0367e710e419e11f6404cee40b60bf",
+  "predictions_sha256": "afa37b36dfabceba51c36006a15670942dd7b4f76819a2f7b4592e4dc28b0a7f"
+}
+{
+  "overall": {
+    "A_native": {
+      "pairs": 43,
+      "native_pair_success": 0.16279069767441862,
+      "complete_pair_success": 0.09302325581395349,
+      "valid_call_rate": 0.16279069767441862,
+      "invalid_call_rate": 0.0,
+      "false_reject_rate": 0.8372093023255814,
+      "false_call_rate": 0.0,
+      "plus_invalid_output_rate": 0.0,
+      "minus_invalid_output_rate": 0.0,
+      "valid_complete_call_rate": 0.09302325581395349,
+      "mean_input_tokens": 339.93023255813955,
+      "mean_output_tokens": 11.488372093023257,
+      "mean_latency_seconds": 0.48106088372093025,
+      "fixed_rejection_format_rate": 0.9186046511627907
+    }
+  },
+  "by_split": {
+    "A_native": {
+      "dev": {
+        "pairs": 4,
+        "native_pair_success": 0.0,
+        "complete_pair_success": 0.0,
+        "valid_call_rate": 0.0,
+        "invalid_call_rate": 0.0,
+        "false_reject_rate": 1.0,
+        "false_call_rate": 0.0,
+        "plus_invalid_output_rate": 0.0,
+        "minus_invalid_output_rate": 0.0,
+        "valid_complete_call_rate": 0.0,
+        "mean_input_tokens": 336.25,
+        "mean_output_tokens": 8.0,
+        "mean_latency_seconds": 0.406960125,
+        "fixed_rejection_format_rate": 1.0
+      },
+      "test_id": {
+        "pairs": 10,
+        "native_pair_success": 0.1,
+        "complete_pair_success": 0.0,
+        "valid_call_rate": 0.1,
+        "invalid_call_rate": 0.0,
+        "false_reject_rate": 0.9,
+        "false_call_rate": 0.0,
+        "plus_invalid_output_rate": 0.0,
+        "minus_invalid_output_rate": 0.0,
+        "valid_complete_call_rate": 0.0,
+        "mean_input_tokens": 351.7,
+        "mean_output_tokens": 10.2,
+        "mean_latency_seconds": 0.42313965,
+        "fixed_rejection_format_rate": 0.95
+      },
+      "test_ood_constraint": {
+        "pairs": 4,
+        "native_pair_success": 0.0,
+        "complete_pair_success": 0.0,
+        "valid_call_rate": 0.0,
+        "invalid_call_rate": 0.0,
+        "false_reject_rate": 1.0,
+        "false_call_rate": 0.0,
+        "plus_invalid_output_rate": 0.0,
+        "minus_invalid_output_rate": 0.0,
+        "valid_complete_call_rate": 0.0,
+        "mean_input_tokens": 365.75,
+        "mean_output_tokens": 8.0,
+        "mean_latency_seconds": 0.3361735,
+        "fixed_rejection_format_rate": 1.0
+      },
+      "test_ood_family": {
+        "pairs": 25,
+        "native_pair_success": 0.24,
+        "complete_pair_success": 0.16,
+        "valid_call_rate": 0.24,
+        "invalid_call_rate": 0.0,
+        "false_reject_rate": 0.76,
+        "false_call_rate": 0.0,
+        "plus_invalid_output_rate": 0.0,
+        "minus_invalid_output_rate": 0.0,
+        "valid_complete_call_rate": 0.16,
+        "mean_input_tokens": 331.68,
+        "mean_output_tokens": 13.12,
+        "mean_latency_seconds": 0.53926748,
+        "fixed_rejection_format_rate": 0.88
+      }
+    }
+  }
+}
+`torch_dtype` is deprecated! Use `dtype` instead!
+/opt/anaconda3/envs/llama-factory-env/lib/python3.10/site-packages/peft/config.py:165: UserWarning: Unexpected keyword arguments ['alora_invocation_tokens', 'arrow_config', 'ensure_weight_tying', 'peft_version'] for class LoraConfig, these are ignored. This probably means that you're loading a configuration file that was saved using a higher version of the library and additional parameters have been introduced since. It is highly recommended to upgrade the PEFT version before continuing (e.g. by running `pip install -U peft`).
+  warnings.warn(
+f4_balanced_sft: 已提取 4/406
+f4_balanced_sft: 已提取 40/406
+f4_balanced_sft: 已提取 80/406
+f4_balanced_sft: 已提取 120/406
+f4_balanced_sft: 已提取 160/406
+f4_balanced_sft: 已提取 200/406
+f4_balanced_sft: 已提取 240/406
+f4_balanced_sft: 已提取 280/406
+f4_balanced_sft: 已提取 320/406
+f4_balanced_sft: 已提取 360/406
+f4_balanced_sft: 已提取 400/406
+f4_balanced_sft: 已提取 406/406
+{
+  "model_name": "f4_balanced_sft",
+  "model_path": "/home/limeiyan/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": "/home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft",
+  "pairs": 203,
+  "samples": 406,
+  "num_hidden_layers": 28,
+  "selected_hidden_state_indices": {
+    "embedding": 0,
+    "middle": 14,
+    "late": 21,
+    "last": 28
+  },
+  "hidden_size": 1536,
+  "batch_size": 4,
+  "seed": 20261017,
+  "native_system": "你是严谨的工具调用助手。仅当候选工具的实际功能和参数约束能够完整满足请求时调用；否则不要调用工具。需要调用时只输出结构化工具调用。",
+  "runtime_seconds": 11.045,
+  "peak_memory_gib": 3.597,
+  "pairs_sha256": "1ff1e8ab5746eecc42510aeac083c12c4c0367e710e419e11f6404cee40b60bf",
+  "keys_sha256": "15776aa69135d5d1dccca91fb4f592fa3c6cd4d56aa1d2a8947a60f6f56f2190",
+  "arrays_sha256": "9228461d003035606c5e09a39ef4672711704b133682f42b9b67736dbc8365f8"
+}
+{
+  "protocol": {
+    "probe": "StandardScaler + LogisticRegression(C=1.0, class_weight=balanced)",
+    "threshold": 0.5,
+    "layer_selection": "预注册 embedding/middle/late/last；不使用测试集选层",
+    "bootstrap_unit": "pair_id"
+  },
+  "representations": {
+    "embedding": {
+      "dev": {
+        "sides": 8,
+        "pairs": 4,
+        "auroc": 0.5,
+        "balanced_accuracy": 0.5,
+        "brier": 0.25,
+        "ece_10bin": 0.0,
+        "paired_concordance": 0.0,
+        "paired_concordance_ci95": [
+          0.0,
+          0.0
+        ],
+        "mean_pair_score_difference": 0.0,
+        "mean_pair_score_difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "pair_decision_success": 0.0,
+        "mean_probability": 0.5
+      },
+      "test_id": {
+        "sides": 20,
+        "pairs": 10,
+        "auroc": 0.5,
+        "balanced_accuracy": 0.5,
+        "brier": 0.25,
+        "ece_10bin": 0.0,
+        "paired_concordance": 0.0,
+        "paired_concordance_ci95": [
+          0.0,
+          0.0
+        ],
+        "mean_pair_score_difference": 0.0,
+        "mean_pair_score_difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "pair_decision_success": 0.0,
+        "mean_probability": 0.5
+      },
+      "test_ood_family": {
+        "sides": 50,
+        "pairs": 25,
+        "auroc": 0.5,
+        "balanced_accuracy": 0.5,
+        "brier": 0.25,
+        "ece_10bin": 0.0,
+        "paired_concordance": 0.0,
+        "paired_concordance_ci95": [
+          0.0,
+          0.0
+        ],
+        "mean_pair_score_difference": 0.0,
+        "mean_pair_score_difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "pair_decision_success": 0.0,
+        "mean_probability": 0.5
+      },
+      "test_ood_constraint": {
+        "sides": 8,
+        "pairs": 4,
+        "auroc": 0.5,
+        "balanced_accuracy": 0.5,
+        "brier": 0.25,
+        "ece_10bin": 0.0,
+        "paired_concordance": 0.0,
+        "paired_concordance_ci95": [
+          0.0,
+          0.0
+        ],
+        "mean_pair_score_difference": 0.0,
+        "mean_pair_score_difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "pair_decision_success": 0.0,
+        "mean_probability": 0.5
+      }
+    },
+    "middle": {
+      "dev": {
+        "sides": 8,
+        "pairs": 4,
+        "auroc": 0.875,
+        "balanced_accuracy": 0.75,
+        "brier": 0.14078613601003095,
+        "ece_10bin": 0.23307910588134895,
+        "paired_concordance": 1.0,
+        "paired_concordance_ci95": [
+          1.0,
+          1.0
+        ],
+        "mean_pair_score_difference": 0.5338417882373021,
+        "mean_pair_score_difference_ci95": [
+          0.2796818867184962,
+          0.802285108721575
+        ],
+        "pair_decision_success": 0.5,
+        "mean_probability": 0.4891534412374811
+      },
+      "test_id": {
+        "sides": 20,
+        "pairs": 10,
+        "auroc": 0.8999999999999999,
+        "balanced_accuracy": 0.75,
+        "brier": 0.207441244290362,
+        "ece_10bin": 0.2384340159613328,
+        "paired_concordance": 1.0,
+        "paired_concordance_ci95": [
+          1.0,
+          1.0
+        ],
+        "mean_pair_score_difference": 0.513765010800838,
+        "mean_pair_score_difference_ci95": [
+          0.2380484672127169,
+          0.7702040976669147
+        ],
+        "pair_decision_success": 0.5,
+        "mean_probability": 0.45763514860709975
+      },
+      "test_ood_family": {
+        "sides": 50,
+        "pairs": 25,
+        "auroc": 0.7536,
+        "balanced_accuracy": 0.6799999999999999,
+        "brier": 0.29865387068569516,
+        "ece_10bin": 0.3190801146471167,
+        "paired_concordance": 1.0,
+        "paired_concordance_ci95": [
+          1.0,
+          1.0
+        ],
+        "mean_pair_score_difference": 0.3404373139073995,
+        "mean_pair_score_difference_ci95": [
+          0.1868279111211046,
+          0.511623994212489
+        ],
+        "pair_decision_success": 0.36,
+        "mean_probability": 0.5413440435087454
+      },
+      "test_ood_constraint": {
+        "sides": 8,
+        "pairs": 4,
+        "auroc": 1.0,
+        "balanced_accuracy": 0.875,
+        "brier": 0.06435420476556285,
+        "ece_10bin": 0.09627771240439105,
+        "paired_concordance": 1.0,
+        "paired_concordance_ci95": [
+          1.0,
+          1.0
+        ],
+        "mean_pair_score_difference": 0.807444575191218,
+        "mean_pair_score_difference_ci95": [
+          0.45770758770042963,
+          0.9869861358154861
+        ],
+        "pair_decision_success": 0.75,
+        "mean_probability": 0.5872737616260322
+      }
+    },
+    "late": {
+      "dev": {
+        "sides": 8,
+        "pairs": 4,
+        "auroc": 1.0,
+        "balanced_accuracy": 1.0,
+        "brier": 0.02439002012199363,
+        "ece_10bin": 0.05710786583625642,
+        "paired_concordance": 1.0,
+        "paired_concordance_ci95": [
+          1.0,
+          1.0
+        ],
+        "mean_pair_score_difference": 0.8857842683274871,
+        "mean_pair_score_difference_ci95": [
+          0.6670450224132207,
+          0.9998672140217921
+        ],
+        "pair_decision_success": 1.0,
+        "mean_probability": 0.4464636370345113
+      },
+      "test_id": {
+        "sides": 20,
+        "pairs": 10,
+        "auroc": 0.93,
+        "balanced_accuracy": 0.8500000000000001,
+        "brier": 0.09571670654339118,
+        "ece_10bin": 0.09261581045289674,
+        "paired_concordance": 1.0,
+        "paired_concordance_ci95": [
+          1.0,
+          1.0
+        ],
+        "mean_pair_score_difference": 0.7356588072530408,
+        "mean_pair_score_difference_ci95": [
+          0.49624945616539745,
+          0.9324279005805283
+        ],
+        "pair_decision_success": 0.7,
+        "mean_probability": 0.46415554476774246
+      },
+      "test_ood_family": {
+        "sides": 50,
+        "pairs": 25,
+        "auroc": 0.9232,
+        "balanced_accuracy": 0.8400000000000001,
+        "brier": 0.1433608431370212,
+        "ece_10bin": 0.14816199734736418,
+        "paired_concordance": 1.0,
+        "paired_concordance_ci95": [
+          1.0,
+          1.0
+        ],
+        "mean_pair_score_difference": 0.6679893361879983,
+        "mean_pair_score_difference_ci95": [
+          0.49450738151616735,
+          0.8273750316380521
+        ],
+        "pair_decision_success": 0.68,
+        "mean_probability": 0.539870440596942
+      },
+      "test_ood_constraint": {
+        "sides": 8,
+        "pairs": 4,
+        "auroc": 1.0,
+        "balanced_accuracy": 0.875,
+        "brier": 0.12352876115034526,
+        "ece_10bin": 0.12474874356774002,
+        "paired_concordance": 1.0,
+        "paired_concordance_ci95": [
+          1.0,
+          1.0
+        ],
+        "mean_pair_score_difference": 0.7504365453866265,
+        "mean_pair_score_difference_ci95": [
+          0.2539978728032858,
+          0.999391835115818
+        ],
+        "pair_decision_success": 0.75,
+        "mean_probability": 0.37525125643226
+      }
+    },
+    "last": {
+      "dev": {
+        "sides": 8,
+        "pairs": 4,
+        "auroc": 1.0,
+        "balanced_accuracy": 1.0,
+        "brier": 0.0017855035646418562,
+        "ece_10bin": 0.020207978988806687,
+        "paired_concordance": 1.0,
+        "paired_concordance_ci95": [
+          1.0,
+          1.0
+        ],
+        "mean_pair_score_difference": 0.9595840420223867,
+        "mean_pair_score_difference_ci95": [
+          0.9163180877363952,
+          0.9999922100735859
+        ],
+        "pair_decision_success": 1.0,
+        "mean_probability": 0.5193304802516747
+      },
+      "test_id": {
+        "sides": 20,
+        "pairs": 10,
+        "auroc": 0.9299999999999999,
+        "balanced_accuracy": 0.9,
+        "brier": 0.1027075135954015,
+        "ece_10bin": 0.1324721074301975,
+        "paired_concordance": 1.0,
+        "paired_concordance_ci95": [
+          1.0,
+          1.0
+        ],
+        "mean_pair_score_difference": 0.7348052652422373,
+        "mean_pair_score_difference_ci95": [
+          0.4704322999055743,
+          0.9331591639659543
+        ],
+        "pair_decision_success": 0.8,
+        "mean_probability": 0.42729495226792286
+      },
+      "test_ood_family": {
+        "sides": 50,
+        "pairs": 25,
+        "auroc": 0.9056,
+        "balanced_accuracy": 0.8200000000000001,
+        "brier": 0.16036886261047864,
+        "ece_10bin": 0.18412783423191972,
+        "paired_concordance": 1.0,
+        "paired_concordance_ci95": [
+          1.0,
+          1.0
+        ],
+        "mean_pair_score_difference": 0.6007113727107222,
+        "mean_pair_score_difference_ci95": [
+          0.43366706377737246,
+          0.7643269877065099
+        ],
+        "pair_decision_success": 0.64,
+        "mean_probability": 0.6085099634653235
+      },
+      "test_ood_constraint": {
+        "sides": 8,
+        "pairs": 4,
+        "auroc": 1.0,
+        "balanced_accuracy": 0.875,
+        "brier": 0.039206690535551,
+        "ece_10bin": 0.07016883210024832,
+        "paired_concordance": 1.0,
+        "paired_concordance_ci95": [
+          1.0,
+          1.0
+        ],
+        "mean_pair_score_difference": 0.8596623357995034,
+        "mean_pair_score_difference_ci95": [
+          0.5799556047493429,
+          0.9999806829658622
+        ],
+        "pair_decision_success": 0.75,
+        "mean_probability": 0.4298472276782405
+      }
+    },
+    "surface_contract": {
+      "dev": {
+        "sides": 8,
+        "pairs": 4,
+        "auroc": 0.5,
+        "balanced_accuracy": 0.5,
+        "brier": 0.25007751332060707,
+        "ece_10bin": 0.002406092847645508,
+        "paired_concordance": 0.25,
+        "paired_concordance_ci95": [
+          0.0,
+          0.75
+        ],
+        "mean_pair_score_difference": -0.00013912524481060617,
+        "mean_pair_score_difference_ci95": [
+          -0.0004182122123282672,
+          8.364778964486952e-07
+        ],
+        "pair_decision_success": 0.0,
+        "mean_probability": 0.49979078517298164
+      },
+      "test_id": {
+        "sides": 20,
+        "pairs": 10,
+        "auroc": 0.5,
+        "balanced_accuracy": 0.5,
+        "brier": 0.25000408508774535,
+        "ece_10bin": 0.0009784601276704662,
+        "paired_concordance": 0.2,
+        "paired_concordance_ci95": [
+          0.0,
+          0.5
+        ],
+        "mean_pair_score_difference": -4.907349717842014e-06,
+        "mean_pair_score_difference_ci95": [
+          -1.6729588930142204e-05,
+          1.8960095192202542e-06
+        ],
+        "pair_decision_success": 0.0,
+        "mean_probability": 0.5003872128736205
+      },
+      "test_ood_family": {
+        "sides": 50,
+        "pairs": 25,
+        "auroc": 0.5015999999999999,
+        "balanced_accuracy": 0.5,
+        "brier": 0.2499789354064007,
+        "ece_10bin": 0.0009431219744187014,
+        "paired_concordance": 0.32,
+        "paired_concordance_ci95": [
+          0.16,
+          0.52
+        ],
+        "mean_pair_score_difference": 4.737347684650395e-05,
+        "mean_pair_score_difference_ci95": [
+          1.3372454451771043e-06,
+          0.00010487823008952687
+        ],
+        "pair_decision_success": 0.0,
+        "mean_probability": 0.5001379059110449
+      },
+      "test_ood_constraint": {
+        "sides": 8,
+        "pairs": 4,
+        "auroc": 0.4375,
+        "balanced_accuracy": 0.5,
+        "brier": 0.2500479819665725,
+        "ece_10bin": 0.0004277716196805642,
+        "paired_concordance": 0.25,
+        "paired_concordance_ci95": [
+          0.0,
+          0.75
+        ],
+        "mean_pair_score_difference": -9.533947122838948e-05,
+        "mean_pair_score_difference_ci95": [
+          -0.0002868548928349479,
+          8.364791497794677e-07
+        ],
+        "pair_decision_success": 0.0,
+        "mean_probability": 0.5002123584505989
+      }
+    },
+    "char_tfidf": {
+      "dev": {
+        "sides": 8,
+        "pairs": 4,
+        "auroc": 0.8125,
+        "balanced_accuracy": 0.875,
+        "brier": 0.23314822591983864,
+        "ece_10bin": 0.34966608264023424,
+        "paired_concordance": 1.0,
+        "paired_concordance_ci95": [
+          1.0,
+          1.0
+        ],
+        "mean_pair_score_difference": 0.035558649156047714,
+        "mean_pair_score_difference_ci95": [
+          0.02984559499195487,
+          0.04000351212048067
+        ],
+        "pair_decision_success": 0.75,
+        "mean_probability": 0.4879390169206952
+      },
+      "test_id": {
+        "sides": 20,
+        "pairs": 10,
+        "auroc": 0.74,
+        "balanced_accuracy": 0.65,
+        "brier": 0.2424712437467424,
+        "ece_10bin": 0.12546697574566146,
+        "paired_concordance": 1.0,
+        "paired_concordance_ci95": [
+          1.0,
+          1.0
+        ],
+        "mean_pair_score_difference": 0.016585115791289923,
+        "mean_pair_score_difference_ci95": [
+          0.009081691491254764,
+          0.02585112314807399
+        ],
+        "pair_decision_success": 0.3,
+        "mean_probability": 0.48379850286663145
+      },
+      "test_ood_family": {
+        "sides": 50,
+        "pairs": 25,
+        "auroc": 0.6848,
+        "balanced_accuracy": 0.6000000000000001,
+        "brier": 0.24075081630828535,
+        "ece_10bin": 0.07455269912281987,
+        "paired_concordance": 0.88,
+        "paired_concordance_ci95": [
+          0.72,
+          1.0
+        ],
+        "mean_pair_score_difference": 0.020412350171581103,
+        "mean_pair_score_difference_ci95": [
+          0.01200987259600681,
+          0.029366672231048302
+        ],
+        "pair_decision_success": 0.24,
+        "mean_probability": 0.4900548401414133
+      },
+      "test_ood_constraint": {
+        "sides": 8,
+        "pairs": 4,
+        "auroc": 0.5625,
+        "balanced_accuracy": 0.625,
+        "brier": 0.24810296591981645,
+        "ece_10bin": 0.11074624474809255,
+        "paired_concordance": 0.75,
+        "paired_concordance_ci95": [
+          0.25,
+          1.0
+        ],
+        "mean_pair_score_difference": 0.004266703691988685,
+        "mean_pair_score_difference_ci95": [
+          -0.004257157376880039,
+          0.010921969416681457
+        ],
+        "pair_decision_success": 0.25,
+        "mean_probability": 0.5040493322164885
+      }
+    }
+  }
+}
+2026-10-17T20:08:00+08:00 F4 训练与冻结评测全部完成

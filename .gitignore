@@ -21,6 +21,27 @@ checkpoints/*
 !checkpoints/stage4_world_randomization/**
 !checkpoints/stage5_fctw/
 !checkpoints/stage5_fctw/**
+!checkpoints/ccpd_v11_f4_balanced_sft/
+checkpoints/ccpd_v11_f4_balanced_sft/*
+!checkpoints/ccpd_v11_f4_balanced_sft/adapter_config.json
+!checkpoints/ccpd_v11_f4_balanced_sft/adapter_model.safetensors
+!checkpoints/ccpd_v11_f4_balanced_sft/added_tokens.json
+!checkpoints/ccpd_v11_f4_balanced_sft/chat_template.jinja
+!checkpoints/ccpd_v11_f4_balanced_sft/merges.txt
+!checkpoints/ccpd_v11_f4_balanced_sft/README.md
+!checkpoints/ccpd_v11_f4_balanced_sft/special_tokens_map.json
+!checkpoints/ccpd_v11_f4_balanced_sft/tokenizer_config.json
+!checkpoints/ccpd_v11_f4_balanced_sft/tokenizer.json
+!checkpoints/ccpd_v11_f4_balanced_sft/training_args.bin
+!checkpoints/ccpd_v11_f4_balanced_sft/vocab.json
+!checkpoints/ccpd_v11_f4_balanced_sft/all_results.json
+!checkpoints/ccpd_v11_f4_balanced_sft/eval_results.json
+!checkpoints/ccpd_v11_f4_balanced_sft/train_results.json
+!checkpoints/ccpd_v11_f4_balanced_sft/trainer_log.jsonl
+!checkpoints/ccpd_v11_f4_balanced_sft/trainer_state.json
+!checkpoints/ccpd_v11_f4_balanced_sft/training_eval_loss.png
+!checkpoints/ccpd_v11_f4_balanced_sft/training_loss.png
+!checkpoints/ccpd_v11_f4_balanced_sft/artifact_manifest.json
 logs/*
 !logs/README.md
 

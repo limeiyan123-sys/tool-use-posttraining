@@ -10,4 +10,6 @@
 4. F3 分离判断质量与行动执行能力。
 5. 仅当 F1–F3 仍显示稳定且未被简单方法解决的缺口时，才运行 F4 平衡 LoRA SFT。
 
+F0–F4 已于 2026-10-17 全部完成。F4 没有解决行为差距，而是从“总调用”翻转为“多数拒绝”；最终研究判断为 `REVISE`。完整证据见 `reports/ccpd_v11_know_act_report.md`。
+
 旧 E0–E2 产物保持在 `experiments/ccpd_core_validation/`，本阶段不会覆盖它们。

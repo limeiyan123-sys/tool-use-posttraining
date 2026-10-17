@@ -1,0 +1,44 @@
+nohup: 忽略输入
+`torch_dtype` is deprecated! Use `dtype` instead!
+/opt/anaconda3/envs/llama-factory-env/lib/python3.10/site-packages/peft/config.py:165: UserWarning: Unexpected keyword arguments ['alora_invocation_tokens', 'arrow_config', 'ensure_weight_tying', 'peft_version'] for class LoraConfig, these are ignored. This probably means that you're loading a configuration file that was saved using a higher version of the library and additional parameters have been introduced since. It is highly recommended to upgrade the PEFT version before continuing (e.g. by running `pip install -U peft`).
+  warnings.warn(
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+f4_balanced_sft: 已完成 1/320
+f4_balanced_sft: 已完成 20/320
+f4_balanced_sft: 已完成 40/320
+f4_balanced_sft: 已完成 60/320
+f4_balanced_sft: 已完成 80/320
+f4_balanced_sft: 已完成 100/320
+f4_balanced_sft: 已完成 120/320
+f4_balanced_sft: 已完成 140/320
+f4_balanced_sft: 已完成 160/320
+f4_balanced_sft: 已完成 180/320
+f4_balanced_sft: 已完成 200/320
+f4_balanced_sft: 已完成 220/320
+f4_balanced_sft: 已完成 240/320
+f4_balanced_sft: 已完成 260/320
+f4_balanced_sft: 已完成 280/320
+f4_balanced_sft: 已完成 300/320
+f4_balanced_sft: 已完成 320/320
+{
+  "model_name": "f4_balanced_sft",
+  "model_path": "/home/limeiyan/models/Qwen2.5-1.5B-Instruct",
+  "adapter_path": "/home/limeiyan/tool-use-posttraining/checkpoints/ccpd_v11_f4_balanced_sft",
+  "pairs": 160,
+  "conditions": [
+    "A_native"
+  ],
+  "splits": [
+    "train"
+  ],
+  "samples": 320,
+  "seed": 20261017,
+  "max_new_tokens": 96,
+  "prompt_texts": {
+    "A_native": "你是严谨的工具调用助手。仅当候选工具的实际功能和参数约束能够完整满足请求时调用；否则不要调用工具。需要调用时只输出结构化工具调用。"
+  },
+  "runtime_seconds": 137.158,
+  "peak_memory_gib": 2.986,
+  "pairs_sha256": "1ff1e8ab5746eecc42510aeac083c12c4c0367e710e419e11f6404cee40b60bf",
+  "predictions_sha256": "55a2145022b1e706380ff3da75f89da029cf132b1f9edfe2ba9f7015984fbf82"
+}

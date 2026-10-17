@@ -12,6 +12,15 @@ MIN_FREE_MIB=18000
 MAX_UTIL=40
 REQUIRED_STREAK=3
 
+# 用户显式授权立即运行时跳过空闲门控，但仍保留资源快照与完整日志。
+if [[ "${FORCE_START:-0}" == "1" ]]; then
+  MIN_FREE_MIB=0
+  MAX_UTIL=100
+  REQUIRED_STREAK=1
+  MAX_POLLS=1
+  echo "$(date --iso-8601=seconds) WARNING: 用户已授权立即运行，跳过共享 GPU 空闲门控"
+fi
+
 mkdir -p "$STATUS_DIR"
 if [[ -e "$OUTPUT_DIR" ]]; then
   echo "拒绝覆盖已有 F4 输出：$OUTPUT_DIR" >&2

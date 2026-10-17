@@ -1,0 +1,11 @@
+{
+  "experiment": "ccpd_v11_f4_balanced_sft",
+  "base_model": "Qwen2.5-1.5B-Instruct",
+  "best_checkpoint_step": 120,
+  "adapter_file": "adapter_model.safetensors",
+  "adapter_sha256": "c52125a7a1fdbdc8129cad8bb610975396c5060bacc5ab284f21031666b8a6e4",
+  "source_data_sha256": "1ff1e8ab5746eecc42510aeac083c12c4c0367e710e419e11f6404cee40b60bf",
+  "seed": 20261017,
+  "training_status": "completed",
+  "research_outcome": "negative_result_over_rejection"
+}
