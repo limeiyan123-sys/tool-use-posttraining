@@ -36,7 +36,30 @@ for ((attempt=1; attempt<=MAX_POLLS; attempt++)); do
     export CUDA_VISIBLE_DEVICES=1
     export TOKENIZERS_PARALLELISM=false
     echo "$(date --iso-8601=seconds) F4 资源门控通过，开始训练"
-    exec /opt/anaconda3/bin/llamafactory-cli train "$CONFIG"
+    /opt/anaconda3/bin/llamafactory-cli train "$CONFIG"
+
+    # 训练成功后立即使用冻结协议完成原生行为和隐状态评测。
+    PYTHON="/opt/anaconda3/envs/llama-factory-env/bin/python"
+    PAIRS="$PROJECT_ROOT/experiments/ccpd_v11_know_act/f0_data/frozen_v2/pairs.jsonl"
+    MODEL="/home/limeiyan/models/Qwen2.5-1.5B-Instruct"
+    PREDICTIONS="$STATUS_DIR/f4_predictions.jsonl"
+    "$PYTHON" experiments/ccpd_v11_know_act/f1_prompt/run_f1_prompts.py \
+      --pairs "$PAIRS" --model-path "$MODEL" --adapter-path "$OUTPUT_DIR" \
+      --output "$PREDICTIONS" --model-name f4_balanced_sft \
+      --conditions A_native --gpu-memory-fraction 0.10
+    "$PYTHON" experiments/ccpd_v11_know_act/f1_prompt/analyze_f1.py \
+      --project-root "$PROJECT_ROOT" --pairs "$PAIRS" --predictions "$PREDICTIONS" \
+      --output "$STATUS_DIR/f4_summary.json"
+    "$PYTHON" experiments/ccpd_v11_know_act/f2_probe/extract_native_hidden.py \
+      --pairs "$PAIRS" --model-path "$MODEL" --adapter-path "$OUTPUT_DIR" \
+      --output-dir "$STATUS_DIR/f4_hidden" --model-name f4_balanced_sft \
+      --gpu-memory-fraction 0.10
+    "$PYTHON" experiments/ccpd_v11_know_act/f2_probe/analyze_probes.py \
+      --pairs "$PAIRS" --hidden-dir "$STATUS_DIR/f4_hidden" \
+      --output "$STATUS_DIR/f4_probe_summary.json"
+    date --iso-8601=seconds > "$STATUS_DIR/F4_COMPLETE"
+    echo "$(date --iso-8601=seconds) F4 训练与冻结评测全部完成"
+    exit 0
   fi
   sleep "$POLL_SECONDS"
 done
